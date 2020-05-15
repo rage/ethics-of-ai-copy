@@ -6,6 +6,7 @@ hidden: false
 
 <text-box variant='learningObjectives' name='Oppimistavoitteet'>
 
+- Learn basics of AI Ethics
 - Tutustut kurssilla käytettyyn NetBeans with TMC -ohjelmointiympäristöön.
 - Opit lataamaan ja palauttamaan kurssin ohjelmointitehtäviä.
 
