@@ -5,6 +5,7 @@ const courseSettings = {
   siteUrl: "https://ethics-of-ai.now.sh",
   githubUrl: "https://github.com/rage/ohjelmointi-20",
   subtitle: "The basics of ethical issues of AI for everybody",
+  // Things from here onwards still need to be updated
   slug: "ohjelmoinnin-mooc-2020",
   tmcCourse: "2020-ohjelmointi",
   quizzesId: "a9251b4f-b3d2-4d0c-ab01-a143eb2834b5",
