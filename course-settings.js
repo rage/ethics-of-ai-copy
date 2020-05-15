@@ -1,6 +1,7 @@
 const courseSettings = {
   language: "en",
   name: "Ethics of AI",
+  // siteUrl: "https://ohjelmointi-20.mooc.fi",
   siteUrl: "https://ohjelmointi-20.mooc.fi",
   githubUrl: "https://github.com/rage/ohjelmointi-20",
   subtitle: "The basics of ethical issues of AI for everybody",
