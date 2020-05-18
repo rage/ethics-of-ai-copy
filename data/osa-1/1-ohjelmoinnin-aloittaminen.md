@@ -4,7 +4,7 @@ title: ' What is AI Ethics?'
 hidden: false
 ---
 
-<text-box variant='learningObjectives' name='Oppimistavoitteet'>
+<text-box variant='learningObjectives' name='Learning Objectives'>
 
 - Learn what is AI Ethics
 - Understand the role of ethical guidelines in AI
