@@ -1,11 +1,10 @@
-
 ---
 path: '/osa-1/1-ohjelmoinnin-aloittaminen'
 title: ' What is AI Ethics?'
 hidden: false
 ---
 
-<text-box variant='Intro' name='Oppimistavoitteet'>
+<text-box variant='learningObjectives' name='Oppimistavoitteet'>
 
 - Learn what is AI Ethics
 - Understand the role of ethical guidelines in AI
