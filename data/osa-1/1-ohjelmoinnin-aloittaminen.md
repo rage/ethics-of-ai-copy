@@ -22,7 +22,7 @@ You should take this course as a shopper´s guide on the design, implementation 
 In this first section, we'll become familiar with the basic concepts of AI ethics by looking into its definition and some examples.
 
 ## WHAT IS AI ETHICS
-What is ethics? From a philosophical point of view, ethics seeks to resolve questions like ‘what is good or bad?”, “what is right - what is wrong”, ‘what is justice, well-being or equality’ by using philosophical tools.  Ethics involves systematizing, defending, and recommending concepts of right and wrong conduct by using conceptual analysis, thought experiments, and  argumentation. (If you want to know more about philosophical reasoning, see this video by Crash Course Philosophy.)
+What is ethics? From a philosophical point of view, ethics seeks to resolve questions like ‘what is good or bad?”, “what is right - what is wrong”, ‘what is justice, well-being or equality’ by using philosophical tools.  Ethics involves systematizing, defending, and recommending concepts of right and wrong conduct by using conceptual analysis, thought experiments, and  argumentation. (If you want to know more about philosophical reasoning, see e.g. [Crash Course Philosophy videos](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNgK6MZucdYldNkMybYIHKR).)
 
 Ethics can be divided to three major sub-fields:
 - Meta-ethics studies the meaning ethical concepts, the existence of ethical entities (ontology) and the possibility of ethical knowledge (epistemology).
@@ -84,6 +84,7 @@ Isaac Asimov proposed ‘three laws of robotics’ (Asimov 1942):
 1. A robot may not injure a human being or, through inaction, allow a human being to come to harm. 
 2. A robot must obey the orders given it by human beings except where such orders would conflict with the First Law.  
 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Laws.” 
+````
 
 Machine ethics has traditionally been contrasted with “roboethics”. Roboethics studies the moral behavior of humans as they design, construct, use and treat such beings.
 
@@ -91,7 +92,7 @@ However, in this course we´ll adopt a broader view on the ethics of AI, and cha
 1. Ethics for AI, which includes the machine ethics
 2. Ethics in Design of AI, and 
 3. Ethics for Designers of AI. 
-```
+
 
 
 ### ------------ OLD STUFF -------------------
