@@ -24,27 +24,10 @@ const Credits = () => (
       <h2>Kurssimateriaali</h2>
 
       <p>
-        Kurssimateriaalin ovat kirjoittaneet Arto Hellas (né Vihavainen) ja
-        Matti Luukkainen. Kurssin sisältöön ovat myös vaikuttaneet seuraavat
-        henkilöt (listattu aakkosjärjestyksessä):
+        Kurssimateriaalin ja tehtävien tekijät ovat Erkki Kaila, Antti Laaksonen
+        ja Matti Luukkainen. Muutama kurssin tehtävistä on Arto Hellaksen (né
+        Vihavainen) käsialaa.
       </p>
-
-      <ul>
-        <li>Antti Laaksonen</li>
-        <li>Antti Leinonen</li>
-        <li>Henrik Nygren</li>
-        <li>Joel Kaasinen</li>
-        <li>Juhana Laurinharju</li>
-        <li>Juho Leinonen</li>
-        <li>Martin Pärtel</li>
-        <li>Matti Paksula</li>
-        <li>Mikael Nousiainen</li>
-        <li>Nea Pirttinen</li>
-        <li>Pekka Mikkola</li>
-        <li>Reetta Puska</li>
-        <li>Vilma Kangas</li>
-      </ul>
-
       <p>
         Kurssin materiaali on lisensoitu{" "}
         <OutboundLink
@@ -64,7 +47,7 @@ const Credits = () => (
       <h2>Kurssilla käytössä oleva teknologia</h2>
 
       <p>
-        Kurssin sivun ovat tehneet{" "}
+        Kurssisivuston ovat tehneet{" "}
         <OutboundLink
           href="https://github.com/nygrenh"
           target="_blank"
@@ -88,8 +71,7 @@ const Credits = () => (
         >
           Agile Education Research -tutkimusryhmä
         </OutboundLink>{" "}
-        on luonut ja ylläpitää kurssilla käytettyä ohjelmointitehtävien
-        palautusympäristöä{" "}
+        on luonut kurssilla käytetyn ohjelmointitehtävien palautusympäristön (
         <OutboundLink
           href="https://tmc.mooc.fi"
           target="_blank"
@@ -97,9 +79,8 @@ const Credits = () => (
         >
           Test My Code
         </OutboundLink>
-        :a, Test My Coden liitännäisiä ohjelmointiympäristöhin,
-        kurssimateriaalissa olevaa kyselyjärjestelmää ja muita
-        kurssimateriaalissa olevia vempaimia (widgettejä).
+        ) ja sen liitännäiset ohjelmointiympäristöihin, kurssimateriaalissa
+        olevan kyselyjärjestelmän ja muut toiminnot.
       </p>
     </Container>
   </Layout>

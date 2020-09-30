@@ -47,15 +47,6 @@ export default class CourseContentTemplate extends React.Component {
   static contextType = LoginStateContext
 
   async componentDidMount() {
-    if (!loggedIn()) {
-      return
-    }
-
-    let userInfo = await getCachedUserDetails()
-    const research = userInfo?.extra_fields?.research
-    if (research === undefined) {
-      navigate("/missing-info")
-    }
     if (typeof window !== "undefined" && window.location.hash) {
       const selector = window.location.hash
       setTimeout(() => {
@@ -71,12 +62,22 @@ export default class CourseContentTemplate extends React.Component {
         tryToScrollToSelector(selector)
       }, 2000)
     }
+
+    if (!loggedIn()) {
+      return
+    }
+
+    let userInfo = await getCachedUserDetails()
+    const research = userInfo?.extra_fields?.research
+    if (research === undefined) {
+      navigate("/missing-info")
+    }
   }
 
   render() {
     const { data } = this.props
     const { frontmatter, htmlAst } = data.page
-    const allPages = data.allPages.edges.map(o => o.node?.frontmatter)
+    const allPages = data.allPages.edges.map((o) => o.node?.frontmatter)
     const partials = getNamedPartials()
     const renderAst = new rehypeReact({
       createElement: React.createElement,

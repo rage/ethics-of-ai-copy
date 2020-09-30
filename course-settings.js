@@ -12,6 +12,7 @@ const courseSettings = {
   tmcOrganization: "mooc",
   bannerPath: "banner.svg",
   studyRightEnabled: true,
+  showExerciseDescriptionWhenNotLoggedIn: true,
 }
 
 module.exports = courseSettings
