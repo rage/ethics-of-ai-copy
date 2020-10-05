@@ -41,7 +41,7 @@ Despite an agreement that AI should be developed and applied in  ‘ethically’
 
 According to recent meta-analyses (Jobin & al, 2019), AI ethics has seemingly converged on a set of five principles;  non-maleficence,  responsibility or accountability, transparency and explainability, justice and fairness, and privacy and security.
 
-<text-box variant="hint" name="INFOBOX: DEFINITIONS">
+<text-box variant="hint" name="Definitions">
 
 - non-maleficence
 - responsibility or accountability
@@ -53,7 +53,7 @@ According to recent meta-analyses (Jobin & al, 2019), AI ethics has seemingly co
 
 OR
 
-<text-box variant="hint" name="INFOBOX: DEFINITIONS">
+<text-box variant="hint" name="Definitions">
 
 1. How could we use AI for good, and not for causing  harm (the principle of non-maleficance)
 2. Who should be blame when AI causes harm? (the principle of accountability)
