@@ -1,5 +1,5 @@
 ---
-path: '/osa-2/1-ethical-concepts'
+path: '/chapter-2/1-ethical-concepts'
 title: ' What is AI Ethics?'
 hidden: false
 ---

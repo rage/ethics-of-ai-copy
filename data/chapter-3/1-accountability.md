@@ -1,5 +1,5 @@
 ---
-path: '/osa-3/1-accountability'
+path: '/chapter-3/1-accountability'
 title: 'Accountability: Who should be blamed?'
 hidden: false
 ---
