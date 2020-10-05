@@ -13,13 +13,13 @@ hidden: false
 </text-box>
 
 
-## A SHOPPER´S GUIDE TO AI ETHICS
+## A Shoppers's Guide to Ethics
 
 In this course, we'll take a look at the ethical issues related to contemporary AI,  open up their background  in philosophy and give them an interpretation in terms of computer science.  The goal of course is to develop your skills for ethical thinking.
 You should take this course as a shopper´s guide on the design, implementation and use of AI in ethically sustainable way.
 In this first section, we'll become familiar with the basic concepts of AI ethics by looking into its definition and some examples.
 
-## WHAT IS AI ETHICS
+## What is Ai Ethics
 What is ethics? From a philosophical point of view, ethics seeks to resolve questions like ‘what is good or bad?”, “what is right - what is wrong”, ‘what is justice, well-being or equality’ by using philosophical tools.  Ethics involves systematizing, defending, and recommending concepts of right and wrong conduct by using conceptual analysis, thought experiments, and  argumentation. (If you want to know more about philosophical reasoning, see this video by Crash Course Philosophy.)
 
 Ethics can be divided to three major sub-fields:
@@ -29,7 +29,7 @@ Ethics can be divided to three major sub-fields:
 AI Ethics is a subfield of the “applied ethics”. However, as a very young research field it is still a developing.
 
 
-## ON ETHICAL GUIDELINES
+## On Ethical Guidelines
 
 In the past years,  research institutions, companies, countries, public sector organizations and ad hoc committees - such as HLEG - have published principles and guidelines for “ethical artificial intelligence”.
 

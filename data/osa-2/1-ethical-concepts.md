@@ -6,7 +6,7 @@ hidden: false
 
 <text-box variant='Intro' name='Learning objectives'>
 
-- VALUES, NORMS AND FACTS
+- Values, Norms and Facts
 - DO GOOD, NOT BAD
 
 </text-box>
@@ -16,7 +16,7 @@ hidden: false
 In the previous section, we discussed on the nature of ethics. <br>
 In this section, we focus on ethical concepts, such as values, norms and normativity.
 
-# WHAT IS GOOD: VALUES, NORMS AND FACTS
+# What is Good: Values, Norms and Facts
 
 ## Values
 
@@ -50,7 +50,7 @@ valuable i.e. valuable in its own rights. It explains the goodness to be found i
 Intrinsically valuable things are typically “big ethical topics”, such as the well-being, happiness, or
 freedom. These things are good as they are (cf. Aristotle, Nicomachean Ethics, 1094a).
 
-## NORMS
+## Norms
 
 “Normativity” refers to an evaluative standard, “a norm”, by which we designate actions, behavior
 or outcomes as desirable or permissible (and others as undesirable or impermissible). Importantly,
@@ -85,9 +85,9 @@ The fact that “X is a law” does not make X as morally good. Instead, one can
 law good or bad?”. This question alone suffices to illustrate, how laws and morality refer to
 different things.
 
-### EXERCISE 1
+### Exercise 1
 
-## FACTS
+## Facts
 
 Hume´s guillotine, as articulated by the Scottish philosopher David Hume (1711–76), states that we
 should not make claims about what should be, based only on statements about what is. Of course,
@@ -120,7 +120,7 @@ founded merely on the relations of objects, nor is perceived by reason.”
 
 </text-box>
 
-## DO GOOD, NO BAD
+## Do Good, No Bad
 
 ### Harms
 
@@ -136,7 +136,7 @@ Also, a specific harm or a specific benefit may have different implications in d
 In ethics, practical and subjective factors are sometimes simply idealized away. If the type of harm or benefit is held constant, and subjective factors are simply ignored, then it is possible to compare
 actions in terms of possible risks (Kauppinen, in progress). Instead of focusing on real consequences, one focuses on comparing the likelihood of producing for a particular consequence in idealized situations. However, this changes the basis of comparison: It is more accurate to speak of "risk-benefit" comparisons rather than cost-benefit -comparisons.
 
-### RISKS
+### Risks
 
 Generally, "risk" is commonly used to mean a likelihood of a danger or a hazard that arises unpredictably, or in a more technical sense, the probability of some resulting degree of harm. This formal notion requires that one can treat the resulting harms in some exact quantities (i.e., not only quantify them so as to be able to rank order them, but assign the harms quantities that may be added
 and subtracted, see Kauppinen, under review for discussion). If the consequences – risks, possible harms and benefits - can be quantified, there are formal mathematical, computational and
@@ -150,7 +150,7 @@ which wars might be declared, if robots will be taking most of the physical risk
 More importantly, as Kauppinen correctly remarks (under review), these risk-benefit calculations sometimes obscure the morally significant matters, such as the fairness of the calculations (see
 CHAPTERS 6 and 7 for more details.) Risk-benefit comparisons alone do not suffice to answer the question of moral value of our choices, even when they may help to compare the consequences of actions.
 
-### EXERCISE 2
+### Exercise 2
 
 Various empirical studies have documented the differences in value aspects of cultures around the world and explicated their sources and implications (e.g., Hofstede, 1982, 1991; Schwartz, 1997; Smith & Schwartz, 1997, Schwartz & 2001). These studies reveal a great deal of variation in the value priorities of individuals within societies as well as groups across nations. Yet, a striking degree of consensus across individuals and societies on values have also been documented. In their classical study, Scwartz and colleagues suggested that certain values are especially important (e.g., honesty and other prosocial values) and others are much less important (e.g., wealth and other power values). They also found that there are some values for which consensus regarding their importance is low (e.g., pleasure and other hedonism values).
 
@@ -212,7 +212,7 @@ Social order
 
 Cleaness
 
-### EXERCISE 3
+### Execise 3
 
 Please, read the following text. (Source). Do you find any values from the text? Please, mark the
 expressions that refers to values by clicking them.
@@ -249,7 +249,7 @@ limiting regulatory uncertainty. Building on the basis of decades of consensual 
 fundamental rights in the EU provides clarity, readability and prospectivity for users, investors and
 innovators.
 
-2. From Fundamental rights to Principles and Values
+2. **From Fundamental rights to Principles and Values**
 
 To give an example of the relationship between fundamental rights, principles, and values let us
 consider the fundamental right conceptualised as ‘respect for human dignity’. This right involves
@@ -264,7 +264,7 @@ decision as to whether or not they will develop, use, or invest in an AI system 
 commercial stages (i.e. by ensuring that people are given the opportunity to consent to products or
 services, they can make choices about their lives and thus their value as humans is protected).
 
-3. Normativity, norms and standardization
+3. **Normativity, norms and standardization**
 
 Normativity plays a significant role in standardization. Because of this, for example in International
 Organization for Standardization (ISO) Directives Part 2 normativity is characterized in terms of
