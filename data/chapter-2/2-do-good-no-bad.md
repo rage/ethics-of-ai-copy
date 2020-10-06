@@ -4,8 +4,6 @@ title: 'Do good no bad'
 hidden: false
 ---
 
-## Do Good, No Bad
-
 ### Harms
 
 When we evaluate the morally meaningful factors of actions, consequences – such as harms and

@@ -1,11 +1,8 @@
 ---
 path: '/chapter-3/2-who-should-be-blamed'
-title: 'Who should be blamed?'
+title: 'Who should we blame, and for what?'
 hidden: false
 ---
-
-# **Who should be blamed – and for what?**
-
 
 **Moral agency**
 
@@ -21,7 +18,7 @@ Immanuel Kant is one of the most famous moral philosophers in Western thought. F
 
 So, according to Kant, we owe to ourselves moral respect in virtue of our autonomy. But insofar as this capacity depends in no way on anything particular or contingent about ourselves, we owe similar respect to all other persons in virtue to their capacity. That means (via the second formulation of Kant´s famous [Categorical Imperative](https://en.wikipedia.org/wiki/Categorical_imperative)), we are obliged to act out of fundamental respect for other persons in virtue of their autonomy. In this way, autonomy serves as both a model of practical reason in the determination of moral obligation and as the feature of other persons deserving moral respect from us. (For further discussion, see Immanual Kant and moral philosophy.)
 
-<text-box>
+</text-box>
 
 **Actions and omissions**
 
@@ -33,7 +30,7 @@ Obviously, agents cannot be responsible for all of the things they do not do. Th
 
 Helsinki  -- is it moral not to help people by using AI-methods, even if those methods may violate the privacy? Can you help someone against their own will?
 
-<text-box>
+</text-box>
 
 **Accountability and transparency**
 
@@ -43,7 +40,7 @@ Who should we blame when AI systems don’t work as intended or make a mistake? 
 
 Accountability is related to other issues, such as transparency ([Chapter 4](https://ethics-of-ai.now.sh/). Accountability is primarily a legal and ethical obligation on an individual (or organisation) to accept responsibility for the use of AI systems, and to disclose the results in a transparent manner.
 
-<text-box>
+</text-box>
 
 Moral machines
 However, even if present-day AI systems lack moral status in terms of moral agents, it is still a theoretical possibility that, some day, future AI systems may have such a status. Because of this, many have addressed the issue of “automated moral reasoning” or the question of possible development of genuinely moral artificial agents.

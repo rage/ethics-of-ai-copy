@@ -11,12 +11,10 @@ hidden: false
 
 </text-box>
 
-### Introduction
+# What is good: values, norms and facts
 
 In the previous section, we discussed on the nature of ethics. <br>
 In this section, we focus on ethical concepts, such as values, norms and normativity.
-
-# What is good: values, norms and facts
 
 ## Values
 

@@ -4,8 +4,6 @@ title: 'Defining accountability'
 hidden: false
 ---
 
-
-
 <text-box variant='Intro' name='Learning objectives'>
 
 1.  Defining accountability
@@ -30,6 +28,7 @@ That said, algorithms still raise a growing challenge for legislators, authoriti
 **An autonomous system** learns and adapts to dynamic environments, and evolves as the environment around it changes. The data it learns and adapts to may be outside what was contemplated when the system was deployed.
 
 **Data-based decision making** uses collected data to make decisions. This can be done either automatically or by a human analyst.
+
 </text-box>
 
 ## **What is “accountability”?**
@@ -49,6 +48,6 @@ Accountability presupposes a “power-relation”. It determines who is in contr
 
 **Morally**, an actor is responsible for an act if they can be blamed for that action.
 
-<text-box>
+</text-box>
 
 Legal and moral responsibility are two different things. They do not always coincide; an agent can be legally responsible even if they were not morally responsible, and vice versa. We’ll discuss more about what moral responsibility means in practice in section II.
