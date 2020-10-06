@@ -1,6 +1,6 @@
 ---
 path: '/chapter-3/2-who-should-be-blamed'
-title: 'Accountability: Who should be blamed?'
+title: 'Who should be blamed?'
 hidden: false
 ---
 

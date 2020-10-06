@@ -1,6 +1,6 @@
 ---
 path: '/chapter-1/1-what-is-ai-ethics'
-title: ' What is AI Ethics?'
+title: 'What is AI ethics?'
 hidden: false
 ---
 
@@ -13,13 +13,13 @@ hidden: false
 </text-box>
 
 
-## A Shoppers's Guide to Ethics
+## A shoppers's guide to ethics
 
 In this course, we'll take a look at the ethical issues related to contemporary AI,  open up their background  in philosophy and give them an interpretation in terms of computer science.  The goal of course is to develop your skills for ethical thinking.
 You should take this course as a shopper´s guide on the design, implementation and use of AI in ethically sustainable way.
 In this first section, we'll become familiar with the basic concepts of AI ethics by looking into its definition and some examples.
 
-## What is Ai Ethics
+## What is Ai ethics
 What is ethics? From a philosophical point of view, ethics seeks to resolve questions like ‘what is good or bad?”, “what is right - what is wrong”, ‘what is justice, well-being or equality’ by using philosophical tools.  Ethics involves systematizing, defending, and recommending concepts of right and wrong conduct by using conceptual analysis, thought experiments, and  argumentation. (If you want to know more about philosophical reasoning, see this video by Crash Course Philosophy.)
 
 Ethics can be divided to three major sub-fields:
@@ -29,7 +29,7 @@ Ethics can be divided to three major sub-fields:
 AI Ethics is a subfield of the “applied ethics”. However, as a very young research field it is still a developing.
 
 
-## On Ethical Guidelines
+## On ethical guidelines
 
 In the past years,  research institutions, companies, countries, public sector organizations and ad hoc committees - such as HLEG - have published principles and guidelines for “ethical artificial intelligence”.
 
@@ -63,18 +63,17 @@ OR
 
 </text-box>
 
-## Examples of Ethical Principles
+## Examples of ethical principles
 
 - HLEG: Trustworthy AI
 - EU: Context and Implementation
 - Rome call for ethical AI
 - Microsoft
 
-## AI Ethics vs Roboethics (was Criticism)
+## AI ethics vs roboethics (was criticism)
 
-<text-box variant='Intro' name='The Traditional Fields of AI Ethics'>
+<text-box variant='Intro' name='The traditional fields of AI ethics'>
 
-Infobox: The Traditional Fields of AI Ethics
 Traditionally AI ethics has taken to mean two things; Machine Ethics and Roboethics.
 Machine ethics is, roughly, a practical research area involving the modelling and implementation of artificial moral agents. Machine ethics is designing ethics for machines, not for the human use of machines.  It is based on a presupposition that machines will make ethically relevant choices, and can be even considered possibly as ethical agents (Anderson and Anderson 2007) or ‘autonomous moral agents’ (van Wynsberghe and Robbins forthcoming).
 As practical research, machine ethics has several research goals, such as the development of ethically responsive autonomous vehicles, or of automated advisers for clinicians on medical ethics issues. Moreover, the more long-term objective of machine ethics is to design the ethical codes for perhaps even ‘genuinely’ moral autonomous agents.

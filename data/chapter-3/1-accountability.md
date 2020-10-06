@@ -1,6 +1,6 @@
 ---
-path: '/chapter-3/1-accountability'
-title: 'Accountability: Who should be blamed?'
+path: '/chapter-3/1-defining-accountability'
+title: 'Defining accountability'
 hidden: false
 ---
 
