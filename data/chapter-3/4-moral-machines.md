@@ -1,5 +1,5 @@
 ---
-path: '/chapter-3/3-moral-machines'
+path: '/chapter-3/4-moral-machines'
 title: 'Moral machines'
 hidden: false
 ---
