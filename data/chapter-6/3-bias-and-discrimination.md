@@ -1,6 +1,6 @@
 ---
-path: '/chapter-6/1-bias-and-discrimination'
-title: 'Moral machines'
+path: '/chapter-6/3-bias-and-discrimination'
+title: 'Bias and discrimiantion'
 hidden: false
 ---
 
@@ -31,12 +31,10 @@ In social justice: a morally suspect discrepancy in the treatment of people.
 
 ## Example 1: Word embeddings: Bolukbasi et al.
 
-Word embeddings are a form of data structure used in natural language processing applications; That is: AI that can understand English. They are produced by trawling through texts, and noting which words often occur together. The produced associations work as a kind of dictionary for AI systems, capturing semantic relationships like “man” is to “king” as “woman” is to “queen”.
-Bolukbasi et al. found that, rather unsurprisingly, these kind of word associations have a tendency to encode conceptual relationships which are culturally pervasive, but considered discriminatory. For example, “mother” is to “nurse” as “father” is to “doctor”.
+Word embeddings are a form of data structure used in natural language processing applications; That is: AI that can understand English. They are produced by trawling through texts, and noting which words often occur together. The produced associations work as a kind of dictionary for AI systems, capturing semantic relationships like “man” is to “king” as “woman” is to “queen”. Bolukbasi et al. found that, rather unsurprisingly, these kind of word associations have a tendency to encode conceptual relationships which are culturally pervasive, but considered discriminatory. For example, “mother” is to “nurse” as “father” is to “doctor”.
 
-## Example 2: Amazon recruitment algorithm
+## Example 2: Amazon recruitment algorithm (Dastin n.d.)
 
-(Dastin, “Amazon Scraps Secret AI Recruiting Tool That Showed Bias against Women.”)
 In 2014, Amazon started developing an internal AI system to streamline their recruitment process. Using the CV:s of past applicants as teching data, the system would analyze incoming CV:s and rate the candidates for further evaluation. Very quickly though, the system was found to rate candidates for technical jobs in a gender biased way.
 The system was found to penalize any CV’s which indicated the applicant to be female. This included mentions of attending things like a Womens chess club, or an all-female college.
 Amazon reportedly attempted to debias the system but ended up scrapping the whole project instead. The system was never used in actual recruiting processes.
@@ -49,17 +47,17 @@ But putting it into words, what it is which makes it discriminatory, turns out t
 **Definition 1**: Discrimination is a difference of treatment of individuals based on their membership in a group.
 
 So how does this definition fare in capturing our sense of discrimination? The words doing the work here are “difference” and “group”. That is, discrimination is something which is comparative, and the units of comparison are different groups (or, rather, groupings), or individuals belonging to them. This is a good start, but let’s analyze where this definition draws the line. What is included, and what is left out?
+
 Consider, for example, driver’s licenses. In Finland, driver’s licenses are issued by the police, upon completion of certain amount of practical and theoretical training, as well as an exam. Thus, driver’s licenses are issued based on individual merit. Nonetheless, we generally find it sensible that people with severely impaired vision are precluded from the process altogether, and we do not consider this discriminatory in the moral sense. After all, driving would be practically impossible either way.  Thus we need to include some sense of the harmfulness of discrimination in our definition.
 
-Consider, then, a café which only serves people wearing green shirts. This is most definitely differential treatment based on group membership, and conducive of a kind of harm, but we would not consider this discrimination in the moralistic sense either. We might find it a strange policy, but not a morally problematic one.  Thus, it is not just group membership we are interested in, but /which/groups.
+Consider, then, a café which only serves people wearing green shirts. This is most definitely differential treatment based on group membership, and conducive of a kind of harm, but we would not consider this discrimination in the moralistic sense either. We might find it a strange policy, but not a morally problematic one.  Thus, it is not just group membership we are interested in, but /which/ groups
 
-**Definition 2**: differential treatment based on perceived membership in a socially salient group, which causes a social harm.
-(Lippert-Rasmussen, /Born Free and Equal? : A Philosophical Inquiry Into the Nature of Discrimination/.)
+**Definition 2**: differential treatment based on perceived membership in a socially salient group, which causes social harm. (Lippert-Rasmussen 2014)
 
-“Socially saliency” is what identifies the which features are moralistically relevant in cases of discrimination. But what does it mean? According to Lippert-Rasmussen, a feature is socially salient if it is important to the structure of social interactions across multiple contexts. That is, what are considered socially salient classifications is a historically contingent matter: in an alternate timeline, where wearing a green shirt was invariably a matter of social importance, factoring into the kind of dignity, opportunities or status afforded to a person, the café example above might well count as a case of discrimination.
+"Socially saliency" is what identifies which features are moralistically relevant in cases of discrimination. But what does it mean? According to Lippert-Rasmussen, a feature is socially salient if it is important to the structure of social interactions across multiple contexts. That is, what are considered socially salient classifications is a historically contingent matter: in an alternate timeline, where wearing a green shirt was invariably a matter of social importance, factoring into the kind of dignity, opportunities or status afforded to a person (if it was religious attire, for example), the café example above might well count as a case of discrimination.
 
-Recognizing moralistic discrimination is not simply a matter of recognizing discrepancies of treatment across arbitrary groupings. Rather, it requires the contextualization of the disparate treatment in the history of oppressive or valuative practices in society, and the groupings made salient thus. For example, the EU charter of fundamental rights lists the following as features, which are morally pertinent in cases of discrimination:
-“sex, race, colour, ethnic or social origin, genetic features, language, religion or belief, political or any other opinion, membership of a national minority, property, birth, disability, age and sexual orientation.”  (/Article 21,/Charter of Fundamental Rights of the European Union)
+Recognizing moralistic discrimination then is not simply a matter of recognizing discrepancies of treatment across arbitrary groupings. Rather, it requires the contextualization of the disparate treatment in the history of oppressive or valuative practices in society, and the groupings made salient thus. For example, the EU charter of fundamental rights lists the following as features, which are morally pertinent in cases of discrimination:
+“sex, race, colour, ethnic or social origin, genetic features, language, religion or belief, political or any other opinion, membership of a national minority, property, birth, disability, age and sexual orientation.”
 
 ## Harms – what are they?
 
@@ -68,35 +66,43 @@ What about harm? One case is clearer than the other: losing out on a job opportu
 
 (This following section is based on Barocas et al., “The Problem with Bias.”)
 
-## Allocative
+## Allocative harms
 
 Allocative harms are situations where an individual is made worse off in terms of the resources available to them. Here resources should be understood broadly not only as food, cars, cell phones and other material goods, but also the services and opportunities provided.
 A lower salary for the same work is most definitely an allocative harm. But so is denying the opportunity for a job interview on the basis of one’s gender.
-Even such abstractions such as risk may be the objects of allocative harms. Wilson et al. (Wilson, Hoffman, and Morgenstern, “Predictive Inequity in Object Detection.”) found that object detection algorithms are worse off recognizing dark toned figures than light toned ones. The researcher Joy Buolamwini has also shown, that facial recognition algorithms are noticeably worse at recognising faces of people of colour. This means that driverless cars may be more likely to hit a black person than a white one. Now granted that causing bodily damage is clearly a harm, one can argue that a harm has been incurred even before such accidents take place. Namely, the disparate distribution of risk is itself an allocative harm to the worse off party.
 
-## Representational
+Even such abstractions such as risk may be the objects of allocative harms. Wilson, Hoffman, and Morgenstern (2019) found that object detection algorithms are worse at recognizing dark toned figures than light toned ones. The researchers Joy Buolamwini and Timnit Gebru have also shown that facial recognition algorithms are noticeably worse at recognising faces of people of colour (Buolamwini and Gebru 2018). This means that driverless cars may be more likely to hit a black person than a white one. Now granted that causing bodily damage is clearly a harm, one can argue that a harm has been incurred even before such accidents take place. Namely, the disparate distribution of risk is itself an allocative harm to the worse off party.
+
+## Representational harms
 
 Representational harms are ones which do not concern the distribution of goods. Rather, they concern the representation of groups and individuals. This class includes harms such as denigration, stereotyping, misrecognition, and ex-nomination.
 
 <text-box variant='hint' name='Terminology: Exonomination'>
-Exnomination: A term originating from media studies, meaning a practice where a certain category or way of being is framed as the norm, by not giving it a name, or not specifying it as a category in itself. Eg. Athlete vs female athlete.
+Exnomination: A term originating from media studies, meaning a practice where a certain category or way of being is framed as the norm, by not giving it a name, or not specifying it as a category in itself (eg. athlete vs female athlete).
 </text-box>
 
 Representational harms affect the narratives we construct of the relevant social groups. By amplifying stereotypical views, degrading the social status of individuals and framing certain ways of being the status quo, representational harms manufacture the unwarranted justifications for oppressive practices.
 
 With the concept of representational harms, we are able to identify the gender-skewed word associations as discriminatory, even though the word associations themselves are not an example of resource distribution in the sense of allocative harms.
 
-## How does bias propagate – and can we stop it?
+## How does bias propagate?
+
+<text-box variant='hint' name='Three different meanings of “bias”'>
+
+In **statistics**: discrepancy of a sample statistic vs the true statistic of the population.
+
+In **cognitive science**: A mode of reasoning which is likely to produce an incorrect or skewed result.
+
+In **social justice**: a morally suspect discrepancy in the treatment of people.
+
+
+</text-box>
 
 So far, we have managed to find a reasonable definition of discrimination, and have at least two anecdotal examples of AI systems taking part in it. In both cases, the discriminatory practice arises from biases in the AI system itself. So if we want to get a handle on this issue, we have some questions to answer. How do AI systems become biased? How can we measure if a system is biased? How can we fix it?
+
 In this section we will look at the way that discriminatory practices feed into each other. That is, biased AI is not only a technical issue, but a result of a history of social practices. Can we detect when our systems amplify these discriminatory tendencies, and better yet, how can we stop the cycle?
 
-
 “All data is historical data: the product of a time, place, political, economic, technical, & social climate. If you are not considering why your data exists, and other data sets don’t, you are doing data science wrong”. - Melissa Terras
-
-
-Source: Corbett-Davies 2018
-
 
 **Non-representative sample**
 
@@ -107,6 +113,7 @@ One reason for this is, according to Buolamwini and Gebru (Gender Shades: Inters
 **Label bias**
 
 Let the data speak for itself, as the saying goes. It’s a nice thought, but the unfortunate truth is that data does not have a voice of its own. Data only speaks through our interpretations of it, and often, these interpretations are difficult to make. This is especially true in situations where there is a discrepancy between what is being measured and what is being investigated.
+
 For example, predicting crime is a task which, if done well, would interests courts, police departments and citizens alike. Unfortunately, crime is a difficult thing to measure, and thus, good data sets are difficult to manufacture.
 “Now hold on!” you might say. The department of statistics produces graphs of crime rates every year! While this is true, what is being measured is not crime itself, but rather arrests, convictions or other proxies. The hope is that these proxies correlate well with the amount of crime in a population. Furthermore, we should wish that the proxies correlate similarly well across socially salient groups /within/ the population.
 The unfortunate truth is that arrests are hardly a neutral proxy for crime. It may give a good sense of overall crime in a population, but it does not generalise well across groupings. In the united states, black people may be much more likely to be arrested on drug charges than white people (Ferrer & Connolly), for example. This doesn’t mean that black people are more likely to commit drug crime, only that black people are more likely to be caught, arrested and logged doing it. Thus, any inferences about crime from such data will necessarily repeat and reinforce injustices which brought about the data itself.
