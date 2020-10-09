@@ -167,7 +167,12 @@ module.exports = {
     },
     `gatsby-plugin-top-layout`,
     {
-      resolve: "gatsby-plugin-material-ui",
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        stylesProvider: {
+          injectFirst: true,
+        },
+      },
     },
     `gatsby-plugin-meta-redirect`, // make sure to put last in the array
   ],

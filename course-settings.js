@@ -13,6 +13,7 @@ const courseSettings = {
   bannerPath: "banner.svg",
   studyRightEnabled: true,
   showExerciseDescriptionWhenNotLoggedIn: true,
+  theme: "indogoTheme"
 }
 
 module.exports = courseSettings
