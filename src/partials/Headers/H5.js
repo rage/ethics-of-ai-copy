@@ -1,5 +1,14 @@
 import React from "react"
+import styled from "styled-components"
 import { normalizeExerciseId } from "../../util/strings"
+
+const Heading = styled.div`
+  & h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(20px, 2vw, 20px);
+    color: #26252a;
+  }
+`
 
 const H5 = ({ children }) => {
   let text = "unknown heading"
@@ -8,9 +17,12 @@ const H5 = ({ children }) => {
   } catch (e) {}
   const id = `heading-${normalizeExerciseId(text)}`
   return (
-    <h5 class="material-header" id={id}>
-      {children}
-    </h5>
+    <Heading>
+      <h5 class="material-header" id={id}>
+        {" "}
+        {children}{" "}
+      </h5>{" "}
+    </Heading>
   )
 }
 

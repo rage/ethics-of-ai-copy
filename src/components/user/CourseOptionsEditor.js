@@ -43,13 +43,6 @@ const StyledIcon = styled(FontAwesomeIcon)`
   margin-right: 0.25rem;
 `
 
-const WarningBox = styled(Card)`
-  margin: 2rem 0;
-  background: #f1a9a0;
-  padding: 1rem;
-  font-weight: bold;
-`
-
 class CourseOptionsEditor extends React.Component {
   async componentDidMount() {
     const data = await userDetails()
@@ -71,7 +64,7 @@ class CourseOptionsEditor extends React.Component {
     )
   }
 
-  onClick = async (e) => {
+  onClick = async e => {
     e.preventDefault()
     this.setState({ submitting: true })
     let extraFields = {
@@ -84,22 +77,18 @@ class CourseOptionsEditor extends React.Component {
       last_name: this.state.last_name,
       organizational_id: this.state.student_number,
     }
-    try {
-      await updateUserDetails({
-        extraFields,
-        userField,
-      })
-      this.setState({ submitting: false })
-      this.props.onComplete()
-    } catch (err) {
-      this.setState({ errorObj: err, submitting: false })
-    }
+    await updateUserDetails({
+      extraFields,
+      userField,
+    })
+    this.setState({ submitting: false })
+    this.props.onComplete()
   }
 
   state = {
     submitting: false,
     error: true,
-    errorObj: undefined,
+    errorObj: {},
     digital_education_for_all: false,
     marketing: false,
     research: undefined,
@@ -111,7 +100,7 @@ class CourseOptionsEditor extends React.Component {
     focused: null,
   }
 
-  handleInput = (e) => {
+  handleInput = e => {
     const name = e.target.name
     const value = e.target.value
     this.setState({ [name]: value }, () => {
@@ -119,7 +108,7 @@ class CourseOptionsEditor extends React.Component {
     })
   }
 
-  handleCheckboxInput = (e) => {
+  handleCheckboxInput = e => {
     const name = e.target.name
     const value = e.target.checked
     this.setState({ [name]: value }, () => {
@@ -127,7 +116,7 @@ class CourseOptionsEditor extends React.Component {
     })
   }
 
-  handleFocus = (e) => {
+  handleFocus = e => {
     const name = e.target.name
     this.setState({ focused: name })
   }
@@ -137,7 +126,7 @@ class CourseOptionsEditor extends React.Component {
   }
 
   validate = () => {
-    this.setState((prev) => ({
+    this.setState(prev => ({
       error: prev.research === undefined,
     }))
   }
@@ -316,9 +305,6 @@ class CourseOptionsEditor extends React.Component {
           <InfoBox>
             <b>{this.props.t("fillRequired")}</b>
           </InfoBox>
-        )}
-        {this.state.errorObj && (
-          <WarningBox>{this.state.errorObj.toString()}</WarningBox>
         )}
       </FormContainer>
     )

@@ -6,8 +6,8 @@ import ContentArea from "../components/ContentArea"
 import TopBar from "../components/TopBar"
 import { StaticQuery, graphql } from "gatsby"
 import * as store from "store"
-// import Pheromones from "../util/pheromones"
-import styled from "styled-components"
+import Pheromones from "../util/pheromones"
+import styled, { ThemeProvider } from "styled-components"
 import courseMetaData from "../../course-metadata.json"
 import "./reboot.css"
 import "./theme.css"
@@ -21,6 +21,8 @@ import "@fortawesome/fontawesome-svg-core/styles.css"
 import { config as fontAwesomeConfig } from "@fortawesome/fontawesome-svg-core"
 import { canDoResearch, accessToken } from "../services/moocfi"
 import Footer from "../components/Footer"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
+import { redTheme, defaultTheme, indigoTheme } from "../theme"
 import PointsBalloon from "../components/PointsBalloon"
 import {
   MEDIUM_SIDEBAR_WIDTH,
@@ -37,13 +39,20 @@ const layoutQuery = graphql`
     title: site {
       siteMetadata {
         title
+        theme
       }
     }
   }
 `
 
+const themeArray = {
+  redTheme: redTheme,
+  indigoTheme: indigoTheme,
+  defaultTheme: defaultTheme,
+}
+
 const Wrapper = styled.div`
-  ${(props) =>
+  ${props =>
     props.mobileMenuOpen &&
     `
     height: 100vh;
@@ -68,34 +77,34 @@ class Layout extends React.Component {
     mobileMenuOpen: false,
   }
 
-  // componentDidMount() {
-  //   const user = store.get("tmc.user")
-  //   if (typeof window !== "undefined" && user) {
-  //     if (canDoResearch()) {
-  //       setTimeout(() => {
-  //         this.removePheromones = Pheromones.init({
-  //           apiUrl: "https://data.pheromones.io/",
-  //           username: user.username,
-  //           submitAfter: 20,
-  //         })
-  //       }, 1000)
-  //     }
-  //   }
-  // }
+  componentDidMount() {
+    const user = store.get("tmc.user")
+    if (typeof window !== "undefined" && user) {
+      if (canDoResearch()) {
+        setTimeout(() => {
+          this.removePheromones = Pheromones.init({
+            apiUrl: "https://data.pheromones.io/",
+            username: user.username,
+            submitAfter: 20,
+          })
+        }, 1000)
+      }
+    }
+  }
 
-  // componentWillUnmount() {
-  //   if (
-  //     typeof window === "undefined" ||
-  //     typeof this.removePheromones === "undefined"
-  //   ) {
-  //     return
-  //   }
-  //   this.removePheromones()
-  //   this.removePheromones = undefined
-  // }
+  componentWillUnmount() {
+    if (
+      typeof window === "undefined" ||
+      typeof this.removePheromones === "undefined"
+    ) {
+      return
+    }
+    this.removePheromones()
+    this.removePheromones = undefined
+  }
 
   toggleMobileMenu = () => {
-    this.setState((prev) => {
+    this.setState(prev => {
       return {
         mobileMenuOpen: !prev.mobileMenuOpen,
       }
@@ -110,39 +119,50 @@ class Layout extends React.Component {
         {" "}
         <StaticQuery
           query={layoutQuery}
-          render={(data) => {
+          render={data => {
             const siteTitle = data.title.siteMetadata.title
+            const derivedTheme = data.title.siteMetadata.theme
+            const theme = themeArray[derivedTheme] || defaultTheme
+            /*             let selectedTheme
+            for (const [key, value] of Object.entries(themeArray)) {
+              if (key === derivedTheme) {
+                selectedTheme = value
+              }
+            } */
+
             return (
-              <Wrapper mobileMenuOpen={this.state.mobileMenuOpen}>
-                <Helmet
-                  defaultTitle={siteTitle}
-                  titleTemplate={`%s - ${siteTitle}`}
-                  meta={[
-                    {
-                      name: "description",
-                      content:
-                        "Helsingin yliopiston kaikille avoin ja ilmainen ohjelmoinnin perusteet opettava verkkokurssi. Kurssilla perehdytään nykyaikaisen ohjelmoinnin perusideoihin sekä ohjelmoinnissa käytettävien työvälineiden lisäksi algoritmien laatimiseen. Kurssille osallistuminen ei vaadi ennakkotietoja ohjelmoinnista.",
-                    },
-                    {
-                      name: "keywords",
-                      content:
-                        "ohjelmointi, java, programming, CS1, MOOC, 2019, ohjelmointikurssi, avoin, ilmainen, helsingin yliopisto",
-                    },
-                  ]}
-                />
-                <Sidebar
-                  mobileMenuOpen={this.state.mobileMenuOpen}
-                  toggleMobileMenu={this.toggleMobileMenu}
-                />
-                <SidebarPush>
-                  <TopBar />
-                  <ContentArea mobileMenuOpen={this.state.mobileMenuOpen}>
-                    {children}
-                  </ContentArea>
-                  <PointsBalloon />
-                  <Footer />
-                </SidebarPush>
-              </Wrapper>
+              <ThemeProvider theme={theme}>
+                <Wrapper mobileMenuOpen={this.state.mobileMenuOpen}>
+                  <Helmet
+                    defaultTitle={siteTitle}
+                    titleTemplate={`%s - ${siteTitle}`}
+                    meta={[
+                      {
+                        name: "description",
+                        content:
+                          "Helsingin yliopiston kaikille avoin ja ilmainen ohjelmoinnin perusteet opettava verkkokurssi. Kurssilla perehdytään nykyaikaisen ohjelmoinnin perusideoihin sekä ohjelmoinnissa käytettävien työvälineiden lisäksi algoritmien laatimiseen. Kurssille osallistuminen ei vaadi ennakkotietoja ohjelmoinnista.",
+                      },
+                      {
+                        name: "keywords",
+                        content:
+                          "ohjelmointi, java, programming, CS1, MOOC, 2019, ohjelmointikurssi, avoin, ilmainen, helsingin yliopisto",
+                      },
+                    ]}
+                  />
+                  <Sidebar
+                    mobileMenuOpen={this.state.mobileMenuOpen}
+                    toggleMobileMenu={this.toggleMobileMenu}
+                  />
+                  <SidebarPush>
+                    <TopBar />
+                    <ContentArea mobileMenuOpen={this.state.mobileMenuOpen}>
+                      {children}
+                    </ContentArea>
+                    <PointsBalloon />
+                    <Footer />
+                  </SidebarPush>
+                </Wrapper>
+              </ThemeProvider>
             )
           }}
         />

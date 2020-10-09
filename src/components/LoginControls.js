@@ -17,7 +17,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 class LoginControls extends React.Component {
   static contextType = LoginStateContext
 
-  doSignOut = (e) => {
+  doSignOut = e => {
     e.preventDefault()
     signOut()
   }
@@ -27,9 +27,8 @@ class LoginControls extends React.Component {
       return
     }
     const details = await getCachedUserDetails()
-    let name = `${details?.user_field?.first_name || ""} ${
-      details?.user_field?.last_name || ""
-    }`.trim()
+    let name = `${details?.user_field?.first_name || ""} ${details?.user_field
+      ?.last_name || ""}`.trim()
     if (name === "") {
       name = details.email
     }
@@ -49,9 +48,7 @@ class LoginControls extends React.Component {
           <StyledIcon icon={profileIcon} />
           {this.state.name}
         </Button>
-        <Button to="/sign-out" onClick={this.doSignOut}>
-          {this.props.t("logout")}
-        </Button>
+        <Button onClick={this.doSignOut}>{this.props.t("logout")}</Button>
       </Fragment>
     ) : (
       <Fragment>

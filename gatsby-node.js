@@ -6,8 +6,14 @@
 
 const path = require("path")
 
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage, createRedirect } = actions
+exports.createPages = ({
+  actions,
+  graphql
+}) => {
+  const {
+    createPage,
+    createRedirect
+  } = actions
 
   // createRedirect({
   //   fromPath: `/osa-1/4-muuttujat`,
@@ -27,6 +33,10 @@ exports.createPages = ({ actions, graphql }) => {
   const infoPageTemplate = path.resolve(`src/templates/InfoPageTemplate.js`)
 
   const vocabularyTemplate = path.resolve(`src/templates/VocabularyTemplate.js`)
+
+  const gridNavigationTemplate = path.resolve(`src/templates/GridNavigationTemplate.js`)
+
+  const homePageTemplate = path.resolve(`src/templates/HomePageTemplate.js`)
 
   const query = `
   {
@@ -49,13 +59,14 @@ exports.createPages = ({ actions, graphql }) => {
             hide_in_sidebar
             sidebar_priority
             vocabulary_page
+            grid_navigation
+            home_page
           }
         }
       }
     }
   }
     `
-
   return graphql(query).then(result => {
     if (result.errors) {
       return Promise.reject(result.errors)
@@ -66,8 +77,18 @@ exports.createPages = ({ actions, graphql }) => {
       return
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    result.data.allMarkdownRemark.edges.forEach(({
+      node
+    }) => {
       let template = courseMaterialTemplate
+
+      if (node.frontmatter.home_page) {
+        template = homePageTemplate
+      }
+
+      if (node.frontmatter.grid_navigation) {
+        template = gridNavigationTemplate
+      }
       if (node.frontmatter.overview) {
         template = coursePartOverviewTemplate
       }
@@ -77,6 +98,8 @@ exports.createPages = ({ actions, graphql }) => {
       if (node.frontmatter.vocabulary_page) {
         template = vocabularyTemplate
       }
+
+
       if (!node.frontmatter.path) {
         // To prevent a bug that happens in development from time to time
         return;

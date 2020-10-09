@@ -15,8 +15,6 @@ import ExerciseDescription from "./ExerciseDescription"
 import ExtraDetails from "./ExtraDetails"
 import StyledDivider from "../../components/StyledDivider"
 import ProgrammingExerciseCard from "./ProgrammingExerciseCard"
-import Alert from "@material-ui/lab/Alert"
-import CourseSettings from "../../../course-settings"
 
 const LoginNag = styled.div`
   margin-bottom: 1rem;
@@ -34,9 +32,6 @@ const Small = styled.div`
     font-size: 0.9rem;
     color: #333;
   }
-`
-const StyledAlert = styled(Alert)`
-  margin-bottom: 1rem;
 `
 
 class ProgrammingExercise extends React.Component {
@@ -124,7 +119,6 @@ class ProgrammingExercise extends React.Component {
       return <div>Loading</div>
     }
 
-    const completed = get(this.state, "exerciseDetails.completed")
     const points = get(this.state, "exerciseDetails.available_points.length")
     const awardedPoints = get(
       this.state,
@@ -138,16 +132,10 @@ class ProgrammingExercise extends React.Component {
         awardedPoints={awardedPoints}
         onRefresh={this.onUpdate}
         allowRefresh={this.context.loggedIn}
-        completed={completed}
       >
         <div>
-          {CourseSettings.showExerciseDescriptionWhenNotLoggedIn ? (
+          {this.context.loggedIn ? (
             <div>
-              {!this.context.loggedIn && (
-                <StyledAlert severity="warning">
-                  {this.props.t("loginToSeeExercisePoints")}
-                </StyledAlert>
-              )}
               {points && points > 1 && (
                 <Small>
                   <p>
@@ -165,40 +153,16 @@ class ProgrammingExercise extends React.Component {
                 </Small>
               )}
               <ExerciseDescription>{children}</ExerciseDescription>
+              {this.state.exerciseDetails === null && (
+                <div>Error loading exercise details</div>
+              )}
             </div>
           ) : (
             <div>
-              {this.context.loggedIn ? (
-                <div>
-                  {points && points > 1 && (
-                    <Small>
-                      <p>
-                        {this.props.t("submitNB")}{" "}
-                        <OutboundLink
-                          href="https://www.mooc.fi/fi/installation/netbeans"
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          {this.props.t("submitHowTo")}
-                        </OutboundLink>
-                        .
-                      </p>
-                      <StyledDivider />
-                    </Small>
-                  )}
-                  <ExerciseDescription>{children}</ExerciseDescription>
-                  {this.state.exerciseDetails === null && (
-                    <div>Error loading exercise details</div>
-                  )}
-                </div>
-              ) : (
-                <div>
-                  <LoginNag>{this.props.t("loginForExercise")}</LoginNag>
-                  <LoginNagWrapper>
-                    <LoginControls />
-                  </LoginNagWrapper>
-                </div>
-              )}
+              <LoginNag>{this.props.t("loginForExercise")}</LoginNag>
+              <LoginNagWrapper>
+                <LoginControls />
+              </LoginNagWrapper>
             </div>
           )}
         </div>

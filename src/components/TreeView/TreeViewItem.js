@@ -12,7 +12,7 @@ import Avatar from "@material-ui/core/Avatar"
 import Chip from "@material-ui/core/Chip"
 import Divider from "@material-ui/core/Divider"
 
-import { faUnlockAlt as icon } from "@fortawesome/free-solid-svg-icons"
+import { faCalendarAlt as icon } from "@fortawesome/free-regular-svg-icons"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
 
 const ChildrenList = styled.ul`
@@ -38,17 +38,17 @@ const NavigationLink = styled(GatsbyLink)`
   border-left: 0.5em solid white;
   width: 100%;
   background-color: white;
-  ${(props) =>
-    props.active === "t" &&
-    `
-    border-color: #f75b4b !important;
+  ${props =>
+      props.active === "t" &&
+      `
+    border-color: ${props.theme.primaryColor} !important;
     background-color: #edeaea;
   `}
-  :hover {
+    :hover {
     text-decoration: none;
     color: black;
-    background-color: #f5ebeb;
-    border-color: #f5ebeb;
+    background-color: ${props => props.theme.primaryHoverColor};
+    border-color: ${props => props.theme.primaryHoverColor};
     //filter: brightness(0.5);
   }
 `
@@ -65,13 +65,13 @@ const DisabledItemWithLink = styled(GatsbyLink)`
   width: 100%;
   border-left: 0.5em solid white;
   background-color: white;
-  ${(props) =>
-    props.active === "t" &&
-    `
+  ${props =>
+      props.active === "t" &&
+      `
     border-color: #f75b4b !important;
     background-color: #edeaea;
   `}
-  :hover {
+    :hover {
     text-decoration: none;
     color: black;
     background-color: #f5ebeb;
@@ -108,7 +108,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 
 const StyledChip = styled(Chip)`
   span {
-    width: 6.5em;
+    width: 6em;
   }
 `
 
@@ -131,7 +131,7 @@ class TreeViewItem extends React.Component {
   }
 
   onClick = () => {
-    this.setState((prev) => ({
+    this.setState(prev => ({
       childrenVisible: !prev.childrenVisible,
     }))
   }
@@ -205,7 +205,7 @@ class TreeViewItem extends React.Component {
                         innerRef={this.childrenListRef}
                         style={{ "--open-ratio": `${openRatio}` }}
                       >
-                        {this.props.item.children.map((i) => (
+                        {this.props.item.children.map(i => (
                           <TreeViewItem key={i.title} item={i} />
                         ))}
                       </ChildrenList>

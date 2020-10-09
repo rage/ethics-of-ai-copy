@@ -1,23 +1,32 @@
 const red = require("@material-ui/core/colors/red").default
 const blue = require("@material-ui/core/colors/red").default
 
-const CourseSettings = require('./course-settings')
+const CourseSettings = require("./course-settings")
 
 module.exports = {
   siteMetadata: {
     title: CourseSettings.name,
     siteUrl: CourseSettings.siteUrl,
+    theme: CourseSettings.theme,
   },
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
+    "gatsby-plugin-smoothscroll",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/data`,
         name: "markdown-pages",
-
-      }
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
     },
     `gatsby-plugin-anchor-links`,
     `gatsby-plugin-sharp`,
@@ -27,14 +36,15 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-responsive-iframe`,
           {
             resolve: "gatsby-remark-smartypants",
             options: {
               quotes: false,
               ellipses: false,
               backticks: false,
-              dashes: "inverted"
-            }
+              dashes: "inverted",
+            },
           },
           {
             resolve: `gatsby-remark-prismjs`,
@@ -67,8 +77,8 @@ module.exports = {
               showLineNumbers: false,
               // If setting this to true, the parser won't handle and highlight inline
               // code used in markdown i.e. single backtick code like `this`.
-              noInlineHighlight: false
-            }
+              noInlineHighlight: false,
+            },
           },
           {
             resolve: `gatsby-remark-images`,
@@ -79,15 +89,15 @@ module.exports = {
               maxWidth: 920,
               withWebp: true,
               wrapperStyle: "margin-bottom: 1rem;",
-              backgroundColor: 'transparent'
-            }
+              backgroundColor: "transparent",
+            },
           },
           {
             resolve: "gatsby-remark-external-links",
             options: {
               target: "_blank",
-              rel: "noopener noreferrer"
-            }
+              rel: "noopener noreferrer",
+            },
           },
           {
             resolve: "gatsby-remark-emojis",
@@ -105,13 +115,13 @@ module.exports = {
                 "margin-top": "1px",
                 position: "relative",
                 top: "5px",
-                width: "25px"
-              }
-            }
+                width: "25px",
+              },
+            },
           },
-          `@rstacruz/gatsby-remark-component`
-        ]
-      }
+          `@rstacruz/gatsby-remark-component`,
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -120,8 +130,8 @@ module.exports = {
         // Puts tracking script in the head instead of the body
         head: false,
         // Setting this parameter is optional
-        anonymize: true
-      }
+        anonymize: true,
+      },
     },
     {
       resolve: `gatsby-plugin-sitemap`,
@@ -146,19 +156,19 @@ module.exports = {
               }
             }
           }
-      }`
-      }
+      }`,
+      },
     },
     {
-      resolve: "gatsby-transformer-moocfi-exercises"
+      resolve: "gatsby-transformer-moocfi-exercises",
     },
     {
-      resolve: "gatsby-transformer-vocabulary"
+      resolve: "gatsby-transformer-vocabulary",
     },
     `gatsby-plugin-top-layout`,
     {
-      resolve: 'gatsby-plugin-material-ui',
+      resolve: "gatsby-plugin-material-ui",
     },
-    `gatsby-plugin-meta-redirect` // make sure to put last in the array
-  ]
-};
+    `gatsby-plugin-meta-redirect`, // make sure to put last in the array
+  ],
+}

@@ -6,6 +6,10 @@ import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
 const StyledLink = styled(Link)`
   margin: 1rem 0.5rem;
+
+  &:hover {
+    text-decoration: none;
+  }
 `
 
 const Button = ({ children, to, onClick, disabled, variant = "outlined" }) => (
@@ -14,7 +18,7 @@ const Button = ({ children, to, onClick, disabled, variant = "outlined" }) => (
     to={to === undefined ? false : to}
     disabled={disabled}
   >
-    <MaterialButton variant={variant}>{children}</MaterialButton>
+    <MaterialButton variant={variant}> {children} </MaterialButton>{" "}
   </StyledLink>
 )
 

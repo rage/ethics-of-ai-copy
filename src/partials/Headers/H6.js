@@ -9,7 +9,8 @@ const H6 = ({ children }) => {
   const id = `heading-${normalizeExerciseId(text)}`
   return (
     <h6 class="material-header" id={id}>
-      {children}
+      {" "}
+      {children}{" "}
     </h6>
   )
 }

@@ -20,7 +20,9 @@
 
 // export default getNamedPartials
 
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import {
+  OutboundLink
+} from "gatsby-plugin-google-analytics"
 
 import Test from "./Test"
 import PagesInThisSection from "./PagesInThisSection"
@@ -71,6 +73,20 @@ import Summary from "./Summary"
 import Button from "../components/Button"
 import Vocabulary from "./Vocabulary"
 import VocabularyWord from "./Vocabulary/VocabularyWord"
+import CourseGrid from "./Grid/CourseGrid"
+import CourseGridCard from "./Grid/CourseGridCard"
+import GridNavigation from "./Grid/index"
+import TeaserQuestion from "./Homepage/Teaser"
+import TeaserCard from "./Homepage/TeaserCard"
+import HeroSection from "./Homepage/HeroSection"
+import PlaceHolder from "./Homepage/PlaceHolder"
+import Header from "./Contentpage/Header"
+import MediumContent from "./Contentpage/MediumContent"
+import Subtopic from "./Contentpage/Subtopic"
+import Quote from "./Contentpage/Quote"
+import TopicHero from "./Topicpage/HeroSection"
+import StartHero from "./Startpage/HeroSection"
+import ErrorHero from "./404page/index"
 
 const mapping = {
   test: Test,
@@ -97,6 +113,20 @@ const mapping = {
   "in-browser-programming-exercise": InBrowserProgrammingExercise,
   "workshop-schedule": WorkshopSchedule,
   "vocabulary-word": VocabularyWord,
+  "course-grid": CourseGrid,
+  "course-grid-card": CourseGridCard,
+  "homepage-grid": GridNavigation,
+  "teaser-question": TeaserQuestion,
+  "teaser-card": TeaserCard,
+  "hero-section": HeroSection,
+  "placeholder": PlaceHolder,
+  "header": Header,
+  "medium-content": MediumContent,
+  "sub-topic": Subtopic,
+  "quote": Quote,
+  "topic-hero": TopicHero,
+  "start-hero": StartHero,
+  "error-hero": ErrorHero,
   vocabulary: Vocabulary,
   notice: Notice,
   youtube: Youtube,
