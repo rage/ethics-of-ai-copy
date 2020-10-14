@@ -21,7 +21,7 @@ const Header = styled.div`
   font-weight: normal;
   padding 1rem 0;
   border-bottom: 1px solid #f7f7f9;
-  background-color: ${props => (props.completed ? "#13B559" : "#D23D48")};
+  background-color: ${(props) => (props.completed ? "#13B559" : "#D23D48")};
   border-radius: 16px 16px 0px 0px;
   display: flex;
   flex-direction: row;
@@ -79,7 +79,7 @@ const ProgrammingExerciseWrapper = styled(Card)`
   margin: 3.5rem 0;
   // border-left: 0.2rem solid ${accentColor};
   border-radius: 1rem !important;
-  box-shadow: 0 8px 40px -12px rgba(0,0,0,0.3) !important;
+  box-shadow: 0 8px 40px -12px rgba(0, 0, 0, 0.3) !important;
   padding: 0 !important;
   overflow: visible !important;
 `

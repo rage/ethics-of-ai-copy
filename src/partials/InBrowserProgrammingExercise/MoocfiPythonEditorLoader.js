@@ -72,7 +72,7 @@ class InBrowserProgrammingExercisePartial extends React.Component {
     })
   }
 
-  onUpdate = async completed => {
+  onUpdate = async (completed) => {
     this.setState({
       exerciseDetails: { completed },
     })

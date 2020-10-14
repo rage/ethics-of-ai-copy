@@ -26,27 +26,20 @@ as loading or unloading, or stationary cars in front of a traffic light. Parking
 verify the situation on-site by scooter. Whenever there is no valid reason for non-paid parking, a
 parking ticket is issued.
 
-Parking control services provide an example of how algorithms are increasingly used for
-automating decision making. As being exact, fast and precise, algorithms often promote
-efficiency, reliability and consistency of decisions. Paradoxically, algorithms can also be make
-systematic errors, be biased and cause serious harms. Moreover, automated decision making
-raises a fundamental ethical question of the accountability: If we use algorithms for decision
-making, who takes the responsibility - especially if the algorithms make mistakes? What are the
-requirements for acceptable use of such algorithms?
+Parking control services provide an example of how algorithms are increasingly used for automating public services.  As they are exact, fast and precise, algorithms often promote efficiency, reliability and consistency of services.  Paradoxically, algorithms can also make systematic errors, be biased and cause serious harms. For example, scanning systems may malfunction, or suffer from bugs. They may make mistakes, and suggest the tickets be issued on invalid grounds. In these cases, who should take the responsibility – and on what grounds?
 
-The parking control services provides an example of partially automated decision making, since it
-is the human inspector who makes the final decision about issuing the parking ticket. However,
-one day it may be possible to replace the human inspectors by algorithms, too. In this case, the
-decision making is said to be completely automated. Would the algorithms, then, be responsible
-for their decisions, and on what grounds?
+Although we say things like "yes, it was the algorithm’s fault and it is responsible for the wrong decision", we do not literally mean that contemporary algorithms would be morally guilty. Instead, the algorithms are causal factors that underlie the decisions. Mere causes, however, differ from morally responsible actions.
+
+Although algorithms themselves cannot be held accountable as they are not moral or legal agents, the organizations designing and deploying algorithms can be taken to be morally responsible  through governance structures. Thus, in the case of the city of Amsterdam, it is the human inspector that makes the final decision – and also takes responsibility. However, one day the human inspector may be replaced by algorithms, too. Who, then, would take responsibility?
+
 
 <text-box variant="hint" name="Automated vs. autonomous decision making">
 
-Automated systems typically run within a well-defined set of parameters and are very
+**Automated systems** typically run within a well-defined set of parameters and are very
 restricted in what tasks they can perform. The decisions made or actions taken by an
 automated system are based on predefined heuristics.
 
-An autonomous system learns and adapts to dynamic environments, and evolves as the
+**An autonomous system** learns and adapts to dynamic environments, and evolves as the
 environment around it changes. The data it learns and adapts to may be outside what was
 contemplated when the system was deployed.
 

@@ -24,7 +24,6 @@ In this course, we'll take a look at the ethical issues related to contemporary 
 <text-box variant="hint" name="A guide to AI ethics">
 
 **Artificial intelligence** is an overall term of a set of different kinds of techniques to make computers behave in some kind of intelligent fashion. There is no agreed definition of AI, but in general the ability to perform tasks without supervision and to learn so as to improve performance are key parts of AI.
-parts of AI.
 
 **Machine learning** is a big topic in AI. Machine learning is a set of algorithms which by themselves learn to make decisions or to structure data. Supervised and unsupervised learning are based on data, while reinforcement learning is where the algorithm uses trial and error to learn to make sequences of decisions.
 

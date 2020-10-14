@@ -4,11 +4,9 @@ import {
   yellow,
   indigo,
   green,
-  grey
+  grey,
 } from "@material-ui/core/colors"
-import {
-  createMuiTheme
-} from "@material-ui/core/styles"
+import { createMuiTheme } from "@material-ui/core/styles"
 
 // A custom theme for this app
 const theme = createMuiTheme({
@@ -67,8 +65,8 @@ export const defaultTheme = {
     errorColorActive: red[300],
     successColor: green[100],
     successColorHover: green[200],
-    successColorActive: green[300]
-  }
+    successColorActive: green[300],
+  },
 }
 
 export const blueTheme = {
@@ -90,8 +88,8 @@ export const blueTheme = {
     errorColorActive: blue[300],
     successColor: blue[100],
     successColorHover: blue[200],
-    successColorActive: blue[300]
-  }
+    successColorActive: blue[300],
+  },
 }
 
 // TODO: Make Red the Default Theme
@@ -116,9 +114,8 @@ export const indigoTheme = {
     errorColorActive: red[300],
     successColor: green[100],
     successColorHover: green[200],
-    successColorActive: green[300]
-  }
+    successColorActive: green[300],
+  },
 }
-
 
 export default theme

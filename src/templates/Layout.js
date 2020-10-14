@@ -52,7 +52,7 @@ const themeArray = {
 }
 
 const Wrapper = styled.div`
-  ${props =>
+  ${(props) =>
     props.mobileMenuOpen &&
     `
     height: 100vh;
@@ -104,7 +104,7 @@ class Layout extends React.Component {
   }
 
   toggleMobileMenu = () => {
-    this.setState(prev => {
+    this.setState((prev) => {
       return {
         mobileMenuOpen: !prev.mobileMenuOpen,
       }
@@ -119,7 +119,7 @@ class Layout extends React.Component {
         {" "}
         <StaticQuery
           query={layoutQuery}
-          render={data => {
+          render={(data) => {
             const siteTitle = data.title.siteMetadata.title
             const derivedTheme = data.title.siteMetadata.theme
             const theme = themeArray[derivedTheme] || defaultTheme

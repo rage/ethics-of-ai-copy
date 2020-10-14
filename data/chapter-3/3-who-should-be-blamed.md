@@ -10,27 +10,20 @@ In ethics, accountability is closely related to the concept of “moral agency�
 agent who is capable of acting with reference to right and wrong." Importantly, only moral agents
 are morally responsible for their actions.
 
-## Actions and omissions
+**Actions and omissions**
 
-Philosophically, a moral agent is primarily responsible for her/his own actions (“acts”). Sometimes
-agents are also responsible for “omissions”. They are actions which are not done by agents. So, if I
-kill someone, I am responsible for that act. If I just let someone to die, I am responsible for not-
-helping (omission), but not for actively killing.
+Philosophically, a moral agent is primarily responsible for their own actions (“acts”). Sometimes agents are also responsible for not-doings, “omissions”. So, if I kill someone, I am responsible for that act. If I just let someone die, I am responsible for not-helping (omission), even if I would not actively kill.
 
-Omissions and actions are not morally equal. It is morally less bad to omit a thing than to perform
-an act. It is worse to actively kill someone than to let them die. Moreover, we cannot be
-responsible for all of the things we do, or not do. We are responsible for only of those things,
-which we´ve deliberately and knowingly chosen to do, or not to do.
+Omissions and actions are not morally equal. It is morally less bad to omit a thing than to perform an act: It is worse to actively kill someone than to let them die. But this doesn’t make omissions morally right. However, we cannot be responsible for all of the things we do not do. Instead, we are responsible for only those things which we’ve deliberately and knowingly chosen to do or omit.
 
-Moral responsibility is taken to require i) the moral autonomy and ii) ability to evaluate the
-consequences of actions. “Moral autonomy” means the agent´s capacity to impose the moral code
-on oneself in a self-governed way. Further, autonomy requires:
+**Autonomy**
+According to philosophers, moral responsibility requires 1) moral autonomy and 2) the ability to evaluate the consequences of actions. “Moral autonomy” means the agent’s capacity to impose the moral code on oneself in a self-governed way.  Further, autonomy requires:
+
 
 1. the capacity to rule oneself without manipulation by others and the ability to act, without
 external or internal contsraints (see Dworkin 1989).
 
-2. the authenticity of the desires (values, emotions, etc) that move one to act. Link to
-literature.
+2. the authenticity of the desires (values, emotions, etc) that move one to act. **LINK TO LITERATURE**.
 
 3. sufficient cognitive skills. An agent must be able to evaluate, to predict and to compare
 consequencies of her actions and, also, to estimate motives that drive action by using

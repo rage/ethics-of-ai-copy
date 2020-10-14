@@ -4,11 +4,11 @@ import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
 const ContentAreaContainer = styled.main`
   padding: 0 0.5rem;
-  color: ${props => props.theme.textColor};
+  color: ${(props) => props.theme.textColor};
   margin-bottom: 5rem;
   min-height: 80vh;
   font-size: 1rem;
-  ${props =>
+  ${(props) =>
     props.mobileMenuOpen &&
     `
   display: none;
