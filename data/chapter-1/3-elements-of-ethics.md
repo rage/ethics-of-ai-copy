@@ -13,7 +13,7 @@ consequences to people.
 
 ### Intrinsic and extrinsic values
 
-Values can be divided into extrinsic (also called “instrumental”) and intrinsic values. For example, money
+Values can be divided into **extrinsic** (also called “instrumental”) and **intrinsic** values. For example, money
 has extrinsic or instrumental value. Money is valuable only because one can use it for other things, such as
 to provide better medical care for the people. These things, in turn, may be good for what they lead to: for
 example, for better health. And those things, in turn, may be good only for what they lead to – for example
@@ -45,7 +45,7 @@ ask: “Is this law morally acceptable or not?”
 
 <text-box variant="hint" name="Hume´s Guillotine: Facts, value and norms">
 
-Normative claims do not describe how the world is. Instead, they prescribe how the world should be. This
+Normative claims do not describe how the world is. Instead, **they prescribe how the world should be**. This
 is, they imply “ought-to” evaluations, in distinction to sentences that provide "is" types of assertions. For
 instance, a sentence "This machine-learning system is a black-box system" is descriptive, while a sentence
 “Machine-learning systems should be transparent" is normative.

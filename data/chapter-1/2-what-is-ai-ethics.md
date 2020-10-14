@@ -4,7 +4,7 @@ title: 'What is AI ethics?'
 hidden: false
 ---
 
-## On ethical guidelines
+#### On ethical guidelines
 
 Before looking at AI ethics, we need to set out what ethics means in the first place.
 
@@ -15,13 +15,13 @@ Philosophy.)
 
 <text-box variant="hint" name="The three subfields of ethics">
 
-*  Meta-ethics studies the meaning of ethical concepts, the existence of ethical entities
+*  **Meta-ethics** studies the meaning of ethical concepts, the existence of ethical entities
 (ontology) and the possibility of ethical knowledge (epistemology).
 
-*  Normative ethics concerns the practical means of determining a moral (or ethically
+*  **Normative ethics** concerns the practical means of determining a moral (or ethically
 correct) course of action
 
-*  Applied ethics concerns what a moral agent (defined as someone who can judge what is
+*  **Applied ethics** concerns what a moral agent (defined as someone who can judge what is
 right and wrong and be held accountable) is obligated or permitted to do in a specific
 situation or a particular domain of action.
 
