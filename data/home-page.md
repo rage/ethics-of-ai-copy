@@ -1,5 +1,5 @@
 ---
-path: "/homepage"
+path: "/"
 title: "Welcome to the most straightforward Economics Course"
 home_page: true
 hide_in_sidebar: true
