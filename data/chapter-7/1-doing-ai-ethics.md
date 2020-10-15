@@ -6,13 +6,13 @@ hidden: false
 
 So far we have looked at core ethical principles around which AI ethics conversations currently revolve. In this section, we will step away from the contents of ethical statements to take a wider perspective into the whole project of AI ethics. This means looking at the /making/ and /doing/ of AI ethics as a cultural phenomenon, a project with diverse members with differing stakes, and producing texts that can be analysed as cultural products. That is, AI Ethics is created by certain people, at a certain time, for certain purposes.
 
-<text-box variant='Intro' name='Learning objectives'>
+<chapter-box>
 
-* What are the functions of AI Ethics guidelines?
-* Are there issues that are sidelined by current AI ethics?
-* What does it mean to take ethics to practice?
+1. What are the functions of AI Ethics guidelines?
+2. Are there issues that are sidelined by current AI ethics?
+3. What does it mean to take ethics to practice?
 
-</text-box>
+</chapter-box>
 
 ## Ethics Guidelines as texts that do
 

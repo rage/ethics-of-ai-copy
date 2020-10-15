@@ -4,13 +4,13 @@ title: 'Introduction'
 hidden: false
 ---
 
-<text-box variant='Intro' name='Learning objectives'>
+<chapter-box>
 
-1. INTRODUCTION
+1. Introduction
 2. What is “accountability”? Agents, acts and omissions
 3. Moral Machines
 
-</text-box>
+</chapter-box>
 
 In the city of Amsterdam, parking control services are partially automated. The service automises
 the process of license plate identification and background checks with specific scanning equipment
@@ -33,7 +33,7 @@ Although we say things like "yes, it was the algorithm’s fault and it is respo
 Although algorithms themselves cannot be held accountable as they are not moral or legal agents, the organizations designing and deploying algorithms can be taken to be morally responsible  through governance structures. Thus, in the case of the city of Amsterdam, it is the human inspector that makes the final decision – and also takes responsibility. However, one day the human inspector may be replaced by algorithms, too. Who, then, would take responsibility?
 
 
-<text-box variant="hint" name="Automated vs. autonomous decision making">
+<text-box icon="techIcon" name="Automated vs. autonomous decision making">
 
 **Automated systems** typically run within a well-defined set of parameters and are very
 restricted in what tasks they can perform. The decisions made or actions taken by an

@@ -90,11 +90,6 @@ const ImageBox = styled.img`
 `
 
 const ChapterBox = (props) => {
-  console.log(props.children[0].props.children.length / 2)
-  console.log(props.children[0].props.children[1].props.children[0])
-  console.log(props.children[0].props.children[3].props.children[0])
-  console.log(props.children[0].props.children[5].props.children[0])
-  console.log(props.children[0].props.children[7].props.children[0])
   const chapters = props.children[0].props.children
   return (
     <Wrapper>

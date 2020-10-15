@@ -21,7 +21,7 @@ For these reasons, people need to explore the ethical, social and legal aspects 
 
 In this course, we'll take a look at the ethical issues related to contemporary AI,  open up their background  in philosophy and give them an interpretation in terms of computer and other sciences. The goal of course is to develop  skills for ethical thinking. The course provides a guide – or  a roadmap – on the ethically sustainable design, implementation and use of AI. It will introduce you to basic ethical concepts, their theoretical background and their role in discussion on contemporary AI.
 
-<text-box variant="hint" name="A guide to AI ethics">
+<text-box icon="techIcon" name="A guide to AI ethics">
 
 **Artificial intelligence** is an overall term of a set of different kinds of techniques to make computers behave in some kind of intelligent fashion. There is no agreed definition of AI, but in general the ability to perform tasks without supervision and to learn so as to improve performance are key parts of AI.
 

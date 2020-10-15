@@ -4,6 +4,14 @@ title: 'The principles of beneficence and non-maleficence'
 hidden: false
 ---
 
+<chapter-box>
+
+1. Introduction
+2. Ethical concepts
+3. Do good no bad
+
+</chapter-box>
+
 “AI inevitably becomes entangled in the ethical and political dimensions of vocations and practices in which
 it is embedded. AI Ethics is effectively a microcosm of the political and ethical challenges faced in society.”
 

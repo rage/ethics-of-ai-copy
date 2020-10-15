@@ -4,6 +4,14 @@ title: 'What is fairness'
 hidden: false
 ---
 
+<chapter-box>
+
+1. What is fairness
+2. Varieties of fairness
+3. Bias and discrimination
+
+</chapter-box>
+
 Let´s imagine that due to the COVID-19 pandemic in Finland all matricular examinations (in secondary schools) to be held in autumn 2020 were cancelled. As a result, an alternative method had to be designed and implemented to determine the qualification grades to be given to students for that year. Students will be accepted for university studies on the basis of their grades, so the grades are really important.
 
 The government decided that the teachers give an estimate of how they thought their students would have performed on the exams, and that will determine the grades. Teachers were asked to make evaluations of their pupils and the results were then put through the algorithm. This was apparently done because teachers are often likely to be more generous in assigning an estimated mark, which could lead to grade inflation and also give unfair advantage to some students.

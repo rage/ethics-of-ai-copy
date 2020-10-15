@@ -1,10 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import { faInfoCircle, faUserGraduate } from "@fortawesome/free-solid-svg-icons"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import techIcon from "../images/tech-icon.svg"
+import philIcon from "../images/phil-icon.svg"
+import bgIcon from "../images/bg-icon.svg"
+import ethicsIcon from "../images/ethics-icon.svg"
 
 const Wrapper = styled.aside`
   @media (min-width: 711px) {
@@ -50,37 +51,9 @@ const Wrapper = styled.aside`
     }
   }
 `
-
-/*
-const StyledIcon = styled(FontAwesomeIcon)`
-  vertical-align: middle;
-  margin-right: 1rem;
-  margin-left: 0.5rem;
-  color: var(--color);
-`
-
-
-const Header = styled.h3`
-  font-size: 1.3rem;
-  font-weight: normal;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #f7f7f9;
-`
-*/
 const Body = styled.div`
   padding-bottom: 0.5rem;
 `
-/*
-const variantToColor = {
-  hint: "#528afc",
-  learningObjectives: "#57b181",
-}
-
-const variantToIcon = {
-  hint: faInfoCircle,
-  learningObjectives: faUserGraduate,
-}
-*/
 const ImageBox = styled.img`
   @media (min-width: 1px) {
     top: 3.3em;
@@ -107,22 +80,23 @@ const ImageBox = styled.img`
     -webkit-transform: translate(18%, 0);
   }
 `
-/*
-<Wrapper style={{ "--color": variantToColor[props.variant] }}>
-  <Header>
-    <StyledIcon icon={variantToIcon[props.variant]} size="1x" />
-      {props.name}
-  </Header>
-  <Body>{props.children}</Body>
-</Wrapper>
-*/
+const chooseIcon = {
+  techIcon: techIcon,
+  philIcon: philIcon,
+  bgIcon: bgIcon,
+  undefined: ethicsIcon,
+}
 
 const TextBox = (props) => {
+  console.log(props)
+  console.log(props.icon)
+  console.log(chooseIcon[props.icon])
+
   return (
     <Wrapper>
       <h3> {props.name}</h3>
       <Body>{props.children}</Body>
-      <ImageBox src={techIcon} alt="Tech icon"></ImageBox>
+      <ImageBox src={chooseIcon[props.icon]} alt="icon"></ImageBox>
     </Wrapper>
   )
 }
