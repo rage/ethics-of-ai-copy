@@ -149,18 +149,12 @@ class Layout extends React.Component {
                       },
                     ]}
                   />
-                  <Sidebar
-                    mobileMenuOpen={this.state.mobileMenuOpen}
-                    toggleMobileMenu={this.toggleMobileMenu}
-                  />
-                  <SidebarPush>
-                    <TopBar />
-                    <ContentArea mobileMenuOpen={this.state.mobileMenuOpen}>
-                      {children}
-                    </ContentArea>
-                    <PointsBalloon />
-                    <Footer />
-                  </SidebarPush>
+                  <TopBar />
+                  <ContentArea mobileMenuOpen={this.state.mobileMenuOpen}>
+                    {children}
+                  </ContentArea>
+                  <PointsBalloon />
+                  <Footer />
                 </Wrapper>
               </ThemeProvider>
             )

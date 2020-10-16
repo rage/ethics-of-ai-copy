@@ -20,7 +20,7 @@ export default function Navbar(props) {
     <div classNamae="fixedPosition">
       <nav className="NavbarItems">
         <h1 className="navbar-logo">
-          <Link to="/homepage">
+          <Link to="/">
             {" "}
             <StyledIcon icon={faBullseye}> </StyledIcon>
           </Link>

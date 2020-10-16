@@ -13,43 +13,43 @@ const courses = [
     icon: <Thumbnail01 />,
     title: "Part 1",
     text: "This is an introduction to Git and GitHub",
-    url: "chapter-1"
+    url: "chapter-1",
   },
   {
     icon: <Thumbnail02 />,
     title: "Part 2",
     text: "This is an introduction to Git and GitHub",
-    url: "chapter-2"
+    url: "chapter-2",
   },
   {
     icon: <Thumbnail03 />,
     title: "Part 3",
     text: "This is an introduction to Git and GitHub",
-    url: "chapter-3"
+    url: "chapter-3",
   },
   {
     icon: <Thumbnail04 />,
     title: "Part 4",
     text: "This is an introduction to Git and GitHub",
-    url: "chapter-4"
+    url: "chapter-4",
   },
   {
     icon: <Thumbnail05 />,
     title: "Part 5",
     text: "This is an introduction to Git and GitHub",
-    url: "chapter-5"
+    url: "chapter-5",
   },
   {
     icon: <Thumbnail06 />,
     title: "Part 6",
     text: "This is an introduction to Git and GitHub",
-    url: "chapter-6"
+    url: "chapter-6",
   },
   {
     icon: <Thumbnail06 />,
     title: "Part 7",
     text: "This is an introduction to Git and GitHub",
-    url: "chapter-7"
+    url: "chapter-7",
   },
 ]
 
