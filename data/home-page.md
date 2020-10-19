@@ -22,6 +22,10 @@ banner: false
 
 <homepage-grid></homepage-grid>
 
-<about-section></about-section>
+<about-section>
+
+<img src="./img/placeholder.jpg" alt="placeholder image">
+
+</about-section>
 
 <sponsor-section></sponsor-section>

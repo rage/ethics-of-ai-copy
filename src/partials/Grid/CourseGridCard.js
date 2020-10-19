@@ -44,15 +44,15 @@ const CourseGridText = styled.div`
   flex-direction: column;
   text-align: left;
   color: #333;
-  font-weight: 500;
-  font-size: 16px;
   padding: 2rem;
 
   H5 {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 
   span {
+    font-weight: 500;
+    font-size: 14px;
     opacity: 0.7;
   }
 `
