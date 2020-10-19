@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import { respond } from "../../_respond"
-import Button from "../../components/Buttons"
+import { PrimaryButton } from "../../components/Buttons"
 import H1 from "../Headers/H1"
 import HeroIllustration from "../../assets/hero-svg.svg"
 
@@ -61,11 +61,12 @@ export default (props) => {
     <div>
       <StyledSVG />
       <HeroSection>
-        <H1> {props.title} </H1> <HeroText> {props.subtitle} </HeroText>{" "}
+        <H1> {props.title} </H1>
+        <HeroText> {props.subtitle} </HeroText>{" "}
         <ButtonWrapper>
-          <Button> </Button>{" "}
-        </ButtonWrapper>{" "}
-      </HeroSection>{" "}
+          <PrimaryButton to="/start">Start </PrimaryButton>
+        </ButtonWrapper>
+      </HeroSection>
     </div>
   )
 }
