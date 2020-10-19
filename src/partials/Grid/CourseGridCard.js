@@ -43,10 +43,18 @@ const CourseGridText = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  color: #26252a;
-  opacity: 0.8;
+  color: #333;
   font-weight: 500;
+  font-size: 16px;
   padding: 2rem;
+
+  H5 {
+    margin-bottom: 10px;
+  }
+
+  span {
+    opacity: 0.7;
+  }
 `
 
 export default (props) => {
