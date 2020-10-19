@@ -1,17 +1,15 @@
 import React from "react"
 import styled from "styled-components"
-import {
-  respond
-} from "../../_respond"
+import { respond } from "../../_respond"
 import H3 from "../Headers/H3"
 
-const Container = styled.div `
+const Container = styled.div`
   margin: 6rem 0;
   padding: 2rem 6rem;
   height: 40vh;
   background: blue;
 `
-const SponsorBox = styled.div `
+const SponsorBox = styled.div`
   background: white;
   padding: 2rem;
   width: 50%;
@@ -28,19 +26,12 @@ const SponsorBox = styled.div `
 `
 
 export default (props) => {
-  return ( <
-    Container >
-    <
-    H3 > Sponsor... < /H3> <span> Something, something something</span > {
-      " "
-    } <
-    SponsorBox >
-    <
-    span > < /span> <
-    span > < /span> <
-    span > < /span> <
-    span > < /span> <
-    /SponsorBox> <
-    /Container>
+  return (
+    <Container>
+      <H3> Sponsor... </H3> <span> Something, something something</span>{" "}
+      <SponsorBox>
+        <span> </span> <span> </span> <span> </span> <span> </span>{" "}
+      </SponsorBox>{" "}
+    </Container>
   )
 }
