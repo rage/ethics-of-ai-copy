@@ -17,7 +17,7 @@ const ContentWrapper = styled.article`
   background: white;
   padding: 2rem 4rem;
   margin: 0;
-  font-family: "Merriweather", serif;
+  font-family: "Montserrat", sans-serif;
 
   ${respond.xs`
 

@@ -1,125 +1,70 @@
 import React from "react"
 import styled from "styled-components"
-import Thumbnail01 from "../../assets/ZombieingDoodle.svg"
-import Thumbnail02 from "../../assets/MessyDoodle.svg"
-import Thumbnail03 from "../../assets/SprintingDoodle.svg"
-import Thumbnail04 from "../../assets/UnboxingDoodle.svg"
-import Thumbnail05 from "../../assets/SwingingDoodle.svg"
-import Thumbnail06 from "../../assets/SitReadingDoodle.svg"
-import { PrimaryButton } from "../../components/Buttons"
 
-const courses = [
-  {
-    icon: <Thumbnail01 />,
-    title: "Part 1",
-    text: "This is an introduction to Git and GitHub",
-    url: "chapter-1",
-  },
-  {
-    icon: <Thumbnail02 />,
-    title: "Part 2",
-    text: "This is an introduction to Git and GitHub",
-    url: "chapter-2",
-  },
-  {
-    icon: <Thumbnail03 />,
-    title: "Part 3",
-    text: "This is an introduction to Git and GitHub",
-    url: "chapter-3",
-  },
-  {
-    icon: <Thumbnail04 />,
-    title: "Part 4",
-    text: "This is an introduction to Git and GitHub",
-    url: "chapter-4",
-  },
-  {
-    icon: <Thumbnail05 />,
-    title: "Part 5",
-    text: "This is an introduction to Git and GitHub",
-    url: "chapter-5",
-  },
-  {
-    icon: <Thumbnail06 />,
-    title: "Part 6",
-    text: "This is an introduction to Git and GitHub",
-    url: "chapter-6",
-  },
-  {
-    icon: <Thumbnail06 />,
-    title: "Part 7",
-    text: "This is an introduction to Git and GitHub",
-    url: "chapter-7",
-  },
-]
+import Icon1 from "../../assets/chap-1.svg"
+import Icon2 from "../../assets/chap-2.svg"
+import Icon3 from "../../assets/chap-3.svg"
+import Icon4 from "../../assets/chap-4.svg"
+import Icon5 from "../../assets/chap-5.svg"
+import Icon6 from "../../assets/chap-6.svg"
+
+const svgs = {
+  chapter01: <Icon1 />,
+  chapter02: <Icon2 />,
+  chapter03: <Icon3 />,
+  chapter04: <Icon4 />,
+  chapter05: <Icon5 />,
+  chapter06: <Icon6 />,
+  chapter07: <Icon3 />,
+}
 
 const CourseGridWrapper = styled.div`
-  background: #fff;
+  background: #e3c7b6;
   width: auto;
-  height: 34rem;
+  height: 22rem;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   &:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
-  display: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
 `
 
 const CourseGridSVG = styled.div`
-  background-position: center;
   width: 100%;
   height: 60%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  padding: 20px;
+  padding: 60px;
+  background: #f6ebe8;
 `
 
-const CourseGridTextBox = styled.div`
-  display: absolute;
+const CourseGridText = styled.div`
+  display: flex;
   flex-direction: column;
-  align-item: center;
-  padding: 1rem;
-  height: 50%;
-  top: 20px;
-  width: 80%;
-  margin: 0 auto;
+  text-align: left;
+  color: #333;
+  padding: 2rem;
 
-  div {
-    margin-bottom: 1.4rem;
+  H5 {
+    margin-bottom: 6px;
   }
 
   span {
-    color: #202020;
-    font-size: 16px;
-    line-height: 1.625;
-    opacity: 0.4;
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 0.7;
   }
 `
 
-/* const StyledIcon = styled(Icon)`
-  width: 100%;
-  height: 100%;
-` */
-
-export default ({ children }) => {
+export default (props) => {
   return (
     <>
-      {courses.map((course) => (
-        <CourseGridWrapper>
-          <CourseGridSVG>{course.icon}</CourseGridSVG>
-          <CourseGridTextBox>
-            <div>
-              <h4>{course.title}</h4>
-              <span>{course.text}</span>
-            </div>
-            <PrimaryButton to={course.url}> Preview </PrimaryButton>
-          </CourseGridTextBox>
-        </CourseGridWrapper>
-      ))}
+      <CourseGridWrapper>
+        {" "}
+        <CourseGridSVG> {svgs[props.title]} </CourseGridSVG>{" "}
+        <CourseGridText> {props.children} </CourseGridText>{" "}
+      </CourseGridWrapper>{" "}
     </>
   )
 }

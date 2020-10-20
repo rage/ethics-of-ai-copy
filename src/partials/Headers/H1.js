@@ -6,9 +6,8 @@ const Heading = styled.div`
   & h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    text-transform: uppercase;
     font-size: clamp(40px, 4vw, 60px);
-    color: #202020;
+    color: #26252a;
   }
 `
 

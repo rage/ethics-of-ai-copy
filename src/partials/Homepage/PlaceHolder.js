@@ -15,12 +15,11 @@ const PlaceHolderContainer = styled.div`
   align-content: center;
 `
 const PlaceHolderText = styled.div`
-  font-size: 2rem;
-  line-height: 1.9;
+  font-size: 1rem;
+  line-height: 2.8rem;
   width: 60%;
   margin: 0 auto;
-  color: #202020;
-  opacity: 0.8;
+  color: #6f7678;
   font-weight: 400;
 
   ${respond.xs`
@@ -29,7 +28,7 @@ const PlaceHolderText = styled.div`
   `}
 
   ${respond.lg`
-    width: 40%;
+    width: 60%;
   `}
 `
 
