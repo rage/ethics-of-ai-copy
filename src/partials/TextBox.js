@@ -42,7 +42,7 @@ const Wrapper = styled.aside`
     left: calc(-50vw + 50%);
     padding: 1rem;
     margin-bottom: 2rem;
-    background: ${props => props.color};
+    background: ${(props) => props.color};
     padding-left: 4rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -96,16 +96,24 @@ const ImageBox = styled.img`
   }
 `
 const TechIcon = (
-  <img src={techIcon} alt="icon" style={{width: "100%", height: "auto"}}> </img>
+  <img src={techIcon} alt="icon" style={{ width: "100%", height: "auto" }}>
+    {" "}
+  </img>
 )
 const PhilIcon = (
-  <img src={philIcon} alt="icon" style={{width: "80%", height: "auto"}}> </img>
+  <img src={philIcon} alt="icon" style={{ width: "80%", height: "auto" }}>
+    {" "}
+  </img>
 )
 const BgIcon = (
-  <img src={bgIcon} alt="icon" style={{width: "100%", height: "auto"}}> </img>
+  <img src={bgIcon} alt="icon" style={{ width: "100%", height: "auto" }}>
+    {" "}
+  </img>
 )
 const EthicsIcon = (
-  <img src={philIcon} alt="icon" style={{width: "100%", height: "auto"}}> </img>
+  <img src={philIcon} alt="icon" style={{ width: "100%", height: "auto" }}>
+    {" "}
+  </img>
 )
 
 const chooseIcon = {
