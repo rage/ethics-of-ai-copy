@@ -67,6 +67,7 @@ const Body = styled.div`
     margin-left: 20em;
   }
 `
+
 const ImageBox = styled.img`
   @media (min-width: 1px) {
     top: 7.8em;

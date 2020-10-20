@@ -68,29 +68,43 @@ const Body = styled.div`
   padding-bottom: 0.5rem;
 `
 
-const ImageBox = styled.img`
+const ImageBox = styled.div`
   @media (min-width: 1px) {
     top: 5.8em;
     left: 0.2em;
     width: 40px;
-    heigth: auto;
+    height: auto;
     position: relative;
-    -webkit-transform: translate(10%, 0);
-    -webkit-transform: rotate(105deg);
   }
   @media (min-width: 425px) {
-    top: 6em;
+    top: 4em;
     left: 0.2em;
     width: 40px;
-    heigth: auto;
+    height: auto;
     position: relative;
-    -webkit-transform: translate(5%, 0);
-    -webkit-transform: rotate(105deg);
   }
 `
+const Image = styled.div`
+  top: 4em;
+  left: 0.2em;
+  width: 100px;
+  height: auto;
+  position: relative;
+  -webkit-transform: translate(5%, 0);
+  -webkit-transform: rotate(105deg);
+`
 
+const chooseChapterValue = {
+  1: "I",
+  3: "II",
+  5: "III",
+  7: "IV",
+  9: "V",
+}
+ 
 const ChapterBox = (props) => {
   const chapters = props.children[0].props.children
+  // position:"relative", verticalAlign:"middle", marginTop:"0rem", marginInlineStart:"0.8em", textAlign:"center"}}
   return (
     <Wrapper>
       <h3> Chapter content</h3>
@@ -98,14 +112,18 @@ const ChapterBox = (props) => {
         {chapters.map((value, index) => {
           if (index % 2 !== 0) {
             return (
-              <div style={{ marginBottom: "-5em", marginTop: "-5em" }}>
-                <ImageBox src={chapterIcon} alt="Chapter icon"></ImageBox>
-                <p style={{ marginInlineStart: "4em", display: "table" }}>
+              <div style={{marginBottom: "-5em", marginTop: "-5em"}}>
+                <ImageBox>
+                <p style={{zIndex:"2"}}>  {chooseChapterValue[index]}</p>
+                <Image src={chapterIcon} alt="Chapter icon"/>
+                </ImageBox>
+                <p style={{ marginInlineStart: "4em", display: "table",marginTop:"3.5em" }}>
                   {chapters[index].props.children[0]}
                 </p>
               </div>
             )
           }
+
         })}
       </Body>
     </Wrapper>
