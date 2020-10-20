@@ -101,7 +101,6 @@ const chooseChapterValue = {
   7: "IV",
   9: "V",
 }
- 
 const ChapterBox = (props) => {
   const chapters = props.children[0].props.children
   // position:"relative", verticalAlign:"middle", marginTop:"0rem", marginInlineStart:"0.8em", textAlign:"center"}}
@@ -112,18 +111,23 @@ const ChapterBox = (props) => {
         {chapters.map((value, index) => {
           if (index % 2 !== 0) {
             return (
-              <div style={{marginBottom: "-5em", marginTop: "-5em"}}>
+              <div style={{ marginBottom: "-5em", marginTop: "-5em" }}>
                 <ImageBox>
-                <p style={{zIndex:"2"}}>  {chooseChapterValue[index]}</p>
-                <Image src={chapterIcon} alt="Chapter icon"/>
+                  <p style={{ zIndex: "2" }}> {chooseChapterValue[index]}</p>
+                  <Image src={chapterIcon} alt="Chapter icon" />
                 </ImageBox>
-                <p style={{ marginInlineStart: "4em", display: "table",marginTop:"3.5em" }}>
+                <p
+                  style={{
+                    marginInlineStart: "4em",
+                    display: "table",
+                    marginTop: "3.5em",
+                  }}
+                >
                   {chapters[index].props.children[0]}
                 </p>
               </div>
             )
           }
-
         })}
       </Body>
     </Wrapper>
