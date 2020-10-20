@@ -13,7 +13,7 @@ justice, well-being or equality”. As a discipline, ethics involves systematizi
 concepts of right and wrong conduct by using [conceptual analysis](https://en.wikipedia.org/wiki/Philosophical_analysis), [thought experiments](https://plato.stanford.edu/entries/thought-experiment/), and [argumentation](https://iep.utm.edu/argument/). (If you want to know more about philosophical reasoning, see this [video](https://www.youtube.com/watch?v=NKEhdsnKKHs) by Crash Course
 Philosophy.)
 
-<text-box icon="philIcon" background="#rgb(224, 234, 235)" name="The three subfields of ethics">
+<text-box icon="philIcon" background="rgba(246, 235, 232, 0.5)" name="The three subfields of ethics">
 
 **1) Meta-ethics** studies the meaning of ethical concepts, the existence of ethical entities
 (ontology) and the possibility of ethical knowledge (epistemology).
@@ -41,7 +41,7 @@ justice and educational systems
 * longer-term concerns about the fundamental ethical goals of developing and implementing AI in
 society
 
-<text-box icon="bgIcon" background="rgb(224, 234, 235)" name="From machine ethics to the ethics of AI">
+<text-box icon="bgIcon" background="rgba(224, 234, 235, 0.5)" name="From machine ethics to the ethics of AI">
 
 For a long time, AI ethics was taken to mean mostly machine and roboethics. They study the ethical codes
 of possible artificial moral agents. As research fields, they are based on a scenario that machines can one
