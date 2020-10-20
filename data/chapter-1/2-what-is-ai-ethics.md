@@ -13,15 +13,15 @@ justice, well-being or equality”. As a discipline, ethics involves systematizi
 concepts of right and wrong conduct by using [conceptual analysis](https://en.wikipedia.org/wiki/Philosophical_analysis), [thought experiments](https://plato.stanford.edu/entries/thought-experiment/), and [argumentation](https://iep.utm.edu/argument/). (If you want to know more about philosophical reasoning, see this [video](https://www.youtube.com/watch?v=NKEhdsnKKHs) by Crash Course
 Philosophy.)
 
-<text-box icon="philIcon" name="The three subfields of ethics">
+<text-box icon="philIcon" background="#rgb(224, 234, 235)" name="The three subfields of ethics">
 
-*  **Meta-ethics** studies the meaning of ethical concepts, the existence of ethical entities
+**1) Meta-ethics** studies the meaning of ethical concepts, the existence of ethical entities
 (ontology) and the possibility of ethical knowledge (epistemology).
 
-*  **Normative ethics** concerns the practical means of determining a moral (or ethically
+**2) Normative ethics** concerns the practical means of determining a moral (or ethically
 correct) course of action
 
-*  **Applied ethics** concerns what a moral agent (defined as someone who can judge what is
+**3) Applied ethics** concerns what a moral agent (defined as someone who can judge what is
 right and wrong and be held accountable) is obligated or permitted to do in a specific
 situation or a particular domain of action.
 
@@ -41,7 +41,7 @@ justice and educational systems
 * longer-term concerns about the fundamental ethical goals of developing and implementing AI in
 society
 
-<text-box icon="bgIcon" name="From machine ethics to the ethics of AI">
+<text-box icon="bgIcon" background="rgb(224, 234, 235)" name="From machine ethics to the ethics of AI">
 
 For a long time, AI ethics was taken to mean mostly machine and roboethics. They study the ethical codes
 of possible artificial moral agents. As research fields, they are based on a scenario that machines can one
