@@ -111,6 +111,7 @@ export default class CourseContentTemplate extends React.Component {
                       <StyledIcon icon={icon} />
                       {parentSectionName}
                     </UpLink>
+                    <h1>{frontmatter.title}</h1>
                     {renderAst(htmlAst)}
                     <EndOfSubSection />
                   </ContentWrapper>

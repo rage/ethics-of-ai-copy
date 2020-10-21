@@ -42,7 +42,7 @@ const Wrapper = styled.aside`
     left: calc(-50vw + 50%);
     padding: 1rem;
     margin-bottom: 2rem;
-    background: ${(props) => props.color};
+    background: ${(props) => props.color || "rgba(246, 235, 232, 0.5)"};
     padding-left: 4rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
