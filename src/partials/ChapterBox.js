@@ -6,22 +6,26 @@ import chapterIcon from "../images/blob-4.svg"
 
 const Wrapper = styled.aside`
   @media (min-width: 1px) {
-    padding: 5em 5em 5em 5em;
+    padding: 3em 1em 7em 1em;
     margin-bottom: 2rem;
     background: rgba(165, 178, 166, 0.2);
     border-radius: 15px;
     position: relative;
-    text-align: center;
+    width: 100%;
   }
   @media (min-width: 444px) {
-    padding: 5em 5em 5em 5em;
+    padding: 3em 1em 7em 1em;
   }
   @media (min-width: 600px) {
-    padding: 5em 5em 5em 5em;
+    padding: 3em 1em 7em 2em;
     width: 60%;
   }
   @media (min-width: 870px) {
-    padding: 3em 5em 5em 5em;
+    padding: 3em 1em 7em 2em;
+    width: 40%;
+  }
+  @media (min-width: 1100px) {
+    padding: 3em 5em 7em 5em;
     width: 40%;
   }
 `
@@ -35,6 +39,7 @@ const Header = styled.h3`
 
 const Body = styled.div`
   padding-bottom: 0.5rem;
+  display: table;
 `
 
 const ImageBox = styled.div`
@@ -50,14 +55,11 @@ const ImageBox = styled.div`
   }
   @media (min-width: 425px) {
     top: 5.5em;
-    left: 0.2em;
-    width: 40px;
-    height: auto;
     position: relative;
   }
 `
 const Image = styled.img`
-  top: 0em;
+  top: -2em;
   left: 0.2em;
   width: 100px;
   height: auto;
@@ -67,6 +69,16 @@ const Image = styled.img`
   -webkit-transform: translate(5%, 0);
   -webkit-transform: rotate(105deg);
   z-index: 1;
+`
+
+const ChapterParts = styled.div`
+  margin-bottom: -4em;
+  margin-top: -2em;
+  margin-inline-start: 1em;
+
+  @media (min-width: 600px) {
+    margin-inline-start: 0em;
+  }
 `
 
 const chooseChapterValue = {
@@ -81,26 +93,26 @@ const ChapterBox = (props) => {
   // position:"relative", verticalAlign:"middle", marginTop:"0rem", marginInlineStart:"0.8em", textAlign:"center"}}
   return (
     <Wrapper>
-      <h3> Chapter content </h3>
+      <h3 style={{ textAlign: "center" }}> Chapter content </h3>
       <Body>
         {chapters.map((value, index) => {
           if (index % 2 !== 0) {
             return (
-              <div style={{ marginBottom: "-4em", marginTop: "-5em" }}>
+              <ChapterParts>
                 <ImageBox>
                   <div
                     style={{
                       width: "100%",
                       height: "100%",
                       zIndex: "2",
-                      top: "0.2em",
+                      top: "0.5em",
                       left: "0.1em",
-                      position: "absolute",
+                      position: "relative",
+                      textAlign: "center",
                     }}
                   >
                     <p
                       style={{
-                        textAlign: "center",
                         color: "white",
                         fontSize: "15px",
                       }}
@@ -113,13 +125,12 @@ const ChapterBox = (props) => {
                 <p
                   style={{
                     marginInlineStart: "4em",
-                    display: "table",
-                    marginTop: "4.5em",
+                    marginTop: "2.5em",
                   }}
                 >
                   {chapters[index].props.children[0]}
                 </p>
-              </div>
+              </ChapterParts>
             )
           }
         })}
