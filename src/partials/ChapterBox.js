@@ -94,11 +94,17 @@ const ChapterBox = (props) => {
                       height: "100%",
                       zIndex: "2",
                       top: "0.2em",
-                      left: "0.2em",
+                      left: "0.1em",
                       position: "absolute",
                     }}
                   >
-                    <p style={{ textAlign: "center", color: "white" }}>
+                    <p
+                      style={{
+                        textAlign: "center",
+                        color: "white",
+                        fontSize: "15px",
+                      }}
+                    >
                       {chooseChapterValue[index]}
                     </p>
                   </div>
