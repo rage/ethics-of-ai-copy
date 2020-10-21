@@ -6,53 +6,22 @@ import chapterIcon from "../images/blob-4.svg"
 
 const Wrapper = styled.aside`
   @media (min-width: 1px) {
-    padding: 1rem;
+    padding: 5em 5em 5em 5em;
     margin-bottom: 2rem;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
-      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-    border-radius: 20px;
-    background: #e0dedc;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 5em;
+    background: rgba(165, 178, 166, 0.2);
+    border-radius: 15px;
     position: relative;
+    text-align: center;
   }
   @media (min-width: 444px) {
-    padding: 1rem;
-    margin-bottom: 2rem;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
-      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-    border-radius: 20px;
-    background: #e0dedc;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 5em;
-    position: relative;
+    padding: 5em 5em 5em 5em;
   }
   @media (min-width: 600px) {
-    padding: 1rem;
-    margin-bottom: 2rem;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
-      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-    border-radius: 20px;
-    background: #e0dedc;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 5em;
-    position: relative;
-    width: 50%;
+    padding: 5em 5em 5em 5em;
+    width: 60%;
   }
   @media (min-width: 870px) {
-    padding: 1rem;
-    margin-bottom: 2rem;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
-      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-    border-radius: 20px;
-    background: #e0dedc;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 5em;
-    position: relative;
+    padding: 3em 5em 5em 5em;
     width: 40%;
   }
 `
@@ -75,23 +44,29 @@ const ImageBox = styled.div`
     width: 40px;
     height: auto;
     position: relative;
+    margin-top: -5em;
+    margin-bottom: -1em;
+    display: block;
   }
   @media (min-width: 425px) {
-    top: 4em;
+    top: 5.5em;
     left: 0.2em;
     width: 40px;
     height: auto;
     position: relative;
   }
 `
-const Image = styled.div`
-  top: 4em;
+const Image = styled.img`
+  top: 0em;
   left: 0.2em;
   width: 100px;
   height: auto;
   position: relative;
+  margin-top: -12em;
+  margin-bottom: -12em;
   -webkit-transform: translate(5%, 0);
   -webkit-transform: rotate(105deg);
+  z-index: 1;
 `
 
 const chooseChapterValue = {
@@ -106,21 +81,34 @@ const ChapterBox = (props) => {
   // position:"relative", verticalAlign:"middle", marginTop:"0rem", marginInlineStart:"0.8em", textAlign:"center"}}
   return (
     <Wrapper>
-      <h3> Chapter content</h3>
+      <h3> Chapter content </h3>
       <Body>
         {chapters.map((value, index) => {
           if (index % 2 !== 0) {
             return (
-              <div style={{ marginBottom: "-5em", marginTop: "-5em" }}>
+              <div style={{ marginBottom: "-4em", marginTop: "-5em" }}>
                 <ImageBox>
-                  <p style={{ zIndex: "2" }}> {chooseChapterValue[index]}</p>
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      zIndex: "2",
+                      top: "0.2em",
+                      left: "0.2em",
+                      position: "absolute",
+                    }}
+                  >
+                    <p style={{ textAlign: "center", color: "white" }}>
+                      {chooseChapterValue[index]}
+                    </p>
+                  </div>
                   <Image src={chapterIcon} alt="Chapter icon" />
                 </ImageBox>
                 <p
                   style={{
                     marginInlineStart: "4em",
                     display: "table",
-                    marginTop: "3.5em",
+                    marginTop: "4.5em",
                   }}
                 >
                   {chapters[index].props.children[0]}
