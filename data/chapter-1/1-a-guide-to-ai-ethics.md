@@ -1,6 +1,6 @@
 ---
 path: '/chapter-1/1-a-guide-to-ai-ethics'
-title: 'A guide to ai ethics'
+title: 'A guide to AI ethics'
 hidden: false
 ---
 
@@ -13,7 +13,7 @@ hidden: false
 
 </chapter-box>
 
-<title name='A guide to ai ethics'> </title>
+<title title='1) A guide to AI ethics'> </title>
 
 Ever since the birth of computation with Alan Turing, humans have put high hopes on the power of computers and artificial intelligence (AI). AI is expected to bring significant and diverse benefits to society – from greater efficiency and productivity to tackling a number of difficult global problems, such as climate change, poverty, disease, and conflict.
 

@@ -3,22 +3,23 @@ import styled from "styled-components"
 
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import chapterIcon from "../images/blob-4.svg"
+import Title from "./Title"
 
 const Wrapper = styled.aside`
   @media (min-width: 1px) {
     padding: 3em 1em 7em 1em;
-    margin-bottom: 2rem;
+    margin-bottom: 8em;
     background: rgba(165, 178, 166, 0.2);
     border-radius: 15px;
     position: relative;
     width: 100%;
   }
   @media (min-width: 444px) {
-    padding: 3em 1em 7em 1em;
+    padding: 3em 1em 6em 1em;
   }
   @media (min-width: 600px) {
     padding: 3em 1em 7em 2em;
-    width: 60%;
+    width: 50%;
   }
   @media (min-width: 870px) {
     padding: 3em 1em 7em 2em;
@@ -75,7 +76,12 @@ const ChapterParts = styled.div`
   margin-bottom: -4em;
   margin-top: -2em;
   margin-inline-start: 1em;
-
+  @media (min-width: 400px) {
+    margin-inline-start: 7em;
+  }
+  @media (min-width: 500px) {
+    margin-inline-start: 5em;
+  }
   @media (min-width: 600px) {
     margin-inline-start: 0em;
   }

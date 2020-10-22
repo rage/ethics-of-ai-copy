@@ -10,7 +10,7 @@ const TitleStyle = styled.h1`
 const Title = (props) => {
   return (
     <div>
-      <TitleStyle>I) {props.name}</TitleStyle>
+      <TitleStyle> {props.title}</TitleStyle>
     </div>
   )
 }

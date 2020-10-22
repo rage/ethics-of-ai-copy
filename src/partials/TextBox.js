@@ -10,31 +10,9 @@ import ethicsIcon from "../images/ethics-icon.svg"
 const Wrapper = styled.aside`
   @media (min-width: 711px) {
     width: 100vw;
-    position:relative;
-    left: calc(-50vw + 50%);
-    padding: 1rem;
-    margin-bottom: 2rem;
-    padding-left: 4rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    position: relative;
-    ul {
-      padding-inline-start: 40px;
-    }
   }
   @media (min-width: 425px) {
     width: 100vw;
-    position:relative;
-    left: calc(-50vw + 50%);
-    padding: 1rem;
-    margin-bottom: 2rem;
-    padding-left: 4rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    position: relative;
-    ul {
-      padding-inline-start: 40px;
-    }
   }
   @media (min-width: 1px) {
     width: 100vw;
