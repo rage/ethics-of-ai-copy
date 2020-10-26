@@ -20,9 +20,7 @@
 
 // export default getNamedPartials
 
-import {
-  OutboundLink
-} from "gatsby-plugin-google-analytics"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import Test from "./Test"
 import PagesInThisSection from "./PagesInThisSection"
@@ -90,6 +88,7 @@ import Quote from "./Contentpage/Quote"
 import TopicHero from "./Topicpage/HeroSection"
 import StartHero from "./Startpage/HeroSection"
 import ErrorHero from "./404page/index"
+import Title from "./Title"
 
 const mapping = {
   test: Test,
@@ -97,6 +96,7 @@ const mapping = {
   "programming-exercise": ProgrammingExercise,
   "text-box": TextBox,
   "chapter-box": ChapterBox,
+  title: Title,
   "sample-data": SampleData,
   "sample-output": SampleOutput,
   "please-login": PleaseLogin,

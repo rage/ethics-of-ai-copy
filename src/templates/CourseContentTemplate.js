@@ -6,6 +6,7 @@ import { navigate, Link } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import Layout from "./Layout"
+import HeroSection from "../partials/Contentpage/HeroSection"
 
 import getNamedPartials from "../partials"
 import CoursePageFooter from "../components/CoursePageFooter"
@@ -105,13 +106,16 @@ export default class CourseContentTemplate extends React.Component {
           <LoginStateContextProvider>
             <Layout>
               <Fragment>
+                <HeroSection
+                  title={parentSectionName}
+                  subtitle={frontmatter.title}
+                ></HeroSection>
                 <Container>
                   <ContentWrapper>
                     <UpLink to={parentSectionPath}>
                       <StyledIcon icon={icon} />
                       {parentSectionName}
                     </UpLink>
-                    <h1>{frontmatter.title}</h1>
                     {renderAst(htmlAst)}
                     <EndOfSubSection />
                   </ContentWrapper>

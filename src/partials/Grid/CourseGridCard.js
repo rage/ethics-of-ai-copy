@@ -60,11 +60,13 @@ const CourseGridText = styled.div`
 export default (props) => {
   return (
     <>
-      <CourseGridWrapper>
-        {" "}
-        <CourseGridSVG> {svgs[props.title]} </CourseGridSVG>{" "}
-        <CourseGridText> {props.children} </CourseGridText>{" "}
-      </CourseGridWrapper>{" "}
+      <a href={props.url} style={{ textDecoration: "none" }}>
+        <CourseGridWrapper>
+          {" "}
+          <CourseGridSVG> {svgs[props.title]} </CourseGridSVG>{" "}
+          <CourseGridText> {props.children} </CourseGridText>{" "}
+        </CourseGridWrapper>{" "}
+      </a>
     </>
   )
 }

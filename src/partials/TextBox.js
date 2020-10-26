@@ -10,41 +10,20 @@ import ethicsIcon from "../images/ethics-icon.svg"
 const Wrapper = styled.aside`
   @media (min-width: 711px) {
     width: 100vw;
-    position:relative;
-    left: calc(-50vw + 50%);
-    padding: 1rem;
-    margin-bottom: 2rem;
-    background: rgba(246, 235, 232, 0.5);
-    padding-left: 4rem;
-    padding-top: 2rem;
-    position: relative;
-    ul {
-      padding-inline-start: 40px;
-    }
   }
-  @media (max-width: 710px) {
+  @media (min-width: 425px) {
+    width: 100vw;
+  }
+  @media (min-width: 1px) {
     width: 100vw;
     position:relative;
     left: calc(-50vw + 50%);
     padding: 1rem;
     margin-bottom: 2rem;
-    background: rgba(246, 235, 232, 0.5);
+    background: ${(props) => props.color || "rgba(246, 235, 232, 0.5)"};
     padding-left: 4rem;
-    padding-top: 2rem;
-    position: relative;
-    ul {
-      padding-inline-start: 40px;
-    }
-  }
-  @media (max-width: 425px) {
-    width: 100vw;
-    position:relative;
-    left: calc(-50vw + 50%);
-    padding: 1rem;
-    margin-bottom: 2rem;
-    background: rgba(246, 235, 232, 0.5);
-    padding-left: 4rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     position: relative;
     ul {
       padding-inline-start: 40px;
@@ -67,9 +46,10 @@ const Body = styled.div`
     margin-left: 20em;
   }
 `
+
 const ImageBox = styled.img`
   @media (min-width: 1px) {
-    top: 7.8em;
+    top: 6em;
     left: 0em;
     width: 60px;
     heigth: auto;
@@ -77,7 +57,7 @@ const ImageBox = styled.img`
     -webkit-transform: translate(18%, 0);
   }
   @media (min-width: 425px) {
-    top: 5.9em;
+    top: 4.2em;
     left: 1em;
     width: 110px;
     heigth: auto;
@@ -85,7 +65,7 @@ const ImageBox = styled.img`
     -webkit-transform: translate(18%, 0);
   }
   @media (min-width: 900px) {
-    top: 5.7em;
+    top: 4em;
     left: 6em;
     width: 180px;
     heigth: auto;
@@ -93,6 +73,27 @@ const ImageBox = styled.img`
     -webkit-transform: translate(18%, 0);
   }
 `
+const TechIcon = (
+  <img src={techIcon} alt="icon" style={{ width: "100%", height: "auto" }}>
+    {" "}
+  </img>
+)
+const PhilIcon = (
+  <img src={philIcon} alt="icon" style={{ width: "80%", height: "auto" }}>
+    {" "}
+  </img>
+)
+const BgIcon = (
+  <img src={bgIcon} alt="icon" style={{ width: "100%", height: "auto" }}>
+    {" "}
+  </img>
+)
+const EthicsIcon = (
+  <img src={philIcon} alt="icon" style={{ width: "100%", height: "auto" }}>
+    {" "}
+  </img>
+)
+
 const chooseIcon = {
   techIcon: techIcon,
   philIcon: philIcon,
@@ -102,7 +103,7 @@ const chooseIcon = {
 
 const TextBox = (props) => {
   return (
-    <Wrapper>
+    <Wrapper color={props.background}>
       <Body>
         <h3> {props.name}</h3>
         {props.children}
