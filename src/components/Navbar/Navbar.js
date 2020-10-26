@@ -29,17 +29,21 @@ export default function Navbar(props) {
           <Hamburger> </Hamburger>{" "}
         </div>{" "}
         <ul className={clicked ? "nav-menu active" : "nav-menu"}>
-          {" "}
-          {MenuItems.map((item, index) => {
-            return (
-              <li key={index}>
-                <a className={item.cName} href={item.url}>
-                  {" "}
-                  {item.title}{" "}
-                </a>{" "}
+              <li>
+                <a className="nav-links" href="/grid">
+                  Courses
+                </a>
               </li>
-            )
-          })}{" "}
+              <li>
+                <a className="nav-links" href="#">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a className="nav-links" href="#">
+                  Contact Us
+                </a>
+              </li>
           <span>
             {" "}
             © 2020 Graduate Economic, <br />

@@ -66,7 +66,7 @@ const StyleLink = styled.div`
 `
 
 export default function GridNavigationTemplate(props) {
-  const [showModal, setShowModal] = useState(true)
+/*   const [showModal, setShowModal] = useState(true) */
 
   const { data } = props
   const { frontmatter, htmlAst } = data.page
@@ -81,7 +81,7 @@ export default function GridNavigationTemplate(props) {
     data.page.fileAbsolutePath.length,
   )
 
-  const animation = useSpring({
+/*   const animation = useSpring({
     opacity: showModal ? 1 : 0,
     transform: showModal ? `translateY(0)` : `translateY(-200%)`,
     config: { duration: 250 },
@@ -91,13 +91,13 @@ export default function GridNavigationTemplate(props) {
   const handleClick = (e) => {
     e.preventDefault()
     setShowModal(!showModal)
-  }
+  } */
   return (
     <>
-      <ButtonWrapper>
+{/*       <ButtonWrapper>
         <Button onClick={handleClick}> Course Overview </Button>
-      </ButtonWrapper>
-      <animated.div style={animation}>
+      </ButtonWrapper> */}
+{/*       <animated.div style={animation}> */}
         <Fragment>
           <Helmet title={frontmatter.title} />{" "}
           <PagesContext.Provider
@@ -134,7 +134,7 @@ export default function GridNavigationTemplate(props) {
             {/* </LoginStateContextProviderider>{" "} */}
           </PagesContext.Provider>
         </Fragment>
-      </animated.div>
+{/*       </animated.div> */}
     </>
   )
 }
