@@ -23,11 +23,10 @@ const Background = styled.div`
   background-image: url(${heroSvg});
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
+  background-size: 100% 1000%;
   opacity: 0.3;
   width: 100%;
   height: 100%;
-  display: flex;
   position: absolute;
   z-index: -1;
 `
@@ -45,21 +44,32 @@ const TextWrapper = styled.div`
 
 const ImageWrapper = styled.img`
   z-index: 200;
-  width: 20em;
   height: auto;
   padding-bottom: 7rem;
   padding-right: 6rem;
-  flex: 0.5;
+  flex: 0.4;
   @media (min-width: 1px) {
     padding-right: 0rem;
+    max-width: 30px;
+  }
+  @media (min-width: 250px) {
+    padding-right: 0rem;
+    max-width: 100px;
+  }
+  @media (min-width: 530px) {
+    padding-right: 0rem;
+    max-width: 200px;
+  }
+  @media (min-width: 700px) {
+    padding-right: 1rem;
+    max-width: 350px;
   }
   @media (min-width: 1000px) {
+    max-width: 500px;
     padding-right: 3rem;
   }
   @media (min-width: 1500px) {
-    padding-right: 20rem;
-  }
-  @media (min-width: 1700px) {
+    max-width: 800px;
     padding-right: 20rem;
   }
 `
@@ -89,7 +99,7 @@ export default (props) => {
   return (
     <div>
       <Background />
-      <HeroSection style={{}}>
+      <HeroSection>
         <TextWrapper>
           <H1>
             <a style={{ color: "rgba(28, 59, 64, 0.5)" }}>{props.title}: </a>

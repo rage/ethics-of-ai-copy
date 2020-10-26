@@ -66,7 +66,7 @@ const StyleLink = styled.div`
 `
 
 export default function GridNavigationTemplate(props) {
-/*   const [showModal, setShowModal] = useState(true) */
+  /*   const [showModal, setShowModal] = useState(true) */
 
   const { data } = props
   const { frontmatter, htmlAst } = data.page
@@ -81,7 +81,7 @@ export default function GridNavigationTemplate(props) {
     data.page.fileAbsolutePath.length,
   )
 
-/*   const animation = useSpring({
+  /*   const animation = useSpring({
     opacity: showModal ? 1 : 0,
     transform: showModal ? `translateY(0)` : `translateY(-200%)`,
     config: { duration: 250 },
@@ -94,47 +94,47 @@ export default function GridNavigationTemplate(props) {
   } */
   return (
     <>
-{/*       <ButtonWrapper>
+      {/*       <ButtonWrapper>
         <Button onClick={handleClick}> Course Overview </Button>
       </ButtonWrapper> */}
-{/*       <animated.div style={animation}> */}
-        <Fragment>
-          <Helmet title={frontmatter.title} />{" "}
-          <PagesContext.Provider
-            value={{
-              current: {
-                frontmatter: frontmatter,
-                filePath: filePath,
-              },
-            }}
-          >
-            {/* <LoginStateContextProviderider> */}
-            <Fragment>
-              <ContentWrapper>
-                <Heading>
-                  <H3> {frontmatter.title} </H3>
-                </Heading>
-                <StyleLink>
-                  <ul>
-                    <li>
-                      <a href="#" target="_blank" rel="noopener noreferrer">
-                        Judging & tests
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" target="_blank" rel="noopener noreferrer">
-                        FAQ
-                      </a>
-                    </li>
-                  </ul>
-                </StyleLink>
-                {renderAst(htmlAst)}
-              </ContentWrapper>
-            </Fragment>
-            {/* </LoginStateContextProviderider>{" "} */}
-          </PagesContext.Provider>
-        </Fragment>
-{/*       </animated.div> */}
+      {/*       <animated.div style={animation}> */}
+      <Fragment>
+        <Helmet title={frontmatter.title} />{" "}
+        <PagesContext.Provider
+          value={{
+            current: {
+              frontmatter: frontmatter,
+              filePath: filePath,
+            },
+          }}
+        >
+          {/* <LoginStateContextProviderider> */}
+          <Fragment>
+            <ContentWrapper>
+              <Heading>
+                <H3> {frontmatter.title} </H3>
+              </Heading>
+              <StyleLink>
+                <ul>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      Judging & tests
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      FAQ
+                    </a>
+                  </li>
+                </ul>
+              </StyleLink>
+              {renderAst(htmlAst)}
+            </ContentWrapper>
+          </Fragment>
+          {/* </LoginStateContextProviderider>{" "} */}
+        </PagesContext.Provider>
+      </Fragment>
+      {/*       </animated.div> */}
     </>
   )
 }
