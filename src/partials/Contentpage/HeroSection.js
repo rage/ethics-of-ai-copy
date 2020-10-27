@@ -8,42 +8,39 @@ import heroSvg from "../../images/hero-svg.svg"
 
 const HeroSection = styled.div`
   padding: 4rem 2rem 0rem 10rem;
-  width: 100vw;
-  height: 90vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-text: left;
   z-index: 99;
   @media (max-width: 1000px) {
-    padding: 4rem 2rem 0rem 3rem;
+    padding: 4rem 2rem 2rem 3rem;
   }
 `
 const Background = styled.div`
   background-image: url(${heroSvg});
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 100% 1000%;
+  background-size: cover;
   opacity: 0.3;
   width: 100%;
-  height: 100%;
+  height: 90%;
   position: absolute;
   z-index: -1;
 `
 const TextWrapper = styled.div`
-  padding: 15rem 0rem 4rem 0rem;
+  padding: 10rem 0rem 4rem 0rem;
   flex-direction: column;
   justify-content: center;
   align-text: center;
   flex: 1;
   @media (max-width: 1000px) {
     width: 90%;
-    padding-top: 8rem;
+    padding-top: 5rem;
   }
 `
 
 const ImageWrapper = styled.img`
-  z-index: 200;
   height: auto;
   padding-bottom: 7rem;
   padding-right: 6rem;
@@ -94,6 +91,14 @@ const StyledSVG = styled(HeroIllustration)`
   position: absolute;
 `
 
+const Border = styled.div`
+border-bottom: 2px solid grey;
+margin-bottom: 4em;
+margin-left: 2em;
+width: 95%;
+
+`
+
 export default (props) => {
   // <StyledSVG />
   return (
@@ -113,6 +118,7 @@ export default (props) => {
         </TextWrapper>
         <ImageWrapper src={chapIcon} alt="icon" />
       </HeroSection>
-    </div>
+      <Border/>
+          </div>
   )
 }

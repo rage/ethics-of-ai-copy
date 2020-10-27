@@ -4,6 +4,7 @@ import Helmet from "react-helmet"
 import Sidebar from "../components/Sidebar"
 import ContentArea from "../components/ContentArea"
 import TopBar from "../components/TopBar"
+import NavBar from "../components/Navbar/Navbar"
 import { StaticQuery, graphql } from "gatsby"
 import * as store from "store"
 import Pheromones from "../util/pheromones"
@@ -31,6 +32,7 @@ import {
   SMALL_MEDIUM_BREAKPOINT,
 } from "../util/constants"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
+import zIndex from "@material-ui/core/styles/zIndex"
 
 fontAwesomeConfig.autoAddCss = false
 
@@ -149,7 +151,7 @@ class Layout extends React.Component {
                       },
                     ]}
                   />
-                  <TopBar />
+                  <NavBar />
                   <ContentArea mobileMenuOpen={this.state.mobileMenuOpen}>
                     {children}
                   </ContentArea>

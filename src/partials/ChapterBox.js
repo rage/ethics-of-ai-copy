@@ -45,14 +45,15 @@ const Body = styled.div`
 
 const ImageBox = styled.div`
   @media (min-width: 1px) {
-    top: 5.8em;
+    top: 5.2em;
     left: 0.2em;
     width: 40px;
     height: auto;
     position: relative;
-    margin-top: -5em;
-    margin-bottom: -1em;
+    margin-top: -3em;
+    margin-bottom: 1em;
     display: block;
+    vertical-align: left;
   }
   @media (min-width: 425px) {
     top: 5.5em;
@@ -60,14 +61,13 @@ const ImageBox = styled.div`
   }
 `
 const Image = styled.img`
-  top: -2em;
+  top: -2.2em;
   left: 0.2em;
   width: 100px;
   height: auto;
   position: relative;
   margin-top: -12em;
   margin-bottom: -12em;
-  -webkit-transform: translate(5%, 0);
   -webkit-transform: rotate(105deg);
   z-index: 1;
 `
@@ -76,6 +76,7 @@ const ChapterParts = styled.div`
   margin-bottom: -4em;
   margin-top: -2em;
   margin-inline-start: 1em;
+  line-height: 2;
   @media (min-width: 400px) {
     margin-inline-start: 7em;
   }
@@ -99,7 +100,10 @@ const ChapterBox = (props) => {
   // position:"relative", verticalAlign:"middle", marginTop:"0rem", marginInlineStart:"0.8em", textAlign:"center"}}
   return (
     <Wrapper>
-      <h3 style={{ textAlign: "center" }}> Chapter content </h3>
+      <h3 style={{ textAlign: "center", marginBottom: "-1.7em" }}>
+        {" "}
+        Chapter content{" "}
+      </h3>
       <Body>
         {chapters.map((value, index) => {
           if (index % 2 !== 0) {
@@ -131,7 +135,8 @@ const ChapterBox = (props) => {
                 <p
                   style={{
                     marginInlineStart: "4em",
-                    marginTop: "2.5em",
+                    marginTop: "0em",
+                    display: "inline-block",
                   }}
                 >
                   {chapters[index].props.children[0]}
