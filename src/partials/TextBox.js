@@ -75,26 +75,6 @@ const ImageBox = styled.img`
     -webkit-transform: translate(18%, 0);
   }
 `
-const TechIcon = (
-  <img src={techIcon} alt="icon" style={{ width: "100%", height: "auto" }}>
-    {" "}
-  </img>
-)
-const PhilIcon = (
-  <img src={philIcon} alt="icon" style={{ width: "80%", height: "auto" }}>
-    {" "}
-  </img>
-)
-const BgIcon = (
-  <img src={bgIcon} alt="icon" style={{ width: "100%", height: "auto" }}>
-    {" "}
-  </img>
-)
-const EthicsIcon = (
-  <img src={philIcon} alt="icon" style={{ width: "100%", height: "auto" }}>
-    {" "}
-  </img>
-)
 
 const chooseIcon = {
   techIcon: techIcon,

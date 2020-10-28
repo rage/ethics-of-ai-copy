@@ -1,10 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 
-import { respond } from "../../_respond"
-import HeroIllustration from "../../assets/hero-svg.svg"
 import chapIcon from "../../images/chap-1-bigmap.svg"
 import heroSvg from "../../images/hero-svg.svg"
+import techIcon from "../../images/tech-icon.svg"
+import philIcon from "../../images/phil-icon.svg"
+import bgIcon from "../../images/bg-icon.svg"
+import ethicsIcon from "../../images/ethics-icon.svg"
 
 const HeroSection = styled.div`
   padding: 4rem 2rem 0rem 10rem;
@@ -19,8 +21,8 @@ const HeroSection = styled.div`
 `
 const Background = styled.div`
   background-image: url(${heroSvg});
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.3;
   width: 100%;
@@ -71,8 +73,6 @@ const ImageWrapper = styled.img`
   }
 `
 
-const H1 = styled.h1``
-
 const HeroText = styled.div`
   color: rgba(28, 59, 64, 1);
   font-size: 22px;
@@ -81,23 +81,22 @@ const HeroText = styled.div`
   display: grid;
 `
 
-const StyledSVG = styled(HeroIllustration)`
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  margin: 0;
-  position: absolute;
-`
-
 const Border = styled.div`
 border-bottom: 2px solid grey;
 margin-bottom: 4em;
 margin-left: 2em;
 width: 95%;
-
 `
+
+const H1 = styled.h1`
+`
+
+const chooseIcon = {
+  techIcon: techIcon,
+  philIcon: philIcon,
+  bgIcon: bgIcon,
+  undefined: ethicsIcon,
+}
 
 export default (props) => {
   // <StyledSVG />

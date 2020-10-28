@@ -18,11 +18,11 @@ const Wrapper = styled.aside`
     padding: 3em 1em 6em 1em;
   }
   @media (min-width: 600px) {
-    padding: 3em 1em 7em 2em;
+    padding: 3em 1em 6em 2em;
     width: 50%;
   }
   @media (min-width: 870px) {
-    padding: 3em 1em 7em 2em;
+    padding: 3em 1em 6em 2em;
     width: 40%;
   }
   @media (min-width: 1100px) {
@@ -39,7 +39,6 @@ const Header = styled.h3`
 `
 
 const Body = styled.div`
-  padding-bottom: 0.5rem;
   display: table;
 `
 
