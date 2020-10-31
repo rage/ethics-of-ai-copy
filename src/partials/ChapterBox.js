@@ -10,7 +10,7 @@ const Wrapper = styled.aside`
     padding: 3em 1em 7em 1em;
     margin-bottom: 8em;
     background: rgba(165, 178, 166, 0.2);
-    border-radius: 15px;
+    border-radius: 24px;
     position: relative;
     width: 100%;
   }
@@ -29,6 +29,10 @@ const Wrapper = styled.aside`
     padding: 3em 5em 7em 5em;
     width: 40%;
   }
+  @media (min-width: 1500px) {
+    padding: 3em 5em 7em 5em;
+    width: 35%;
+  }
 `
 
 const Header = styled.h3`
@@ -40,6 +44,7 @@ const Header = styled.h3`
 
 const Body = styled.div`
   display: table;
+  padding-bottom: 2em;
 `
 
 const ImageBox = styled.div`
@@ -60,8 +65,8 @@ const ImageBox = styled.div`
   }
 `
 const Image = styled.img`
-  top: -2.2em;
-  left: 0.2em;
+  top: -3.3em;
+  left: -0.5em;
   width: 100px;
   height: auto;
   position: relative;
@@ -75,7 +80,7 @@ const ChapterParts = styled.div`
   margin-bottom: -4em;
   margin-top: -2em;
   margin-inline-start: 1em;
-  line-height: 2;
+  line-height: 1;
   @media (min-width: 400px) {
     margin-inline-start: 7em;
   }
@@ -99,7 +104,7 @@ const ChapterBox = (props) => {
   // position:"relative", verticalAlign:"middle", marginTop:"0rem", marginInlineStart:"0.8em", textAlign:"center"}}
   return (
     <Wrapper>
-      <h3 style={{ textAlign: "center", marginBottom: "-1.7em" }}>
+      <h3 style={{ textAlign: "center", marginBottom: "0.1em" }}>
         {" "}
         Chapter content{" "}
       </h3>
@@ -114,8 +119,8 @@ const ChapterBox = (props) => {
                       width: "100%",
                       height: "100%",
                       zIndex: "2",
-                      top: "0.5em",
-                      left: "0.1em",
+                      top: "-0.9em",
+                      left: "-0.5em",
                       position: "relative",
                       textAlign: "center",
                     }}
@@ -133,9 +138,10 @@ const ChapterBox = (props) => {
                 </ImageBox>
                 <p
                   style={{
-                    marginInlineStart: "4em",
+                    marginInlineStart: "3em",
                     marginTop: "0em",
                     display: "inline-block",
+                    color: "#1C3B40",
                   }}
                 >
                   {chapters[index].props.children[0]}

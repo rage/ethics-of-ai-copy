@@ -24,7 +24,7 @@ const Background = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.3;
+  opacity: 0.1;
   width: 100%;
   height: 90%;
   position: absolute;
@@ -82,14 +82,13 @@ const HeroText = styled.div`
 `
 
 const Border = styled.div`
-border-bottom: 2px solid grey;
-margin-bottom: 4em;
-margin-left: 2em;
-width: 95%;
+  border-bottom: 2px solid rgba(112, 112, 112, 1);
+  margin-bottom: 4em;
+  margin-left: 2em;
+  width: 95%;
 `
 
-const H1 = styled.h1`
-`
+const H1 = styled.h1``
 
 const chooseIcon = {
   techIcon: techIcon,
@@ -117,7 +116,7 @@ export default (props) => {
         </TextWrapper>
         <ImageWrapper src={chapIcon} alt="icon" />
       </HeroSection>
-      <Border/>
-          </div>
+      <Border />
+    </div>
   )
 }

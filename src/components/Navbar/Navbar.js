@@ -17,7 +17,7 @@ export default function Navbar(props) {
   const [clicked, setClicked] = useState(false)
 
   return (
-    <div classNamae="fixedPosition">
+    <div className="fixedPosition">
       <nav className="NavbarItems">
         <h1 className="navbar-logo">
           <Link to="/">
@@ -29,21 +29,21 @@ export default function Navbar(props) {
           <Hamburger> </Hamburger>{" "}
         </div>{" "}
         <ul className={clicked ? "nav-menu active" : "nav-menu"}>
-              <li>
-                <a className="nav-links" href="/grid">
-                  Courses
-                </a>
-              </li>
-              <li>
-                <a className="nav-links" href="#">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a className="nav-links" href="#">
-                  Contact Us
-                </a>
-              </li>
+          <li>
+            <a className="nav-links" href="/grid">
+              Courses
+            </a>
+          </li>
+          <li>
+            <a className="nav-links" href="#">
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a className="nav-links" href="#">
+              Contact Us
+            </a>
+          </li>
           <span>
             {" "}
             © 2020 Graduate Economic, <br />
