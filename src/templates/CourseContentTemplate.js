@@ -94,6 +94,9 @@ export default class CourseContentTemplate extends React.Component {
       data.page.fileAbsolutePath.lastIndexOf("/data/"),
       data.page.fileAbsolutePath.length,
     )
+    const heroIconPath = data.page.htmlAst.children[0]
+    const heroIcon =
+      heroIconPath === undefined ? undefined : heroIconPath.properties.heroicon
     return (
       <Fragment>
         <Helmet title={frontmatter.title} />
@@ -109,7 +112,7 @@ export default class CourseContentTemplate extends React.Component {
                 <HeroSection
                   title={parentSectionName}
                   subtitle={frontmatter.title}
-                  heroIcon={data.page.htmlAst.children[0].properties.heroicon}
+                  heroIcon={heroIcon}
                 ></HeroSection>
                 <Container>
                   <ContentWrapper>

@@ -1,6 +1,6 @@
 ---
-path: '/chapter-2/1-the-principles-of-beneficence-and-non_maleficence'
-title: 'The principles of beneficence and non-maleficence'
+path: '/chapter-2/1-what-should-we-do'
+title: 'What should we do?'
 hidden: false
 ---
 
@@ -11,6 +11,8 @@ hidden: false
 3. Common good and well-being
 
 </chapter-box>
+
+## The Principle of Beneficence
 
  *“AI inevitably becomes entangled in the ethical and political dimensions of vocations and practices in which
 it is embedded. AI Ethics is effectively a microcosm of the political and ethical challenges faced in society.”*
