@@ -48,7 +48,6 @@ const ImageWrapper = styled.img`
 `
 
 const ImageImporter = (props) => {
-  console.log(props)
   return <ImageWrapper src={chooseIcon[props.icon]} alt="icon" />
 }
 

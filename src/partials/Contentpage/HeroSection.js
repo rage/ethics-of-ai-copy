@@ -56,8 +56,6 @@ const Border = styled.div`
 const H1 = styled.h1``
 
 export default (props) => {
-  // <StyledSVG />
-  console.log(props)
   return (
     <div>
       <Background />
