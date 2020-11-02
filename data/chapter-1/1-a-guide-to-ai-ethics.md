@@ -4,6 +4,8 @@ title: 'A guide to AI ethics'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap'/>
+
 <chapter-box>
 
 1. Introduction

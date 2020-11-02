@@ -1,12 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
-import chapIcon from "../../images/chap-1-bigmap.svg"
 import heroSvg from "../../images/hero-svg.svg"
-import techIcon from "../../images/tech-icon.svg"
-import philIcon from "../../images/phil-icon.svg"
-import bgIcon from "../../images/bg-icon.svg"
-import ethicsIcon from "../../images/ethics-icon.svg"
+import ImageImporter from "./ImageImporter"
 
 const HeroSection = styled.div`
   padding: 4rem 2rem 0rem 10rem;
@@ -42,37 +38,6 @@ const TextWrapper = styled.div`
   }
 `
 
-const ImageWrapper = styled.img`
-  height: auto;
-  padding-bottom: 7rem;
-  padding-right: 6rem;
-  flex: 0.4;
-  @media (min-width: 1px) {
-    padding-right: 0rem;
-    max-width: 30px;
-  }
-  @media (min-width: 250px) {
-    padding-right: 0rem;
-    max-width: 100px;
-  }
-  @media (min-width: 530px) {
-    padding-right: 0rem;
-    max-width: 200px;
-  }
-  @media (min-width: 700px) {
-    padding-right: 1rem;
-    max-width: 350px;
-  }
-  @media (min-width: 1000px) {
-    max-width: 500px;
-    padding-right: 3rem;
-  }
-  @media (min-width: 1500px) {
-    max-width: 800px;
-    padding-right: 20rem;
-  }
-`
-
 const HeroText = styled.div`
   color: rgba(28, 59, 64, 1);
   font-size: 22px;
@@ -90,15 +55,9 @@ const Border = styled.div`
 
 const H1 = styled.h1``
 
-const chooseIcon = {
-  techIcon: techIcon,
-  philIcon: philIcon,
-  bgIcon: bgIcon,
-  undefined: ethicsIcon,
-}
-
 export default (props) => {
   // <StyledSVG />
+  console.log(props)
   return (
     <div>
       <Background />
@@ -114,7 +73,7 @@ export default (props) => {
             erat, sed diam voluptua.
           </HeroText>
         </TextWrapper>
-        <ImageWrapper src={chapIcon} alt="icon" />
+        <ImageImporter icon={props.heroIcon} />
       </HeroSection>
       <Border />
     </div>

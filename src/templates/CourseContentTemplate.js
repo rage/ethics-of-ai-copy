@@ -109,6 +109,7 @@ export default class CourseContentTemplate extends React.Component {
                 <HeroSection
                   title={parentSectionName}
                   subtitle={frontmatter.title}
+                  heroIcon={data.page.htmlAst.children[0].properties.heroicon}
                 ></HeroSection>
                 <Container>
                   <ContentWrapper>
