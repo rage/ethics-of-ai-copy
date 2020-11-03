@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet"
 import Layout from "./Layout"
 import HeroSection from "../partials/Contentpage/HeroSection"
 
+import NextChapter from "../partials/Contentpage/NextChapter"
 import getNamedPartials from "../partials"
 import CoursePageFooter from "../components/CoursePageFooter"
 import { getCachedUserDetails } from "../services/moocfi"
@@ -94,9 +95,13 @@ export default class CourseContentTemplate extends React.Component {
       data.page.fileAbsolutePath.lastIndexOf("/data/"),
       data.page.fileAbsolutePath.length,
     )
+
     const heroIconPath = data.page.htmlAst.children[0]
     const heroIcon =
       heroIconPath === undefined ? undefined : heroIconPath.properties.heroicon
+
+    const currentChapter = parentSectionPath.split("-")[1]
+    const nextChapter = parseInt(currentChapter) + 1
     return (
       <Fragment>
         <Helmet title={frontmatter.title} />
@@ -125,6 +130,7 @@ export default class CourseContentTemplate extends React.Component {
                   </ContentWrapper>
                 </Container>
                 <CoursePageFooter />
+                <NextChapter nextChapter={nextChapter} />
               </Fragment>
             </Layout>
           </LoginStateContextProvider>
