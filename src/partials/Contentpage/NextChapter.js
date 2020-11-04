@@ -29,7 +29,7 @@ const NextChapter = (props) => {
             position: "absolute",
           }}
         >
-          <PrimaryButton to={`/chapter-${props.nextChapter}`}>
+          <PrimaryButton to={props.nextChapter.path}>
             {" "}
             Next Chapter
           </PrimaryButton>

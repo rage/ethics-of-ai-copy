@@ -99,9 +99,6 @@ export default class CourseContentTemplate extends React.Component {
     const heroIconPath = data.page.htmlAst.children[0]
     const heroIcon =
       heroIconPath === undefined ? undefined : heroIconPath.properties.heroicon
-
-    const currentChapter = parentSectionPath.split("-")[1]
-    const nextChapter = parseInt(currentChapter) + 1
     return (
       <Fragment>
         <Helmet title={frontmatter.title} />
@@ -130,7 +127,6 @@ export default class CourseContentTemplate extends React.Component {
                   </ContentWrapper>
                 </Container>
                 <CoursePageFooter />
-                <NextChapter nextChapter={nextChapter} />
               </Fragment>
             </Layout>
           </LoginStateContextProvider>

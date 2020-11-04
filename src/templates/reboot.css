@@ -107,6 +107,17 @@ ul ol {
   margin-bottom: 0;
 }
 
+ul li {
+  margin-inline-start: 1em;
+  line-height: 2.4;
+  font-size: 18px;
+}
+ol li {
+  margin-inline-start: 1em;
+  line-height: 2.4;
+  font-size: 18px;
+}
+
 dt {
   font-weight: 700;
 }
