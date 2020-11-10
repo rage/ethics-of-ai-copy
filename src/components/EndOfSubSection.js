@@ -118,7 +118,7 @@ class EndOfSubSection extends React.Component {
                   </ButtonWrapper>
                 </Fragment>
               )}
-              {nextPart === null && (
+              {nextPart === null && currentChapter + 1 <= chapters.length && (
                 <Fragment>
                   {this.props.t("continueToNext")}{" "}
                   <ButtonWrapper>
