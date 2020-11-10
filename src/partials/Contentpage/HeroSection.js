@@ -16,11 +16,12 @@ const HeroSection = styled.div`
   }
 `
 const Background = styled.div`
+  background-color: green;
   background-image: url(${heroSvg});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.1;
+  opacity: 0.3;
   width: 100%;
   height: 90%;
   position: absolute;

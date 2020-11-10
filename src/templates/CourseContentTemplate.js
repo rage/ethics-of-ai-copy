@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet"
 
 import Layout from "./Layout"
 import HeroSection from "../partials/Contentpage/HeroSection"
-
+import PagesInThisSection from "../partials/PagesInThisSection"
 import NextChapter from "../partials/Contentpage/NextChapter"
 import getNamedPartials from "../partials"
 import CoursePageFooter from "../components/CoursePageFooter"
@@ -116,17 +116,21 @@ export default class CourseContentTemplate extends React.Component {
                   subtitle={frontmatter.title}
                   heroIcon={heroIcon}
                 ></HeroSection>
+
                 <Container>
                   <ContentWrapper>
                     <UpLink to={parentSectionPath}>
                       <StyledIcon icon={icon} />
                       {parentSectionName}
                     </UpLink>
+                    <div style={{ width: "30%" }}>
+                      <PagesInThisSection />
+                    </div>
                     {renderAst(htmlAst)}
                     <EndOfSubSection />
                   </ContentWrapper>
                 </Container>
-                <CoursePageFooter />
+                {/*  <CoursePageFooter />*/}
               </Fragment>
             </Layout>
           </LoginStateContextProvider>

@@ -92,6 +92,18 @@ class EndOfSubSection extends React.Component {
               return a.path > b.path ? 1 : -1
             })
           console.log(chapters)
+
+          const nextSectionPath = `/chapter-${currentChapter + 1}`
+          console.log(nextSectionPath)
+
+          const nextSectionPages = value.all
+            .filter((o) => o.path.startsWith(`${nextSectionPath}/`))
+            .sort((a, b) => {
+              a = a.path.toLowerCase()
+              b = b.path.toLowerCase()
+
+              return a > b ? 1 : b > a ? -1 : 0
+            })
           return (
             <div>
               {this.props.t("endReached")}{" "}
@@ -107,10 +119,21 @@ class EndOfSubSection extends React.Component {
                 </Fragment>
               )}
               {nextPart === null && (
+                <Fragment>
+                  {this.props.t("continueToNext")}{" "}
+                  <ButtonWrapper>
+                    <StyledLink to={nextSectionPages[0].path}>
+                      <StyledIcon icon={icon} />
+                      Chapter {currentChapter + 1}. {nextSectionPages[0].title}
+                    </StyledLink>
+                  </ButtonWrapper>
+                </Fragment>
+              )}
+              {/*nextPart === null && (
                 <NextChapter
                   nextChapter={chapters[currentChapter]}
                 ></NextChapter>
-              )}
+              )*/}
               <p>{this.props.t("rememberToCheckPoints")}</p>
             </div>
           )

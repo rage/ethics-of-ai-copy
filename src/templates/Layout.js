@@ -1,9 +1,9 @@
 import React, { Fragment } from "react"
 import "../i18n"
 import Helmet from "react-helmet"
-import Sidebar from "../components/Sidebar"
+//import Sidebar from "../components/Sidebar"
 import ContentArea from "../components/ContentArea"
-import TopBar from "../components/TopBar"
+//import TopBar from "../components/TopBar"
 import NavBar from "../components/Navbar/Navbar"
 import { StaticQuery, graphql } from "gatsby"
 import * as store from "store"
@@ -22,7 +22,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css"
 import { config as fontAwesomeConfig } from "@fortawesome/fontawesome-svg-core"
 import { canDoResearch, accessToken } from "../services/moocfi"
 import Footer from "../components/Footer"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+//import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { redTheme, defaultTheme, indigoTheme } from "../theme"
 import PointsBalloon from "../components/PointsBalloon"
 import {
@@ -32,7 +32,6 @@ import {
   SMALL_MEDIUM_BREAKPOINT,
 } from "../util/constants"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
-import zIndex from "@material-ui/core/styles/zIndex"
 
 fontAwesomeConfig.autoAddCss = false
 
