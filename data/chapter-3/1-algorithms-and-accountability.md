@@ -4,15 +4,6 @@ title: 'Algorithms and accountability'
 hidden: false
 ---
 
-<chapter-box>
-
-1. Algorithms and accountability
-2. What is accountability?
-3. Who should be blamed – and for what?
-4. The problem of individuating responsibilities
-
-</chapter-box>
-
 <text-box name="">
 
 In the city of Amsterdam,  parking control is partially automated and in use across 150,000 street parking spaces in the city. The service follows a three step process:

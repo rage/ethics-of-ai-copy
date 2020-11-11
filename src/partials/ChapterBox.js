@@ -3,7 +3,11 @@ import styled from "styled-components"
 
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import chapterIcon from "../images/blob-4.svg"
-import Title from "./Title"
+import PagesContext from "../contexes/PagesContext"
+import { nthIndex } from "../util/strings"
+import { Link } from "gatsby"
+import { withTranslation } from "react-i18next"
+import { Divider, Paper } from "@material-ui/core"
 
 const Wrapper = styled.aside`
   @media (min-width: 1px) {
@@ -49,110 +53,112 @@ const Body = styled.div`
 
 const ImageBox = styled.div`
   @media (min-width: 1px) {
-    top: 5.2em;
-    left: 0.2em;
     width: 40px;
-    height: auto;
+    height: 40px;
     position: relative;
-    margin-top: -3em;
-    margin-bottom: 1em;
-    display: block;
-    vertical-align: left;
-  }
-  @media (min-width: 425px) {
-    top: 5.5em;
-    position: relative;
+    display: inline-block;
+    vertical-align: middle;
   }
 `
 const Image = styled.img`
-  top: -3.3em;
-  left: -0.5em;
-  width: 100px;
-  height: auto;
-  position: relative;
-  margin-top: -12em;
-  margin-bottom: -12em;
+  position: absolute;
   -webkit-transform: rotate(105deg);
   z-index: 1;
+  top: 0;
+  left: 0;
 `
 
 const ChapterParts = styled.div`
-  margin-bottom: -4em;
-  margin-top: -2em;
-  margin-inline-start: 1em;
-  line-height: 1;
-  @media (min-width: 400px) {
-    margin-inline-start: 7em;
-  }
-  @media (min-width: 500px) {
-    margin-inline-start: 5em;
-  }
-  @media (min-width: 600px) {
-    margin-inline-start: 0em;
-  }
+  margin-left: 0em;
+  margin-top: 1em;
 `
 
 const chooseChapterValue = {
-  1: "I",
-  3: "II",
-  5: "III",
-  7: "IV",
-  9: "V",
+  0: "I",
+  1: "II",
+  2: "III",
+  3: "IV",
+  4: "V",
 }
-const ChapterBox = (props) => {
-  const chapters = props.children[0].props.children
-  // position:"relative", verticalAlign:"middle", marginTop:"0rem", marginInlineStart:"0.8em", textAlign:"center"}}
-  return (
-    <Wrapper>
-      <h3 style={{ textAlign: "center", marginBottom: "0.1em" }}>
-        {" "}
-        Chapter content{" "}
-      </h3>
-      <Body>
-        {chapters.map((value, index) => {
-          if (index % 2 !== 0) {
-            return (
-              <ChapterParts>
-                <ImageBox>
-                  <div
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      zIndex: "2",
-                      top: "-0.9em",
-                      left: "-0.5em",
-                      position: "relative",
-                      textAlign: "center",
-                    }}
-                  >
-                    <p
+const ChapterBox = (props) => (
+  <PagesContext.Consumer>
+    {(value) => {
+      const currentPath = value.current.frontmatter.path
+      let sectionPath = currentPath
+      const sectionSeparator = nthIndex(currentPath, "/", 2)
+      if (sectionSeparator !== -1) {
+        sectionPath = currentPath.substr(0, sectionSeparator)
+      }
+
+      const sectionPages = value.all
+        .filter((o) => o.path.startsWith(`${sectionPath}/`))
+        .sort((a, b) => {
+          a = a.path.toLowerCase()
+          b = b.path.toLowerCase()
+
+          return a > b ? 1 : b > a ? -1 : 0
+        })
+      console.log(sectionPages)
+      const chapters = []
+      // const chapters = props.children[0].props.children
+      // position:"relative", verticalAlign:"middle", marginTop:"0rem", marginInlineStart:"0.8em", textAlign:"center"}}
+      return (
+        <Wrapper>
+          <h3 style={{ textAlign: "center", marginBottom: "0.7em" }}>
+            {" "}
+            Chapter content{" "}
+          </h3>
+          <Body>
+            {sectionPages.map((value, index) => {
+              return (
+                <ChapterParts>
+                  <ImageBox>
+                    <div
                       style={{
-                        color: "white",
-                        fontSize: "15px",
+                        width: "100%",
+                        height: "100%",
+                        zIndex: "2",
+                        left: "-0.8em",
+                        textAlign: "center",
                       }}
                     >
-                      {chooseChapterValue[index]}
-                    </p>
-                  </div>
-                  <Image src={chapterIcon} alt="Chapter icon" />
-                </ImageBox>
-                <p
-                  style={{
-                    marginInlineStart: "3em",
-                    marginTop: "0em",
-                    display: "inline-block",
-                    color: "#1C3B40",
-                  }}
-                >
-                  {chapters[index].props.children[0]}
-                </p>
-              </ChapterParts>
-            )
-          }
-        })}
-      </Body>
-    </Wrapper>
-  )
-}
+                      <p
+                        style={{
+                          top: "0.4em",
+                          textAlign: "center",
+                          position: "relative",
+                          zIndex: "3",
+                          color: "white",
+                          fontSize: "20px",
+                        }}
+                      >
+                        {chooseChapterValue[index]}
+                      </p>
+                      <Image src={chapterIcon} alt="Chapter icon" />
+                    </div>
+                  </ImageBox>
+                  <span
+                    style={{
+                      verticalAlign: "middle",
+                      marginLeft: "1em",
+                      fontSize: "18px",
+                    }}
+                  >
+                    <a
+                      style={{ textDecoration: "none", color: "#1C3B40" }}
+                      href={value.path}
+                    >
+                      {value.title}
+                    </a>
+                  </span>
+                </ChapterParts>
+              )
+            })}
+          </Body>
+        </Wrapper>
+      )
+    }}
+  </PagesContext.Consumer>
+)
 
 export default withSimpleErrorBoundary(ChapterBox)

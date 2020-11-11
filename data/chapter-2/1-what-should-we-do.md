@@ -4,13 +4,6 @@ title: 'What should we do?'
 hidden: false
 ---
 
-<chapter-box>
-
-1. The principles of beneficence and non-maleficence
-2. The common good – calculating consequences
-3. Common good and well-being
-
-</chapter-box>
 
 ## The Principle of Beneficence
 

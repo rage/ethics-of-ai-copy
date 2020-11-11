@@ -6,14 +6,6 @@ hidden: false
 
 So far we have looked at core ethical principles around which AI ethics conversations currently revolve. In this section, we will step away from the contents of ethical statements to take a wider perspective into the whole project of AI ethics. This means looking at the /making/ and /doing/ of AI ethics as a cultural phenomenon, a project with diverse members with differing stakes, and producing texts that can be analysed as cultural products. That is, AI Ethics is created by certain people, at a certain time, for certain purposes.
 
-<chapter-box>
-
-1.  From principles to doing
-2.  Ethics as doing
-3.  Moving forward with ethics
-
-</chapter-box>
-
 ## From principles to doing
 
 “[Ethics] plays the role of a bicycle brake on an intercontinental airplane”
@@ -38,7 +30,9 @@ II. Ethics as doing
 
 
 <text-box>
+
 AuroraAI case here.
+
 </text-box>
 
 
@@ -64,7 +58,6 @@ Ethics guidelines as texts that do
 
 First coined by philosopher John L. Austin, but made more famous by feminist scholar Judith Butler, performativity is the capacity of words to do things in the world. That is, sometimes making statements does not just describe the world, but also performs a social function beyond describing. As an example (from Austin), when a priest declares a couple to be “husband and wife”,  they are not describing the state of their relationship. Rather by that very declaration, the institution of marriage is brought about. The words perform the marrying of the two people. In a similar way, other acts of communication can also have a performative quality – not just presenting information, but effecting change in the world.
 
----
 </text-box>
 
 
@@ -140,6 +133,4 @@ AI systems can also change human experience, challenge human agency, raise conce
 
 </text-box>
 
-
 Now, it is your turn to think about these questions.
-

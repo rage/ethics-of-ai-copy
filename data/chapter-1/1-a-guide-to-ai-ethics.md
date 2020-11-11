@@ -6,14 +6,6 @@ hidden: false
 
 <hero-icon heroIcon='chap'/>
 
-<chapter-box>
-
-1. Introduction
-2. What is ethics?
-3. Values and norms
-4. A framework for AI ethics
-
-</chapter-box>
 
 <title title='1) A guide to AI ethics'> </title>
 

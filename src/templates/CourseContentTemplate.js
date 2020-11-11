@@ -18,6 +18,7 @@ import LoginStateContext, {
   LoginStateContextProvider,
 } from "../contexes/LoginStateContext"
 import Container from "../components/Container"
+import ChapterBox from "../partials/ChapterBox"
 
 import { loggedIn } from "../services/moocfi"
 import { capitalizeFirstLetter } from "../util/strings"
@@ -123,9 +124,7 @@ export default class CourseContentTemplate extends React.Component {
                       <StyledIcon icon={icon} />
                       {parentSectionName}
                     </UpLink>
-                    <div style={{ width: "30%" }}>
-                      <PagesInThisSection />
-                    </div>
+                    <ChapterBox />
                     {renderAst(htmlAst)}
                     <EndOfSubSection />
                   </ContentWrapper>
