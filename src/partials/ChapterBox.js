@@ -47,7 +47,6 @@ const Header = styled.h3`
 `
 
 const Body = styled.div`
-  display: table;
   padding-bottom: 2em;
 `
 
@@ -56,8 +55,8 @@ const ImageBox = styled.div`
     width: 40px;
     height: 40px;
     position: relative;
-    display: inline-block;
     vertical-align: middle;
+    display: inline-block;
   }
 `
 const Image = styled.img`
@@ -71,6 +70,29 @@ const Image = styled.img`
 const ChapterParts = styled.div`
   margin-left: 0em;
   margin-top: 1em;
+
+  padding: 1em;
+  list-style-type: none;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+
+  ${(props) =>
+    props.currentPage &&
+    `
+    background-color: rgb(176, 212, 206);
+    border-radius: 0.25rem;
+    color: white;
+
+    :hover {
+      background-color: #380C0E !important;
+      color: white !important;
+    }
+  `}
+  :hover {
+    background-color: #f5ebeb;
+    color: black;
+  }
 `
 
 const chooseChapterValue = {
@@ -100,8 +122,6 @@ const ChapterBox = (props) => (
         })
       console.log(sectionPages)
       const chapters = []
-      // const chapters = props.children[0].props.children
-      // position:"relative", verticalAlign:"middle", marginTop:"0rem", marginInlineStart:"0.8em", textAlign:"center"}}
       return (
         <Wrapper>
           <h3 style={{ textAlign: "center", marginBottom: "0.7em" }}>
@@ -111,7 +131,7 @@ const ChapterBox = (props) => (
           <Body>
             {sectionPages.map((value, index) => {
               return (
-                <ChapterParts>
+                <ChapterParts currentPage={currentPath === value.path}>
                   <ImageBox>
                     <div
                       style={{
@@ -137,20 +157,22 @@ const ChapterBox = (props) => (
                       <Image src={chapterIcon} alt="Chapter icon" />
                     </div>
                   </ImageBox>
-                  <span
+                  <p
                     style={{
-                      verticalAlign: "middle",
+                      verticalAlign: "top",
                       marginLeft: "1em",
                       fontSize: "18px",
+                      display: "inline-block",
+                      maxWidth: "60%",
                     }}
                   >
                     <a
-                      style={{ textDecoration: "none", color: "#1C3B40" }}
+                      style={{ color: "#1C3B40", boxShadow: "none" }}
                       href={value.path}
                     >
                       {value.title}
                     </a>
-                  </span>
+                  </p>
                 </ChapterParts>
               )
             })}
