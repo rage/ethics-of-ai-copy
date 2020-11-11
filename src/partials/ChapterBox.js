@@ -5,9 +5,6 @@ import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import chapterIcon from "../images/blob-4.svg"
 import PagesContext from "../contexes/PagesContext"
 import { nthIndex } from "../util/strings"
-import { Link } from "gatsby"
-import { withTranslation } from "react-i18next"
-import { Divider, Paper } from "@material-ui/core"
 
 const Wrapper = styled.aside`
   @media (min-width: 1px) {
