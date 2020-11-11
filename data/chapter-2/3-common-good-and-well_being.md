@@ -4,6 +4,8 @@ title: 'Common good and well-being'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap2'/>
+
 Despite the problems outlined in the previous section, the principles of utilitarianism may help us to consider the immediate and the less immediate consequences of our actions. One should remember that in real life, defining “common good” requires a diversity of viewpoints.
 
 <text-box name='What is "well-being"?'>

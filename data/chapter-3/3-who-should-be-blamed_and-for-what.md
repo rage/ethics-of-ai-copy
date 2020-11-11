@@ -4,6 +4,10 @@ title: 'Who should be blamed – and for what?'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap3'/>
+
+<img src=../../src/assets/agent-action.svg alt="Agent action" style="width: 600px">
+
 In ethics, accountability is closely related to the concept of “moral agency”. A moral agent is “an agent who is capable of acting with reference to right and wrong." Importantly, only moral agents are morally responsible for their actions.
 
 **Actions and omissions**

@@ -4,6 +4,8 @@ title: 'Values and norms'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap1'/>
+
 Values and norms are the basic elements of ethics. The concept “value” means, roughly, the degree of
 importance of a thing or an action. Values provide ideals and standards with which evaluate things, choices,
 actions, and events. In ethics, the focus is primarily on moral values, although other types of values
@@ -55,7 +57,7 @@ should not make normative claims about what should be, based only on descriptive
 is. This does not mean that facts do not take any part in our moral consideration, but that you cannot get
 from an “is” to an “ought” without the use of some purely normative value statement along the way.
 
-- PICTURE HUME´s QUILLOTINE -
+<img src=../../src/assets/hume-guillotine.svg alt="Hume guillotine">
 
 This principle is known as “Hume´s guillotine”. It states that moral norms or claims cannot be justified only
 by appealing to facts. As Hume remarks, one cannot derive the “ought from is”. For example, the fact that

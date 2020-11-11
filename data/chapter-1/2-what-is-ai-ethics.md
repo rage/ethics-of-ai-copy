@@ -4,6 +4,8 @@ title: 'What is AI ethics?'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap1'/>
+
 Before looking at AI ethics, we need to set out what ethics means in the first place.
 
 Ethics seeks to answer questions like “what is good or bad?”, “what is right - what is wrong”, or “what is

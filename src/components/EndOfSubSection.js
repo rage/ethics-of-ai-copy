@@ -7,7 +7,6 @@ import { withTranslation } from "react-i18next"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight as icon } from "@fortawesome/free-solid-svg-icons"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
-import NextChapter from "../partials/Contentpage/NextChapter"
 
 const StyledLink = styled(Link)`
   color: black;
@@ -80,11 +79,6 @@ class EndOfSubSection extends React.Component {
 
           const currentChapter = parseInt(sectionPath.split("-")[1])
 
-          console.log(currentPath)
-          console.log(sectionPath)
-          console.log(currentPageIndex)
-          console.log(nextPart)
-          console.log(sectionPages)
           const regex = new RegExp("/chapter-[1-9]$", "gm")
           const chapters = value.all
             .filter((o) => o.path.match(regex))
@@ -113,7 +107,7 @@ class EndOfSubSection extends React.Component {
                   <ButtonWrapper>
                     <StyledLink to={nextPart.path}>
                       <StyledIcon icon={icon} />
-                      {currentPageIndex + 1}. {nextPart.title}
+                      {currentPageIndex + 2}. {nextPart.title}
                     </StyledLink>
                   </ButtonWrapper>
                 </Fragment>
@@ -129,11 +123,6 @@ class EndOfSubSection extends React.Component {
                   </ButtonWrapper>
                 </Fragment>
               )}
-              {/*nextPart === null && (
-                <NextChapter
-                  nextChapter={chapters[currentChapter]}
-                ></NextChapter>
-              )*/}
               <p>{this.props.t("rememberToCheckPoints")}</p>
             </div>
           )

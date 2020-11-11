@@ -4,6 +4,7 @@ title: 'Doing AI ethics'
 hidden: false
 ---
 
+
 So far we have looked at core ethical principles around which AI ethics conversations currently revolve. In this section, we will step away from the contents of ethical statements to take a wider perspective into the whole project of AI ethics. This means looking at the /making/ and /doing/ of AI ethics as a cultural phenomenon, a project with diverse members with differing stakes, and producing texts that can be analysed as cultural products. That is, AI Ethics is created by certain people, at a certain time, for certain purposes.
 
 ## From principles to doing
@@ -36,15 +37,16 @@ AuroraAI case here.
 </text-box>
 
 
-AuroraAI illustrates how the discourse around AI ethics principles and their technical manifestations is often based on an overly narrow and technologized interpretation of concepts like “justice”.  The fundamental ethical questions on the principles of good governance, or the impact of technology on the relationship between a state and its citizens, cannot be fixed by technical measures alone.
+AuroraAI illustrates how the discourse around AI ethics principles and their technical manifestations must address also the fundamental ethical questions. The programme forces us to discuss about principles of good governance, the impact of technology on the relationship between a state and its citizens, or the justification for organising public services around  ideals of “good life”.
 
-The AuroraAI project crystallizes how the reduction of ethical questions into narrow technologized concepts doesn’t answer questions posed by the developers of the project. Instead, the reduction obscures the larger socio-technical issues and the social orderings brought about by an AI future. For example, remembering our discussion on fairness in chapter 6, the effort to de-bias datasets by adding more diverse representation may fulfill a mathematical definition of fairness. But if that dataset only serves to create more effective tools of surveillance and subjugation, then our conception of ethics has failed to capture what it means to be just. Precisely the same applies to many other examples.
+The AuroraAI programme also crystallizes how the reduction of ethical questions into narrow technologized concepts doesn’t help to answer these questions. Instead, the reduction obscures the larger socio-technical issues and the social orderings brought about by an AI in our societies. For example, remembering our discussion on fairness in chapter 6, the effort to de-bias datasets by adding more diverse representation may fulfill a mathematical definition of fairness. But if that dataset only serves to create more effective tools of surveillance and subjugation, then our conception of ethics has failed to capture what it means to be just. Or,  if AI serves to create public services that predefine the standards of “well-being” or “good life” too narrowly, then the danger is that we forget the principles of good governance. In the AuroraAI, an ethical board was appointed to provide a platform for discussion on these fundamental questions.
+
 
 ### A shared project
 The search for technical fixes to issues like fairness and privacy paint a picture of AI as a shared, collective project: an ideal future which humanity cooperatively strives for, encountering technical obstacles to ethics that can be overcome with technical fixes. This is evidenced most clearly in the positioning of AI as something outside of social relations, and the depiction of humanity as a unanimous polity, in phrases like “AI should respect human values” or “the human aspect in AI”. A more appropriate image positions AI, like any other technology, in the spaces between human collectives and into the struggles and power relations among us. This means also admitting that there are plainly malicious actors and explicitly malicious uses of AI:
 
-“These occur in various areas (Pistono and Yampolskiy 2016; Amodei et al. 2017), such as in the military use of AI in cyber warfare or regarding weaponized unmanned vehicles or drones (Ernest and Carroll 2016; Anderson and Waxman 2013). Moreover, AI applications are already being used for automated propaganda and disinformation campaigns (Lazer et  al. 2018), social control (Engelmann et  al. 2019), surveillance (Helbing 2019), face recognition or sentiment analysis (Introna and Wood 2004), social sorting (Lyon 2003), or improved interrogation techniques (McAllister 2017).”
-Hagendorff (2020)
+* “These occur in various areas (Pistono and Yampolskiy 2016; Amodei et al. 2017), such as in the military use of AI in cyber warfare or regarding weaponized unmanned vehicles or drones (Ernest and Carroll 2016; Anderson and Waxman 2013). Moreover, AI applications are already being used for automated propaganda and disinformation campaigns (Lazer et  al. 2018), social control (Engelmann et  al. 2019), surveillance (Helbing 2019), face recognition or sentiment analysis (Introna and Wood 2004), social sorting (Lyon 2003), or improved interrogation techniques (McAllister 2017).”
+>  **-Hagendorff (2020)**
 
 In this section, we will take a wider look at the whole project of AI ethics. This means looking at the making and doing of AI ethics as a phenomenon. AI ethics is a project with diverse members who have differing stakes – and it produces contents and discussions that can be analyzed as cultural products. That is, AI ethics is created by certain people, at a certain time, for certain purposes. But what are these purposes, and is AI ethics achieving its goals?
 
@@ -97,7 +99,7 @@ But, as HXX remarks, these values do not often appear in ethical guidelines. Wha
 
 <text-box>
 
-An example of this kind of mapping can be seen in the Anatomy of An AI System schematic created by researchers Crawford and Joler. The schematic shows the complex and complete interactions that go into creating an AI artefact. It expands outwards from just software to the material processes of creating an AI system; the markets, infrastructures and geological processes involved. This reveals ethically relevant aspects that would otherwise be obscured by the lens provided by AI ethics: the ecological damages of mining and the labor conditions of data processing, for example.
+An example of this kind of mapping can be seen in the [Anatomy of An AI System](https://anatomyof.ai/img/ai-anatomy-map.pdf) schematic created by researchers Crawford and Joler. The schematic shows the complex and complete interactions that go into creating an AI artefact. It expands outwards from just software to the material processes of creating an AI system; the markets, infrastructures and geological processes involved. This reveals ethically relevant aspects that would otherwise be obscured by the lens provided by AI ethics: the ecological damages of mining and the labor conditions of data processing, for example.
 
 </text-box>
 
@@ -113,8 +115,8 @@ Or, to take another example, let’s look at AlgorithmWatch. AlgorithmWatch trac
 
 The Director of the Ada Lovelace institute Carly Kind calls this the third wave of AI ethics, and suggests we are moving into a new form of societal engagement:
 
-“Third-wave ethical AI has seen a Dutch Court shut down an algorithmic fraud detection system, students in the UK take to the streets to protest against algorithmically-decided exam results, and US companies voluntarily restrict their sales of facial recognition technology. It is taking us beyond the principled and the technical, to practical mechanisms for rectifying power imbalances and achieving individual and societal justice.”
--Carly Kind
+* “Third-wave ethical AI has seen a Dutch Court shut down an algorithmic fraud detection system, students in the UK take to the streets to protest against algorithmically-decided exam results, and US companies voluntarily restrict their sales of facial recognition technology. It is taking us beyond the principled and the technical, to practical mechanisms for rectifying power imbalances and achieving individual and societal justice.”
+>**-Carly Kind**
 
 Conclusion: now it’s your turn
 Ethical questions regarding Al Systems pertain to all stages of the Al system lifecycle, understood here to range from research, design, and development to deployment and use – including maintenance, operation, trade, financing, monitoring and evaluation, validation, end-of-use, disassembly, and termination.
@@ -123,13 +125,13 @@ In addition, Al actors can be defined as any actors involved in at least one sta
 
 <text-box>
 
-Al systems raise ethical issues that include, but are not limited to, their impact on decision-making, equality, polarization, and well-being.
+* AI systems raise ethical issues that include, but are not limited to, their impact on decision-making, equality, polarization, and well-being.
 
-Al systems impact societal sectors such as employment and labor, social interaction, healthcare, education, weaponization, transport, and media.
+* AI systems impact societal sectors such as employment and labor, social interaction, healthcare, education, weaponization, transport, and media.
 
-AI systems cover topics such as freedom of expression, access to information, privacy, democracy, or discrimination.
+* AI systems cover topics such as freedom of expression, access to information, privacy, democracy, or discrimination.
 
-AI systems can also change human experience, challenge human agency, raise concerns on the reliability of sources of information, and question the ideal of fundamental dignity.
+* AI systems can also change human experience, challenge human agency, raise concerns on the reliability of sources of information, and question the ideal of fundamental dignity.
 
 </text-box>
 

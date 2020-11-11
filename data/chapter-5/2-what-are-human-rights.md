@@ -4,6 +4,8 @@ title: 'What are human rights?'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap5'/>
+
 Human rights form the foundation of the current ethical guidelines and principles of AI. This makes human rights a fundamental component of contemporary AI ethics. As rights, human rights are universal: all humans are entitled to have them. One does not have to be a particular kind of person or a member of some specific community to have human rights.
 
 Human rights are norms that protect all people, everywhere from political, legal, and social abuses. They include the following:

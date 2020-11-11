@@ -43,9 +43,7 @@ const Header = styled.h3`
   border-bottom: 1px solid #f7f7f9;
 `
 
-const Body = styled.div`
-  padding-bottom: 2em;
-`
+const Body = styled.div``
 
 const ImageBox = styled.div`
   @media (min-width: 1px) {
@@ -66,8 +64,6 @@ const Image = styled.img`
 
 const ChapterParts = styled.div`
   margin-left: 0em;
-  margin-top: 1em;
-
   padding: 1em;
   list-style-type: none;
   color: black;
@@ -82,12 +78,12 @@ const ChapterParts = styled.div`
     color: white;
 
     :hover {
-      background-color: #380C0E !important;
+      background-color: rgb(95, 176, 162) !important;
       color: white !important;
     }
   `}
   :hover {
-    background-color: #f5ebeb;
+    background-color: rgb(154, 184, 179);
     color: black;
   }
 `
@@ -117,8 +113,6 @@ const ChapterBox = (props) => (
 
           return a > b ? 1 : b > a ? -1 : 0
         })
-      console.log(sectionPages)
-      const chapters = []
       return (
         <Wrapper>
           <h3 style={{ textAlign: "center", marginBottom: "0.7em" }}>
@@ -128,49 +122,49 @@ const ChapterBox = (props) => (
           <Body>
             {sectionPages.map((value, index) => {
               return (
-                <ChapterParts currentPage={currentPath === value.path}>
-                  <ImageBox>
-                    <div
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        zIndex: "2",
-                        left: "-0.8em",
-                        textAlign: "center",
-                      }}
-                    >
-                      <p
+                <a
+                  style={{ color: "#1C3B40", boxShadow: "none" }}
+                  href={value.path}
+                >
+                  <ChapterParts currentPage={currentPath === value.path}>
+                    <ImageBox>
+                      <div
                         style={{
-                          top: "0.6em",
+                          width: "100%",
+                          height: "100%",
+                          zIndex: "2",
+                          left: "-0.8em",
                           textAlign: "center",
-                          position: "relative",
-                          zIndex: "3",
-                          color: "white",
-                          fontSize: "16px",
                         }}
                       >
-                        {chooseChapterValue[index]}
-                      </p>
-                      <Image src={chapterIcon} alt="Chapter icon" />
-                    </div>
-                  </ImageBox>
-                  <p
-                    style={{
-                      verticalAlign: "top",
-                      marginLeft: "1em",
-                      fontSize: "18px",
-                      display: "inline-block",
-                      maxWidth: "60%",
-                    }}
-                  >
-                    <a
-                      style={{ color: "#1C3B40", boxShadow: "none" }}
-                      href={value.path}
+                        <p
+                          style={{
+                            top: "0.6em",
+                            textAlign: "center",
+                            position: "relative",
+                            zIndex: "3",
+                            color: "white",
+                            fontSize: "16px",
+                          }}
+                        >
+                          {chooseChapterValue[index]}
+                        </p>
+                        <Image src={chapterIcon} alt="Chapter icon" />
+                      </div>
+                    </ImageBox>
+                    <p
+                      style={{
+                        verticalAlign: "top",
+                        marginLeft: "1em",
+                        fontSize: "18px",
+                        display: "inline-block",
+                        maxWidth: "60%",
+                      }}
                     >
                       {value.title}
-                    </a>
-                  </p>
-                </ChapterParts>
+                    </p>
+                  </ChapterParts>
+                </a>
               )
             })}
           </Body>

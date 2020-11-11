@@ -4,6 +4,8 @@ title: 'Transparency - Should we know how AI works?'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap4'/>
+
 <text-box>
 Imagine a facial recognition system called MYFACE. MYFACE is used for security purposes in the airport. Usually it works perfectly, but one day it starts to miscategorize individuals as potentially dangerous. As a result, several innocent people are arrested. Would it be important to know why the system made all these mistakes? Should we be able to explain why it made mistakes? And why would this matter?
 -- picture --
@@ -38,9 +40,7 @@ There are many open questions regarding what constitutes transparency or explain
 
 As a property of a system, transparency addresses how a model works or functions internally. Transparency is further divided into “simulatability” (an understanding of the functioning of the model), “decomposability” (understanding of the individual components), and algorithmic transparency (visibility of the algorithms).
 
-<text-box>
-
-What makes a system a “black box”?
+<text-box name="What makes a system a “black box”?">
 
 Complexity. In contemporary AI-systems, operation of a neural network is encoded in thousands, or even millions, of numerical coefficients. Typically the system learns their values at the training phase. Because the operation of the neural network depends on the complicated interactions between these values, it is practically impossible to understand how the network works even if all the parameters are known.
 Difficulty of developing explainable solutions. Even if the used AI models support some level of explainability, additional development is required to build explainability to the system. It may be difficult to create a user experience for careful yet easily understandable explanations for the users.
@@ -61,10 +61,10 @@ Moreover, transparency serves many other functions in contemporary debates on ma
 
 The comprehensibility – or understandability – of an algorithm requires that one should explain how a decision was made by an AI model in a way that is sufficiently understandable to those affected by the model. One should have a concrete sense of how or why a particular decision has been arrived at based on inputs.
 
-However, it is notoriously difficult to translate algorithmically derived concepts into human-understandable concepts. In some countries, legislators are currently discussing whether public authorities should publish algorithms they use in automated decision-making in terms of programming codes. However, most people do not know how to make sense of programming codes.
+However, it is notoriously difficult to translate algorithmically derived concepts into human-understandable concepts. In some countries, legislators have discussed whether public authorities should publish algorithms they use in automated decision-making in terms of programming codes. However, most people do not know how to make sense of programming codes. It is thus hard to see, how the transparency is increased by publishing codes.
 
 
-Example of code
+<img src=../../src/assets/example-code.svg alt="Example code">
 
 Would it be more helpful to publish the exact algorithms? In most cases, publishing the exact algorithms does not bring a lot of transparency either, especially if you do not have the access to the data used in a model.
 
@@ -77,27 +77,31 @@ Nowadays, cognitive and computer scientists develop human-interpretable descript
 Example of a visualization technique
 KUVA
 
-The fact that comprehensibility is based on subject and culture-dependent components complicates this more. For example, the logic of how visualizations are interpreted – or how the inferences are made on them – varies across cultures. Moreover, much is dependent on the familiarity and knowledge of contemporary technologies. The degree of algorithmic and data literacy varies across cultures (and subcultures). In some cultures, the vocabulary of contemporary technology is more familiar, while in others the concepts can be mostly unfamiliar. To increase the understandability, there is clearly a need for significant educational efforts in improving algorithmic literacy – for example on “computational thinking” (Heintz, Mannila, & Färnqvist, 2016). This user literacy will have a direct effect on transparency in terms of the ordinary users’ basic understanding of AI systems.
+The fact that comprehensibility is based on subject and culture-dependent components complicates this more. For example, the logic of how visualizations are interpreted – or how the inferences are made on them – varies across cultures. Thus, tech developers should pay attention to the sufficient understanding of the visual language they use.
 
-<text-box>
-How to make models more transparent?
+Moreover, much is dependent on the degree of data or algorithmic literacy e.g. the knowledge of contemporary technologies. In some cultures, the vocabulary of contemporary technology is more familiar, but in many others they may be completely novel. To increase the understandability, there is clearly a need for significant educational efforts in improving algorithmic literacy – for example on “computational thinking” (Heintz, Mannila, & Färnqvist, 2016). This user literacy will have a direct effect on transparency in terms of the ordinary users’ basic understanding of AI systems. It may actually provide the most efficient and practical way to make the boxes less black for many people.
+
+
+<text-box name="How to make models more transparent?">
+
 The black box problem of artificial intelligence is not new. Providing transparency for machine learning models is an area of active research. Roughly speaking, there are five main approaches:
 
-* Use simpler models. This, however, often sacrifices accuracy for explainability.
+* **Use simpler models**. This, however, often sacrifices accuracy for explainability.
 
-* Combine simpler and more sophisticated models. While the sophisticated model allows the system to do more complex computations, the simpler model provides transparency.
+* **Combine simpler and more sophisticated models**. While the sophisticated model allows the system to do more complex computations, the simpler model can be used to provide transparency.
 
-* Modify inputs to track relevant dependencies between inputs and outputs. If a subset of inputs are manipulated, chances are these inputs play a significant role in the classification. They can be explored by running the model on variants of the input, with results highlighted for the user.
+* **Modify inputs to track relevant dependencies between inputs and outputs**. If a manipulation of inputs changes overall model results, these inputs may play a  role in the classification.
 
-* Design the models for the user. This requires using cognitively and psychologically efficient methods and tools for visualizing the model states or directing attention. For example, in computer vision, states in intermediate layers of the models can be visualized as features (like heads, arms, and legs) to provide a rationale for image classification. Researchers have also developed methods for directing “attention” towards the parts of the input that matter the most. These can be visualized to highlight the parts of an image or a text (so-called “weights”) that contribute the most to a particular recommendation.
+* **Design the models for the user**. This requires using cognitively and psychologically efficient methods and tools for visualizing the model states or directing attention. For example, in computer vision, states in intermediate layers of the models can be visualized as features (like heads, arms, and legs) to provide an comprehensible description for image classification. Researchers have also developed methods for directing “attention” towards the parts of the input that matter the most. These can be visualized to highlight the parts of an image or a text (so-called “weights”) that contribute the most to a particular recommendation.
 
-* Follow the latest research. A lot of research is ongoing on various aspects of explainable AI – including the socio-cognitive dimensions – and new techniques are being developed.
+* **Follow the latest research**. A lot of research is ongoing on various aspects of explainable AI – including the socio-cognitive dimensions – and new techniques are being developed.
+
 
 </text-box>
 
 ### V) Transparency and the risks of openness
 
-Transparency is often listed as a core ethical principle for AI systems. It denotes a modern, ethico-socio-legal “ideal” (Koivisto 2016), a normative demand for the acceptable use of technology in our societies. It is a reflection of the ideal of “openness”, that is often framed in terms of “open government”, “open data”, “open source/code/access”, as well as “open science” (Larsson 2020). In this way, transparency considerations are needed to mitigate the equal distribution of scientific advancements so that the benefits of AI development can be made accessible for all people.
+Transparency denotes often a modern, ethico-socio-legal “ideal” (Koivisto 2016), a normative demand for the acceptable use of technology in our societies. It is a reflection of the ideal of “openness”, that is framed in terms of “open government”, “open data”, “open source/code/access”, as well as “open science” (Larsson 2020). In this way, transparency considerations are needed to mitigate the equal distribution of scientific advancements so that the benefits of AI development can be made accessible for all people.
 
 <text-box>
 

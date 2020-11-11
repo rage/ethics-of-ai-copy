@@ -4,23 +4,15 @@ title: 'Introduction'
 hidden: false
 ---
 
-<chapter-box>
-
-1. Introduction
-2. What are human rights?
-3. Examples of human rights: privacy, security, and inclusion
-4. AI rights for children
-
-</chapter-box>
-
+<hero-icon heroIcon='chap5'/>
 
 <text-box>
 
 During the COVID-19 pandemic, governments have struggled to find effective policy-making strategies for exiting lockdown in a safe way. According to epidemiologists, opening up society requires efficient tracking, tracing, and monitoring. In many cases, this has led to the utilization of various tracing and tracking apps. These apps have raised several concerns about privacy and security. Critics have seen them as the first steps towards the algorithmic surveillance of citizens.
 
-In London, authorities decided to try something new. Together with scientists, they developed methods for “capturing activity over London” to better understand the city’s level of activity. In a project called Odysseus, authorities are able to get information about the distribution of activities in London by combining machine learning algorithms, statistical time-series analysis, and image processing. This information about the activity in the streets of London can be utilized for the safe reopening of streets and for public health planning.
+In London, authorities decided to try something new. Together with scientists, they developed methods for “capturing activity over London” to better understand the city’s level of activity. In a project called [Odysseus](https://www.turing.ac.uk/research/research-projects/project-odysseus-understanding-london-busyness-and-exiting-lockdown), authorities get information about the distribution of activities in London by combining machine learning algorithms, statistical time-series analysis, and image processing. This information about the activity in the streets of London can be utilized for the safe reopening of streets and for public health planning.
 
--- picture: London --
+<img src=../../src/assets/cbcl-02.svg alt="london image">
 
 In Odysseus, the data comes from a wide range of sources. Odysseus combines aggregated, anonymized mobile phone data, anonymized credit card transactions, satellite navigation data, and data from sensors and traffic cameras in the streets. This data is used to create counts of vehicles, cyclists and pedestrians, and to indicate the density and impacts of social distancing. Special attention is paid to the anonymization of data so that individuals cannot be identified.
 

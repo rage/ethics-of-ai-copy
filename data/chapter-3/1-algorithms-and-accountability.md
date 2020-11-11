@@ -4,6 +4,8 @@ title: 'Algorithms and accountability'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap3'/>
+
 <text-box name="">
 
 In the city of Amsterdam,  parking control is partially automated and in use across 150,000 street parking spaces in the city. The service follows a three step process:
@@ -31,6 +33,6 @@ Even though algorithms themselves cannot be held accountable as they are not mor
 
 Automation or autonomisation is about degree, and hence, they are continuums rather than simple yes/no situations. For example, a system can be said to be autonomous with respect to human control to a certain degree.
 
-  **- picture of levels of automatisation -**
+<img src=../../src/assets/levels-automatisation.svg alt="Levels of automatisation" style="width: 700px">
 
 </text-box>

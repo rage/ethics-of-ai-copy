@@ -4,7 +4,7 @@ title: 'A guide to AI ethics'
 hidden: false
 ---
 
-<hero-icon heroIcon='chap'/>
+<hero-icon heroIcon='chap1'/>
 
 
 <title title='1) A guide to AI ethics'> </title>

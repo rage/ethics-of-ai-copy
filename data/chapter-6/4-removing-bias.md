@@ -4,6 +4,8 @@ title: 'Removing bias'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap6'/>
+
 So, how do we make AI systems more fair and less biased? There is no panacea for bias – partly because of the many different ways that bias can manifest, and partly because there is no single definition of an algorithmically fair outcome. Nonetheless, we can look at some of the situations above and look at ways the problems with fairness could potentially have been dealt with.
 
 Starting with the example of the sexist recruiting algorithm, we can pinpoint the source of bias to historical recruitment practices that produced the training data, and the assumption that past recruitment practices provide normative basis for future practices (ie. “we should hire this person because we have hired people like them before”). We can see that the root issues are inexorably linked to company culture and even wider working culture in the technology sector, as well as a morally suspect reasoning (recall Hume’s guillotine in chapter 2). These are problems which require large cultural shifts and structural reformations, and are unlikely to be fixed by technological solutions.

@@ -4,6 +4,8 @@ title: 'A framework for AI ethics'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap1'/>
+
 Traditionally, technology development has typically revolved around the functionality, usability, efficiency and reliability of technologies. However, AI  technology needs a broader discussion on its societal acceptability. It impacts on moral (and political) considerations. It shapes individuals, societies and their environments in a way that has ethical implications.
 
 The interpretation of ethically relevant concepts can change with technologies (consider what “privacy” meant before social media). Furthermore, when new technologies are introduced, users often apply them for purposes other than those originally intended. This reforms the ethical landscape, and forces one to reflect and analyze the ethical basis of technology over and over again.

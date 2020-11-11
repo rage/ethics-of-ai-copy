@@ -4,6 +4,8 @@ title: 'The varieties of fairness'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap6'/>
+
 Philosophers have proposed various definitions for the concept of fairness. According to Aristotle, “equals should be treated equally and unequals unequally”.
 
 This principle of equality states that individuals should be treated the same, unless they differ in ways that are relevant to the situation in which they are involved.

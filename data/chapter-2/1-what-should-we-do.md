@@ -4,6 +4,7 @@ title: 'What should we do?'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap2'/>
 
 ## The Principle of Beneficence
 

@@ -4,6 +4,8 @@ title: 'The common good – calculating consequences'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap2'/>
+
 <text-box name="">
 
 Suppose you are the Chief Digital Officer in Helsinki City. You are asked to consider whether the city’s health care organisation should move from “reactive” healthcare to “preventive” healthcare. You read a report. It tells about novel, sophisticated machine learning systems that would help health authorities to forecast the possible health risks of citizens.
@@ -41,7 +43,7 @@ Utilitarianism offers a relatively simple method for deciding, whether an action
 * Thirdly, we choose the action that provides the greatest benefits after the costs have been taken into account
 
 
-**PICTURE: PAST, PRESENT, FUTURE**
+<img src=../../src/assets/pqr-cubicle-fs.svg alt="Past, future, presence">
 
 Utilitarianism provides many interesting ideas and concepts. For example, the principle of “diminishing marginal utility” is useful for many purposes. According to this principle, the utility of an item decreases as the supply of units increases (and vice versa).
 
@@ -49,7 +51,8 @@ For example, when you start to work out, at first you benefit greatly and your r
 
 Another example is that if you eat one candy, you’ll  get a lot of pleasure. But if you eat too much candy, you may end up having diabetes. This paradox of benefits should always be remembered when we evaluate the consequences of actions. What is the common good now may not be the common good in the future.
 
-**PICTURE of diminishing marginal utility**
+<img src=../../src/assets/dim-mu.svg alt="Diminishing marginal utility">
+
 
 ## The problems of utilitarianism
 

@@ -4,14 +4,7 @@ title: 'What is fairness'
 hidden: false
 ---
 
-<chapter-box>
-
-1. What is fairness?
-2. The varieties of fairness
-3. Discrimination and biases
-4. Removing bias
-
-</chapter-box>
+<hero-icon heroIcon='chap6'/>
 
 <text-box name="">
 

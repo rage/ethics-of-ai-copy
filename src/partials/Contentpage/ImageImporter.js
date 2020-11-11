@@ -1,19 +1,29 @@
 import React from "react"
 import styled from "styled-components"
 
-import chapIcon from "../../images/chap-1-bigmap.svg"
+import chap1 from "../../images/chap-1-bigmap.svg"
 import techIcon from "../../images/tech-icon.svg"
 import philIcon from "../../images/phil-icon.svg"
 import bgIcon from "../../images/bg-icon.svg"
 import ethicsIcon from "../../images/ethics-icon.svg"
+import chap2 from "../../images/chap-2.svg"
+import chap3 from "../../images/chap-3.svg"
+import chap4 from "../../images/chap-4.svg"
+import chap5 from "../../images/chap-5.svg"
+import chap6 from "../../images/chap-6.svg"
 
 const chooseIcon = {
-  chap: chapIcon,
+  chap1: chap1,
+  chap2: chap2,
+  chap3: chap3,
+  chap4: chap4,
+  chap5: chap5,
+  chap6: chap6,
   tech: techIcon,
   phil: philIcon,
   bg: bgIcon,
   ethics: ethicsIcon,
-  undefined: chapIcon,
+  undefined: chap1,
 }
 
 const ImageWrapper = styled.img`
