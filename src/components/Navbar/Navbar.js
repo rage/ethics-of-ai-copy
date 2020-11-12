@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBullseye } from "@fortawesome/free-solid-svg-icons"
 import styled from "styled-components"
 import Hamburger from "../../components/Hamburger"
+import LoginControls from "../LoginControls"
 import "./Navbar.css"
 
 const StyledIcon = styled(FontAwesomeIcon)`
@@ -13,44 +14,33 @@ const StyledIcon = styled(FontAwesomeIcon)`
   color: #333;
 `
 
+const TopBarWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+`
+
 export default function Navbar(props) {
   const [clicked, setClicked] = useState(false)
 
   return (
     <div className="fixedPosition">
       <nav className="NavbarItems">
+      <TopBarWrapper>
         <h1 className="navbar-logo">
           <Link to="/">
-            {" "}
             <StyledIcon icon={faBullseye}> </StyledIcon>
           </Link>
-        </h1>{" "}
-        <div className="menu-icon" onClick={() => setClicked(!clicked)}>
-          <Hamburger> </Hamburger>{" "}
-        </div>{" "}
-        <ul className={clicked ? "nav-menu active" : "nav-menu"}>
-          <li>
-            <a className="nav-links" href="/grid">
-              Courses
-            </a>
-          </li>
-          <li>
-            <a className="nav-links" href="#">
-              FAQ
-            </a>
-          </li>
-          <li>
-            <a className="nav-links" href="#">
-              Contact Us
-            </a>
-          </li>
-          <span>
-            {" "}
-            © 2020 Graduate Economic, <br />
-            Inc.All Rights Reserved.{" "}
-          </span>{" "}
-        </ul>{" "}
-      </nav>{" "}
+        </h1>
+
+          <div className="menu-icon" onClick={() => setClicked(!clicked)}>
+            <Hamburger> </Hamburger>
+          </div>
+          <div>
+          <LoginControls />
+          </div>
+        </TopBarWrapper>
+      </nav>
     </div>
   )
 }

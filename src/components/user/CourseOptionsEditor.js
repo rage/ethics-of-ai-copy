@@ -213,20 +213,6 @@ class CourseOptionsEditor extends React.Component {
                 <FormControlLabel
                   control={
                     <Checkbox
-                      checked={this.state.digital_education_for_all}
-                      onChange={this.handleCheckboxInput}
-                      name="digital_education_for_all"
-                      value="1"
-                    />
-                  }
-                  label="Olen tällä hetkellä opiskelijana Digital Education for All -hankkeessa. Jätä tämä valitsematta mikäli et tiedä kyseisestä hankkeesta."
-                />
-              </Row>
-
-              <Row>
-                <FormControlLabel
-                  control={
-                    <Checkbox
                       checked={this.state.marketing}
                       onChange={this.handleCheckboxInput}
                       name="marketing"
@@ -240,29 +226,6 @@ class CourseOptionsEditor extends React.Component {
           </Loading>
 
           <h2>{this.props.t("researchTitle")}</h2>
-
-          <p>{this.props.t("research1")}</p>
-
-          <ol>
-            <li>{this.props.t("research2")}</li>
-            <li>{this.props.t("research3")}</li>
-            <li>{this.props.t("research4")}</li>
-          </ol>
-
-          <p>
-            {this.props.t("research5")}
-            <OutboundLink
-              href="https://dl.acm.org/citation.cfm?id=2858798"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Educational Data Mining and Learning Analytics in Programming:
-              Literature Review and Case Studies
-            </OutboundLink>
-            .
-          </p>
-
-          <p>{this.props.t("research6")}</p>
 
           <p>{this.props.t("research7")}</p>
 

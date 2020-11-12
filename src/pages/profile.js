@@ -34,7 +34,7 @@ class MissingInfo extends React.Component {
   }
 
   onStepComplete = () => {
-    this.setState({ successMessage: "Tiedot tallennettu!" })
+    this.setState({ successMessage: "Saved!" })
   }
 
   handleClose = () => {
@@ -64,17 +64,8 @@ class MissingInfo extends React.Component {
     return (
       <Layout>
         <Container>
-          <Helmet title="Profiili" />
-          <h1>Profiili</h1>
-
-          <p>
-            Täällä voit muokata mooc.fi -tilisi asetuksia tämän kurssin osalta.
-            Katso myös profiilisi mooc.fi:n Test My Code -palvelussa:{" "}
-            <OutboundLink href="https://tmc.mooc.fi" rel="noopener noreferrer">
-              https://tmc.mooc.fi
-            </OutboundLink>
-            .
-          </p>
+          <Helmet title="Profile" />
+          <h1>Profile</h1>
           <CourseOptionsEditor onComplete={this.onStepComplete} />
         </Container>
         <Snackbar
