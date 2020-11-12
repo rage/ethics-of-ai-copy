@@ -36,3 +36,10 @@ The rest of this course will focus on these principles of AI ethics. We will ana
 
 In the last section of the course, we will look at the project of AI ethics as a whole. We will be asking the “cui bono” question: who is AI ethics for, and who or what is left out?
 Lastly, we want to note that when speaking of AI and “the social”, AI ethics is the first to come up. There are other theoretical frames for looking at ethical codes for algorithmic, data-driven systems. For example, questions of the social implications of AI come up in fields like algorithmic cultures, gender studies and media studies, amongst numerous others. Correspondingly, the cognitive and psychological aspects of human-machine interaction shapes the question of appropriate ethical framework for AI. Simply, there is a lot more to AI ethics than just data or algorithm ethics.
+
+<quiz id="85149553-407a-4733-a4a0-18d54a4715cd"> </quiz>
+
+<quiz id="0e72de1d-165b-4d3e-9e62-1008a83f2e8f"> </quiz>
+
+<quiz id="33ef4765-0577-4eed-b8e6-81a96c9a9804"> </quiz>
+

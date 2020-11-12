@@ -31,3 +31,7 @@ Moreover, researchers develop constantly novel ways to approach well-being. For 
 The common good approach requires that everyone should have access to the benefits of AI. This highlights the importance of ensuring that potential benefits of AI do not accumulate unequally, and are made accessible to as many people as possible. And, AI should be aligned with values, goals, and norms, respecting cultural and individual diversity to a sufficient degree.
 
 The common good is not a singular, but a plural. Identifying social and moral norms of the specific community in which an AI will be deployed is, thus, obligatory. It is the only way to bring AI’s potentially significant and diverse benefits to society and facilitate, among other things, greater well-being and welfare for all.
+
+<quiz id="b5647fe2-c441-4cda-974e-dcd3e39aa494"> </quiz>
+
+<quiz id="6710d2b5-19a9-48d1-a722-912f1e60094d"> </quiz>

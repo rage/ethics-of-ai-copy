@@ -110,3 +110,5 @@ Paradoxically, the ideal of openness can lean to harmful consequences, too. For 
 </text-box>
 
 In summary, while there is a need to develop more transparent practices for AI, there is also a need to  develop practices that can help us to avoid abuse. While transparency may help to mitigate ethical issues – such as fairness or accountability – it also creates ethically important risks. Too much openness in the wrong context may defeat the positive development of AI-enabled processes. Taken together, it is clear that the ideal of full transparency of algorithms should be carefully considered, and we will have to find a balance between security and transparency considerations.
+
+<quiz id="f94f13d3-3983-4d86-811c-881e1282c275"> </quiz>

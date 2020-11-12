@@ -26,18 +26,18 @@ export default function Navbar(props) {
   return (
     <div className="fixedPosition">
       <nav className="NavbarItems">
-      <TopBarWrapper>
-        <h1 className="navbar-logo">
-          <Link to="/">
-            <StyledIcon icon={faBullseye}> </StyledIcon>
-          </Link>
-        </h1>
+        <TopBarWrapper>
+          <h1 className="navbar-logo">
+            <Link to="/">
+              <StyledIcon icon={faBullseye}> </StyledIcon>
+            </Link>
+          </h1>
 
           <div className="menu-icon" onClick={() => setClicked(!clicked)}>
             <Hamburger> </Hamburger>
           </div>
           <div>
-          <LoginControls />
+            <LoginControls />
           </div>
         </TopBarWrapper>
       </nav>

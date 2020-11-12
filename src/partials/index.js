@@ -89,6 +89,7 @@ import TopicHero from "./Topicpage/HeroSection"
 import StartHero from "./Startpage/HeroSection"
 import ErrorHero from "./404page/index"
 import Title from "./Title"
+import BigFive from "./BigFive"
 
 const mapping = {
   test: Test,
@@ -133,6 +134,7 @@ const mapping = {
   "topic-hero": TopicHero,
   "start-hero": StartHero,
   "error-hero": ErrorHero,
+  "big-five": BigFive,
   vocabulary: Vocabulary,
   notice: Notice,
   youtube: Youtube,

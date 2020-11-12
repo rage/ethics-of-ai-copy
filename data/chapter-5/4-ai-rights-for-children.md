@@ -35,3 +35,7 @@ Parents and legal guardians have the primary responsibility for taking care of t
 </text-box>
 
 However, the current international framework that protects children’s rights does not explicitly address many of the issues raised by the development and use of artificial intelligence. Instead, it identifies several rights that may be implicated by these technologies, and thus provides a starting place for any analysis of how children’s rights may be positively or negatively affected by new technologies, such as rights to privacy, to education, to play, and to non-discrimination.
+
+<quiz id="655a75c3-ab8e-467b-bcdc-be65c8ab2db7"> </quiz>
+
+<quiz id="b5499af6-fe03-41bb-a36a-3863a9973419"> </quiz>

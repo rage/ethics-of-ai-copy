@@ -24,3 +24,6 @@ But, an action is done voluntarily only if the action is done intentionally (the
 
 Naturally, persuasive technology should comply with the requirement of voluntariness to guarantee autonomy. Algorithms complicate this issue, since the voluntariness presupposes a sufficient understanding of the use of specific technology. But, what does it mean to “understand”, and what is the sufficient degree, really? What is the correct reading of “understandability” – “transparency”, “explainability” or  “auditability”? How much, and what, exactly, a user should understand about the technology? When can one genuinely  estimate, whether or not they want to use that particular technology? We’ll look at this topic in more detail in chapter 4.
 
+<quiz id="63998353-c785-496e-a447-7f61202ecf3a"> </quiz>
+
+<quiz id="b6f98b77-1ca1-4c74-b0ad-d2f373c4c9db"> </quiz>
