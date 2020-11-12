@@ -8,7 +8,7 @@ import styled from "styled-components"
 import ProgressBar from "./ProgressBar"
 
 const ProgressContainer = styled.div`
-  margin: 5rem;
+  margin: 5rem 0;
 `
 
 const CourseProgressVisualization = () => {
@@ -23,8 +23,8 @@ const CourseProgressVisualization = () => {
   const { exercise_completions, total_exercises, max_points, n_points, completed } = data.courseProgressData
 
   return <ProgressContainer>
-    <ProgressBar n={n_points} max={max_points} />
-    <ProgressBar n={exercise_completions} max={total_exercises} />
+    <ProgressBar label="Points" n={n_points} max={max_points} />
+    <ProgressBar label="Exercises" n={exercise_completions} max={total_exercises} />
   </ProgressContainer>
 }
 
