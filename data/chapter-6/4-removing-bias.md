@@ -37,3 +37,5 @@ It’s not necessary to draw out examples of malicious uses of such systems desc
 This leads us to an important point for anyone considering the ethics of AI systems: beware the reductionism trap! That is, we should avoid reducing the concept of ethics to simplified, corner-cutting, quantified values, like unbiasedness. Because AI systems take part in processes which are much more complex than what the system itself does, ethics cannot be measured by just looking at the input and the output values of the algorithm.
 
 Put succinctly, fair does not mean ethical.
+
+<quiz id="3d90fdb5-2668-4412-8e4d-6ea8f10e32cb"> </quiz>
