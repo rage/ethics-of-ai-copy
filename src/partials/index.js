@@ -40,6 +40,7 @@ import ExercisesInThisSection from "./ExercisesInThisSection"
 import AbStudy from "./AbStudy"
 import MoodleExercise from "./MoodleExercise"
 import SqlTrainerExercise from "./SqlTrainerExercise"
+import CourseProgress from "./CourseProgress"
 
 import {
   Table,
@@ -135,6 +136,7 @@ const mapping = {
   "start-hero": StartHero,
   "error-hero": ErrorHero,
   "big-five": BigFive,
+  "course-progress": CourseProgress,
   vocabulary: Vocabulary,
   notice: Notice,
   youtube: Youtube,
