@@ -22,7 +22,7 @@ banner: false
 <course-grid-text><H5>Chapter 3: Accountability</H5><span>Who is to blame when AI cause harm</span></course-grid-text>
 
 </course-grid-card>
-    <course-grid-card title="chapter04" url="chapter-4">
+    <course-grid-card title="chapter04" url="chapter-4/1-should-we-know-how-ai-works">
 
 <course-grid-text><H5>Chapter 4: Transparency</H5><span>What does AI do and why?</span></course-grid-text>
 
