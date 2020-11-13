@@ -27,9 +27,11 @@ The important thing to remember here, is that discrimination is not the same as 
 Nonetheless, AI systems can partake in discriminatory practices which do not stem from bias in the AI system. Rather, we have to expand our object of investigation from the minutiae of the AI model, to the whole system of institutions it takes part in.
 
 <text-box name="">
+
 In early 2018, researchers from Stanford Graduate School of Business published a white-paper detailing a deep learning system which could distinguish between gay and heterosexual men with an accuracy of 81% based on a single photo of their face. The findings have been controversial, to say the least, and for many different reasons. Critics have raised worries about the resurrection of the pseudoscience of physiognomy, which has a deep rooted connection to historical racist injustices. There has also been suspicions that the system, rather than picking up on some subtle genetic signifiers as was claimed, is actually tracking how people tend to groom and take photos of themselves.
 
 Furthermore, this AI system very clearly works in an ethically nebulous area in terms of privacy, self-determination, and, of course, discrimination. Leaving out the other concerns for the moment, how does discrimination function here? Clearly classification bias is not the discriminatory element here: we are not ethically concerned with whether the estimator is more accurate in predicting homosexuality in some groups than others. Instead, the ethically relevant feature of the system is that, regardless of its accuracy, it directly enables differential treatment based on perceived social grouping.
+
 </text-box>
 
 It’s not necessary to draw out examples of malicious uses of such systems described above, as their possibility should be obvious to all. Directly malicious uses aside, we can imagine integrating such a technology into, say, the online personalized advertising machinery composed of social media, data processors, trend influencers and global merchandisers. Even if the classifying AI is by all technical standards fair and unbiased, it predicates the online advertising of goods on the discriminatory principle, that assumed sexual orientation is a valid reason to treat people differently.
