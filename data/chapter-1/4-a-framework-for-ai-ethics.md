@@ -68,4 +68,4 @@ GANs can be used for many purposes, such as image-to-image translation tasks tra
 
 </text-box>
 
-<quiz id="ced76fe9-4d59-459e-8519-6b7c9af03524"> </quiz>
+<quiz id="c956ae17-d49d-4148-8414-029a14f3ff4c"> </quiz>
