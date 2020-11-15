@@ -11,7 +11,7 @@ const Wrapper = styled.aside`
     padding: 3em 1em 7em 1em;
     margin-bottom: 8em;
     background: rgba(165, 178, 166, 0.2);
-    border-radius: 24px;
+    border-radius: 10px;
     position: relative;
     width: 100%;
   }
@@ -68,22 +68,22 @@ const ChapterParts = styled.div`
   list-style-type: none;
   color: black;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 5px;
 
   ${(props) =>
     props.currentPage &&
     `
-    background-color: rgb(176, 212, 206);
-    border-radius: 0.25rem;
+    background-color: #BFCAC0;
+    border-radius: 5px;
     color: white;
 
     :hover {
-      background-color: rgb(95, 176, 162) !important;
+      background-color: #95C299 !important;
       color: white !important;
     }
   `}
   :hover {
-    background-color: rgb(154, 184, 179);
+    background-color: #D6DCD6;
     color: black;
   }
 `

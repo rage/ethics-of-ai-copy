@@ -74,7 +74,6 @@ export default (props) => {
         </TextWrapper>
         <ImageImporter icon={props.heroIcon} />
       </HeroSection>
-      <Border />
     </div>
   )
 }
