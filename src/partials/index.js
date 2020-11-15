@@ -40,6 +40,7 @@ import ExercisesInThisSection from "./ExercisesInThisSection"
 import AbStudy from "./AbStudy"
 import MoodleExercise from "./MoodleExercise"
 import SqlTrainerExercise from "./SqlTrainerExercise"
+import CourseProgress from "./CourseProgress"
 
 import {
   Table,
@@ -89,6 +90,7 @@ import TopicHero from "./Topicpage/HeroSection"
 import StartHero from "./Startpage/HeroSection"
 import ErrorHero from "./404page/index"
 import Title from "./Title"
+import BigFive from "./BigFive"
 
 const mapping = {
   test: Test,
@@ -133,6 +135,8 @@ const mapping = {
   "topic-hero": TopicHero,
   "start-hero": StartHero,
   "error-hero": ErrorHero,
+  "big-five": BigFive,
+  "course-progress": CourseProgress,
   vocabulary: Vocabulary,
   notice: Notice,
   youtube: Youtube,

@@ -108,65 +108,6 @@ const Footer = ({ t }) => {
       <FooterContent>
         <StyledCard>
           <StyledCardContent>
-            <GithubContainer>
-              <OutboundLink
-                href={CourseSettings.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <StyledIcon icon={faGithub} size="3x" title={t("footer-src")} />
-                <div>{t("footer-src")}</div>
-              </OutboundLink>
-            </GithubContainer>
-            <ButtonContainer>
-              <Button to="/report-issue">{t("footer-report-issue")}</Button>
-              {filePath && (
-                <Button to={`/edit-page?path=${filePath}`}>
-                  {t("footer-edit-page")}
-                </Button>
-              )}
-            </ButtonContainer>
-            <ContentContainer>
-              {t("makers")}{" "}
-              <OutboundLink
-                href="https://www.helsinki.fi/en/researchgroups/data-driven-education"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("rage")}
-              </OutboundLink>
-              .
-            </ContentContainer>
-
-            <ContentContainer>
-              <Link to="/credits">{t("credits")}</Link>.
-            </ContentContainer>
-            <SocialContainer>
-              <OutboundLink
-                href="https://twitter.com/moocfi"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={t("twitter-aria")}
-              >
-                <StyledIcon icon={faTwitter} size="3x" />
-              </OutboundLink>
-              <OutboundLink
-                href="https://www.facebook.com/Moocfi"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={t("facebook-aria")}
-              >
-                <StyledIcon icon={faFacebook} size="3x" />
-              </OutboundLink>
-              <OutboundLink
-                href="https://www.youtube.com/channel/UCkHoQ5p9skFdyjrV3_tnUrA"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={t("facebook-aria")}
-              >
-                <StyledIcon icon={faYoutube} size="3x" />
-              </OutboundLink>
-            </SocialContainer>
             <BrandsContainer>
               <OutboundLink
                 href="https://helsinki.fi"

@@ -78,32 +78,6 @@ class Layout extends React.Component {
     mobileMenuOpen: false,
   }
 
-  componentDidMount() {
-    const user = store.get("tmc.user")
-    if (typeof window !== "undefined" && user) {
-      if (canDoResearch()) {
-        setTimeout(() => {
-          this.removePheromones = Pheromones.init({
-            apiUrl: "https://data.pheromones.io/",
-            username: user.username,
-            submitAfter: 20,
-          })
-        }, 1000)
-      }
-    }
-  }
-
-  componentWillUnmount() {
-    if (
-      typeof window === "undefined" ||
-      typeof this.removePheromones === "undefined"
-    ) {
-      return
-    }
-    this.removePheromones()
-    this.removePheromones = undefined
-  }
-
   toggleMobileMenu = () => {
     this.setState((prev) => {
       return {
@@ -137,24 +111,24 @@ class Layout extends React.Component {
                   <Helmet
                     defaultTitle={siteTitle}
                     titleTemplate={`%s - ${siteTitle}`}
-                    meta={[
-                      {
-                        name: "description",
-                        content:
-                          "Helsingin yliopiston kaikille avoin ja ilmainen ohjelmoinnin perusteet opettava verkkokurssi. Kurssilla perehdytään nykyaikaisen ohjelmoinnin perusideoihin sekä ohjelmoinnissa käytettävien työvälineiden lisäksi algoritmien laatimiseen. Kurssille osallistuminen ei vaadi ennakkotietoja ohjelmoinnista.",
-                      },
-                      {
-                        name: "keywords",
-                        content:
-                          "ohjelmointi, java, programming, CS1, MOOC, 2019, ohjelmointikurssi, avoin, ilmainen, helsingin yliopisto",
-                      },
-                    ]}
+                    // meta={[
+                    //   {
+                    //     name: "description",
+                    //     content:
+                    //       "Helsingin yliopiston kaikille avoin ja ilmainen ohjelmoinnin perusteet opettava verkkokurssi. Kurssilla perehdytään nykyaikaisen ohjelmoinnin perusideoihin sekä ohjelmoinnissa käytettävien työvälineiden lisäksi algoritmien laatimiseen. Kurssille osallistuminen ei vaadi ennakkotietoja ohjelmoinnista.",
+                    //   },
+                    //   {
+                    //     name: "keywords",
+                    //     content:
+                    //       "ohjelmointi, java, programming, CS1, MOOC, 2019, ohjelmointikurssi, avoin, ilmainen, helsingin yliopisto",
+                    //   },
+                    // ]}
                   />
                   <NavBar />
                   <ContentArea mobileMenuOpen={this.state.mobileMenuOpen}>
                     {children}
                   </ContentArea>
-                  <PointsBalloon />
+                  {/* <PointsBalloon /> */}
                   <Footer />
                 </Wrapper>
               </ThemeProvider>

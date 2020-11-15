@@ -7,8 +7,10 @@ hidden: false
 <hero-icon heroIcon='chap4'/>
 
 <text-box>
+
 Imagine a facial recognition system called MYFACE. MYFACE is used for security purposes in the airport. Usually it works perfectly, but one day it starts to miscategorize individuals as potentially dangerous. As a result, several innocent people are arrested. Would it be important to know why the system made all these mistakes? Should we be able to explain why it made mistakes? And why would this matter?
 -- picture --
+
 </text-box>
 
 Some contemporary machine learning systems are so-called “black box” systems, meaning we can’t really see how they work.  This “opacity”, or lack of visibility, can be a problem if  we use these systems to make decisions that have an effect on individuals.
@@ -110,3 +112,5 @@ Paradoxically, the ideal of openness can lean to harmful consequences, too. For 
 </text-box>
 
 In summary, while there is a need to develop more transparent practices for AI, there is also a need to  develop practices that can help us to avoid abuse. While transparency may help to mitigate ethical issues – such as fairness or accountability – it also creates ethically important risks. Too much openness in the wrong context may defeat the positive development of AI-enabled processes. Taken together, it is clear that the ideal of full transparency of algorithms should be carefully considered, and we will have to find a balance between security and transparency considerations.
+
+<quiz id="f94f13d3-3983-4d86-811c-881e1282c275"> </quiz>

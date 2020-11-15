@@ -85,11 +85,8 @@ class EndOfSubSection extends React.Component {
             .sort((a, b) => {
               return a.path > b.path ? 1 : -1
             })
-          console.log(chapters)
 
           const nextSectionPath = `/chapter-${currentChapter + 1}`
-          console.log(nextSectionPath)
-
           const nextSectionPages = value.all
             .filter((o) => o.path.startsWith(`${nextSectionPath}/`))
             .sort((a, b) => {
@@ -98,6 +95,7 @@ class EndOfSubSection extends React.Component {
 
               return a > b ? 1 : b > a ? -1 : 0
             })
+
           return (
             <div>
               {this.props.t("endReached")}{" "}
@@ -123,7 +121,6 @@ class EndOfSubSection extends React.Component {
                   </ButtonWrapper>
                 </Fragment>
               )}
-              <p>{this.props.t("rememberToCheckPoints")}</p>
             </div>
           )
         }}
