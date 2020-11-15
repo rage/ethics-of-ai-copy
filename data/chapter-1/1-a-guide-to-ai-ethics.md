@@ -9,13 +9,17 @@ hidden: false
 
 <title title='1) A guide to AI ethics'> </title>
 
+<styled-text>
 Ever since the birth of computation with Alan Turing, humans have put high hopes on the power of computers and artificial intelligence (AI). AI is expected to bring significant and diverse benefits to society – from greater efficiency and productivity to tackling a number of difficult global problems, such as climate change, poverty, disease, and conflict.
-
+<br/><br/>
 AI technologies shape our societies. They have an enormous impact on our daily lives.  At the same time, multiple legal and societal issues have revealed the potential of these technologies to produce undesirable impacts. Algorithms can enhance already existing biases. They can discriminate. They can threaten our security, manipulate us and have lethal consequences.
-
+<br/><br/>
 For these reasons, people need to explore the ethical, social and legal aspects of AI systems. There is a common call for the ethics of AI – meaning how are we to develop and use this technology in an ethically acceptable and sustainable way? What are the ethical and moral principles we should adopt and follow?
-
+<br/><br/>
 In this course, we'll take a look at the ethical issues related to contemporary AI, open up their background in philosophy and give them an interpretation in terms of computer and other sciences. The goal of course is to develop  skills for ethical thinking. The course provides a guide – or  a roadmap – on the ethically sustainable design, implementation and use of AI. It will introduce you to basic ethical concepts, their theoretical background, and their role in discussion on contemporary AI.
+
+</styled-text>
+
 
 <text-box icon="techIcon" background="rgba(246, 235, 232, 0.5)" name="A guide to AI ethics">
 

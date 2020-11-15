@@ -47,6 +47,11 @@ const Body = styled.div`
     max-width: 50%;
     margin-left: 20em;
   }
+
+  p{
+    font-size: 1.125rem;
+    line-height: 1.89;
+  }
 `
 
 const ImageBox = styled.img`

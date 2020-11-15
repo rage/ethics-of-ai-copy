@@ -91,6 +91,7 @@ import StartHero from "./Startpage/HeroSection"
 import ErrorHero from "./404page/index"
 import Title from "./Title"
 import BigFive from "./BigFive"
+import StyledText from "./StyledText"
 
 const mapping = {
   test: Test,
@@ -137,6 +138,7 @@ const mapping = {
   "error-hero": ErrorHero,
   "big-five": BigFive,
   "course-progress": CourseProgress,
+  "styled-text": StyledText,
   vocabulary: Vocabulary,
   notice: Notice,
   youtube: Youtube,

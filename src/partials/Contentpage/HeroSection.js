@@ -14,6 +14,7 @@ const HeroSection = styled.div`
   @media (max-width: 1000px) {
     padding: 4rem 2rem 2rem 3rem;
   }
+  margin-bottom: 5rem;
 `
 const Background = styled.div`
   background-color: green;
@@ -40,10 +41,10 @@ const TextWrapper = styled.div`
 `
 
 const HeroText = styled.div`
-  color: rgba(28, 59, 64, 1);
+  color: rgba(28, 59, 64, 0.8);
   font-size: 22px;
   font-weight: 450;
-  width: 60%;
+  width: 90%;
   display: grid;
 `
 
@@ -63,8 +64,8 @@ export default (props) => {
       <HeroSection>
         <TextWrapper>
           <H1>
-            <a style={{ color: "rgba(28, 59, 64, 0.5)" }}>{props.title}: </a>
-            <a style={{ color: "rgba(28, 59, 64, 1)" }}>{props.subtitle}</a>
+            <a style={{ color: "rgba(28, 59, 64)", fontFamily: "Work Sans"}}>{props.title}: </a>
+            <a style={{ color: "rgba(28, 59, 64)", fontFamily: "Work Sans"}}>{props.subtitle}</a>
           </H1>
           <HeroText>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam

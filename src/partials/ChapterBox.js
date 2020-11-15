@@ -96,10 +96,10 @@ const ChapterBox = (props) => (
         })
       return (
         <Wrapper>
-          <h3 style={{ textAlign: "center", marginBottom: "0.7em" }}>
+          <h2 style={{ textAlign: "center", marginBottom: "0.7em", color: "#3B4754", fontFamily: "Work Sans" }}>
             {" "}
             Chapter content{" "}
-          </h3>
+          </h2>
           <Body>
             {sectionPages.map((value, index) => {
               return (
