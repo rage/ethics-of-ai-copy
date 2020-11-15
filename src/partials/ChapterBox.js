@@ -44,11 +44,12 @@ const Image = styled.img`
 
 const ChapterParts = styled.div`
   margin-left: 0em;
-  padding: 1em;
+  padding: .8em 1em;
   list-style-type: none;
   color: black;
   text-decoration: none;
   border-radius: 5px;
+  margin-bottom: .4em;
 
   ${(props) =>
     props.currentPage &&
@@ -135,10 +136,11 @@ const ChapterBox = (props) => (
                     <p
                       style={{
                         verticalAlign: "top",
-                        marginLeft: "1em",
+                        /* marginLeft: "1em", */
                         fontSize: "18px",
                         display: "inline-block",
                         width: "80%",
+                        margin:".4em 0 .4em 1em"
                       }}
                     >
                       {value.title}
