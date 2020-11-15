@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+/* import React, { useContext } from "react"
 import { CourseStatusProvider } from "moocfi-quizzes"
 import { accessToken } from "../../services/moocfi"
 import CourseSettings from "../../../course-settings"
@@ -44,3 +44,4 @@ const CourseProgressVisualization = () => {
 }
 
 export default CourseProgressVisualization
+ */

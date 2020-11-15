@@ -7,33 +7,13 @@ import PagesContext from "../contexes/PagesContext"
 import { nthIndex } from "../util/strings"
 
 const Wrapper = styled.aside`
-  @media (min-width: 1px) {
-    padding: 3em 1em 7em 1em;
+    padding: 3em 2em 7em 2em;
     margin-bottom: 8em;
     background: rgba(165, 178, 166, 0.2);
     border-radius: 10px;
     position: relative;
-    width: 100%;
-  }
-  @media (min-width: 444px) {
-    padding: 3em 1em 6em 1em;
-  }
-  @media (min-width: 600px) {
-    padding: 3em 1em 6em 2em;
-    width: 50%;
-  }
-  @media (min-width: 870px) {
-    padding: 3em 1em 6em 2em;
-    width: 40%;
-  }
-  @media (min-width: 1100px) {
-    padding: 3em 5em 7em 5em;
-    width: 40%;
-  }
-  @media (min-width: 1500px) {
-    padding: 3em 5em 7em 5em;
-    width: 35%;
-  }
+    width: 500px;
+    max-height: 480px;
 `
 
 const Header = styled.h3`
@@ -73,12 +53,12 @@ const ChapterParts = styled.div`
   ${(props) =>
     props.currentPage &&
     `
-    background-color: #BFCAC0;
+    background-color: rgba(187, 198, 187, 0.8);
     border-radius: 5px;
     color: white;
 
     :hover {
-      background-color: #95C299 !important;
+      background-color: rgba(187, 198, 187) !important;
       color: white !important;
     }
   `}
@@ -158,7 +138,7 @@ const ChapterBox = (props) => (
                         marginLeft: "1em",
                         fontSize: "18px",
                         display: "inline-block",
-                        maxWidth: "60%",
+                        width: "80%",
                       }}
                     >
                       {value.title}

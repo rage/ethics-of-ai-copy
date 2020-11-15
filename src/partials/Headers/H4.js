@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const Heading = styled.div`
   & h4 {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: clamp(18px, 2vw, 26px);
     font-weight: 500;
     color: #202020;
