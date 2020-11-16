@@ -113,4 +113,22 @@ Paradoxically, the ideal of openness can lean to harmful consequences, too. For 
 
 In summary, while there is a need to develop more transparent practices for AI, there is also a need to  develop practices that can help us to avoid abuse. While transparency may help to mitigate ethical issues – such as fairness or accountability – it also creates ethically important risks. Too much openness in the wrong context may defeat the positive development of AI-enabled processes. Taken together, it is clear that the ideal of full transparency of algorithms should be carefully considered, and we will have to find a balance between security and transparency considerations.
 
-<quiz id="f94f13d3-3983-4d86-811c-881e1282c275"> </quiz>
+<quiz id="f94f13d3-3983-4d86-811c-881e1282c275">
+
+There is a need to translate algorithmic concepts into everyday language. Most people without a  background in computer science are not familiar with the basic vocabulary of AI. This has a direct impact on their ability to understand recent developments.
+
+<img src="./dog_agent.png" alt="dog agent" style="width: 50px; height: 50px">
+
+
+<img src="./robot_agent.png" alt="robot agent">
+
+
+<img src="./technical_agent.png" alt="technical agent" style="width: 50%">
+
+<br>
+
+Compare these three visualizations of reinforcement learning algorithms. Which one of them is the most understandable? Why?
+
+<br>
+
+ </quiz>
