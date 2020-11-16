@@ -4,7 +4,7 @@ import { normalizeExerciseId } from "../../util/strings"
 
 const Heading = styled.div`
   & h5 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: clamp(20px, 2vw, 20px);
     color: #26252a;
   }

@@ -48,7 +48,7 @@ const Body = styled.div`
     margin-left: 20em;
   }
 
-  p{
+  p {
     font-size: 1.125rem;
     line-height: 1.89;
   }

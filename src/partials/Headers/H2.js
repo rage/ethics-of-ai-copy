@@ -5,7 +5,7 @@ import styled from "styled-components"
 const Heading = styled.div`
   & h2 {
     text-align: center;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-weight: 600;
     font-size: clamp(20px, 4vw, 40px);
     line-height: 1.8rem;

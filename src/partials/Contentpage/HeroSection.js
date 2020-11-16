@@ -64,8 +64,12 @@ export default (props) => {
       <HeroSection>
         <TextWrapper>
           <H1>
-            <a style={{ color: "rgba(28, 59, 64)", fontFamily: "Work Sans"}}>{props.title}: </a>
-            <a style={{ color: "rgba(28, 59, 64)", fontFamily: "Work Sans"}}>{props.subtitle}</a>
+            <a style={{ color: "rgba(28, 59, 64)", fontFamily: "Work Sans" }}>
+              {props.title}:{" "}
+            </a>
+            <a style={{ color: "rgba(28, 59, 64)", fontFamily: "Work Sans" }}>
+              {props.subtitle}
+            </a>
           </H1>
           <HeroText>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
