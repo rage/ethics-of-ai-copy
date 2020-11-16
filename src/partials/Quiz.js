@@ -56,7 +56,9 @@ class QuizPartial extends React.Component {
           languageId={languageId}
           accessToken={accessToken()}
           backendAddress="https://quizzes.mooc.fi"
-        />
+        >
+          {this.props.children}
+        </Quiz>
       </StyledPaper>
     )
   }
