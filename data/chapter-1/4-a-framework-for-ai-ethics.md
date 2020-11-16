@@ -43,14 +43,19 @@ Lastly, we want to note that when speaking of AI and “the social”, AI ethics
 
 <quiz id="33ef4765-0577-4eed-b8e6-81a96c9a9804"> </quiz>
 
-<text-box name="">
+<text-box name="Exercise 3: GANs">
 
 Imagine that one day you end up in a heated conversation on Twitter. It starts with a university professor’s (@TuringLives) tweet on photo recreation models. He tells about a model which depixelated an input image of Finnish Prime Minister Sanna Marin into a photo of a middle-aged white male:
 
 <img src=../../src/assets/chap1-transf.png alt="Edited picture of Sanna Marin">
-Note: Artistic impression.
-Sanna Marin: Edited from original CC BY 4.0 Laura Kotila / Finnish Prime Minister’s Office
-Result image: CC BY-NC 4.0 NVIDIA Corporation
+
+Note: Artistic impression. </br>
+
+Sanna Marin: Edited from original CC BY 4.0 Laura Kotila / Finnish Prime Minister’s Office </br>
+
+Result image: CC BY-NC 4.0 NVIDIA Corporation </br>
+
+</br>
 
 What are photo (re)creation algorithms?
 
