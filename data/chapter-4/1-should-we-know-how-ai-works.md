@@ -66,7 +66,7 @@ The comprehensibility – or understandability – of an algorithm requires that
 However, it is notoriously difficult to translate algorithmically derived concepts into human-understandable concepts. In some countries, legislators have discussed whether public authorities should publish algorithms they use in automated decision-making in terms of programming codes. However, most people do not know how to make sense of programming codes. It is thus hard to see, how the transparency is increased by publishing codes.
 
 
-<img src=../../src/assets/example-code.svg alt="Example code">
+![Example code](./example-code.png)
 
 Would it be more helpful to publish the exact algorithms? In most cases, publishing the exact algorithms does not bring a lot of transparency either, especially if you do not have the access to the data used in a model.
 

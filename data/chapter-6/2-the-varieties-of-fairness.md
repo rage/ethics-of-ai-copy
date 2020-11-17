@@ -16,8 +16,13 @@ However, the principle of equality has been criticized for being “blind”. Th
 
 PICTURE: equality
 
- 1: Equality means, that everybody is treated the same.
-Equity means, that everybody gets what they need to be successful.
+**Equality** means, that everybody is treated the same.
+
+![Equality image](./equality.svg)
+
+**Equity** means, that everybody gets what they need to be successful.
+
+![Equity image](./equity.svg)
 
 
 On the other hand, there are also criteria that are not justifiable grounds for giving people different treatment. For example, we generally hold that it is unfair to give individuals special treatment on the basis of age, sex, race, or their religious preferences. What is discrimination, in other words?
