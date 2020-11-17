@@ -117,7 +117,6 @@ export default class CourseContentTemplate extends React.Component {
                   subtitle={frontmatter.title}
                   heroIcon={heroIcon}
                 ></HeroSection>
-
                 <Container>
                   <ContentWrapper>
 {/*                     <UpLink to={parentSectionPath}>

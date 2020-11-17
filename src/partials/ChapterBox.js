@@ -7,13 +7,13 @@ import PagesContext from "../contexes/PagesContext"
 import { nthIndex } from "../util/strings"
 
 const Wrapper = styled.aside`
-    padding: 3em 2em 7em 2em;
-    margin-bottom: 8em;
-    background: rgba(165, 178, 166, 0.2);
-    border-radius: 10px;
-    position: relative;
-    width: 500px;
-    max-height: 480px;
+  padding: 3em 2em 7em 2em;
+  margin-bottom: 8em;
+  background: rgba(165, 178, 166, 0.2);
+  border-radius: 10px;
+  position: relative;
+  width: 500px;
+  max-height: 480px;
 `
 
 const Header = styled.h3`
@@ -44,12 +44,12 @@ const Image = styled.img`
 
 const ChapterParts = styled.div`
   margin-left: 0em;
-  padding: .8em 1em;
+  padding: 0.8em 1em;
   list-style-type: none;
   color: black;
   text-decoration: none;
   border-radius: 5px;
-  margin-bottom: .4em;
+  margin-bottom: 0.4em;
 
   ${(props) =>
     props.currentPage &&
@@ -64,7 +64,7 @@ const ChapterParts = styled.div`
     }
   `}
   :hover {
-    background-color: #D6DCD6;
+    background-color: #d6dcd6;
     color: black;
   }
 `
@@ -96,7 +96,14 @@ const ChapterBox = (props) => (
         })
       return (
         <Wrapper>
-          <h2 style={{ textAlign: "center", marginBottom: "0.7em", color: "#3B4754", fontFamily: "Work Sans" }}>
+          <h2
+            style={{
+              textAlign: "center",
+              marginBottom: "0.7em",
+              color: "#3B4754",
+              fontFamily: "Work Sans",
+            }}
+          >
             {" "}
             Chapter content{" "}
           </h2>
@@ -140,7 +147,7 @@ const ChapterBox = (props) => (
                         fontSize: "18px",
                         display: "inline-block",
                         width: "80%",
-                        margin:".4em 0 .4em 1em"
+                        margin: ".4em 0 .4em 1em",
                       }}
                     >
                       {value.title}
