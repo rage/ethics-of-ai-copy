@@ -9,7 +9,7 @@ hidden: false
 Moving beyond ethical guidelines, how should AI ethics manifest in the future? What kind of conversations around the ethics of AI should we have, and what kind of activities and ways of doing ethics should be taken into practice? This is a difficult question to answer, but some hints can be found from looking at what is left outside the scope of the AI ethics guidelines we have been discussing so far.
 
 
-<text-box name="The AuroraAI program">
+<text-box name="The AuroraAI program" icon="techIcon">
 
 The Finnish National Artificial Intelligence Program AuroraAI (2020–2022) combines contemporary technology, well-designed service chains and a human-centric approach to good governance. One of its objectives is to link together public, private and third sector services and provide more efficient, flexible and tailored public services.
 
@@ -32,7 +32,7 @@ Fairness, accountability, and transparency have come to dominate the AI ethics c
 But, these values do not often appear in ethical guidelines. What, then, would it look like to take a perspective of care to AI ethics? According to the ethics of care, this means taking into consideration the complex dependencies and interdependencies between individuals, how the consequences of actions propagate and affect the most vulnerable, and how nature and ecology become entwined in these processes.
 
 
-<text-box name="Anatomy of An AI System">
+<text-box name="Anatomy of An AI System" icon="techIcon">
 
 An example of this kind of mapping can be seen in the [Anatomy of An AI System](https://anatomyof.ai/img/ai-anatomy-map.pdf) schematic created by researchers Crawford and Joler. The schematic shows the complex and complete interactions that go into creating an AI artefact. It expands outwards from just software to the material processes of creating an AI system; the markets, infrastructures and geological processes involved. This reveals ethically relevant aspects that would otherwise be obscured by the lens provided by AI ethics: the ecological damages of mining and the labor conditions of data processing, for example.
 

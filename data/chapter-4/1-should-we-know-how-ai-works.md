@@ -9,6 +9,7 @@ hidden: false
 <text-box>
 
 Imagine a facial recognition system called MYFACE. MYFACE is used for security purposes in the airport. Usually it works perfectly, but one day it starts to miscategorize individuals as potentially dangerous. As a result, several innocent people are arrested. Would it be important to know why the system made all these mistakes? Should we be able to explain why it made mistakes? And why would this matter?
+
 -- picture --
 
 </text-box>
@@ -22,11 +23,11 @@ Individuals have a right to know how critical decisions – such as who gets acc
 
 Transparency is a property of a system that makes it possible to get certain information regarding a system’s inner workings. But what information that is, and whether it is ethically relevant, depends largely on the ethical issue we are trying to answer. Transparency itself is ethically neutral and is not an ethical concept. Instead, it constitutes an ideal. Transparency is something that can manifest in many different ways, and something that can present a solution for underlying ethical questions. In this sense,  transparency is relevant at least to the three following issues:
 
- 1. The justification of decisions. Good governance in public or private sectors involves non-arbitrariness of decisions. This is applied to any kind of decision-making that has an ethically or legally relevant effect on individuals. Non-arbitrariness means access to justifications about “why was this decision reached, and on what grounds?” Furthermore, especially in the case of public governance, the capacity to contest and appeal are crucial. This represents a demand to right wrongs.
+**1) The justification of decisions.** Good governance in public or private sectors involves non-arbitrariness of decisions. This is applied to any kind of decision-making that has an ethically or legally    relevant effect on individuals. Non-arbitrariness means access to justifications about “why was this decision reached, and on what grounds?” Furthermore, especially in the case of public governance, the capacity to   contest and appeal are crucial. This represents a demand to right wrongs.
 
- 2. A right to know. According to human rights, people are entitled to have explanations on how decisions were made so that they can maintain genuine agency, freedom and privacy (for more on human rights, see chapter 5). Freedom entails the right to get answers to questions such as “How am I being tracked? What kind of inferences are being made about me? And how, exactly, have the inferences about me been made?”
+**2) A right to know. According to human rights**, people are entitled to have explanations on how decisions were made so that they can maintain genuine agency, freedom and privacy (for more on human rights, see chapter 5). Freedom entails the right to get answers to questions such as “How am I being tracked? What kind of inferences are being made about me? And how, exactly, have the inferences about me been made?”
 
- 3. A moral obligation to understand the consequences of our actions. As a community, we also have a responsibility for managing risks. There is a moral obligation, up to some reasonable level, to understand and predict the consequences of the kinds of technologies one brings into the world. That is, saying “we can’t understand now what it will do” is not a valid argument for unleashing a system that causes harm. Instead, it is our moral duty to explore the possible risks.
+**3) A moral obligation to understand the consequences of our actions**. As a community, we also have a responsibility for managing risks. There is a moral obligation, up to some reasonable level, to understand and predict the consequences of the kinds of technologies one brings into the world. That is, saying “we can’t understand now what it will do” is not a valid argument for unleashing a system that causes harm. Instead, it is our moral duty to explore the possible risks.
 
 These three points can all be summarized as calls for sufficient information. Do we know whether and to what extent this algorithmic decision is justified? Do I know how inferences about me are made? To what extent I am responsible for the actions of the system, and how much I should know about the inner workings of the system to be able to take that responsibility?
 
@@ -42,7 +43,7 @@ There are many open questions regarding what constitutes transparency or explain
 
 As a property of a system, transparency addresses how a model works or functions internally. Transparency is further divided into “simulatability” (an understanding of the functioning of the model), “decomposability” (understanding of the individual components), and algorithmic transparency (visibility of the algorithms).
 
-<text-box name="What makes a system a “black box”?">
+<text-box name="What makes a system a “black box”?" icon="chap4">
 
 Complexity. In contemporary AI-systems, operation of a neural network is encoded in thousands, or even millions, of numerical coefficients. Typically the system learns their values at the training phase. Because the operation of the neural network depends on the complicated interactions between these values, it is practically impossible to understand how the network works even if all the parameters are known.
 Difficulty of developing explainable solutions. Even if the used AI models support some level of explainability, additional development is required to build explainability to the system. It may be difficult to create a user experience for careful yet easily understandable explanations for the users.
@@ -84,7 +85,7 @@ The fact that comprehensibility is based on subject and culture-dependent compon
 Moreover, much is dependent on the degree of data or algorithmic literacy e.g. the knowledge of contemporary technologies. In some cultures, the vocabulary of contemporary technology is more familiar, but in many others they may be completely novel. To increase the understandability, there is clearly a need for significant educational efforts in improving algorithmic literacy – for example on “computational thinking” (Heintz, Mannila, & Färnqvist, 2016). This user literacy will have a direct effect on transparency in terms of the ordinary users’ basic understanding of AI systems. It may actually provide the most efficient and practical way to make the boxes less black for many people.
 
 
-<text-box name="How to make models more transparent?">
+<text-box name="How to make models more transparent?" icon="exerIcon">
 
 The black box problem of artificial intelligence is not new. Providing transparency for machine learning models is an area of active research. Roughly speaking, there are five main approaches:
 

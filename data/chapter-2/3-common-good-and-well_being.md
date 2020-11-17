@@ -8,7 +8,7 @@ hidden: false
 
 Despite the problems outlined in the previous section, the principles of utilitarianism may help us to consider the immediate and the less immediate consequences of our actions. One should remember that in real life, defining “common good” requires a diversity of viewpoints.
 
-<text-box name='What is "well-being"?'>
+<text-box name='What is "well-being"?' icon="chap2">
 
 Often, the term “common good” is taken to be synonymous with “well-being”. But what is well-being? The roots of well-being research are in ancient Greece, where philosophers such as Aristotle focused on how to achieve “the good life”. Since then, the search for the good life has been a constant topic handled by different disciplines. Today, research on fields such as in psychology, economics, and social sciences addresses well-being in terms of "the biological, personal, relational, institutional, cultural, and global dimensions of life". These dimensions cover factors such as physical and mental vitality, social satisfaction, and a sense of personal achievement and fulfillment.
 

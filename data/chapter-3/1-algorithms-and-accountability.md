@@ -6,7 +6,7 @@ hidden: false
 
 <hero-icon heroIcon='chap3'/>
 
-<text-box name="">
+<text-box name="" icon="techIcon">
 
 In the city of Amsterdam,  parking control is partially automated and in use across 150,000 street parking spaces in the city. The service follows a three step process:
 

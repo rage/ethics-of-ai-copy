@@ -6,7 +6,7 @@ hidden: false
 
 <hero-icon heroIcon='chap5'/>
 
-<text-box>
+<text-box icon="chap5">
 
 During the COVID-19 pandemic, governments have struggled to find effective policy-making strategies for exiting lockdown in a safe way. According to epidemiologists, opening up society requires efficient tracking, tracing, and monitoring. In many cases, this has led to the utilization of various tracing and tracking apps. These apps have raised several concerns about privacy and security. Critics have seen them as the first steps towards the algorithmic surveillance of citizens.
 

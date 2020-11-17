@@ -11,7 +11,7 @@ Privacy concerns are raised, for example, by digital records which contain infor
 
 Ethically, privacy is related to personal autonomy and integrity. Following the principles set out by John Locke, a right to control our own personal lives has been seen as central to our autonomy. If that right is taken away, it violates something fundamental about our psychological and moral integrity.
 
-<text-box>
+<text-box icon="chap5">
 
 Many have proposed the principle that people should have control over their own data – and that data concerning them should not be allowed to be used to harm or discriminate against them. According to some, this right to have “full control over one’s own data” should be a human right.
 
@@ -24,7 +24,7 @@ Wachter and Mittelstadt (2019) propose that the right for the control of your ow
 <img src=../../src/assets/london-zoom.svg alt="london zoomed image">
 
 
-<text-box name="The GDPR">
+<text-box name="The GDPR" icon="chap5">
 
 The General Data Protection Regulation (GDPR) is a legal framework. It sets guidelines for the collection and processing of personal data from individuals who live in the European Union.
 
@@ -79,7 +79,7 @@ However, the plausibility of a future of superintelligent AI has been called int
 #### 2) Safety in AI
 The second interpretation of safety in AI is the practical question of designing systems which behave in a safe and predictable manner. As AI systems are integrated into ever-widening areas of life, it becomes more important that the systems are well designed to account for the complexity of the world. A very practical and already existing example of this is lane guard technology, which uses machine learning to prevent cars from veering outside of their lanes. Machine learning researchers have found that some lane detection algorithms are quite easy to confuse with rogue road markings, causing the car to veer off the road by following the fake lane markings.
 
-<text-box>
+<text-box icon="techIcon">
 
 One could argue that the right to safety obligates technology producers to account for these kinds of scenarios: the fact that the environment was not ideal does not excuse the system malfunctioning. Machine learning researchers call this feature robustness – the capacity of the system to to work predictably under new and unpredictable circumstances.
 
@@ -89,7 +89,7 @@ The ethically – and legally – significant question is “what are the accept
 
 Nonetheless, the progressive zeal that is attached to AI future visions has brought up questions regarding the limits of safety and the taming of environmental uncertainty in a way that is wholly new. An example of this can be found in the discussion around autonomous vehicles.
 
-<text-box name="Case: Caged pavements: AI safety and environmental uncertainty ">
+<text-box name="Case: Caged pavements: AI safety and environmental uncertainty" icon="chap5">
 
 Caged pavements: AI safety and environmental uncertainty
 A difficult problem for autonomous vehicles is the complex unpredictability of the urban traffic environment. While AI-driven vehicles are constantly being developed to include better ways to model their surroundings, even a small group of individuals – all performing their own movement goals within a shared space – will create a constellation that is difficult to predict. When technical solutions in the cars are too far off, another way to approach the issue is to contain the uncertainty in the environment.
@@ -107,7 +107,7 @@ Robotization can provide an example of this concept in practice. The work of han
 
 Another way certain forms of safety are produced through AI is through automated surveillance. AI-powered surveillance has manifested in many domains: in public spaces, in law-enforcement work through predictive policing, and in domestic life through products like Amazon’s Ring. Although surveillance cameras (CCTV) have existed and dominated public and semi-public spaces for decades, the ACLU argues that automation brings about a big qualitative shift in how surveillance functions. But what is so different?
 
-<text-box>
+<text-box icon="techIcon">
 
 “Imagine a surveillance camera in a typical convenience store in the 1980s. That camera was big and expensive, and connected by a wire running through the wall to a VCR sitting in a back room. There have been significant advances in camera technology in the ensuing decades — in resolution, digitization, storage, and wireless transmission — and cameras have become cheaper and far more prevalent.
 
@@ -134,7 +134,7 @@ With the disparate levels of policing, disparate methods of enforcement, and dis
 #### 4) A safe and healthy environment: AI and climate change
 Safety also means the right to a safe and healthy environment. Nowadays, this right is threatened by  climate change. The effects of climate change are already visible – storms, droughts, fires, and flooding have become more common, more frequent and more devastating. Global ecosystems are changing. They all impact the environment on which our existence depends. The report on climate change (2018) estimated that the world will face catastrophic consequences unless global greenhouse gas (GHG) emissions are eliminated within thirty years.
 
-<text-box>
+<text-box icon="chap5">
 
 AI could be a powerful tool for tackling climate change. It can be used as a resource for monitoring, understanding, and predicting the consequences of climate change. AI can accelerate the development of more ecologically sustainable societies. It can be used to design green cities, environment-friendly transportation, to reduce the ecological impact of industry, and design equipment that can help study and maintain the diversity of ecosystems.
 

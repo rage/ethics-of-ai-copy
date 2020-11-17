@@ -26,7 +26,7 @@ The important thing to remember here, is that discrimination is not the same as 
 
 Nonetheless, AI systems can partake in discriminatory practices which do not stem from bias in the AI system. Rather, we have to expand our object of investigation from the minutiae of the AI model, to the whole system of institutions it takes part in.
 
-<text-box name="">
+<text-box name="" icon="chap6">
 
 In early 2018, researchers from Stanford Graduate School of Business published a white-paper detailing a deep learning system which could distinguish between gay and heterosexual men with an accuracy of 81% based on a single photo of their face. The findings have been controversial, to say the least, and for many different reasons. Critics have raised worries about the resurrection of the pseudoscience of physiognomy, which has a deep rooted connection to historical racist injustices. There has also been suspicions that the system, rather than picking up on some subtle genetic signifiers as was claimed, is actually tracking how people tend to groom and take photos of themselves.
 

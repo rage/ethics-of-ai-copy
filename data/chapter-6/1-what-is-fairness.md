@@ -6,7 +6,7 @@ hidden: false
 
 <hero-icon heroIcon='chap6'/>
 
-<text-box name="">
+<text-box name="" icon="chap6">
 
 For this thought experiment, let’s assume that due to the COVID-19 pandemic, all matricular examinations in Finnish upper secondary schools were cancelled. Instead of an exam, an alternative method had to be designed and implemented to determine the qualification grades to be given to students for that year. Students are accepted to university on the basis of their grades, so the grades of matricular examinations are extremely important.
 

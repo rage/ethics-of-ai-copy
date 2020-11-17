@@ -25,9 +25,9 @@ The system was found to penalize any CVs which indicated the applicant to be fem
 
 First, it is important to note that the word discrimination can be used in a  morally agnostic sense (“can you discriminate between these two colors?”). Throughout this section, we mean the morally loaded sense of the word. But when is discrimination morally suspect? It may seem a silly question to ask. After all, most people would agree that we have a rather clear intuitive sense of what discrimination is. Hearing the word embedding example above, we have no difficulty in pointing to the offending word association and declaring “This is discriminatory!” Putting into words what it is which makes it discriminatory though, turns out to be a slippery task. But let’s start with writing out our intuitions, and see where we go from there:
 
-<text-box>
+<text-box icon="chap6" name="Definition 1: Discrimination">
 
-**Definition #1**: Discrimination is a difference of treatment of individuals based on their membership in a group.
+Discrimination is a difference of treatment of individuals based on their membership in a group.
 
 </text-box>
 
@@ -37,9 +37,9 @@ Consider, for example, driver’s licenses. In Finland, driver’s licenses are 
 
 Consider, then, a café which only serves people wearing green shirts. This is most definitely differential treatment based on group membership, and conducive of a kind of harm, but we would not consider this discrimination in the moralistic sense either. We might find it a strange policy, but not a morally problematic one.  Thus, it is not just group membership we are interested in, but which groups.
 
-<text-box>
+<text-box name="Definition 2: Discrimination" icon="chap6">
 
-**Definition** #2: Discrimination is differential treatment based on perceived membership in a socially salient group, which causes social harm. (Lippert-Rasmussen 2014)
+Discrimination is differential treatment based on perceived membership in a socially salient group, which causes social harm. (Lippert-Rasmussen 2014)
 
 </text-box>
 
@@ -74,7 +74,7 @@ With the concept of representational harms, we are able to identify the gender-s
 
 -Melissa Terras
 
-<text-box variant='hint' name='Three different meanings of “bias”'>
+<text-box name='Three different meanings of “bias”' icon="chap6">
 
 In **statistics**: discrepancy of a sample statistic vs the true statistic of the population.
 
