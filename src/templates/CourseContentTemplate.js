@@ -111,7 +111,6 @@ export default class CourseContentTemplate extends React.Component {
         >
           <LoginStateContextProvider>
             <Layout>
-              <Fragment>
                 <HeroSection
                   title={parentSectionName}
                   subtitle={frontmatter.title}
@@ -119,17 +118,12 @@ export default class CourseContentTemplate extends React.Component {
                 ></HeroSection>
                 <Container>
                   <ContentWrapper>
-{/*                     <UpLink to={parentSectionPath}>
-                      <StyledIcon icon={icon} />
-                      {parentSectionName}
-                    </UpLink> */}
                     <ChapterBox />
                     {renderAst(htmlAst)}
                     <EndOfSubSection />
                   </ContentWrapper>
                 </Container>
                 {/*  <CoursePageFooter />*/}
-              </Fragment>
             </Layout>
           </LoginStateContextProvider>
         </PagesContext.Provider>

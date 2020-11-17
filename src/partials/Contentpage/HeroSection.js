@@ -67,7 +67,7 @@ const TextWrapper = styled.div`
 
 const HeroText = styled.div`
   color: rgba(28, 59, 64, 0.8);
-  font-size: 22px;
+  font-size: 1.4rem;
   font-weight: 450;
   width: 90%;
   display: grid;
