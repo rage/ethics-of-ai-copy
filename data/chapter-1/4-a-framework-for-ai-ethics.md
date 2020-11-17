@@ -89,6 +89,12 @@ GANs can be used for many purposes, such as image-to-image translation tasks tra
 
 <br>
 
+To see how GANs work, please go to: http://gandissect.res.ibm.com/ganpaint.html
+Explore the tool.
+
+Next, you’ll enter into the Twitter discussion. Your task is to answer these tweets by formulating your own view on this matter.
+
+<br>
 
 ![Twitter chat](./twitter-exercise.svg)
 
