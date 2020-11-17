@@ -25,6 +25,11 @@ grid-template-columns: repeat(3, 23rem);
 `}; */
 
 const HeroSection = styled.div`
+background-image: url(${heroSvg});
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 60vh;
   padding: 4rem 2rem 0rem 10rem;
   display: flex;
   flex-direction: row;
@@ -34,9 +39,9 @@ const HeroSection = styled.div`
   @media (max-width: 1000px) {
     padding: 4rem 2rem 2rem 3rem;
   }
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
 `
-const Background = styled.div`
+/* const Background = styled.div`
   background-color: green;
   background-image: url(${heroSvg});
   background-position: center;
@@ -47,7 +52,7 @@ const Background = styled.div`
   height: 100%;
   position: absolute;
   z-index: -1;
-`
+` */
 const TextWrapper = styled.div`
   padding: 10rem 0rem 4rem 0rem;
   flex-direction: column;
@@ -85,7 +90,7 @@ const Border = styled.div`
 export default (props) => {
   return (
     <div>
-      <Background />
+ {/*      <Background /> */}
       <HeroSection>
         <TextWrapper>
           <H2>
