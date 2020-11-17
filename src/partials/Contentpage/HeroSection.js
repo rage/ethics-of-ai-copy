@@ -6,24 +6,6 @@ import ImageImporter from "./ImageImporter"
 import {respond} from "../../_respond"
 import H2 from "../Headers/H2"
 
-/* ${respond.xs`
-
-padding: 2rem 4rem;
-grid-template-columns: minmax(20rem,100%);
-`} ${respond.sm`
-
-width: 100%;
-padding: 0;
- grid-template-columns: repeat(2, minmax(15rem, 20rem));
-`} ${respond.md`
-
-padding: 2rem 2rem;
-grid-template-columns: repeat(2, 20rem);
-`} ${respond.lg`
-
-grid-template-columns: repeat(3, 23rem);
-`}; */
-
 const HeroSection = styled.div`
 background-image: url(${heroSvg});
 background-position: center;
@@ -41,18 +23,6 @@ height: 60vh;
   }
   margin-bottom: 4rem;
 `
-/* const Background = styled.div`
-  background-color: green;
-  background-image: url(${heroSvg});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.3;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-` */
 const TextWrapper = styled.div`
   padding: 10rem 0rem 4rem 0rem;
   flex-direction: column;
@@ -85,12 +55,10 @@ const Border = styled.div`
   width: 95%;
 `
 
-/* const H1 = styled.h1`` */
 
 export default (props) => {
   return (
     <div>
- {/*      <Background /> */}
       <HeroSection>
         <TextWrapper>
           <H2>
