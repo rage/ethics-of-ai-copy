@@ -33,7 +33,6 @@ const Wrapper = styled.aside`
     }
 `
 const Body = styled.div`
-
   @media (min-width: 1px) {
     padding-bottom: 0.5rem;
     width: 70%;

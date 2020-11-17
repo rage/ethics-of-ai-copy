@@ -111,19 +111,19 @@ export default class CourseContentTemplate extends React.Component {
         >
           <LoginStateContextProvider>
             <Layout>
-                <HeroSection
-                  title={parentSectionName}
-                  subtitle={frontmatter.title}
-                  heroIcon={heroIcon}
-                ></HeroSection>
-                <Container>
-                  <ContentWrapper>
-                    <ChapterBox />
-                    {renderAst(htmlAst)}
-                    <EndOfSubSection />
-                  </ContentWrapper>
-                </Container>
-                {/*  <CoursePageFooter />*/}
+              <HeroSection
+                title={parentSectionName}
+                subtitle={frontmatter.title}
+                heroIcon={heroIcon}
+              ></HeroSection>
+              <Container>
+                <ContentWrapper>
+                  <ChapterBox />
+                  {renderAst(htmlAst)}
+                  <EndOfSubSection />
+                </ContentWrapper>
+              </Container>
+              {/*  <CoursePageFooter />*/}
             </Layout>
           </LoginStateContextProvider>
         </PagesContext.Provider>
