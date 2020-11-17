@@ -5,6 +5,7 @@ hidden: false
 ---
 
 <hero-icon heroIcon='chap1'/>
+<styled-text>
 
 Before looking at AI ethics, we need to set out what ethics means in the first place.
 
@@ -12,6 +13,8 @@ Ethics seeks to answer questions like “what is good or bad?”, “what is rig
 justice, well-being or equality”. As a discipline, ethics involves systematizing, defending, and recommending
 concepts of right and wrong conduct by using [conceptual analysis](https://en.wikipedia.org/wiki/Philosophical_analysis), [thought experiments](https://plato.stanford.edu/entries/thought-experiment/), and [argumentation](https://iep.utm.edu/argument/). (If you want to know more about philosophical reasoning, see this [video](https://www.youtube.com/watch?v=NKEhdsnKKHs) by Crash Course
 Philosophy.)
+
+<styled-text>
 
 <text-box icon="philIcon" background="rgba(246, 235, 232, 0.5)" name="The three subfields of ethics">
 
@@ -22,6 +25,7 @@ Philosophy.)
 **3) Applied ethics** concerns what a moral agent (defined as someone who can judge what is right and wrong and be held accountable) is obligated or permitted to do in a specific situation or a particular domain of action.
 
 </text-box>
+<styled-text>
 
 AI ethics is a subfield of applied ethics. Nowadays, AI ethics is considered part of the ethics of technology specific to robots and other artificially intelligent entities. It concerns the questions of how developers, manufacturers, authorities and operators should behave in order to minimize the ethical risks that can arise from AI in society, either from design, inappropriate application, or intentional misuse of the technology.
 
@@ -33,6 +37,8 @@ systems
 justice and educational systems
 * longer-term concerns about the fundamental ethical goals of developing and implementing AI in
 society
+
+<styled-text>
 
 <text-box icon="bgIcon" background="rgba(224, 234, 235, 0.5)" name="From machine ethics to the ethics of AI">
 
@@ -52,4 +58,12 @@ Second Laws.
 
 </text-box>
 
+
+<styled-text>
+
 These days, AI ethics is a more general field, and closer to engineering ethics: we don’t have to assume the machine is an ethical agent to analyze its ethics. Research in the field of AI ethics ranges from reflections on how ethical or moral principles can be implemented in autonomous machines to the empirical analysis on how trolley problems are solved, the systematic analysis of ethical principles such as fairness, and the critical evaluation of ethical frameworks.
+
+These days, AI ethics is a more general field, and closer to engineering ethics: we don’t have to assume the machine is an ethical agent to analyze its ethics. Research in the field of AI ethics ranges from reflections on how ethical or moral principles can be implemented in autonomous machines to the empirical analysis on how trolley problems are solved, the systematic analysis of ethical principles such as fairness, and the critical evaluation of ethical frameworks.
+
+
+</styled-text>

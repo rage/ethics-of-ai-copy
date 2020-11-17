@@ -120,10 +120,10 @@ export default class CourseContentTemplate extends React.Component {
 
                 <Container>
                   <ContentWrapper>
-                    <UpLink to={parentSectionPath}>
+{/*                     <UpLink to={parentSectionPath}>
                       <StyledIcon icon={icon} />
                       {parentSectionName}
-                    </UpLink>
+                    </UpLink> */}
                     <ChapterBox />
                     {renderAst(htmlAst)}
                     <EndOfSubSection />

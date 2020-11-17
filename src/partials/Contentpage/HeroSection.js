@@ -3,6 +3,26 @@ import styled from "styled-components"
 
 import heroSvg from "../../images/hero-svg.svg"
 import ImageImporter from "./ImageImporter"
+import {respond} from "../../_respond"
+import H2 from "../Headers/H2"
+
+/* ${respond.xs`
+
+padding: 2rem 4rem;
+grid-template-columns: minmax(20rem,100%);
+`} ${respond.sm`
+
+width: 100%;
+padding: 0;
+ grid-template-columns: repeat(2, minmax(15rem, 20rem));
+`} ${respond.md`
+
+padding: 2rem 2rem;
+grid-template-columns: repeat(2, 20rem);
+`} ${respond.lg`
+
+grid-template-columns: repeat(3, 23rem);
+`}; */
 
 const HeroSection = styled.div`
   padding: 4rem 2rem 0rem 10rem;
@@ -14,7 +34,7 @@ const HeroSection = styled.div`
   @media (max-width: 1000px) {
     padding: 4rem 2rem 2rem 3rem;
   }
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 `
 const Background = styled.div`
   background-color: green;
@@ -24,7 +44,7 @@ const Background = styled.div`
   background-size: cover;
   opacity: 0.3;
   width: 100%;
-  height: 90%;
+  height: 100%;
   position: absolute;
   z-index: -1;
 `
@@ -38,6 +58,11 @@ const TextWrapper = styled.div`
     width: 90%;
     padding-top: 5rem;
   }
+
+  ${respond.sm`
+  width: 100%;
+  padding: 0;
+`}
 `
 
 const HeroText = styled.div`
@@ -55,7 +80,7 @@ const Border = styled.div`
   width: 95%;
 `
 
-const H1 = styled.h1``
+/* const H1 = styled.h1`` */
 
 export default (props) => {
   return (
@@ -63,10 +88,10 @@ export default (props) => {
       <Background />
       <HeroSection>
         <TextWrapper>
-          <H1>
+          <H2>
             <a style={{ color: "rgba(28, 59, 64)", fontFamily: "Work Sans"}}>{props.title}: </a>
             <a style={{ color: "rgba(28, 59, 64)", fontFamily: "Work Sans"}}>{props.subtitle}</a>
-          </H1>
+          </H2>
           <HeroText>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam

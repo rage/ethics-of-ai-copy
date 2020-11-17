@@ -32,19 +32,20 @@ const Wrapper = styled.aside`
     }
 `
 const Body = styled.div`
+
   @media (min-width: 1px) {
     padding-bottom: 0.5rem;
-    max-width: 80%;
+    width: 70%;
     margin-left: 2em;
   }
   @media (min-width: 425px) {
     padding-bottom: 0.5rem;
-    max-width: 80%;
+    width: 70%;
     margin-left: 8em;
   }
   @media (min-width: 900px) {
     padding-bottom: 0.5rem;
-    max-width: 50%;
+    width: 70%;
     margin-left: 20em;
   }
 
