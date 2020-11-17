@@ -7,18 +7,19 @@ import chap5 from "../images/chap-5.svg"
 import chap6 from "../images/chap-6.svg"
 
 const Wrapper = styled.div`
-  background-color: rgba(231, 204, 235, 0.5);
+  background-color: rgba(231, 204, 235, 0.3);
   padding-top: 5em;
   padding-bottom: 5em;
   width: 100vw;
   left: calc(-50vw + 50%);
   position: relative;
+  text-align: center;
 `
 
 const BigFive = () => {
   return (
     <Wrapper>
-      <div style={{ marginLeft: "3em", marginRight: "10em" }}>
+      <div style={{ marginLeft: "auto", marginRight: "auto", width: "80%" }}>
         <img
           src={chap2}
           alt="big five chap-2"
