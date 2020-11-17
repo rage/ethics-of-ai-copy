@@ -8,7 +8,7 @@ import { nthIndex } from "../util/strings"
 
 const Wrapper = styled.aside`
   padding: 3em 2em 7em 2em;
-  margin-bottom: 8em;
+  margin-bottom: 5em;
   background: rgba(165, 178, 166, 0.2);
   border-radius: 10px;
   position: relative;

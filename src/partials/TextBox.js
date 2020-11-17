@@ -10,6 +10,7 @@ import ethicsIcon from "../images/ethics-icon.svg"
 const Wrapper = styled.aside`
   @media (min-width: 711px) {
     width: 100vw;
+    padding-right: 23rem !important;
   }
   @media (min-width: 425px) {
     width: 100vw;
