@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import chap1 from "../../images/chap-1-bigmap.svg"
+import chap1 from "../../images/chap-1.svg"
 import techIcon from "../../images/tech-icon.svg"
 import philIcon from "../../images/phil-icon.svg"
 import bgIcon from "../../images/bg-icon.svg"

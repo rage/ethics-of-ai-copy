@@ -11,7 +11,7 @@ background-image: url(${heroSvg});
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-height: 60vh;
+height: 100%;
   padding: 4rem 2rem 0rem 10rem;
   display: flex;
   flex-direction: row;
