@@ -29,7 +29,7 @@ const Wrapper = styled.aside`
     margin-bottom: 5rem;
     margin-top: 4rem;
     background: ${(props) => props.color || "rgba(246, 235, 232, 0.5)"};
-    padding-left: 4rem;
+    padding-left: 1rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
     min-height: 17em;
@@ -77,7 +77,7 @@ const ImageBox = styled.img`
     -webkit-transform: translate(18%, 0);
   }
   @media (min-width: 425px) {
-    top: 4.2em;
+    top: 2em;
     left: 0em;
     width: 110px;
     heigth: auto;
@@ -85,7 +85,7 @@ const ImageBox = styled.img`
     -webkit-transform: translate(18%, 0);
   }
   @media (min-width: 900px) {
-    top: 4em;
+    top: 2em;
     left: 0em;
     width: 140px;
     heigth: auto;
