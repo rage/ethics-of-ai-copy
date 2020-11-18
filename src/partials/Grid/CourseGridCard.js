@@ -9,7 +9,7 @@ import Icon5 from "../../assets/chap-5.svg"
 import Icon6 from "../../assets/chap-6.svg"
 
 const svgs = {
-  chapter01: <Icon1 />,
+  chapter01: <Icon1 width="130px"/>,
   chapter02: <Icon2 />,
   chapter03: <Icon3 />,
   chapter04: <Icon4 />,
