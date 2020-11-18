@@ -24,7 +24,9 @@ Generally, AI ethics have been primarily concerned with the principle of non-mal
 
 <text-box name="">
 
-Critics claim that the emphasis on non-maleficence makes ethics a matter of finding technical solutions for technical problems. Moral problems are seen as things that can be solved by technical “fixes”, or by good design alone. The wider ethical and societal context in which technical systems are embedded is forgotten.  Many significant issues that direct the control, governance and societal dimensions of AI are ignored. Technology researcher Evgeny Morozov calls this “tech solutionism” – the conviction that problems caused by technology can always be fixed by more technology.
+Critics claim that the emphasis on non-maleficence makes ethics a matter of finding technical solutions for technical problems. Moral problems are seen as things that can be solved by technical “fixes”, or by good design alone. The wider ethical and societal context in which technical systems are embedded is forgotten.  Many significant issues that direct the control, governance and societal dimensions of AI are ignored.
+
+Technology researcher Evgeny Morozov calls this “tech solutionism” – the conviction that problems caused by technology can always be fixed by more technology.
 
 </text-box>
 
