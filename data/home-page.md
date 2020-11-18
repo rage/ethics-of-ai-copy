@@ -29,3 +29,5 @@ banner: false
 </about-section>
 
 <sponsor-section></sponsor-section>
+
+<course-progress />

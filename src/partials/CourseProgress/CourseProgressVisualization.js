@@ -11,7 +11,7 @@ import styled from "styled-components"
 import ProgressBar from "./ProgressBar"
 
 const ProgressContainer = styled.div`
-  margin: 5rem 0;
+  margin: 5rem 10rem;
 `
 
 const CourseProgressVisualization = () => {

@@ -3,11 +3,10 @@ import { LinearProgress } from "@material-ui/core"
 import styled from "styled-components"
 
 const StyledLinearProgress = styled(LinearProgress)`
-  height: 15px;
+  height: 30px;
   flex: 1;
-  position: relative;
   bottom: -4px;
-  border-radius: 5px;
+  border-radius: 100px;
 `
 
 const LinearProgressContainer = styled.div`
@@ -16,6 +15,10 @@ const LinearProgressContainer = styled.div`
 `
 const Label = styled.div`
   min-width: 125px;
+  font-weight: 500;
+  margin-right: 1rem;
+  display: flex;
+  align-self: center;
 `
 
 const ProgresssBar = ({ n, max, label }) => {

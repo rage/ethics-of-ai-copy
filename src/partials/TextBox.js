@@ -58,7 +58,7 @@ const Body = styled.div`
   @media (min-width: 900px) {
     padding-bottom: 0.5rem;
     width: auto;
-    margin-left: 20em;
+    margin-left: 15em;
   }
 
   p {
@@ -78,7 +78,7 @@ const ImageBox = styled.img`
   }
   @media (min-width: 425px) {
     top: 4.2em;
-    left: .5em;
+    left: 0em;
     width: 110px;
     heigth: auto;
     position: absolute;
@@ -86,8 +86,8 @@ const ImageBox = styled.img`
   }
   @media (min-width: 900px) {
     top: 4em;
-    left: 2em;
-    width: 180px;
+    left: 0em;
+    width: 140px;
     heigth: auto;
     position: absolute;
     -webkit-transform: translate(18%, 0);
