@@ -6,6 +6,8 @@ hidden: false
 
 <hero-icon heroIcon='chap3'/>
 
+<styled-text>
+
 Accountability is often taken as a legal and ethical obligation on an individual or organisation to accept responsibility for the use of AI systems, and to disclose the results in a transparent manner. This formulation presupposes a “power-relation”. It individuates who is in control and who is to be blamed.
 
 However, it has turned out to be notoriously difficult to set specific criteria on how, exactly, the responsibilities should be individuated, directed and defined. In many countries, there are on-going debates on these questions. International actors, such as European Union and G7 have addressed them as  open challenges.
@@ -23,6 +25,8 @@ Why is it so difficult to set criteria on who is responsible?
     But, an action is done voluntarily only if the action is done intentionally (the one acting is “in control”) and is free from controlling influences. Is the driver free from controlling influences, if the seat belt system forces him to react to the beeping sound? Or, are we free from control, if the algorithms decide whose pictures we´ll see in the dating sites, or what music we are about to listen to? What, exactly, is the difference between algorithmic suggestion, control, or manipulation?
 
     Naturally, persuasive technology should comply with the requirement of voluntariness to guarantee autonomy. Algorithms complicate this issue, since the voluntariness presupposes a sufficient understanding of the use of specific technology. But, what does it mean to “understand”, and what is the sufficient degree, really? What is the correct reading of “understandability” – “transparency”, “explainability” or  “auditability”? How much, and what, exactly, a user should understand about the technology? When can one genuinely  estimate, whether or not they want to use that particular technology? We’ll look at this topic in more detail in chapter 4.
+
+</styled-text>
 
 <quiz id="63998353-c785-496e-a447-7f61202ecf3a"> </quiz>
 

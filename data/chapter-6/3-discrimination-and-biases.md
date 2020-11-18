@@ -6,6 +6,8 @@ hidden: false
 
 <hero-icon heroIcon='chap6'/>
 
+<styled-text>
+
 ## Intro:
 
 In this section we will study discrimination and how discriminatory practices can manifest through artificial intelligence. Bias has recently become the prototypical issue for AI ethics, since the hope that the exact formality of algorithms makes them immune to partiality has turned out to be sorely false. First, we will look at two examples of algorithmic systems, which will help us analyze discrimination and bias in AI.
@@ -25,11 +27,15 @@ The system was found to penalize any CVs which indicated the applicant to be fem
 
 First, it is important to note that the word discrimination can be used in a  morally agnostic sense (“can you discriminate between these two colors?”). Throughout this section, we mean the morally loaded sense of the word. But when is discrimination morally suspect? It may seem a silly question to ask. After all, most people would agree that we have a rather clear intuitive sense of what discrimination is. Hearing the word embedding example above, we have no difficulty in pointing to the offending word association and declaring “This is discriminatory!” Putting into words what it is which makes it discriminatory though, turns out to be a slippery task. But let’s start with writing out our intuitions, and see where we go from there:
 
+</styled-text>
+
 <text-box icon="chap6" name="Definition 1: Discrimination">
 
 Discrimination is a difference of treatment of individuals based on their membership in a group.
 
 </text-box>
+
+<styled-text>
 
 So how does this definition fare in capturing our sense of discrimination? The words doing the work here are “difference” and “group”. That is, discrimination is something which is comparative, and the units of comparison are different groups (or, rather, groupings), or individuals belonging to them. This is a good start, but let’s analyze where this definition draws the line. What is included, and what is left out?
 
@@ -37,11 +43,15 @@ Consider, for example, driver’s licenses. In Finland, driver’s licenses are 
 
 Consider, then, a café which only serves people wearing green shirts. This is most definitely differential treatment based on group membership, and conducive of a kind of harm, but we would not consider this discrimination in the moralistic sense either. We might find it a strange policy, but not a morally problematic one.  Thus, it is not just group membership we are interested in, but which groups.
 
+</styled-text>
+
 <text-box name="Definition 2: Discrimination" icon="chap6">
 
 Discrimination is differential treatment based on perceived membership in a socially salient group, which causes social harm. (Lippert-Rasmussen 2014)
 
 </text-box>
+
+<styled-text>
 
 “Socially saliency” is what identifies which features are moralistically relevant in cases of discrimination. But what does it mean? According to Lippert-Rasmussen, a feature is socially salient if it is important to the structure of social interactions across multiple contexts. That is, what are considered socially salient classifications is a historically contingent matter: in an alternate timeline, where wearing a green shirt was invariably a matter of social importance that factored into the kind of dignity, opportunities or status afforded to a person (if it was religious attire, for example), the café example above might well count as a case of discrimination.
 
@@ -74,6 +84,8 @@ With the concept of representational harms, we are able to identify the gender-s
 
 -Melissa Terras
 
+</styled-text>
+
 <text-box name='Three different meanings of “bias”' icon="chap6">
 
 In **statistics**: discrepancy of a sample statistic vs the true statistic of the population.
@@ -84,6 +96,8 @@ In **social justice**: a morally suspect discrepancy in the treatment of people.
 
 
 </text-box>
+
+<styled-text>
 
 So far, we have managed to find a reasonable definition of discrimination, and have at least two anecdotal examples of AI systems taking part in it. In both cases, the discriminatory practice arises from biases in the AI system itself. So if we want to get a handle on this issue, we have some questions to answer. How do AI systems become biased? How can we measure if a system is biased? How can we fix it?
 
@@ -112,6 +126,8 @@ While “AI” and “machine learning” both portray an image of machinic auto
 
 One of the clearest examples of this is in the ways data is made “clean”, involving decisions about what is real signal as opposed to bothersome noise. This is a task that is sometimes seen as janitorial work, and thus not a part of the core business of AI and it happens unnoticed in many stages of the process. For example, when collecting data in webforms, it is called input sanitization.
 
+</styled-text>
+
 <text-box name="">
 
 A good example of this is when collecting names. To prevent false data from entering the system, certain constraints are made as to how names are supposed to look. For example, sometimes it is assumed that names consist of given names and a surname. Sometimes it is assumed that names only contain letters from A to Z. Sometimes it is assumed that names always have more than two letters.
@@ -120,4 +136,8 @@ These might be reasonable assumptions in the limited cultural context of the des
 
 </text-box>
 
+<styled-text>
+
 Bias can thus enter into a system in many different ways, and the above are just a few examples of the mechanisms at play. The important point here is that when analysing AI systems for unfairness, it’s not enough to just look at the algorithms. Rather, unfairness can arise because of historical, cultural, design, data management or deployment reasons, and thus the whole process of AI development must be under scrutiny.
+
+</styled-text>

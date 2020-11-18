@@ -18,7 +18,11 @@ In Odysseus, the data comes from a wide range of sources. Odysseus combines aggr
 
 </text-box>
 
+<styled-text>
+
 In this chapter we will look at human rights. The right for a safe environment is one of these. Odysseus provides an example of how AI can be used in a way that respects and promotes the right to safety or to a healthy environment. At the same time, the project must take other rights – such as the right for privacy – into account. In London these concerns were taken seriously. To secure privacy, Odysseus is designed in a way that all the data is anonymized and individuals cannot be identified from the images taken by the traffic cameras.
 
 Privacy and security have raised a lot of media attention. They are important, but it’s necessary to consider the impact of AI on the full spectrum of fundamental human rights and freedoms, too. How will AI impact on the right to education and work, or for a fair trial, to fair and open elections, to freedom of speech, and to assembly and demonstration? And what about special groups, such as children? But first, let’s discuss what human rights are.
+
+</styled-text>
 

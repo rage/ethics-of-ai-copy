@@ -6,6 +6,8 @@ hidden: false
 
 <hero-icon heroIcon='chap6'/>
 
+<styled-text>
+
 Philosophers have proposed various definitions for the concept of fairness. According to Aristotle, “equals should be treated equally and unequals unequally”.
 
 This principle of equality states that individuals should be treated the same, unless they differ in ways that are relevant to the situation in which they are involved.
@@ -26,6 +28,8 @@ PICTURE: equality
 
 
 On the other hand, there are also criteria that are not justifiable grounds for giving people different treatment. For example, we generally hold that it is unfair to give individuals special treatment on the basis of age, sex, race, or their religious preferences. What is discrimination, in other words?
+
+</styled-text>
 
 
 

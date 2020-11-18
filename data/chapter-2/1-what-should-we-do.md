@@ -6,6 +6,8 @@ hidden: false
 
 <hero-icon heroIcon='chap2'/>
 
+<styled-text>
+
 ## The Principle of Beneficence
 
  *“AI inevitably becomes entangled in the ethical and political dimensions of vocations and practices in which
@@ -17,6 +19,8 @@ The principle of **beneficence** says “do good”, while the principle of **no
 
 Generally, AI ethics have been primarily concerned with the principle of non-maleficence. Discussion has focused mostly on questions of how developers, manufacturers, authorities, or other stakeholders should minimize the ethical risks – discrimination, privacy protection, physical and social harms –  that can arise from AI applications. Often, these discussions are stated in terms of  intentional misuse, malicious hacking, technical measures, or risk-management strategies.
 
+</styled-text>
+
 
 <text-box name="">
 
@@ -24,4 +28,8 @@ Critics claim that the emphasis on non-maleficence makes ethics a matter of find
 
 </text-box>
 
+<styled-text>
+
 As a result, deep and difficult ethical problems are oversimplified and unanswered. One of the questions is the problem of the “common good”. What, exactly, does that mean? In this chapter, we’ll take a look at one classical philosophical answer.
+
+</styled-text>

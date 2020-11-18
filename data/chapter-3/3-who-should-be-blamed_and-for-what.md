@@ -8,6 +8,8 @@ hidden: false
 
 <img src=../../src/assets/agent-action.svg alt="Agent action" style="width: 600px">
 
+<styled-text>
+
 In ethics, accountability is closely related to the concept of “moral agency”. A moral agent is “an agent who is capable of acting with reference to right and wrong." Importantly, only moral agents are morally responsible for their actions.
 
 **Actions and omissions**
@@ -22,6 +24,8 @@ Philosophically, moral responsibility requires 1) moral autonomy and 2) the abil
 * The capacity to rule oneself without manipulation by others and the ability to act, without external or internal constraints
 * The authenticity of the desires (values, emotions, etc) that move someone to act
 * Sufficient cognitive skills – meaning an agent must be able to evaluate, to predict and to compare consequences of their actions and, also, to estimate motives that drive action by using ethically meaningful criteria
+
+</styled-text>
 
 <text-box variant="hint" name="Moral responsibility">
 

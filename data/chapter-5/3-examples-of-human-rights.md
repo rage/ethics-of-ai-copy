@@ -6,10 +6,14 @@ hidden: false
 
 <hero-icon heroIcon='chap5'/>
 
+<styled-text>
+
 #### Privacy
 Privacy concerns are raised, for example, by digital records which contain information that can be used  to infer sensitive attributes (age, gender or sexual orientation), preferences, or religious and political  views. Biometric data also raises privacy concerns, as it can reveal details of physical and mental health. Often the real worry is not the data itself, but the way the data can be used to manipulate, affect, or harm a person.
 
 Ethically, privacy is related to personal autonomy and integrity. Following the principles set out by John Locke, a right to control our own personal lives has been seen as central to our autonomy. If that right is taken away, it violates something fundamental about our psychological and moral integrity.
+
+</styled-text>
 
 <text-box icon="chap5">
 
@@ -66,6 +70,8 @@ Data-anonymization can be challenging. There are also methods for “de-anonymiz
 
 </text-box>
 
+<styled-text>
+
 ### Safety and security
 The right to safety is a norm protecting individuals from physical, social and emotional harms, including accidents and malfunctions. Security  means safety from malicious and intentional threats.
 
@@ -79,15 +85,21 @@ However, the plausibility of a future of superintelligent AI has been called int
 #### 2) Safety in AI
 The second interpretation of safety in AI is the practical question of designing systems which behave in a safe and predictable manner. As AI systems are integrated into ever-widening areas of life, it becomes more important that the systems are well designed to account for the complexity of the world. A very practical and already existing example of this is lane guard technology, which uses machine learning to prevent cars from veering outside of their lanes. Machine learning researchers have found that some lane detection algorithms are quite easy to confuse with rogue road markings, causing the car to veer off the road by following the fake lane markings.
 
+</styled-text>
+
 <text-box icon="techIcon">
 
 One could argue that the right to safety obligates technology producers to account for these kinds of scenarios: the fact that the environment was not ideal does not excuse the system malfunctioning. Machine learning researchers call this feature robustness – the capacity of the system to to work predictably under new and unpredictable circumstances.
 
 </text-box>
 
+<styled-text>
+
 The ethically – and legally – significant question is “what are the acceptable limits to robustness?” It is certainly conceivable that there are a set of circumstances so incredible that even if the system’s safety cannot be assured, we can concede that “nobody could have realistically seen that coming”. Where this limit is, though, is a difficult problem, and definitely not one that is exclusive to AI or even technology.
 
 Nonetheless, the progressive zeal that is attached to AI future visions has brought up questions regarding the limits of safety and the taming of environmental uncertainty in a way that is wholly new. An example of this can be found in the discussion around autonomous vehicles.
+
+</styled-text>
 
 <text-box name="Case: Caged pavements: AI safety and environmental uncertainty" icon="chap5">
 
@@ -100,12 +112,16 @@ Or is this just a false dichotomy, brought about by a technical solution that wa
 
 </text-box>
 
+<styled-text>
+
 #### 3) Producing safety with AI
 The third concept of safety and AI we will look at in this section is the production of safety through the use of AI. Can AI make the world safer? Can AI make the world feel safer? And safer for whom?
 
 Robotization can provide an example of this concept in practice. The work of handling hazardous materials or working in hazardous environments can be delegated to robots, protecting the health of human (or animal) workers.
 
 Another way certain forms of safety are produced through AI is through automated surveillance. AI-powered surveillance has manifested in many domains: in public spaces, in law-enforcement work through predictive policing, and in domestic life through products like Amazon’s Ring. Although surveillance cameras (CCTV) have existed and dominated public and semi-public spaces for decades, the ACLU argues that automation brings about a big qualitative shift in how surveillance functions. But what is so different?
+
+</styled-text>
 
 <text-box icon="techIcon">
 
@@ -117,15 +133,21 @@ Another way certain forms of safety are produced through AI is through automated
 
 </text-box>
 
+<styled-text>
+
 Unlike the 1980s convenience store security cameras, contemporary AI surveillance systems are centralized. You can be traced both at the convenience store and at the library, and these two “yous” can be identified as the same person. The surveillance feeds are more and more often held by private data giants, as opposed to a VCR in the back room.
 
 More importantly, contemporary surveillance infrastructure does not passively record “just in case”. Instead, it actively watches, analyzes, predicts, and informs. Moreover, AI surveillance infrastructure actively watches without a human. The concern with privacy shifts from being recognized by somebody to becoming infrastructurally – and in many ways invisibly and globally – surveilled. Our actions become objects of analysis, transported outside of our reach, and markers that follow us beyond the convenience store. In this case, whether or not a human has recognized me in the process is irrelevant to my privacy and freedom.
+
+</styled-text>
 
 <text-box>
 
 Constant surveillance produces “chilling effects”. That is, the awareness that our actions are constantly watched limits our true freedom to act in the world. Imagine that whenever you leave your house, you are tailed by two police officers. They never interact with you, just follow ten meters behind you. You will probably feel unsettled and unable to go about your day as you normally would. In this way, safety is sometimes at odds with personal freedom and privacy.
 
 </text-box>
+
+<styled-text>
 
 Moreover, it is an open empirical question, to what extent AI surveillance is really producing safety. As the example of chilling effects illustrates, the existence of AI surveillance may itself contribute to a feeling of unsafety. Furthermore, it may directly contribute to actual unsafety and produce harm. AI-powered policing, for example, can lead to direct physical harm because of its predictive nature and the methods of enforcement. And when ubiquitous and automatic surveillance allows even the most petty transgressions to be surveilled and logged, it risks making the consequences of policing more damaging than the original crime.
 
@@ -134,6 +156,8 @@ With the disparate levels of policing, disparate methods of enforcement, and dis
 #### 4) A safe and healthy environment: AI and climate change
 Safety also means the right to a safe and healthy environment. Nowadays, this right is threatened by  climate change. The effects of climate change are already visible – storms, droughts, fires, and flooding have become more common, more frequent and more devastating. Global ecosystems are changing. They all impact the environment on which our existence depends. The report on climate change (2018) estimated that the world will face catastrophic consequences unless global greenhouse gas (GHG) emissions are eliminated within thirty years.
 
+</styled-text>
+
 <text-box icon="chap5">
 
 AI could be a powerful tool for tackling climate change. It can be used as a resource for monitoring, understanding, and predicting the consequences of climate change. AI can accelerate the development of more ecologically sustainable societies. It can be used to design green cities, environment-friendly transportation, to reduce the ecological impact of industry, and design equipment that can help study and maintain the diversity of ecosystems.
@@ -141,6 +165,8 @@ AI could be a powerful tool for tackling climate change. It can be used as a res
 At the same time, many potential problems are associated with the deployment of AI – for instance, innovations that seek to reduce greenhouse gas emissions may actually increase energy consumption and emissions. Given the data and resource-intensive character of contemporary AI, the technology itself still struggles with energy consumption and carbon footprint. One must also pay attention to the environmental impact of raw material extraction for supporting the manufacturing of AI technologies, which can be significant.
 
 </text-box>
+
+<styled-text>
 
 To summarize, safety plays into AI technologies in multiple different ways. These all raise questions about the balancing of normative values: while calls to make “AI for good” sound promising, in practice the enactment of rights and normative values in technological systems often collides with the plethora of conflicting interests and deep injustices existing in the world. When evaluating safety, it is then important to evaluate what other rights intersect in practice and ask, “safety for whom?”
 
@@ -160,12 +186,18 @@ Many technology researchers have paid attention to the “gender gap” or “th
 
 Women are also less likely to create content or use cutting-edge technology.  According to studies, across G20 countries, just 7 per cent of ICT patents are generated by women. A recent survey of undergraduate students in 29 countries found that early adopters of new technologies are overwhelmingly male. Calculations based on the attendees of the world’s top machine-learning conferences in 2017 indicate that only 12 per cent of the leading machine-learning researchers are female.
 
+</styled-text>
+
 <text-box>
 
 The lack of diversity in technology may have a serious effect as big data and algorithms become influential in day-to-day life. AI is now used from the healthcare industry to the legal system, and it affects people’s life trajectories in many ways. As more and more digital tools are built by men, many worry, the the digital space is becoming increasingly gendered.
 
 </text-box>
 
+<styled-text>
+
 Technology studies indicate that technology often reflects its developers. For example, despite the fact that most low-income women in developing countries are primarily employed in agriculture, men have been the primary adopters and developers of agricultural technologies, and agricultural innovations and tools have been designed specifically for men’s use. As a result, many tools were developed to pursue men’s work in farmlands, and are known to be too heavy for women to push or have handles that women can’t reach. Precisely the same often applies to contemporary smart technology – voice command systems do not recognize women’s speech, and the sizes of smartphones and computer keyboards are not suitable for women users.
 
 Inclusion is, however, about more than ensuring that women are able to participate. It is an obligation to ensure cultural, age-based and geographic diversity and their intersects. When thinking about the impact of AI in society, there is, simply, a need to intentionally develop systems in different settings and with diverse users.
+
+</styled-text>

@@ -4,9 +4,13 @@ title: 'Ethics as doing'
 hidden: false
 ---
 
+<styled-text>
+
 The subject of ethical considerations relating to technology is not a new question. Rather, it has been asked in a very similar form throughout many different iterations of technological development. As an illustration of the historical continuities around these issues, the sociologist Langdon Winner wrote in his 1990 essay “Engineering Ethics and Political Imagination” that a difficulty lies in ethical discussions centring on highly hypothetical and limited “troubling incidents” – without calling into question the broader responsibilities of the whole engineering industry. This issue is similar to those facing the AI ethics project now, 30 years later.
 
 While the troubles may not be new, the contemporary AI ethics project has much more public interest and wider stakeholder participation than engineering ethics has had before. Many more are learning about it, many are hoping to implement AI ethics in their work in some way, and many companies, communities, states and individuals have stakes in the outcomes. With this new wave of interest, publishing ethical guidelines has become the typical way of doing ethics.
+
+</styled-text>
 
 ## Ethics guidelines as texts that do
 
@@ -15,6 +19,8 @@ While the troubles may not be new, the contemporary AI ethics project has much m
 First coined by philosopher John L. Austin, but made more famous by feminist scholar Judith Butler, performativity is the capacity of words to do things in the world. That is, sometimes making statements does not just describe the world, but also performs a social function beyond describing. As an example (from Austin), when a priest declares a couple to be “husband and wife”,  they are not describing the state of their relationship. Rather by that very declaration, the institution of marriage is brought about. The words perform the marrying of the two people. In a similar way, other acts of communication can also have a performative quality – not just presenting information, but effecting change in the world.
 
 </text-box>
+
+<styled-text>
 
 To conceptualize AI ethics guidelines as performative texts invites us to look past the ethical contents of the guidelines, and look into what the text does as a communicative act. To do so we have to consider who the text is written by and who the intended audience is. Where it is published and what other authors and actors it references also play into what kind of ends are achieved by the text. Sociologists have looked into the performativity of ethical guidelines and found that they serve to create and manage expectations among different stakeholders in the AI economy.
 
@@ -42,3 +48,5 @@ To be seen as an expert yields certain forms of power. Experts create judgements
 Expertise is only effective if it is publicly recognized, and in the race to become a leading AI organization, publications are a way to secure visibility. According to Greene et al., “ethics and ethical codes designate and defend social status and expertise”. That is, taking part in the AI ethics discussion by publishing a set of ethical guidelines is a way to demonstrate expertise, increasing the organization’s chances of being invited to a seat at the table in regards to future AI issues.
 
 Even if ethical guidelines are ineffectual in effecting change in AI practice, they can nonetheless be useful as communicative strategies and perform other functions for the actors involved. They can help us to figure out what kind of principles and practices should be taken up in the future of ethical AI. And they force us to ask how diverse organizations and individuals can take part in building a more just AI future in their own ways.
+
+</styled-text>

@@ -24,13 +24,19 @@ The report also raises the fundamental question of the city’s role: if the cit
 
 </text-box>
 
+<styled-text>
+
 What do you think about the above example? As a Chief Digital Officer, would you promote the use of preventive methods? If your answer is something like “yes, the city should seek an ethically and legally acceptable way to use those methods – there are so many advantages compared to the possible risks”, you were probably using a form of moral reasoning called "utilitarianism".
+
+</styled-text>
 
 <text-box name="Utilitarianism" icon="chap2">
 
 **Utilitarianism** is a family of ethical theories. It conceives “benefits” as actions that maximize well-being across all affected individuals. Utilitarianism is a version of consequentialism, which states that the consequences of any action are the only standards of right and wrong.
 
 </text-box>
+
+<styled-text>
 
 According to utilitarianists, morally right actions are the ones that produce the greatest balance of benefits over harm for everyone affected. Unlike other, more individualistic forms of consequentialism (such as egoism) or unevenly weighted consequentialism (such as prioritarianism), utilitarianism considers the interests of all humans equally. However, utilitarianists disagree on many specific questions, such as whether actions should be chosen based on their likely results (act utilitarianism), or whether agents should conform to rules that maximize utility (rule utilitarianism). There is also disagreement as to whether total (total utilitarianism), average (average utilitarianism) or minimum utility should be maximized.
 
@@ -57,6 +63,8 @@ Another example is that if you eat one candy, you’ll  get a lot of pleasure. B
 ## The problems of utilitarianism
 
 Utilitarianism is not a perfect account on moral decision making. It has been criticized on many grounds. For example, utilitarian calculation requires that we assign values to the benefits and harm resulting from our actions and compare them with the consequences that might result from other actions. But it’s often difficult, if not impossible, to measure and compare the values of all relevant benefits and costs in advance.
+
+</styled-text>
 
 <text-box name="Risks" icon="chap2">
 

@@ -4,9 +4,13 @@ title: 'Moving forward with ethics'
 hidden: false
 ---
 
+<styled-text>
+
 ### III. Moving forward with ethics
 
 Moving beyond ethical guidelines, how should AI ethics manifest in the future? What kind of conversations around the ethics of AI should we have, and what kind of activities and ways of doing ethics should be taken into practice? This is a difficult question to answer, but some hints can be found from looking at what is left outside the scope of the AI ethics guidelines we have been discussing so far.
+
+</styled-text>
 
 
 <text-box name="The AuroraAI program" icon="techIcon">
@@ -27,10 +31,13 @@ If AI serves to create public services that predefine the standards of “well-b
 
 </text-box>
 
+<styled-text>
+
 Fairness, accountability, and transparency have come to dominate the AI ethics conversation. They also comprise the name of the largest scientific conference around ethical AI, FAccT. However, as AuroraAI illustrates, questions of “help, welfare, and government-citizen relations” are among the fundamental moral questions directed at any government that aims to deploy AI in its public sector services.
 
 But, these values do not often appear in ethical guidelines. What, then, would it look like to take a perspective of care to AI ethics? According to the ethics of care, this means taking into consideration the complex dependencies and interdependencies between individuals, how the consequences of actions propagate and affect the most vulnerable, and how nature and ecology become entwined in these processes.
 
+</styled-text>
 
 <text-box name="Anatomy of An AI System" icon="techIcon">
 
@@ -38,14 +45,18 @@ An example of this kind of mapping can be seen in the [Anatomy of An AI System](
 
 </text-box>
 
+<styled-text>
+
 Moving from new perspectives to new practices, the role of citizens and civil society along with companies in the creation of more just AI should be examined. Creating ethical AI in practice means moving on from publishing good intentions to the many ways that societal actors can participate in effecting different futures.
 
+</styled-text>
 <text-box>
 
 Or, to take another example, let’s look at AlgorithmWatch. AlgorithmWatch tracks the wealth of public and private AI ventures in Europe, analyzes their consequences, and publishes information on how they are progressing and the many ways they are affecting society. The UK has also seen citizen action in the form of protests revolving around the use of predictive grading algorithms as a fix for the difficulties in organizing exams caused by the COVID-19 virus.
 
 </text-box>
 
+<styled-text>
 
 The Director of the Ada Lovelace institute Carly Kind calls this the third wave of AI ethics, and suggests we are moving into a new form of societal engagement:
 
@@ -57,6 +68,8 @@ The Director of the Ada Lovelace institute Carly Kind calls this the third wave 
 Ethical questions regarding Al Systems pertain to all stages of the Al system lifecycle, understood here to range from research, design, and development to deployment and use – including maintenance, operation, trade, financing, monitoring and evaluation, validation, end-of-use, disassembly, and termination.
 
 In addition, Al actors can be defined as any actors involved in at least one stage of the Al lifecycle, and can refer both to natural and legal persons, such as researchers, programmers, engineers, data scientists, end users, large technology companies, small and medium enterprises, start-ups, universities, and public entities, among others.
+
+</styled-text>
 
 <text-box>
 

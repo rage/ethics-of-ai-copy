@@ -6,7 +6,11 @@ hidden: false
 
 <hero-icon heroIcon='chap2'/>
 
+<styled-text>
+
 Despite the problems outlined in the previous section, the principles of utilitarianism may help us to consider the immediate and the less immediate consequences of our actions. One should remember that in real life, defining “common good” requires a diversity of viewpoints.
+
+</styled-text>
 
 <text-box name='What is "well-being"?' icon="chap2">
 
@@ -28,9 +32,13 @@ Moreover, researchers develop constantly novel ways to approach well-being. For 
 
 </text-box>
 
+<styled-text>
+
 The common good approach requires that everyone should have access to the benefits of AI. This highlights the importance of ensuring that potential benefits of AI do not accumulate unequally, and are made accessible to as many people as possible. And, AI should be aligned with values, goals, and norms, respecting cultural and individual diversity to a sufficient degree.
 
 The common good is not a singular, but a plural. Identifying social and moral norms of the specific community in which an AI will be deployed is, thus, obligatory. It is the only way to bring AI’s potentially significant and diverse benefits to society and facilitate, among other things, greater well-being and welfare for all.
+
+</styled-text>
 
 <quiz id="b5647fe2-c441-4cda-974e-dcd3e39aa494"> </quiz>
 

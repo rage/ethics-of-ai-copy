@@ -4,6 +4,8 @@ title: 'Doing AI ethics'
 hidden: false
 ---
 
+<styled-text>
+
 ## From principles to doing
 
 “[Ethics] plays the role of a bicycle brake on an intercontinental airplane”
@@ -17,6 +19,8 @@ Although ethical principles can shape the development and implementation of ethi
 
     “Despite its stated goal, we found no evidence that the ACM code of ethics influences ethical decision-making. Future research is required to identify interventions that do influence decision-making, such as by helping developers identify parallels between their decisions and infamous software news stories.”
     >McNamara et al. (2018)
+
+</styled-text>
 
 
 <text-box name="What is ethics-washing?">

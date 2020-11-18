@@ -17,7 +17,6 @@ import exerIcon from "../images/exer-icon.svg"
 const Wrapper = styled.aside`
   @media (min-width: 711px) {
     width: 100vw;
-    padding-right: 23rem !important;
   }
   @media (min-width: 425px) {
     width: 100vw;
@@ -34,25 +33,31 @@ const Wrapper = styled.aside`
     padding-top: 3rem;
     padding-bottom: 3rem;
     min-height: 17em;
-    position: relative;
     ul {
       padding-inline-start: 40px;
     }
 `
+const Container = styled.div`
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+`
+
 const Body = styled.div`
   @media (min-width: 1px) {
     padding-bottom: 0.5rem;
-    width: 70%;
+    width: auto;
     margin-left: 2em;
   }
   @media (min-width: 425px) {
     padding-bottom: 0.5rem;
-    width: 70%;
+    width: auto;
     margin-left: 8em;
   }
   @media (min-width: 900px) {
     padding-bottom: 0.5rem;
-    width: 70%;
+    width: auto;
     margin-left: 20em;
   }
 
@@ -73,7 +78,7 @@ const ImageBox = styled.img`
   }
   @media (min-width: 425px) {
     top: 4.2em;
-    left: 1em;
+    left: .5em;
     width: 110px;
     heigth: auto;
     position: absolute;
@@ -81,7 +86,7 @@ const ImageBox = styled.img`
   }
   @media (min-width: 900px) {
     top: 4em;
-    left: 6em;
+    left: 2em;
     width: 180px;
     heigth: auto;
     position: absolute;
@@ -106,11 +111,13 @@ const chooseIcon = {
 const TextBox = (props) => {
   return (
     <Wrapper color={props.background}>
+      <Container>
       <Body>
         <h3> {props.name}</h3>
         {props.children}
       </Body>
       <ImageBox src={chooseIcon[props.icon]} alt="icon"></ImageBox>
+      </Container>
     </Wrapper>
   )
 }

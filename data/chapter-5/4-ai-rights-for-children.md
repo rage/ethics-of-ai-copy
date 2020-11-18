@@ -6,6 +6,8 @@ hidden: false
 
 <hero-icon heroIcon='chap5'/>
 
+<styled-text>
+
 Have you ever thought about how much AI impacts children? They are exposed to algorithms at home, at school, and at play. Algorithms shape the environments in which they live, the services they have access to, and how they spend their time. Children play with interactive smart toys, they watch videos recommended by algorithms, use voice commands to control their phones, and use image manipulation algorithms for fun in social media.
 
 The presence of AI in children’s lives raises many questions. Is it acceptable to use recommendation algorithms with children or to provide an interactive toy if the child cannot understand that they are dealing with a computer? How should parents be advised on the possible impact of AI-based toys on the cognitive development of a child? What should children learn about AI in schools in order to have a sufficient understanding of the technology around them? At what point should a child be given the right to decide about the consents involved? How long should the data be stored?
@@ -15,6 +17,8 @@ As Unicef and other organisations emphasize, we must pay specific attention to c
 For more information:
 https://www.unicef.org/innovation/GenerationAI
 https://www.weforum.org/projects/generation-ai
+
+<styled-text>
 
 <text-box name="The Convention on the Rights of the Child">
 
@@ -34,7 +38,11 @@ Parents and legal guardians have the primary responsibility for taking care of t
 
 </text-box>
 
+<styled-text>
+
 However, the current international framework that protects children’s rights does not explicitly address many of the issues raised by the development and use of artificial intelligence. Instead, it identifies several rights that may be implicated by these technologies, and thus provides a starting place for any analysis of how children’s rights may be positively or negatively affected by new technologies, such as rights to privacy, to education, to play, and to non-discrimination.
+
+</styled-text>
 
 <quiz id="655a75c3-ab8e-467b-bcdc-be65c8ab2db7"> </quiz>
 

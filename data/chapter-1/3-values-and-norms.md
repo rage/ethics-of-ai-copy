@@ -6,6 +6,8 @@ hidden: false
 
 <hero-icon heroIcon='chap1'/>
 
+<styled-text>
+
 Values and norms are the basic elements of ethics. The concept “value” means, roughly, the degree of
 importance of a thing or an action. Values provide ideals and standards with which evaluate things, choices,
 actions, and events. In ethics, the focus is primarily on moral values, although other types of values
@@ -44,6 +46,8 @@ statistical expectations. For example, “Do not use AI for behaviour manipulati
 * Norms may also be legal norms. Importantly, a legal norm may not be a moral norm, and vice
 versa. Simply, the fact that “X is a law” does not make it a moral principle. Instead, one can always
 ask: “Is this law morally acceptable or not?”
+
+</styled-text>
 
 <text-box variant="hint" name="Hume´s Guillotine: Facts, value and norms">
 

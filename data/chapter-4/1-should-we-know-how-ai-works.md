@@ -14,6 +14,8 @@ Imagine a facial recognition system called MYFACE. MYFACE is used for security p
 
 </text-box>
 
+<styled-text>
+
 Some contemporary machine learning systems are so-called “black box” systems, meaning we can’t really see how they work.  This “opacity”, or lack of visibility, can be a problem if  we use these systems to make decisions that have an effect on individuals.
 
 Individuals have a right to know how critical decisions – such as who gets accepted for a loan application, who gets paroled, and who gets hired – are made. This has led many to call for “more transparent AI”.
@@ -43,6 +45,8 @@ There are many open questions regarding what constitutes transparency or explain
 
 As a property of a system, transparency addresses how a model works or functions internally. Transparency is further divided into “simulatability” (an understanding of the functioning of the model), “decomposability” (understanding of the individual components), and algorithmic transparency (visibility of the algorithms).
 
+</styled-text>
+
 <text-box name="What makes a system a “black box”?" icon="chap4">
 
 Complexity. In contemporary AI-systems, operation of a neural network is encoded in thousands, or even millions, of numerical coefficients. Typically the system learns their values at the training phase. Because the operation of the neural network depends on the complicated interactions between these values, it is practically impossible to understand how the network works even if all the parameters are known.
@@ -51,6 +55,8 @@ Difficulty of developing explainable solutions. Even if the used AI models suppo
 Risk concerns. Many AI algorithms can be fooled if an attacker carefully designs an input that causes the system to malfunction. In a highly transparent system, it may be easier to game the system to come up with strange or unwanted results. Thus, sometimes systems are intentionally designed as black boxes.
 
 </text-box>
+
+<styled-text>
 
 Given that many of the most efficient, current deep learning models are black box models (almost by definition), researchers seem to assume it is highly unlikely that we would be able to develop them as fully transparent. Because of this, the discussion focuses on finding the “sufficient level of transparency”. Would it suffice if algorithms offered people a disclosure of how algorithms came to their decision and provide the smallest change “that can be made to obtain a desirable outcome” (Wachter et al., 2018)? For example, if an algorithm refuses someone a social benefit, it should tell the person the reason, and also what he or she can do to reverse the decision (Matsakis 2018).
 
@@ -84,6 +90,8 @@ The fact that comprehensibility is based on subject and culture-dependent compon
 
 Moreover, much is dependent on the degree of data or algorithmic literacy e.g. the knowledge of contemporary technologies. In some cultures, the vocabulary of contemporary technology is more familiar, but in many others they may be completely novel. To increase the understandability, there is clearly a need for significant educational efforts in improving algorithmic literacy – for example on “computational thinking” (Heintz, Mannila, & Färnqvist, 2016). This user literacy will have a direct effect on transparency in terms of the ordinary users’ basic understanding of AI systems. It may actually provide the most efficient and practical way to make the boxes less black for many people.
 
+</styled-text>
+
 
 <text-box name="How to make models more transparent?" icon="exerIcon">
 
@@ -102,9 +110,13 @@ The black box problem of artificial intelligence is not new. Providing transpare
 
 </text-box>
 
+<styled-text>
+
 ### V) Transparency and the risks of openness
 
 Transparency denotes often a modern, ethico-socio-legal “ideal” (Koivisto 2016), a normative demand for the acceptable use of technology in our societies. It is a reflection of the ideal of “openness”, that is framed in terms of “open government”, “open data”, “open source/code/access”, as well as “open science” (Larsson 2020). In this way, transparency considerations are needed to mitigate the equal distribution of scientific advancements so that the benefits of AI development can be made accessible for all people.
+
+</styled-text>
 
 <text-box>
 
@@ -112,7 +124,11 @@ Paradoxically, the ideal of openness can lean to harmful consequences, too. For 
 
 </text-box>
 
+<styled-text>
+
 In summary, while there is a need to develop more transparent practices for AI, there is also a need to  develop practices that can help us to avoid abuse. While transparency may help to mitigate ethical issues – such as fairness or accountability – it also creates ethically important risks. Too much openness in the wrong context may defeat the positive development of AI-enabled processes. Taken together, it is clear that the ideal of full transparency of algorithms should be carefully considered, and we will have to find a balance between security and transparency considerations.
+
+</styled-text>
 
 <quiz id="f94f13d3-3983-4d86-811c-881e1282c275">
 
