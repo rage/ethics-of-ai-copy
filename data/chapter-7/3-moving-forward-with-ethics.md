@@ -1,5 +1,5 @@
 ---
-path: '/chapter-7/1-moving-forward-with-ethics'
+path: '/chapter-7/3-moving-forward-with-ethics'
 title: 'Moving forward with ethics'
 hidden: false
 ---
@@ -15,19 +15,20 @@ Moving beyond ethical guidelines, how should AI ethics manifest in the future? W
 
 <text-box name="The AuroraAI program" icon="techIcon">
 
-The Finnish National Artificial Intelligence Program AuroraAI (2020–2022) combines contemporary technology, well-designed service chains and a human-centric approach to good governance. One of its objectives is to link together public, private and third sector services and provide more efficient, flexible and tailored public services.
+[he Finnish National Artificial Intelligence Program AuroraAI](https://vm.fi/en/national-artificial-intelligence-programme-auroraai) (2020–2022) combines contemporary technology, well-designed service chains and a human-centric approach to good governance. One of its objectives is to link together public, private, and third sector services and provide more efficient, flexible, and tailored public services.
 
 **How it works**
-In the AuroraAI network, a person’s needs are better matched to services available in a specific area. This tailoring of services is based on algorithmically produced  recommendations. These recommendations are estimates of the most useful combination of services for a person.
+In the AuroraAI network, a person’s needs are better matched to services available in a specific area. This tailoring of services is based on algorithmically produced recommendations, which are estimates of the most useful combination of services for a person.
 
-The data for these estimates will be given by the person. In the future, personal data held by the government or private companies could also be used for tailoring services. (Since Finland is a member of European Union, this will require a sufficient legal basis for the use of personal data. See the section on the GDPR in chapter 5.)
+The data for these estimates will be given by the person. In the future, personal data held by the government or private companies could also be used for tailoring services (since Finland is a member of European Union, this will require a sufficient legal basis for the use of personal data - see the section on the GDPR in chapter 5.)
 
-AuroraAI provides a philosophical example of how technology impacts governance practices. Traditionally, the interaction between government and person has taken the form of compulsion. Governments require citizens to do certain things, in certain ways. In AuroraAI, the government-person interaction is based not just on compulsion, but also recommendations or suggestions.
+AuroraAI provides a philosophical example of how technology impacts governance practices. Traditionally, the interaction between government and person has taken the form of compulsion. Governments require citizens to do certain things, in certain ways. In AuroraAI, the government-person interaction is based not just on compulsion, but also on recommendations or suggestions.
 
-**Ethical considerations**
-AuroraAI, however, raises the question of the impact of these algorithmic recommendation systems in public sector services. Will the algorithms start to pre-determine and direct the future of the users by recommending certain services? Are the recommendations based on implicit and hidden ideals of good life? Will these systems impose existing prejudices? How are the systems built to maintain and promote digital inclusivity and equality?
+Ethical considerations
+AuroraAI, however, raises the question of the impact of these algorithmic recommendation systems in public sector services. Will the algorithms start to predetermine and direct the future of the users by recommending certain services? Are the recommendations based on implicit and hidden ideals of good life? Will these systems impose existing prejudices? How are the systems built to maintain and promote digital inclusivity and equality?
 
-If AI serves to create public services that predefine the standards of “well-being” or “good life” too narrowly, or muddle the government’s roles in wielding power and providing welfare, then the principles of good governance will end up set aside. In AuroraAI, these concerns have been recognized, and their importance has been acknowledged. As a practical solution, an ethics board has been appointed to provide a forum for discussions on the ethical challenges related to the program.
+If AI serves to create public services that predefine the standards of “well-being” or “good life” too narrowly, or muddle the government’s roles in wielding power and providing welfare, then the principles of good governance will end up being set aside. In AuroraAI, these concerns have been recognized, and their importance has been acknowledged. As a practical solution, an ethics board has been appointed to provide a forum for discussions on the ethical challenges related to the program.
+
 
 </text-box>
 
@@ -41,7 +42,7 @@ But, these values do not often appear in ethical guidelines. What, then, would i
 
 <text-box name="Anatomy of An AI System" icon="techIcon">
 
-An example of this kind of mapping can be seen in the [Anatomy of An AI System](https://anatomyof.ai/img/ai-anatomy-map.pdf) schematic created by researchers Crawford and Joler. The schematic shows the complex and complete interactions that go into creating an AI artefact. It expands outwards from just software to the material processes of creating an AI system; the markets, infrastructures and geological processes involved. This reveals ethically relevant aspects that would otherwise be obscured by the lens provided by AI ethics: the ecological damages of mining and the labor conditions of data processing, for example.
+An example of this kind of mapping can be seen in the [Anatomy of An AI System](https://anatomyof.ai/img/ai-anatomy-map.pdf) schematic created by researchers Crawford and Joler. The schematic shows the complex and complete interactions that go into creating an AI artefact. It expands outwards from just software to the material processes of creating an AI system; the markets, infrastructures, and geological processes involved. This reveals ethically relevant aspects that would otherwise be obscured by the lens provided by AI ethics: the ecological damages of mining and the labor conditions of data processing, for example.
 
 </text-box>
 
@@ -65,9 +66,9 @@ The Director of the Ada Lovelace institute Carly Kind calls this the third wave 
 
 ## Conclusion: now it’s your turn
 
-Ethical questions regarding Al Systems pertain to all stages of the Al system lifecycle, understood here to range from research, design, and development to deployment and use – including maintenance, operation, trade, financing, monitoring and evaluation, validation, end-of-use, disassembly, and termination.
+Ethical questions regarding Al systems pertain to all stages of the Al system lifecycle, understood here to range from research, design, and development to deployment and use – including maintenance, operation, trade, financing, monitoring and evaluation, validation, end-of-use, disassembly, and termination.
 
-In addition, Al actors can be defined as any actors involved in at least one stage of the Al lifecycle, and can refer both to natural and legal persons, such as researchers, programmers, engineers, data scientists, end users, large technology companies, small and medium enterprises, start-ups, universities, and public entities, among others.
+In addition, Al actors can be defined as any actors involved in at least one stage of the Al lifecycle, and can refer to both natural and legal persons, such as researchers, programmers, engineers, data scientists, end users, large technology companies, small and medium enterprises, start-ups, universities, and public entities, among others.
 
 </styled-text>
 
@@ -77,9 +78,9 @@ In addition, Al actors can be defined as any actors involved in at least one sta
 
 * AI systems impact societal sectors such as employment and labor, social interaction, healthcare, education, weaponization, transport, and media.
 
-* AI systems cover topics such as freedom of expression, access to information, privacy, democracy, or discrimination.
+* AI systems cover topics such as freedom of expression, access to information, privacy, democracy, and discrimination.
 
-* AI systems can also change human experience, challenge human agency, raise concerns on the reliability of sources of information, and question the ideal of fundamental dignity.
+* AI systems can also change human experience, challenge human agency, raise concerns over the reliability of information sources, and question the ideal of fundamental dignity.
 
 </text-box>
 

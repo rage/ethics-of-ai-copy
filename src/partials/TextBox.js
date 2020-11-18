@@ -78,7 +78,7 @@ const ImageBox = styled.img`
   }
   @media (min-width: 425px) {
     top: 4.2em;
-    left: .5em;
+    left: 0.5em;
     width: 110px;
     heigth: auto;
     position: absolute;
@@ -112,11 +112,11 @@ const TextBox = (props) => {
   return (
     <Wrapper color={props.background}>
       <Container>
-      <Body>
-        <h3> {props.name}</h3>
-        {props.children}
-      </Body>
-      <ImageBox src={chooseIcon[props.icon]} alt="icon"></ImageBox>
+        <Body>
+          <h3> {props.name}</h3>
+          {props.children}
+        </Body>
+        <ImageBox src={chooseIcon[props.icon]} alt="icon"></ImageBox>
       </Container>
     </Wrapper>
   )

@@ -37,10 +37,10 @@ The GDPR's aim is to give individuals control over their personal data. Any info
 The data subject must give specific, unambiguous consent to process the data. Consents must be “freely given, specific, informed and unambiguous.” Data subjects can withdraw previously given consent whenever they want. Children under 13 can only give consent with permission from their parent.
 
 The GDPR recognizes several privacy rights for data subjects. Their aim is to give individuals more control over the data. Some of these rights are:
-The right to be informed (a person must be told about the use of their personal data)
-The right of access (it should be explained to someone how personal data is used)
-The right to rectification (a person has the right to be forgotten and the data deleted)
-The right to restrict processing (a person can deny the use of their personal data)
+* The right to be informed (a person must be told about the use of their personal data)
+* The right of access (it should be explained how someone's personal data is used)
+* The right to rectification (a person has the right to be forgotten and the data deleted)
+* The right to restrict processing (a person can deny the use of their personal data)
 
 
 If you process data, then according to GDPR you have to do so according to protection and accountability principles. You must consider these data protection principles in the design of any new product or activity. The data protection principles are:
@@ -55,11 +55,11 @@ Accountability: The data controller is responsible for being able to demonstrate
 
 According to GDPR, if you process data you’re also required to handle data securely by implementing “appropriate technical and organizational measures.”
 
-How to protect privacy – data-anonymisation methods
+How to protect privacy – data anonymisation methods
 
 The GDPR permits organisations to collect anonymized data without consent, use it for any purpose, and store it for an indefinite time – as long as organisations remove all identifiers from the data. There are several techniques for data-anonymisation, including:
 
-Generalization is a method deliberately removes some of the data to make it less identifiable. Data can be modified into a set of ranges or a broad area with appropriate boundaries. You can remove, for example, the street address while including the information about the town name. In this way, you can eliminate some of the identifiers while retaining a degree of data accuracy.
+Generalization is a method that deliberately removes some of the data to make it less identifiable. Data can be modified into a set of ranges or a broad area with appropriate boundaries. You can remove, for example, the street address while including the information about the town name. In this way, you can eliminate some of the identifiers while retaining a degree of data accuracy.
 
 Pseudonymization is a data management and de-identification method that replaces private identifiers – names, ID-codes – with fake identifiers or pseudonyms, for example replacing the identifier “Santeri” with “Saara”. Pseudonymization preserves statistical accuracy and data integrity. The modified data can be used while still protecting data privacy.
 
