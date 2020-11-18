@@ -6,6 +6,13 @@ import techIcon from "../images/tech-icon.svg"
 import philIcon from "../images/phil-icon.svg"
 import bgIcon from "../images/bg-icon.svg"
 import ethicsIcon from "../images/ethics-icon.svg"
+import chap1 from "../images/chap-1.svg"
+import chap2 from "../images/chap-2.svg"
+import chap3 from "../images/chap-3.svg"
+import chap4 from "../images/chap-4.svg"
+import chap5 from "../images/chap-5.svg"
+import chap6 from "../images/chap-6.svg"
+import exerIcon from "../images/exer-icon.svg"
 
 const Wrapper = styled.aside`
   @media (min-width: 711px) {
@@ -33,7 +40,6 @@ const Wrapper = styled.aside`
     }
 `
 const Body = styled.div`
-
   @media (min-width: 1px) {
     padding-bottom: 0.5rem;
     width: 70%;
@@ -87,6 +93,13 @@ const chooseIcon = {
   techIcon: techIcon,
   philIcon: philIcon,
   bgIcon: bgIcon,
+  chap1: chap1,
+  chap2: chap2,
+  chap3: chap3,
+  chap4: chap4,
+  chap5: chap5,
+  chap6: chap6,
+  exerIcon: exerIcon,
   undefined: ethicsIcon,
 }
 

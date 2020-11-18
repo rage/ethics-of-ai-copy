@@ -26,7 +26,7 @@ The report also raises the fundamental question of the city’s role: if the cit
 
 What do you think about the above example? As a Chief Digital Officer, would you promote the use of preventive methods? If your answer is something like “yes, the city should seek an ethically and legally acceptable way to use those methods – there are so many advantages compared to the possible risks”, you were probably using a form of moral reasoning called "utilitarianism".
 
-<text-box name="Utilitarianism">
+<text-box name="Utilitarianism" icon="chap2">
 
 **Utilitarianism** is a family of ethical theories. It conceives “benefits” as actions that maximize well-being across all affected individuals. Utilitarianism is a version of consequentialism, which states that the consequences of any action are the only standards of right and wrong.
 
@@ -58,7 +58,7 @@ Another example is that if you eat one candy, you’ll  get a lot of pleasure. B
 
 Utilitarianism is not a perfect account on moral decision making. It has been criticized on many grounds. For example, utilitarian calculation requires that we assign values to the benefits and harm resulting from our actions and compare them with the consequences that might result from other actions. But it’s often difficult, if not impossible, to measure and compare the values of all relevant benefits and costs in advance.
 
-<text-box variant="hint" name="Risks">
+<text-box name="Risks" icon="chap2">
 
 "Risk" is commonly used to mean a likelihood of a danger or a hazard that arises unpredictably, or in a more technical sense, the probability of some resulting degree of harm. In AI ethics, harm and risks are taken to arise from design, inappropriate application, or intentional misuse of technology. Typical examples are risks such as discrimination, violation of privacy, security issues, cyberwarfare, or malicious hacking. In practice, it is difficult to compare the risks and benefits for the following reasons:
 
@@ -72,7 +72,7 @@ Utilitarianism is not a perfect account on moral decision making. It has been cr
 
 </text-box>
 
-<text-box name="Nozick’s utility monster">
+<text-box name="Nozick’s utility monster" icon="chap2">
 
 One of the biggest difficulties with utilitarianism is the question of utility: what is it really? Technically, utility is only a measure (a numeric quantity) that describes some kind of underlying “good” which we want to maximize. Say, pleasure, or well-being (which hedonist philosophers would claim to be the same thing). Pleasure is at least to some extent a subjective experience, and utility, as a measure, should transform it into an intersubjectively comparable number. That is a high bar to reach.
 
@@ -81,16 +81,3 @@ Assuming such a measure as utility does in fact exist, philosopher Robert Nozick
 Does this make utilitarianism unpalatable? Is there a way for the utilitarian to argue that the puzzle Nozick posed is not really a problem?
 
 </text-box>
-
-### Exercise
-
-1. So, if you´d be the Chief Digital Officer, you´d have to write a report on the possible benefits and
-risks of the novel health care system. To do so, you are asked to:
-
-(i) evaluate the immediate, here-and-now benefits, and possible risks
-
-(ii) evaluate the medium-term impacts, such as the positive and negative impacts on the medical
-care system, the job markets and so on.
-
-(iii) evaluate the long-term goals, such as consider the positive and negative ethical impacts in
-terms of “common good”
