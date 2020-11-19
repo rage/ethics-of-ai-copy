@@ -45,15 +45,14 @@ Lastly, we want to note that when speaking of AI and “the social”, AI ethics
 
 </styled-text>
 
-<quiz id="85149553-407a-4733-a4a0-18d54a4715cd"> </quiz>
+<quiz id="85149553-407a-4733-a4a0-18d54a4715cd"></quiz>
 
-<quiz id="0e72de1d-165b-4d3e-9e62-1008a83f2e8f"> </quiz>
+<quiz id="0e72de1d-165b-4d3e-9e62-1008a83f2e8f"></quiz>
 
-<quiz id="33ef4765-0577-4eed-b8e6-81a96c9a9804"> </quiz>
+<quiz id="33ef4765-0577-4eed-b8e6-81a96c9a9804"></quiz>
 
 
 <quiz id="c956ae17-d49d-4148-8414-029a14f3ff4c">
-
 
 Imagine that one day you end up in a heated conversation on Twitter. It starts with a university professor’s (@TuringLives) tweet on photo recreation models. He tells about a model which depixelated an input image of Finnish Prime Minister Sanna Marin into a photo of a middle-aged white male:
 
@@ -107,4 +106,5 @@ Next, you’ll enter into the Twitter discussion. Your task is to answer these t
 ![Twitter chat](./twitter-exercise.svg)
 
 How would you reply? Develop a Twitter name for yourself, and write your reply down below.
+
 </quiz>
