@@ -35,8 +35,15 @@ There is a need to translate algorithmic concepts into everyday language. Most p
 <img src="./dog_agent.png" alt="dog agent" style="width: 50px; height: 50px">
 
 
+<br>
+
+<br>
+
 <img src="./robot_agent.png" alt="robot agent">
 
+<br>
+
+<br>
 
 <img src="./technical_agent.png" alt="technical agent" style="width: 50%">
 
