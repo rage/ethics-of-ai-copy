@@ -17,12 +17,13 @@ const StyledLink = styled(Link)`
   display: inline-block;
   width: 100%;
   border-radius: 10px;
+  background-color: rgba(207, 225, 255, 0.5);
   transition: background-color 0.2s;
 
   &:hover {
     text-decoration: none;
     color: black;
-    background-color: #eeeeee;
+    background-color: rgba(130, 177, 255);
   }
 `
 
