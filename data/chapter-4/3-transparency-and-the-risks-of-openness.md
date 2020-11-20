@@ -4,6 +4,8 @@ title: 'Transparency and the risks of openness'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap4'/>
+
 ### V) Transparency and the risks of openness
 
 Transparency often denotes a modern, ethico-socio-legal “ideal” (Koivisto 2016), a normative demand for the acceptable use of technology in our societies. It is a reflection of the ideal of “openness”, that is framed in terms of “open government”, “open data”, “open source/code/access”, as well as “open science” (Larsson 2020). In this way, transparency considerations are needed to mitigate the equal distribution of scientific advancements so that the benefits of AI development can be made accessible for all people.

@@ -4,6 +4,8 @@ title: 'What is transparency?'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap4'/>
+
 ### II. What is transparency?
 
 Transparency can be defined in multiple ways. There are a number of neighboring concepts that are sometimes used as synonyms for transparency – including “explainability” (AI research in this area is known as “XAI”), “interpretability”, “understandability”, and “black box”.

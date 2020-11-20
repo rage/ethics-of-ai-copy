@@ -7,7 +7,11 @@ hidden: false
 <hero-icon heroIcon='chap1'/>
 
 
-<title title='1) A guide to AI ethics'> </title>
+## I) Introduction
+
+<p style="color:red;">In this section we will explain which topics are covered in the course and take a closer look at what artificial intelligence means in practice. </p>
+
+<br>
 
 <styled-text>
 

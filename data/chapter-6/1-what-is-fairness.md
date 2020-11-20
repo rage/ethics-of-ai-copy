@@ -6,6 +6,10 @@ hidden: false
 
 <hero-icon heroIcon='chap6'/>
 
+## I. What is fairness?
+
+<p style="color:red;">In this section, we introduce a thought experiment about fairness and bias in AI systems.</p>
+
 <text-box name="" icon="chap6">
 
 <styled-text>
