@@ -55,7 +55,7 @@ Utilitarianism provides many interesting ideas and concepts. For example, the pr
 
 For example, when you start to work out, at first you benefit greatly and your results get dramatically better. But the longer you continue working out, each individual training session has a smaller impact. If you work out too often, the utility diminishes and you’ll start to suffer from the symptoms of overtraining.
 
-Another example is that if you eat one candy, you’ll  get a lot of pleasure. But if you eat too much candy, you may end up having diabetes. This paradox of benefits should always be remembered when we evaluate the consequences of actions. What is the common good now may not be the common good in the future.
+Another example is that if you eat one candy, you’ll  get a lot of pleasure. But if you eat too much candy, you may gain weight and increase your risk to all kinds of sicknesses. This paradox of benefits should always be remembered when we evaluate the consequences of actions. What is the common good now may not be the common good in the future.
 
 <img src=../../src/assets/dim-mu.svg alt="Diminishing marginal utility" style="width: 800px; margin-left: 2em">
 
