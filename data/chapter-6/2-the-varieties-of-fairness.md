@@ -16,8 +16,6 @@ For example, if Alan Turing and Ada Lovelace both got the same grades from the e
 
 However, the principle of equality has been criticized for being “blind”. The principle does not take into account that not every one of us starts from the same position, or that there are individual differences that matter. In contrast to equality, “equity” does not promote fairness by treating categorically everybody the same, but by giving everybody equal access to the same opportunities. For example, there are situations where the differences in socio-economic background is a relevant criteria for treating people differently. For example, most people accepted it as fair when the government gives social benefits only to those citizens that really need them, and does not provide benefits to all.
 
-PICTURE: equality
-
 **Equality** means, that everybody is treated the same.
 
 ![Equality image](./equality.svg)
@@ -33,7 +31,7 @@ On the other hand, there are also criteria that are not justifiable grounds for 
 
 
 
-<text-box variant='hint' name='Different Kinds of Justice'>
+<text-box variant='hint' name='Different kinds of justice'>
 
 **Distributive justice** means the extent to which society’s institutions ensure that benefits and burdens are distributed among society’s members in ways that are fair and just.
 
