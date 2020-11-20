@@ -10,6 +10,8 @@ hidden: false
 
 <p style="color:red;">In this section, we introduce a thought experiment about fairness and bias in AI systems.</p>
 
+<br>
+
 <text-box name="" icon="chap6">
 
 <styled-text>

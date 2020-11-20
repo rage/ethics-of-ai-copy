@@ -6,6 +6,10 @@ hidden: false
 
 <hero-icon heroIcon='chap2'/>
 
+<p style="color:red;">“Well-being” is often taken to mean the same as “the common good”. But what does well-being actually mean? </p>
+
+<br>
+
 <styled-text>
 
 Despite the problems outlined in the previous section, the principles of utilitarianism may help us to consider the immediate and the less immediate consequences of our actions. One should remember that in real life, defining “common good” requires a diversity of viewpoints.

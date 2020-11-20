@@ -5,6 +5,11 @@ hidden: false
 ---
 
 <hero-icon heroIcon='chap1'/>
+
+<p style="color:red;">Here, we will take a closer look at ethics in general before exploring the meaning of AI ethics.</p>
+
+<br>
+
 <styled-text>
 
 Before looking at AI ethics, we need to set out what ethics means in the first place.

@@ -8,6 +8,8 @@ hidden: false
 
 <p style="color:red;">In this section, we’ll use an example to explore some considerations for algorithms and accountability.</p>
 
+<br>
+
 <text-box name="" icon="techIcon">
 
 **In the city of Amsterdam,  parking control is partially automated and in use across 150,000 street parking spaces in the city. The service follows a three step process:**

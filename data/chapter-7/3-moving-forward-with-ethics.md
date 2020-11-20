@@ -4,6 +4,10 @@ title: 'Moving forward with ethics'
 hidden: false
 ---
 
+<p style="color:red;">Let’s explore how AI ethics could develop and look like in the future. </p>
+
+<br>
+
 <styled-text>
 
 ### III. Moving forward with ethics

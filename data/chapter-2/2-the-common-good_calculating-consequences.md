@@ -6,6 +6,10 @@ hidden: false
 
 <hero-icon heroIcon='chap2'/>
 
+<p style="color:red;">What does the common good mean, and how does this apply to AI ethics? </p>
+
+<br>
+
 <text-box name="">
 
 Suppose you are the Chief Digital Officer in Helsinki City. You are asked to consider whether the city’s health care organisation should move from “reactive” healthcare to “preventive” healthcare. You read a report. It tells about novel, sophisticated machine learning systems that would help health authorities to forecast the possible health risks of citizens.

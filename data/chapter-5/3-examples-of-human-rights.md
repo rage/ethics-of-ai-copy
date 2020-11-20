@@ -6,6 +6,10 @@ hidden: false
 
 <hero-icon heroIcon='chap5'/>
 
+<p style="color:red;">In this section, we’ll look more closely at three examples of human rights that relate to AI. </p>
+
+<br>
+
 <styled-text>
 
 ### Privacy

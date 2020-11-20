@@ -6,6 +6,10 @@ hidden: false
 
 <hero-icon heroIcon='chap3'/>
 
+<p style="color:red;">In this section, we’ll look at moral agency and moral responsibility in the context of AI ethics. </p>
+
+<br>
+
 <img src=../../src/assets/agent-action.svg alt="Agent action" style="width: 600px">
 
 <styled-text>

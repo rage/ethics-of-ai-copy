@@ -10,6 +10,8 @@ hidden: false
 
 <p style="color:red;">Let’s examine an example that shows why transparency in AI is important, and what major issues are affected by it.</p>
 
+<br>
+
 <text-box>
 
 Imagine a facial recognition system called MYFACE. MYFACE is used for security purposes in the airport. Usually it works perfectly, but one day it starts to miscategorize individuals as potentially dangerous. As a result, several innocent people are arrested. Would it be important to know why the system made all these mistakes? Should we be able to explain why it made mistakes? And why would this matter?

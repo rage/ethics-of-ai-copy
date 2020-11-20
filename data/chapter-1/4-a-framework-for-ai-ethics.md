@@ -6,6 +6,10 @@ hidden: false
 
 <hero-icon heroIcon='chap1'/>
 
+<p style="color:red;">In this section, we lay out some principles for AI ethics that will be followed in the rest of the course.  </p>
+
+<br>
+
 <styled-text>
 
 Traditionally, technology development has typically revolved around the functionality, usability, efficiency and reliability of technologies. However, AI  technology needs a broader discussion on its societal acceptability. It impacts on moral (and political) considerations. It shapes individuals, societies and their environments in a way that has ethical implications.

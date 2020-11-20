@@ -10,6 +10,8 @@ hidden: false
 
 <p style="color:red;">In this section, we take a reflective look at the project of AI ethics as a whole – this requires us to look into the making and doing of AI ethics as a phenomenon. </p>
 
+<br>
+
 “[Ethics] plays the role of a bicycle brake on an intercontinental airplane”
 -Ulrike Beck, 1988
 

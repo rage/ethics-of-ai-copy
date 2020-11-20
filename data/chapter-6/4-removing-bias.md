@@ -6,6 +6,10 @@ hidden: false
 
 <hero-icon heroIcon='chap6'/>
 
+<p style="color:red;">How can we make AI systems more fair and less biased? Let’s look at some ways this can be done. </p>
+
+<br>
+
 <styled-text>
 
 So, how do we make AI systems more fair and less biased? There is no panacea for bias – partly because of the many different ways that bias can manifest, and partly because there is no single definition of an algorithmically fair outcome. Nonetheless, we can look at some of the situations above and look at ways the problems with fairness could potentially have been dealt with.
