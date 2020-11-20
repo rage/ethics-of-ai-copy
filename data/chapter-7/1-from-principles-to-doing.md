@@ -13,7 +13,7 @@ hidden: false
 
 In this section, we’ll take a reflective look at the whole project of AI ethics. This means looking at the making and doing of AI ethics as a phenomenon. AI ethics is a project with diverse members who have differing stakes – and it produces contents and discussions that can be analyzed as cultural products. That is, AI ethics is created by certain people, at a certain time, for certain purposes. But what are these purposes, and is AI ethics achieving its goals?
 
-To date, most ethical discussions regarding AI systems have focused on defining principles to prevent risks. National policies and various initiatives have been made on the basis of them. AlgorithmWatch, a Berlin-based organization, maintains a repository of published AI ethics guidelines, with over 160 collected so far. It is hard to find any actor in AI these days that does not point to their own set of guidelines as evidence of their ethical engagement.
+To date, most ethical discussions regarding AI systems have focused on defining principles to prevent risks. National policies and various initiatives have been made on the basis of these discussions. AlgorithmWatch, a Berlin-based organization, maintains a repository of published AI ethics guidelines, with over 160 collected so far. It is hard to find any actor in AI these days that does not point to their own set of guidelines as evidence of their ethical engagement.
 
 Although ethical principles can shape the development and implementation of ethics-based policy measures and legal norms, empirical studies suggest that guidelines have little impact on the practices surrounding AI development:
 
@@ -25,7 +25,7 @@ Although ethical principles can shape the development and implementation of ethi
 
 <text-box name="What is ethics-washing?">
 
-Often, there is a lack of real implementation mechanics and assessment practices that would turn guidelines into more ethically aware development. Also lacking are mechanisms to halt ethically suspect projects. According to critics, many of the activities around the discussion of AI ethics should be described as “ethics-washing”.
+Often, there is a lack of real implementation mechanics and assessment practices that would turn guidelines into more ethically aware development. Also lacking are mechanisms to halt ethically suspect projects. According to critics, many of the activities around the discussion of AI ethics should therefore be described as “ethics-washing”.
 
 **Technical fixes**
 

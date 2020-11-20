@@ -31,7 +31,7 @@ On the other hand, there are also criteria that are not justifiable grounds for 
 
 
 
-<text-box variant='hint' name='Different Kinds of Justice'>
+<text-box variant='hint' name='Different kinds of justice'>
 
 **Distributive justice** means the extent to which society’s institutions ensure that benefits and burdens are distributed among society’s members in ways that are fair and just.
 

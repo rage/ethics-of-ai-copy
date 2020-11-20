@@ -101,9 +101,8 @@ Nonetheless, the progressive zeal that is attached to AI future visions has brou
 
 </styled-text>
 
-<text-box name="Case: Caged pavements: AI safety and environmental uncertainty" icon="chap5">
+<text-box name="Case: Caged pavements – AI safety and environmental uncertainty" icon="chap5">
 
-Caged pavements: AI safety and environmental uncertainty
 A difficult problem for autonomous vehicles is the complex unpredictability of the urban traffic environment. While AI-driven vehicles are constantly being developed to include better ways to model their surroundings, even a small group of individuals – all performing their own movement goals within a shared space – will create a constellation that is difficult to predict. When technical solutions in the cars are too far off, another way to approach the issue is to contain the uncertainty in the environment.
 
 In a New York Times column, consultant Eric A. Taub proposed a solution: by enclosing pavements in cages, with traffic-light-synced gates at crossings, the complex traffic environment is simplified to become more understandable to autonomous vehicles and therefore safer. However, this safety comes at an obvious cost: limiting the freedom of pedestrians, and a redistribution of accountability. This means we should look at the intersecting limits of the right of safety vs freedom. Which one is more important?

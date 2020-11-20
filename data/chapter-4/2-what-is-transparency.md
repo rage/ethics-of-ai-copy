@@ -20,10 +20,11 @@ As a property of a system, transparency addresses how a model works or functions
 
 <text-box name="What makes a system a “black box”?" icon="chap4">
 
-Complexity. In contemporary AI-systems, operation of a neural network is encoded in thousands, or even millions, of numerical coefficients. Typically the system learns their values at the training phase. Because the operation of the neural network depends on the complicated interactions between these values, it is practically impossible to understand how the network works even if all the parameters are known.
-Difficulty of developing explainable solutions. Even if the used AI models support some level of explainability, additional development is required to build explainability to the system. It may be difficult to create a user experience for careful yet easily understandable explanations for the users.
+**Complexity.** In contemporary AI-systems, operation of a neural network is encoded in thousands, or even millions, of numerical coefficients. Typically the system learns their values at the training phase. Because the operation of the neural network depends on the complicated interactions between these values, it is practically impossible to understand how the network works even if all the parameters are known.
 
-Risk concerns. Many AI algorithms can be fooled if an attacker carefully designs an input that causes the system to malfunction. In a highly transparent system, it may be easier to game the system to come up with strange or unwanted results. Thus, sometimes systems are intentionally designed as black boxes.
+**Difficulty of developing explainable solutions.** Even if the used AI models support some level of explainability, additional development is required to build explainability to the system. It may be difficult to create a user experience for careful yet easily understandable explanations for the users.
+
+**Risk concerns.** Many AI algorithms can be fooled if an attacker carefully designs an input that causes the system to malfunction. In a highly transparent system, it may be easier to game the system to come up with strange or unwanted results. Thus, sometimes systems are intentionally designed as black boxes.
 
 </text-box>
 

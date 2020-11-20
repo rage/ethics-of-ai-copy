@@ -9,7 +9,7 @@ hidden: false
 
 Before looking at AI ethics, we need to set out what ethics means in the first place.
 
-Ethics seeks to answer questions like “what is good or bad?”, “what is right - what is wrong”, or “what is
+Ethics seeks to answer questions like “what is good or bad?”, “what is right or what is wrong”, or “what is
 justice, well-being or equality”. As a discipline, ethics involves systematizing, defending, and recommending
 concepts of right and wrong conduct by using [conceptual analysis](https://en.wikipedia.org/wiki/Philosophical_analysis), [thought experiments](https://plato.stanford.edu/entries/thought-experiment/), and [argumentation](https://iep.utm.edu/argument/). (If you want to know more about philosophical reasoning, see this [video](https://www.youtube.com/watch?v=NKEhdsnKKHs) by Crash Course
 Philosophy.)
