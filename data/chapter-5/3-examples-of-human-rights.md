@@ -8,7 +8,7 @@ hidden: false
 
 <styled-text>
 
-#### Privacy
+### Privacy
 Privacy concerns are raised, for example, by digital records which contain information that can be used  to infer sensitive attributes (age, gender or sexual orientation), preferences, or religious and political  views. Biometric data also raises privacy concerns, as it can reveal details of physical and mental health. Often the real worry is not the data itself, but the way the data can be used to manipulate, affect, or harm a person.
 
 Ethically, privacy is related to personal autonomy and integrity. Following the principles set out by John Locke, a right to control our own personal lives has been seen as central to our autonomy. If that right is taken away, it violates something fundamental about our psychological and moral integrity.
@@ -169,7 +169,11 @@ At the same time, many potential problems are associated with the deployment of 
 
 To summarize, safety plays into AI technologies in multiple different ways. These all raise questions about the balancing of normative values: while calls to make “AI for good” sound promising, in practice the enactment of rights and normative values in technological systems often collides with the plethora of conflicting interests and deep injustices existing in the world. When evaluating safety, it is then important to evaluate what other rights intersect in practice and ask, “safety for whom?”
 
-### Inclusion and the gender divide
+<br/>
+<br/>
+
+
+## Inclusion and the gender divide
 
 Inclusion means that all people, regardless of the characteristics that make them different — be it race, gender, sexuality, ability, or some other feature — have an equal right to fully participate in society.
 
