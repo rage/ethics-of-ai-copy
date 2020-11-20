@@ -22,7 +22,7 @@ In this course, we'll take a look at the ethical issues related to contemporary 
 </styled-text>
 
 
-<text-box icon="techIcon" background="rgba(246, 235, 232, 0.5)" name="A guide to AI ethics">
+<text-box icon="techIcon" background="rgba(246, 235, 232, 0.5)" name="What is AI?">
 
 **Artificial intelligence** is an overall term describing a set of different kinds of techniques to make computers behave in some kind of intelligent fashion. There is no agreed definition of AI, but in general the ability to perform tasks without supervision and to learn so as to improve performance are key parts of AI.
 
