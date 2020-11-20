@@ -22,7 +22,7 @@ The role of human rights is to protect people's ability to form, construe, and p
 
 #### What is a human right?
 
-* A human right is a norm which can exist on different levels:
+A human right is a norm which can exist on different levels:
 * a shared norm of actual human moralities
 * a justified moral norm supported by strong reasons
 * a legal right at the national level (where it might be referred to as a “civil” or “constitutional” right)
