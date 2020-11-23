@@ -128,7 +128,11 @@ export default class CourseContentTemplate extends React.Component {
               <Container>
                 <ContentWrapper>
                   <ChapterBox />
-                  <H2> {chooseChapterValue[frontmatter.path.substr(11,1)]}. {frontmatter.title}</H2>
+                  <H2>
+                    {" "}
+                    {chooseChapterValue[frontmatter.path.substr(11, 1)]}.{" "}
+                    {frontmatter.title}
+                  </H2>
                   {renderAst(htmlAst)}
                   <EndOfSubSection />
                 </ContentWrapper>
