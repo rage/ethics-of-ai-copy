@@ -93,11 +93,20 @@ export default class CourseContentTemplate extends React.Component {
     )
     const parentSectionPath = `/${frontmatter.path.split(/\//g)[1]}`
 
+    const chooseChapterHeader = {
+      1: "What is AI ethics?",
+      2: "What should we do?",
+      3: "Who should be blamed?",
+      4: "Should we know how AI works",
+      5: "Should AI respect and promote them?",
+      6: "Should AI be fair and non-discriminative",
+      7: "AI ethics in practice",
+    }
+
     const filePath = data.page.fileAbsolutePath.substring(
       data.page.fileAbsolutePath.lastIndexOf("/data/"),
       data.page.fileAbsolutePath.length,
     )
-
     const chooseChapterValue = {
       1: "I",
       2: "II",
@@ -105,7 +114,6 @@ export default class CourseContentTemplate extends React.Component {
       4: "IV",
       5: "V",
     }
-
     const heroIconPath = data.page.htmlAst.children[0]
     const heroIcon =
       heroIconPath === undefined ? undefined : heroIconPath.properties.heroicon
@@ -122,7 +130,7 @@ export default class CourseContentTemplate extends React.Component {
             <Layout>
               <HeroSection
                 title={parentSectionName}
-                subtitle={frontmatter.title}
+                subtitle={chooseChapterHeader[frontmatter.path.substr(9, 1)]}
                 heroIcon={heroIcon}
               ></HeroSection>
               <Container>

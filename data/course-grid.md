@@ -19,12 +19,12 @@ banner: false
 </course-grid-card>
     <course-grid-card title="chapter03" url="/chapter-3/1-algorithms-and-accountability">
 
-<course-grid-text><H5>Chapter 3: Accountability</H5><span>who should be blamed?</span></course-grid-text>
+<course-grid-text><H5>Chapter 3: Accountability</H5><span>Who should be blamed?</span></course-grid-text>
 
 </course-grid-card>
     <course-grid-card title="chapter04" url="chapter-4/1-transparency-in-ai">
 
-<course-grid-text><H5>Chapter 4: Transparency</H5><span>should we know how AI works</span></course-grid-text>
+<course-grid-text><H5>Chapter 4: Transparency</H5><span>Should we know how AI works</span></course-grid-text>
 
 </course-grid-card>
     <course-grid-card title="chapter05" url="chapter-5/1-introduction">
