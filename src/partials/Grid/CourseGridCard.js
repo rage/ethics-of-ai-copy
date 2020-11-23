@@ -7,15 +7,16 @@ import Icon3 from "../../assets/chap-3.svg"
 import Icon4 from "../../assets/chap-4.svg"
 import Icon5 from "../../assets/chap-5.svg"
 import Icon6 from "../../assets/chap-6.svg"
+import Icon7 from "../../assets/chap-7.svg"
 
 const svgs = {
   chapter01: <Icon1 width="130px" />,
   chapter02: <Icon2 />,
-  chapter03: <Icon3 />,
+  chapter03: <Icon3 width="130px" />,
   chapter04: <Icon4 />,
   chapter05: <Icon5 />,
   chapter06: <Icon6 />,
-  chapter07: <Icon3 />,
+  chapter07: <Icon7 width="130px" />,
 }
 
 const CourseGridWrapper = styled.div`

@@ -4,7 +4,7 @@ title: 'From principles to doing'
 hidden: false
 ---
 
-<hero-icon heroIcon='chap6'/>
+<hero-icon heroIcon='chap7'/>
 
 <styled-text>
 
