@@ -16,7 +16,7 @@ hidden: false
 Values and norms are the basic elements of ethics. The concept “value” means, roughly, the degree of
 importance of a thing or an action. Values provide ideals and standards with which evaluate things, choices,
 actions, and events. In ethics, the focus is primarily on moral values, although other types of values
-– economic, aesthetic, epistemic (knowledge related) etc – are sometimes relevant morally. For example,
+– economic, aesthetic, epistemic (or knowledge-related) – are sometimes relevant morally. For example,
 economic factors may play morally significant role, if economic decisions have morally significant
 consequences to people.
 
