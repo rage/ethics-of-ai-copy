@@ -38,7 +38,7 @@ The five principles of AI ethics answer different questions and focus on differe
 
 </styled-text>
 
-<big-five> </big-five>
+<img src="./big-five.svg" alt="Big five"> </img>
 
 <styled-text>
 

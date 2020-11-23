@@ -37,4 +37,8 @@ Immanuel Kant is one of the most famous European moral philosophers. For Immanue
 
 So, according to Kant, we owe ourselves moral respect in virtue of our autonomy. But we owe similar respect to all other persons in virtue of their capacity. Hence (via the second formulation of Kant’s famous Categorical Imperative), we are obliged to act out of fundamental respect for other persons in virtue of their autonomy. In this way, autonomy serves as both a model of practical reason in the determination of moral obligation and as the feature of other persons who deserve moral respect from us. (For further discussion, see [Immanual Kant and moral philosophy](https://en.wikipedia.org/wiki/Categorical_imperative).)
 
+
+<img src="./kant.png" alt="Picture of Kant" style="width: 50%; height:50%"> </img>
+
+
 </text-box>

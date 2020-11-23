@@ -11,6 +11,7 @@ import chap3 from "../../images/chap-3.svg"
 import chap4 from "../../images/chap-4.svg"
 import chap5 from "../../images/chap-5.svg"
 import chap6 from "../../images/chap-6.svg"
+import chap7 from "../../images/chap-7.svg"
 
 const chooseIcon = {
   chap1: chap1,
@@ -19,6 +20,7 @@ const chooseIcon = {
   chap4: chap4,
   chap5: chap5,
   chap6: chap6,
+  chap7: chap7,
   tech: techIcon,
   phil: philIcon,
   bg: bgIcon,

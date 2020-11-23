@@ -4,6 +4,8 @@ title: 'From principles to doing'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap6'/>
+
 <styled-text>
 
 ## I. From principles to doing
@@ -43,4 +45,6 @@ A more appropriate image positions AI, like any other technology, in the spaces 
 
 
 </text-box>
+
+<img src="./p-p-f-01.svg" alt="Future"> </img>
 

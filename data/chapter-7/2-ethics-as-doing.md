@@ -4,6 +4,8 @@ title: 'Ethics as doing'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap6'/>
+
 <p style="color:red;">How ethics guidelines can create expectations and impact the discussion about AI ethics. </p>
 
 <br>

@@ -20,6 +20,12 @@ hidden: false
 
 3) A parking inspector uses the scanned images to remotely assess whether there is a special situation such as loading or unloading, or stationary cars in front of a traffic light. The parking inspector may also verify the situation on-site by scooter. Whenever there is no valid reason for non-paid parking, a parking ticket is issued.
 
+<br>
+
+<br>
+
+<img src="am-park.svg" alt="parking" style="width: 80%">  </img>
+
 </text-box>
 
 <styled-text>

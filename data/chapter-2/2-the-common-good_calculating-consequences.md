@@ -10,6 +10,10 @@ hidden: false
 
 <br>
 
+<img src="stk_keksi_hki_biomedicum_0129_cropped.jpg" alt="Illustration"> </img>
+
+Illustration. © Keksi Agency via City of Helsinki / Communications
+
 <text-box name="">
 
 Suppose you are the Chief Digital Officer in Helsinki City. You are asked to consider whether the city’s health care organisation should move from “reactive” healthcare to “preventive” healthcare. You read a report. It tells about novel, sophisticated machine learning systems that would help health authorities to forecast the possible health risks of citizens.

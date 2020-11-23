@@ -33,15 +33,15 @@ In summary, while there is a need to develop more transparent practices for AI, 
 There is a need to translate algorithmic concepts into everyday language. Most people without a  background in computer science are not familiar with the basic vocabulary of AI. This has a direct impact on their ability to understand recent developments.
 
 <span style="font-size: 30px">1.</span>
-<img src="./rl1.svg" alt="dog agent" style="width: 450px">
+<img src="./rl1.svg" alt="Techical reinforcement learning algorithm" style="width: 450px">
 
 <span style="font-size: 30px">2.</span>
-<img src="./rl2.svg" alt="robot agent" style="width: 400px">
+<img src="./rl2.svg" alt="Robot reinforcement learning algorithm" style="width: 400px">
 
 <br>
 
 <span style="font-size: 30px">3.</span>
-<img src="./rl3.svg" alt="technical agent" style="width: 450px">
+<img src="./rl3.svg" alt="Cat reinforcement learning algorithm" style="width: 450px">
 
 <br>
 
