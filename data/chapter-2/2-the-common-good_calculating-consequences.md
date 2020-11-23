@@ -6,9 +6,13 @@ hidden: false
 
 <hero-icon heroIcon='chap2'/>
 
+<styled-text>
+
 <p style="color:red;">What does the common good mean, and how does this apply to AI ethics? </p>
 
 <br>
+
+</styled-text>
 
 <img src="stk_keksi_hki_biomedicum_0129_cropped.jpg" alt="Illustration"> </img>
 

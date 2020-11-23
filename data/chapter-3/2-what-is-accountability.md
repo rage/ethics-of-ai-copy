@@ -6,11 +6,11 @@ hidden: false
 
 <hero-icon heroIcon='chap3'/>
 
+<styled-text>
+
 <p style="color:red;">What does accountability actually mean, and how does it apply to AI ethics? </p>
 
 <br>
-
-<styled-text>
 
 Accountability means the state of being responsible or answerable for a system, its behavior, and its potential impacts. Accountability is an acknowledgement of responsibility for actions, decisions, and products.
 

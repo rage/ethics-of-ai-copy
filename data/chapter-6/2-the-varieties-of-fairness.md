@@ -6,11 +6,11 @@ hidden: false
 
 <hero-icon heroIcon='chap6'/>
 
+<styled-text>
+
 <p style="color:red;">When it comes to fairness, equality and equity mean different things. </p>
 
 <br>
-
-<styled-text>
 
 Philosophers have proposed various definitions for the concept of fairness. According to Aristotle, “equals should be treated equally and unequals unequally”.
 

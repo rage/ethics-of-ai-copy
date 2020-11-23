@@ -6,9 +6,13 @@ hidden: false
 
 <hero-icon heroIcon='chap3'/>
 
+<styled-text>
+
 <p style="color:red;">In this section, we’ll use an example to explore some considerations for algorithms and accountability.</p>
 
 <br>
+
+</styled-text>
 
 <text-box name="" icon="techIcon">
 

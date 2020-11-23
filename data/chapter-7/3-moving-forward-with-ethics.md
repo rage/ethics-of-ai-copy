@@ -6,13 +6,11 @@ hidden: false
 
 <hero-icon heroIcon='chap6'/>
 
+<styled-text>
+
 <p style="color:red;">Let’s explore how AI ethics could develop and what they will look like in the future.</p>
 
 <br>
-
-<styled-text>
-
-### III. Moving forward with ethics
 
 Moving beyond ethical guidelines, how should AI ethics manifest in the future? What kind of conversations around the ethics of AI should we have, and what kind of activities and ways of doing ethics should be taken into practice? This is a difficult question to answer, but some hints can be found from looking at what is left outside the scope of the AI ethics guidelines we have been discussing so far.
 

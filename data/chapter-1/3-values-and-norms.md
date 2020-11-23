@@ -6,12 +6,11 @@ hidden: false
 
 <hero-icon heroIcon='chap1'/>
 
+<styled-text>
+
 <p style="color:red;">What are values and norms, and why they are important to discussions about ethics? </p>
 
 <br>
-
-<styled-text>
-
 
 Values and norms are the basic elements of ethics. The concept “value” means, roughly, the degree of
 importance of a thing or an action. Values provide ideals and standards with which evaluate things, choices,

@@ -6,11 +6,11 @@ hidden: false
 
 <hero-icon heroIcon='chap5'/>
 
+<styled-text>
+
 <p style="color:red;">Exploring how AI impacts the human rights of children. </p>
 
 <br>
-
-<styled-text>
 
 Have you ever thought about how much AI impacts children? They are exposed to algorithms at home, at school, and at play. Algorithms shape the environments in which they live, the services they have access to, and how they spend their time. Children play with interactive smart toys, they watch videos recommended by algorithms, use voice commands to control their phones, and use image manipulation algorithms for fun in social media.
 

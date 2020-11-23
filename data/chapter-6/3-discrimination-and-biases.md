@@ -6,11 +6,12 @@ hidden: false
 
 <hero-icon heroIcon='chap6'/>
 
+<styled-text>
+
 <p style="color:red;">Here, we consider discrimination and explore how discriminatory practices can manifest through artificial intelligence. </p>
 
 <br>
 
-<styled-text>
 
 In this section we will study discrimination and how discriminatory practices can manifest through artificial intelligence. Bias has recently become the prototypical issue for AI ethics, since the hope that the exact formality of algorithms makes them immune to partiality has turned out to be sorely false. First, we will look at two examples of algorithmic systems, which will help us analyze discrimination and bias in AI.
 

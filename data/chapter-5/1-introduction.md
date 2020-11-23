@@ -6,12 +6,13 @@ hidden: false
 
 <hero-icon heroIcon='chap5'/>
 
-
-## I. Introduction
+<styled-text>
 
 <p style="color:red;">In this section, we introduce an example to demonstrate how AI systems can affect human rights like privacy and security. </p>
 
 <br>
+
+</styled-text>
 
 <text-box icon="chap5">
 

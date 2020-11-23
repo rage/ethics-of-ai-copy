@@ -4,7 +4,7 @@ import styled from "styled-components"
 import rehypeReact from "rehype-react"
 import { navigate, Link } from "gatsby"
 import { Helmet } from "react-helmet"
-
+import H2 from "../partials/Headers/H2"
 import Layout from "./Layout"
 import HeroSection from "../partials/Contentpage/HeroSection"
 import PagesInThisSection from "../partials/PagesInThisSection"
@@ -26,6 +26,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowCircleUp as icon } from "@fortawesome/free-solid-svg-icons"
 import EndOfSubSection from "../components/EndOfSubSection"
 import { tryToScrollToSelector } from "../util/dom"
+import { nthIndex } from "../util/strings"
 
 const StyledIcon = styled(FontAwesomeIcon)`
   margin-right: 0.25rem;
@@ -97,6 +98,14 @@ export default class CourseContentTemplate extends React.Component {
       data.page.fileAbsolutePath.length,
     )
 
+    const chooseChapterValue = {
+      1: "I",
+      2: "II",
+      3: "III",
+      4: "IV",
+      5: "V",
+    }
+
     const heroIconPath = data.page.htmlAst.children[0]
     const heroIcon =
       heroIconPath === undefined ? undefined : heroIconPath.properties.heroicon
@@ -119,6 +128,7 @@ export default class CourseContentTemplate extends React.Component {
               <Container>
                 <ContentWrapper>
                   <ChapterBox />
+                  <H2> {chooseChapterValue[frontmatter.path.substr(11,1)]}. {frontmatter.title}</H2>
                   {renderAst(htmlAst)}
                   <EndOfSubSection />
                 </ContentWrapper>

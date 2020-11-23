@@ -6,11 +6,12 @@ hidden: false
 
 <hero-icon heroIcon='chap3'/>
 
+
+<styled-text>
+
 <p style="color:red;">Accountability, or finding out who is responsible for when something goes wrong with AI systems, can be difficult. </p>
 
 <br>
-
-<styled-text>
 
 Accountability is often taken as a legal and ethical obligation on an individual or organisation to accept responsibility for the use of AI systems, and to disclose the results in a transparent manner. This formulation presupposes a “power-relation”. It individuates who is in control and who is to be blamed.
 

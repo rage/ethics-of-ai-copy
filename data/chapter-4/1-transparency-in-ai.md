@@ -8,9 +8,13 @@ hidden: false
 
 ## The principle of transparency
 
+<styled-text>
+
 <p style="color:red;">Let’s examine an example that shows why transparency in AI is important, and what major issues are affected by it.</p>
 
 <br>
+
+</styled-text>
 
 <text-box>
 

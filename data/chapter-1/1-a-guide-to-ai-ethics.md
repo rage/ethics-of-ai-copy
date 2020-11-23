@@ -7,13 +7,11 @@ hidden: false
 <hero-icon heroIcon='chap1'/>
 
 
-## I) Introduction
+<styled-text>
 
 <p style="color:red;">In this section we will explain which topics are covered in the course and take a closer look at what artificial intelligence means in practice. </p>
 
 <br>
-
-<styled-text>
 
 Ever since the birth of computation with Alan Turing, humans have put high hopes on the power of computers and artificial intelligence (AI). AI is expected to bring significant and diverse benefits to society – from greater efficiency and productivity to tackling a number of difficult global problems, such as climate change, poverty, disease, and conflict.
 
