@@ -40,7 +40,7 @@ One of the core tensions in the AI economy is the balancing of the freedom to pu
 
 ### 2) Guidelines as assurances
 
-Others have argued that ethics guidelines work as assurance to investors and the public (Kerr 2020). That is, in the age of social media, news of businesses’ moral misgivings spread fast and can cause quick shifts in a company’s public image. Publishing ethics guidelines makes assurances that the organization has the competence for producing ethical language, and the capacity to take part in public moral discussions to soothe public concern.
+Others have argued that ethics guidelines work as assurance to investors and the public [(Kerr 2020)](https://journals-sagepub-com.libproxy.helsinki.fi/doi/10.1177/2053951720915939). That is, in the age of social media, news of businesses’ moral misgivings spread fast and can cause quick shifts in a company’s public image. Publishing ethics guidelines makes assurances that the organization has the competence for producing ethical language, and the capacity to take part in public moral discussions to soothe public concern.
 
 Thus AI ethics guidelines work to deflect critique away from companies; from both investors and the general public. That is, if the company is seen as being able to manage and anticipate the ethical critique produced by journalists, regulators and civil society, the company will also be seen as a stable investment, with the competence to navigate public discourses that may otherwise be harmful for its outlook.
 
@@ -51,7 +51,7 @@ With the AI boom well underway, the need for new kinds of expertise arises, and 
 
 To be seen as an expert yields certain forms of power. Experts create judgements, provide legitimacy to viewpoints, define situations, and set priorities. Thus, being seen as an AI ethics expert gives some say in what the future of society will look like.
 
-Expertise is only effective if it is publicly recognized, and in the race to become a leading AI organization, publications are a way to secure visibility. According to Greene et al., “ethics and ethical codes designate and defend social status and expertise”. That is, taking part in the AI ethics discussion by publishing a set of ethical guidelines is a way to demonstrate expertise, increasing the organization’s chances of being invited to a seat at the table in regards to future AI issues.
+Expertise is only effective if it is publicly recognized, and in the race to become a leading AI organization, publications are a way to secure visibility. According to Greene et al., “ethics and ethical codes designate and defend social status and expertise” [(Greene et al 2019)](https://scholarspace.manoa.hawaii.edu/bitstream/10125/59651/0211.pdf). That is, taking part in the AI ethics discussion by publishing a set of ethical guidelines is a way to demonstrate expertise, increasing the organization’s chances of being invited to a seat at the table in regards to future AI issues.
 
 Even if ethical guidelines are ineffectual in effecting change in AI practice, they can nonetheless be useful as communicative strategies and perform other functions for the actors involved. They can help us to figure out what kind of principles and practices should be taken up in the future of ethical AI. And they force us to ask how diverse organizations and individuals can take part in building a more just AI future in their own ways.
 
