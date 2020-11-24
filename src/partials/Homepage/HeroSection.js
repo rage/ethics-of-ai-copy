@@ -3,7 +3,6 @@ import styled from "styled-components"
 
 import { respond } from "../../_respond"
 import { PrimaryButton } from "../../components/Buttons"
-import H1 from "../Headers/H1"
 import HeroIllustration from "../../assets/hero-svg.svg"
 
 const ButtonWrapper = styled.div`
@@ -29,20 +28,28 @@ const HeroSection = styled.div`
   z-inde: 99;
 `
 
+const BigText = styled.h1`
+font-family: "Work Sans", sans-serif;
+font-weight: 600;
+font-size: clamp(40px, 4vw, 80px);
+color: #26252a;
+`
+
 const HeroText = styled.div`
-  color: #798da3;
-  font-size: 18px;
+  color: #333;
+  font-size: 20px;
   font-weight: 400;
   width: 60%;
   display: grid;
   margin: 0 auto;
+  opacity: 0.8;
 
   ${respond.xs`
   width: 100%;;
 `}
 
   ${respond.lg`
-  width: 45%;
+  width: 60%;
 `}
 `
 
@@ -61,7 +68,7 @@ export default (props) => {
     <div>
       <StyledSVG />
       <HeroSection>
-        <H1> {props.title} </H1>
+        <BigText> {props.title} </BigText>
         <HeroText> {props.subtitle} </HeroText>{" "}
         <ButtonWrapper>
           <PrimaryButton to="/start">Start </PrimaryButton>
