@@ -122,7 +122,7 @@ The third concept of safety and AI we will look at in this section is the produc
 
 Robotization can provide an example of this concept in practice. The work of handling hazardous materials or working in hazardous environments can be delegated to robots, protecting the health of human (or animal) workers.
 
-Another way certain forms of safety are produced through AI is through automated surveillance. AI-powered surveillance has manifested in many domains: in public spaces, in law-enforcement work through predictive policing, and in domestic life through products like Amazon’s Ring. Although surveillance cameras (CCTV) have existed and dominated public and semi-public spaces for decades, the ACLU argues that automation brings about a big qualitative shift in how surveillance functions ([American Civil Liverties Union 2019](https://www.aclu.org/sites/default/files/field_document/061819-robot_surveillance.pdf)). But what is so different?
+Another way certain forms of safety are produced through AI is through automated surveillance. AI-powered surveillance has manifested in many domains: in public spaces, in law-enforcement work through predictive policing, and in domestic life through products like Amazon’s Ring. Although surveillance cameras (CCTV) have existed and dominated public and semi-public spaces for decades, the ACLU argues that automation brings about a big qualitative shift in how surveillance functions [(American Civil Liberties Union 2019)](https://www.aclu.org/sites/default/files/field_document/061819-robot_surveillance.pdf). But what is so different?
 
 </styled-text>
 
