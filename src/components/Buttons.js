@@ -47,9 +47,6 @@ const Hero = styled(StyledButton)`
   color: #fff;
   border-radius: 50px;
   text-transform: uppercase;
-  :hover {
-    background: #4A6164;
-  }
 `
 const Secondary = styled(StyledButton)`
   background: #fff;

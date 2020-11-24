@@ -31,7 +31,7 @@ const TeaserIcon = styled.div`
   display: flex;
   align-content: center;
   justify-content: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 `
 
 const TeaserText = styled.div`
@@ -39,10 +39,10 @@ const TeaserText = styled.div`
   flex-direction: column;
   align-item: center;
   padding: 0 1rem 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
   font-weight: 400;
   color: #333;
-  opacity: 0.8;
 `
 
 export default (props) => {

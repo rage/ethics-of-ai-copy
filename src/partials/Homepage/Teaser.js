@@ -38,7 +38,7 @@ const TeaserCardContainer = styled.div`
 
   ${respond.lg`
   padding: 2rem 0;
-  grid-template-columns: repeat(3, 22rem);
+  grid-template-columns: repeat(3, 26rem);
   grid-gap: 6rem;
   `}
 `

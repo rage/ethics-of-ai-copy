@@ -38,11 +38,11 @@ color: #26252a;
 const HeroText = styled.div`
   color: #333;
   font-size: 20px;
+  line-height: 1.8;
   font-weight: 400;
   width: 60%;
   display: grid;
   margin: 0 auto;
-  opacity: 0.8;
 
   ${respond.xs`
   width: 100%;;
