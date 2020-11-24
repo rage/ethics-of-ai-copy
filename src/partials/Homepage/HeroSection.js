@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import { respond } from "../../_respond"
-import { PrimaryButton } from "../../components/Buttons"
+import { HeroButton } from "../../components/Buttons"
 import HeroIllustration from "../../assets/hero-svg.svg"
 
 const ButtonWrapper = styled.div`
@@ -31,7 +31,7 @@ const HeroSection = styled.div`
 const BigText = styled.h1`
 font-family: "Work Sans", sans-serif;
 font-weight: 600;
-font-size: clamp(40px, 4vw, 80px);
+font-size: clamp(40px, 4vw, 70px);
 color: #26252a;
 `
 
@@ -71,7 +71,7 @@ export default (props) => {
         <BigText> {props.title} </BigText>
         <HeroText> {props.subtitle} </HeroText>{" "}
         <ButtonWrapper>
-          <PrimaryButton to="/start">Start </PrimaryButton>
+          <HeroButton to="/start">Start </HeroButton>
         </ButtonWrapper>
       </HeroSection>
     </div>

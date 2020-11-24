@@ -39,9 +39,10 @@ const TeaserText = styled.div`
   flex-direction: column;
   align-item: center;
   padding: 0 1rem 0.5rem 1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
-  color: #6f7678;
+  color: #333;
+  opacity: 0.8;
 `
 
 export default (props) => {
