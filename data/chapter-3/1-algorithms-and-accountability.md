@@ -6,6 +6,14 @@ hidden: false
 
 <hero-icon heroIcon='chap3'/>
 
+<styled-text>
+
+<p style="color:red;">In this section, we’ll use an example to explore some considerations for algorithms and accountability.</p>
+
+<br>
+
+</styled-text>
+
 <text-box name="" icon="techIcon">
 
 **In the city of Amsterdam,  parking control is partially automated and in use across 150,000 street parking spaces in the city. The service follows a three step process:**
@@ -15,6 +23,12 @@ hidden: false
 2) After identification, the license plate number is checked against the National Parking Register to validate if the car has permission to park at a given location. Whenever no payment has been made for current parking, the case is sent to a human inspector for further processing.
 
 3) A parking inspector uses the scanned images to remotely assess whether there is a special situation such as loading or unloading, or stationary cars in front of a traffic light. The parking inspector may also verify the situation on-site by scooter. Whenever there is no valid reason for non-paid parking, a parking ticket is issued.
+
+<br>
+
+<br>
+
+<img src="am-park.svg" alt="parking" style="width: 80%">  </img>
 
 </text-box>
 

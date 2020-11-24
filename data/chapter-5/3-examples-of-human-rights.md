@@ -8,7 +8,11 @@ hidden: false
 
 <styled-text>
 
-#### Privacy
+<p style="color:red;">In this section, we’ll look more closely at three examples of human rights that relate to AI. </p>
+
+<br>
+
+### Privacy
 Privacy concerns are raised, for example, by digital records which contain information that can be used  to infer sensitive attributes (age, gender or sexual orientation), preferences, or religious and political  views. Biometric data also raises privacy concerns, as it can reveal details of physical and mental health. Often the real worry is not the data itself, but the way the data can be used to manipulate, affect, or harm a person.
 
 Ethically, privacy is related to personal autonomy and integrity. Following the principles set out by John Locke, a right to control our own personal lives has been seen as central to our autonomy. If that right is taken away, it violates something fundamental about our psychological and moral integrity.
@@ -101,9 +105,8 @@ Nonetheless, the progressive zeal that is attached to AI future visions has brou
 
 </styled-text>
 
-<text-box name="Case: Caged pavements: AI safety and environmental uncertainty" icon="chap5">
+<text-box name="Case: Caged pavements – AI safety and environmental uncertainty" icon="chap5">
 
-Caged pavements: AI safety and environmental uncertainty
 A difficult problem for autonomous vehicles is the complex unpredictability of the urban traffic environment. While AI-driven vehicles are constantly being developed to include better ways to model their surroundings, even a small group of individuals – all performing their own movement goals within a shared space – will create a constellation that is difficult to predict. When technical solutions in the cars are too far off, another way to approach the issue is to contain the uncertainty in the environment.
 
 In a New York Times column, consultant Eric A. Taub proposed a solution: by enclosing pavements in cages, with traffic-light-synced gates at crossings, the complex traffic environment is simplified to become more understandable to autonomous vehicles and therefore safer. However, this safety comes at an obvious cost: limiting the freedom of pedestrians, and a redistribution of accountability. This means we should look at the intersecting limits of the right of safety vs freedom. Which one is more important?
@@ -170,7 +173,11 @@ At the same time, many potential problems are associated with the deployment of 
 
 To summarize, safety plays into AI technologies in multiple different ways. These all raise questions about the balancing of normative values: while calls to make “AI for good” sound promising, in practice the enactment of rights and normative values in technological systems often collides with the plethora of conflicting interests and deep injustices existing in the world. When evaluating safety, it is then important to evaluate what other rights intersect in practice and ask, “safety for whom?”
 
-### Inclusion and the gender divide
+<br/>
+<br/>
+
+
+## Inclusion and the gender divide
 
 Inclusion means that all people, regardless of the characteristics that make them different — be it race, gender, sexuality, ability, or some other feature — have an equal right to fully participate in society.
 
@@ -179,6 +186,8 @@ Inclusion means that all people, regardless of the characteristics that make the
 According to the World Health Organization (2018), more than a billion people live with disability. On the one hand, AI can marginalize and exclude disabled individuals even more. On the other hand, AI technologies have an enormous potential to promote the well-being of these people. AI could  “augment” and support humans with disabilities.
 
 For example,  there are several tools for developing communication and literacy skills that might offer support with understanding those who have cognitive disabilities and/or complex speech and language difficulties (such as dementia, cerebral palsy, and autism). Moreover, the development of assistive technologies using AI, such as description of images for blind people, speech recognition, captioning for hearing impaired people, sign language recognition and creation for deaf people, multilingual text-to-speech options for reading text for those with cognitive disabilities including dyslexia, care robots for elderly people and mobility guides for visually impaired people provide other examples.
+
+<img src="./sp-too-big-rev.svg" alt="smartphone">  </img>
 
 #### Inclusion and the gender divide
 

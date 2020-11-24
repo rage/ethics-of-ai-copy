@@ -7,9 +7,11 @@ hidden: false
 <hero-icon heroIcon='chap1'/>
 
 
-<title title='1) A guide to AI ethics'> </title>
-
 <styled-text>
+
+<p style="color:red;">In this section we will explain which topics are covered in the course and take a closer look at what artificial intelligence means in practice. </p>
+
+<br>
 
 Ever since the birth of computation with Alan Turing, humans have put high hopes on the power of computers and artificial intelligence (AI). AI is expected to bring significant and diverse benefits to society – from greater efficiency and productivity to tackling a number of difficult global problems, such as climate change, poverty, disease, and conflict.
 
@@ -22,7 +24,7 @@ In this course, we'll take a look at the ethical issues related to contemporary 
 </styled-text>
 
 
-<text-box icon="techIcon" background="rgba(246, 235, 232, 0.5)" name="A guide to AI ethics">
+<text-box icon="techIcon" background="rgba(246, 235, 232, 0.5)" name="What is AI?">
 
 **Artificial intelligence** is an overall term describing a set of different kinds of techniques to make computers behave in some kind of intelligent fashion. There is no agreed definition of AI, but in general the ability to perform tasks without supervision and to learn so as to improve performance are key parts of AI.
 

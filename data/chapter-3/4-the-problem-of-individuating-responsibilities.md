@@ -6,7 +6,12 @@ hidden: false
 
 <hero-icon heroIcon='chap3'/>
 
+
 <styled-text>
+
+<p style="color:red;">Accountability, or finding out who is responsible for when something goes wrong with AI systems, can be difficult. </p>
+
+<br>
 
 Accountability is often taken as a legal and ethical obligation on an individual or organisation to accept responsibility for the use of AI systems, and to disclose the results in a transparent manner. This formulation presupposes a “power-relation”. It individuates who is in control and who is to be blamed.
 
@@ -30,4 +35,28 @@ Why is it so difficult to set criteria on who is responsible?
 
 <quiz id="63998353-c785-496e-a447-7f61202ecf3a"> </quiz>
 
-<quiz id="b6f98b77-1ca1-4c74-b0ad-d2f373c4c9db"> </quiz>
+<quiz id="b6f98b77-1ca1-4c74-b0ad-d2f373c4c9db">
+
+
+<img src="_MS_9489_HDR_cropped.jpg" alt="Hospital"> </img>
+
+Picture © City of Helsinki / Communications
+
+<br>
+<br>
+
+Let’s return to the case of healthcare in Helsinki (as mentioned at the start of chapter 2). Suppose you are the Chief Digital Officer in Helsinki City. You are asked to consider whether the city’s healthcare organization should move from reactive healthcare to preventive healthcare. You read a report. It discusses novel machine learning-based methods, which would help health authorities to forecast the possible health risks of citizens.
+
+ <br>
+
+The report mentions many advantages, such as sickness prevention, better impact estimation, and better planning of basic healthcare services. However, the report also reveals some concerns over privacy, polarization, and the possible threat of unintentional discrimination. Moreover, the report raises the fundamental question of the city’s role. If the city has information about the potential health risks and does not act upon the data, is the city morally responsible for negligence?
+
+<br>
+
+The report also addresses the issue of individuating responsibilities. If the system was applied in practice, there is always a risk that it would make a mistake. Who should we blame if this happens?
+
+<br>
+
+Please answer the following questions about the responsibility of a Chief Digital Officer:
+
+</quiz>

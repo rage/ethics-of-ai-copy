@@ -22,7 +22,7 @@ banner: false
 <course-grid-text><h3>Chapter 3: Accountability</h3><span>Who is to blame when AI cause harm</span></course-grid-text>
 
 </course-grid-card>
-    <course-grid-card title="chapter04" url="chapter-4/1-should-we-know-how-ai-works">
+    <course-grid-card title="chapter04" url="chapter-4/1-transparency-in-ai">
 
 <course-grid-text><h3>Chapter 4: Transparency</h3><span>What does AI do and why?</span></course-grid-text>
 
@@ -37,7 +37,7 @@ banner: false
 <course-grid-text><H3>Chapter 6: Human rights</H5><span>Should AI respect and promote them?</span></course-grid-text>
 
 </course-grid-card>
-    <course-grid-card title="chapter07" url="/chapter-7/1-doing-ai-ethics">
+    <course-grid-card title="chapter07" url="/chapter-7/1-from-principles-to-doing">
 
 <course-grid-text><h3>Chapter 7: Future Challenges</h3><span>Blah Blah..</span></course-grid-text>
 

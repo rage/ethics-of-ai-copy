@@ -6,6 +6,18 @@ hidden: false
 
 <hero-icon heroIcon='chap2'/>
 
+<styled-text>
+
+<p style="color:red;">What does the common good mean, and how does this apply to AI ethics? </p>
+
+<br>
+
+</styled-text>
+
+<img src="stk_keksi_hki_biomedicum_0129_cropped.jpg" alt="Illustration"> </img>
+
+Illustration. © Keksi Agency via City of Helsinki / Communications
+
 <text-box name="">
 
 Suppose you are the Chief Digital Officer in Helsinki City. You are asked to consider whether the city’s health care organisation should move from “reactive” healthcare to “preventive” healthcare. You read a report. It tells about novel, sophisticated machine learning systems that would help health authorities to forecast the possible health risks of citizens.
@@ -55,7 +67,7 @@ Utilitarianism provides many interesting ideas and concepts. For example, the pr
 
 For example, when you start to work out, at first you benefit greatly and your results get dramatically better. But the longer you continue working out, each individual training session has a smaller impact. If you work out too often, the utility diminishes and you’ll start to suffer from the symptoms of overtraining.
 
-Another example is that if you eat one candy, you’ll  get a lot of pleasure. But if you eat too much candy, you may end up having diabetes. This paradox of benefits should always be remembered when we evaluate the consequences of actions. What is the common good now may not be the common good in the future.
+Another example is that if you eat one candy, you’ll  get a lot of pleasure. But if you eat too much candy, you may gain weight and increase your risk to all kinds of sicknesses. This paradox of benefits should always be remembered when we evaluate the consequences of actions. What is the common good now may not be the common good in the future.
 
 <img src=../../src/assets/dim-mu.svg alt="Diminishing marginal utility" style="width: 800px; margin-left: 2em">
 

@@ -8,6 +8,10 @@ hidden: false
 
 <styled-text>
 
+<p style="color:red;">Exploring how AI impacts the human rights of children. </p>
+
+<br>
+
 Have you ever thought about how much AI impacts children? They are exposed to algorithms at home, at school, and at play. Algorithms shape the environments in which they live, the services they have access to, and how they spend their time. Children play with interactive smart toys, they watch videos recommended by algorithms, use voice commands to control their phones, and use image manipulation algorithms for fun in social media.
 
 The presence of AI in children’s lives raises many questions. Is it acceptable to use recommendation algorithms with children or to provide an interactive toy if the child cannot understand that they are dealing with a computer? How should parents be advised on the possible impact of AI-based toys on the cognitive development of a child? What should children learn about AI in schools in order to have a sufficient understanding of the technology around them? At what point should a child be given the right to decide about the consents involved? How long should the data be stored?

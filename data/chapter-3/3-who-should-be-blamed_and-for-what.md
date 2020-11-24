@@ -6,9 +6,13 @@ hidden: false
 
 <hero-icon heroIcon='chap3'/>
 
-<img src=../../src/assets/agent-action.svg alt="Agent action" style="width: 600px">
-
 <styled-text>
+
+<p style="color:red;">In this section, we’ll look at moral agency and moral responsibility in the context of AI ethics. </p>
+
+<br>
+
+<img src=../../src/assets/agent-action.svg alt="Agent action" style="width: 600px">
 
 In ethics, accountability is closely related to the concept of “moral agency”. A moral agent is “an agent who is capable of acting with reference to right and wrong." Importantly, only moral agents are morally responsible for their actions.
 
@@ -32,5 +36,9 @@ Philosophically, moral responsibility requires 1) moral autonomy and 2) the abil
 Immanuel Kant is one of the most famous European moral philosophers. For Immanuel Kant, practical reason — our ability to use reasons to choose our own actions — presupposes that we  are free. Actions are based on our own will to utilize a moral law to guide our decisions. For Kant, and Kantians, the claim is that this capacity (to impose the moral law upon ourselves) is the ultimate source of all moral value.
 
 So, according to Kant, we owe ourselves moral respect in virtue of our autonomy. But we owe similar respect to all other persons in virtue of their capacity. Hence (via the second formulation of Kant’s famous Categorical Imperative), we are obliged to act out of fundamental respect for other persons in virtue of their autonomy. In this way, autonomy serves as both a model of practical reason in the determination of moral obligation and as the feature of other persons who deserve moral respect from us. (For further discussion, see [Immanual Kant and moral philosophy](https://en.wikipedia.org/wiki/Categorical_imperative).)
+
+
+<img src="./kant.png" alt="Picture of Kant" style="width: 50%; height:50%"> </img>
+
 
 </text-box>

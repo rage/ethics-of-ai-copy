@@ -16,7 +16,7 @@ class PleaseLogin extends React.Component {
   static contextType = LoginStateContext
 
   render() {
-    if (this.context.loggedIn) {
+    if (this.context && this.context.loggedIn) {
       return <div />
     }
     return (

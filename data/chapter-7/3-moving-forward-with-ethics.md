@@ -4,9 +4,13 @@ title: 'Moving forward with ethics'
 hidden: false
 ---
 
+<hero-icon heroIcon='chap7'/>
+
 <styled-text>
 
-### III. Moving forward with ethics
+<p style="color:red;">Let’s explore how AI ethics could develop and what they will look like in the future.</p>
+
+<br>
 
 Moving beyond ethical guidelines, how should AI ethics manifest in the future? What kind of conversations around the ethics of AI should we have, and what kind of activities and ways of doing ethics should be taken into practice? This is a difficult question to answer, but some hints can be found from looking at what is left outside the scope of the AI ethics guidelines we have been discussing so far.
 
@@ -15,16 +19,16 @@ Moving beyond ethical guidelines, how should AI ethics manifest in the future? W
 
 <text-box name="The AuroraAI program" icon="techIcon">
 
-[he Finnish National Artificial Intelligence Program AuroraAI](https://vm.fi/en/national-artificial-intelligence-programme-auroraai) (2020–2022) combines contemporary technology, well-designed service chains and a human-centric approach to good governance. One of its objectives is to link together public, private, and third sector services and provide more efficient, flexible, and tailored public services.
+[The Finnish National Artificial Intelligence Program AuroraAI](https://vm.fi/en/national-artificial-intelligence-programme-auroraai) (2020–2022) combines contemporary technology, well-designed service chains and a human-centric approach to good governance. One of its objectives is to link together public, private, and third sector services and provide more efficient, flexible, and tailored public services.
 
-**How it works**
+**How it works:**
 In the AuroraAI network, a person’s needs are better matched to services available in a specific area. This tailoring of services is based on algorithmically produced recommendations, which are estimates of the most useful combination of services for a person.
 
 The data for these estimates will be given by the person. In the future, personal data held by the government or private companies could also be used for tailoring services (since Finland is a member of European Union, this will require a sufficient legal basis for the use of personal data - see the section on the GDPR in chapter 5.)
 
 AuroraAI provides a philosophical example of how technology impacts governance practices. Traditionally, the interaction between government and person has taken the form of compulsion. Governments require citizens to do certain things, in certain ways. In AuroraAI, the government-person interaction is based not just on compulsion, but also on recommendations or suggestions.
 
-Ethical considerations
+**Ethical considerations:**
 AuroraAI, however, raises the question of the impact of these algorithmic recommendation systems in public sector services. Will the algorithms start to predetermine and direct the future of the users by recommending certain services? Are the recommendations based on implicit and hidden ideals of good life? Will these systems impose existing prejudices? How are the systems built to maintain and promote digital inclusivity and equality?
 
 If AI serves to create public services that predefine the standards of “well-being” or “good life” too narrowly, or muddle the government’s roles in wielding power and providing welfare, then the principles of good governance will end up being set aside. In AuroraAI, these concerns have been recognized, and their importance has been acknowledged. As a practical solution, an ethics board has been appointed to provide a forum for discussions on the ethical challenges related to the program.

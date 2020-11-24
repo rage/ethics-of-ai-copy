@@ -8,7 +8,10 @@ hidden: false
 
 <styled-text>
 
-## Intro:
+<p style="color:red;">Here, we consider discrimination and explore how discriminatory practices can manifest through artificial intelligence. </p>
+
+<br>
+
 
 In this section we will study discrimination and how discriminatory practices can manifest through artificial intelligence. Bias has recently become the prototypical issue for AI ethics, since the hope that the exact formality of algorithms makes them immune to partiality has turned out to be sorely false. First, we will look at two examples of algorithmic systems, which will help us analyze discrimination and bias in AI.
 
@@ -111,7 +114,7 @@ For example, the ability to recognize people is disparately distributed across e
 
 One reason for this is, according to Buolamwini and Gebru (2018) , that many popular face datasets have a very poor distribution of examples across different genders and ethnicities. That is, the view of the faces of the world fed into the learning systems is undeniably white and male, and very non-representative of the true distribution of faces in the world. Sometimes this is technically referred to as sample size disparity, and it leads to biased systems, because the learning algorithm disregards poorly represented subpopulations to achieve higher predictivity on the majority of the dataset.
 
-#### 1) Label bias
+#### 2) Label bias
 
 Let the data speak for itself, as the saying goes. It’s a nice thought, but the unfortunate truth is that data does not have a voice of its own. Data only speaks through our interpretations of it – and often these interpretations are difficult to make. This is especially true in situations where there is a discrepancy between what is being measured and what is being investigated.
 
