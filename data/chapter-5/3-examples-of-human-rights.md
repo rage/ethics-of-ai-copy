@@ -82,7 +82,7 @@ The right to safety is a norm protecting individuals from physical, social and e
 As a right, safety creates a moral obligation to design our products, laws and environment in such a way that safety can be protected even in unconventional circumstances or impairments. In terms of AI, safety has come to encompass several different conversations, including the following:
 
 #### 1) AI as an existential threat
-The conversation around AI as an existential threat takes a highly speculative and future-oriented stance towards artificial intelligence. It focuses on asking what kind of threats to humanity are posed by AI systems if they become too complex to control (this kind of “superintelligence” scenario is painted by thinkers such as Nick Bostrom and Ray Kurzweil).
+The conversation around AI as an existential threat takes a highly speculative and future-oriented stance towards artificial intelligence. It focuses on asking what kind of threats to humanity are posed by AI systems if they become too complex to control (this kind of “superintelligence” scenario is painted by thinkers such as Nick Bostrom [(Bostrom 2014)](https://global.oup.com/academic/product/superintelligence-9780199678112) and Ray Kurzweil [(Kurzweil 2016)](https://onlinelibrary-wiley-com.libproxy.helsinki.fi/doi/abs/10.1002/9781118922590.ch15)).
 
 However, the plausibility of a future of superintelligent AI has been called into question, both by philosophers and technologists. Philosophers have also argued that the depiction of the control problem as a technical obstacle discounts the political aspects of the issue. It’s fair to imagine that any invocation of a humanly common good hides a great deal of political contentions about what, in fact, is good.
 
