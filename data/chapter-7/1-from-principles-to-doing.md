@@ -13,16 +13,16 @@ hidden: false
 <br>
 
 “[Ethics] plays the role of a bicycle brake on an intercontinental airplane”
--Ulrike Beck, 1988
+- [Ulrich Beck, 1988](https://fis.uni-bamberg.de/handle/uniba/22015)
 
 In this section, we’ll take a reflective look at the whole project of AI ethics. This means looking at the making and doing of AI ethics as a phenomenon. AI ethics is a project with diverse members who have differing stakes – and it produces contents and discussions that can be analyzed as cultural products. That is, AI ethics is created by certain people, at a certain time, for certain purposes. But what are these purposes, and is AI ethics achieving its goals?
 
-To date, most ethical discussions regarding AI systems have focused on defining principles to prevent risks. National policies and various initiatives have been made on the basis of these discussions. AlgorithmWatch, a Berlin-based organization, maintains a repository of published AI ethics guidelines, with over 160 collected so far. It is hard to find any actor in AI these days that does not point to their own set of guidelines as evidence of their ethical engagement.
+To date, most ethical discussions regarding AI systems have focused on defining principles to prevent risks. National policies and various initiatives have been made on the basis of these discussions. [AlgorithmWatch](https://algorithmwatch.org/), a Berlin-based organization, maintains a repository of published AI ethics guidelines, with over 160 collected so far. It is hard to find any actor in AI these days that does not point to their own set of guidelines as evidence of their ethical engagement.
 
 Although ethical principles can shape the development and implementation of ethics-based policy measures and legal norms, empirical studies suggest that guidelines have little impact on the practices surrounding AI development:
 
 “Despite its stated goal, we found no evidence that the ACM code of ethics influences ethical decision-making. Future research is required to identify interventions that do influence decision-making, such as by helping developers identify parallels between their decisions and infamous software news stories.”
--McNamara et al. (2018)
+- [McNamara et al. (2018)](https://dl-acm-org.libproxy.helsinki.fi/doi/10.1145/3236024.3264833)
 
 </styled-text>
 

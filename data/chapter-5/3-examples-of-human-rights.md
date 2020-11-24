@@ -109,7 +109,7 @@ Nonetheless, the progressive zeal that is attached to AI future visions has brou
 
 A difficult problem for autonomous vehicles is the complex unpredictability of the urban traffic environment. While AI-driven vehicles are constantly being developed to include better ways to model their surroundings, even a small group of individuals – all performing their own movement goals within a shared space – will create a constellation that is difficult to predict. When technical solutions in the cars are too far off, another way to approach the issue is to contain the uncertainty in the environment.
 
-In a New York Times column, consultant Eric A. Taub proposed a solution: by enclosing pavements in cages, with traffic-light-synced gates at crossings, the complex traffic environment is simplified to become more understandable to autonomous vehicles and therefore safer. However, this safety comes at an obvious cost: limiting the freedom of pedestrians, and a redistribution of accountability. This means we should look at the intersecting limits of the right of safety vs freedom. Which one is more important?
+In a [New York Times column](https://www.nytimes.com/2019/08/01/business/self-driving-cars-jaywalking.html), consultant Eric A. Taub proposed a solution: by enclosing pavements in cages, with traffic-light-synced gates at crossings, the complex traffic environment is simplified to become more understandable to autonomous vehicles and therefore safer. However, this safety comes at an obvious cost: limiting the freedom of pedestrians, and a redistribution of accountability. This means we should look at the intersecting limits of the right of safety vs freedom. Which one is more important?
 
 Or is this just a false dichotomy, brought about by a technical solution that was never very workable in the first place? A further interesting line of thought that can be traced here is the criminality of what in the United States is called “jaywalking”, or walking across the road at locations without zebra crossings. The concept of jaywalking did not exist until the roads were reconceptualized with motor vehicles as the primary users. How comparable is this to the thought of caging pavements?
 
@@ -122,7 +122,7 @@ The third concept of safety and AI we will look at in this section is the produc
 
 Robotization can provide an example of this concept in practice. The work of handling hazardous materials or working in hazardous environments can be delegated to robots, protecting the health of human (or animal) workers.
 
-Another way certain forms of safety are produced through AI is through automated surveillance. AI-powered surveillance has manifested in many domains: in public spaces, in law-enforcement work through predictive policing, and in domestic life through products like Amazon’s Ring. Although surveillance cameras (CCTV) have existed and dominated public and semi-public spaces for decades, the ACLU argues that automation brings about a big qualitative shift in how surveillance functions. But what is so different?
+Another way certain forms of safety are produced through AI is through automated surveillance. AI-powered surveillance has manifested in many domains: in public spaces, in law-enforcement work through predictive policing, and in domestic life through products like Amazon’s Ring. Although surveillance cameras (CCTV) have existed and dominated public and semi-public spaces for decades, the ACLU argues that automation brings about a big qualitative shift in how surveillance functions ([American Civil Liverties Union 2019](https://www.aclu.org/sites/default/files/field_document/061819-robot_surveillance.pdf)). But what is so different?
 
 </styled-text>
 
@@ -132,7 +132,7 @@ Another way certain forms of safety are produced through AI is through automated
 
 “Still, for all those advances, the social implications of being recorded have not changed: when we walk into a store, we generally expect that the presence of cameras won’t affect us. We expect that our movements will be recorded, and we might feel self-conscious if we notice a camera, especially if we were doing anything that we feel might attract attention. But unless something dramatic occurs, we generally understand that the videos in which we appear are unlikely to be scrutinized or monitored.”
 
- -The Dawn of Robot Surveillance, ACLU
+ - [The Dawn of Robot Surveillance, ACLU 2019](https://www.aclu.org/sites/default/files/field_document/061819-robot_surveillance.pdf)
 
 </text-box>
 
