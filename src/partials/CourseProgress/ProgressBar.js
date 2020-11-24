@@ -5,6 +5,7 @@ import styled from "styled-components"
 const StyledLinearProgress = styled(LinearProgress)`
   height: 30px;
   flex: 1;
+  position: relative;
   bottom: -4px;
   border-radius: 100px;
 `

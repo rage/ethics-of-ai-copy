@@ -5,7 +5,7 @@ import styled from "styled-components"
 const Heading = styled.div`
   & h2 {
     font-family: "Work Sans", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: clamp(28px, 4vw, 40px);
     color: #202020;
   }
