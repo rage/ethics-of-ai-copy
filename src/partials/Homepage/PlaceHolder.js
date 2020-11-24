@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { respond } from "../../_respond"
-import H3 from "../Headers/H3"
+import H2 from "../Headers/H2"
 
 //TO-DO: Make Grid responsive without Media queries
 //TO-DO: + More Breakpoints
@@ -35,7 +35,7 @@ const PlaceHolderText = styled.div`
 export default (props) => {
   return (
     <PlaceHolderContainer>
-      <H3> {props.title} </H3>{" "}
+      <H2> {props.title} </H2>{" "}
       <PlaceHolderText> {props.children} </PlaceHolderText>{" "}
     </PlaceHolderContainer>
   )
