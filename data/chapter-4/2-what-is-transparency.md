@@ -8,17 +8,13 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">In this section, we’ll look at what transparency in AI means in practice. </p>
-
-<br>
-
 Transparency can be defined in multiple ways. There are a number of neighboring concepts that are sometimes used as synonyms for transparency – including “explainability” (AI research in this area is known as “XAI”), “interpretability”, “understandability”, and “black box”.
 
 Transparency is, roughly, a property of an application. It is about how much it is possible to understand about a system’s inner workings “in theory”.  It can also mean the way of providing explanations of algorithmic models and decisions that are comprehensible for the user. This deals with the public perception and understanding of how AI works. Transparency can also be taken as a broader socio-technical and normative ideal of “openness”.
 
 There are many open questions regarding what constitutes transparency or explainability, and what level of transparency is sufficient for different stakeholders (Matsakis, 2018). Depending on the specific situation, the precise meaning of “transparency” may vary. It is an open scientific question, whether there are several different kinds, or types, of transparency. Moreover, transparency can refer to different things whether the purpose is to, say, analyze the legal significance of unjust biases or to discuss them in terms of features of machine learning systems.
 
-### Transparency as a property of system
+### Transparency as a property of a system
 
 As a property of a system, transparency addresses how a model works or functions internally. Transparency is further divided into “simulatability” (an understanding of the functioning of the model), “decomposability” (understanding of the individual components), and algorithmic transparency (visibility of the algorithms).
 
@@ -51,14 +47,51 @@ The comprehensibility – or understandability – of an algorithm requires that
 However, it is notoriously difficult to translate algorithmically derived concepts into human-understandable concepts. In some countries, legislators have discussed whether public authorities should publish the algorithms they use in automated decision-making in terms of programming codes. However, most people do not know how to make sense of programming codes. It is thus hard to see how transparency is increased by publishing codes.
 
 
-![Example code](./example-code.png)
+```sas
+* Otetaan siemenluku otoksen tekoa varten koneajasta ;
+data _NULL_;
+ siemen= int(%sysfunc(TIME())) ;
+ call symput('siemen',siemen);
+run;
+%put &siemen;
+
+* Järjestetään perusjoukko ;
+proc sort data=perus;
+ by henro;
+run;
+* Tehdään otos, n=2000 ;
+proc surveyselect data=perus method=srs
+     n=2000 seed=&siemen
+     out=otos;
+run;
+* Järjestetään otos ;
+proc sort data=otos;
+ by henro;
+run;
+
+ * Yhdistetään otos perusjoukkoon, tehdään muuttuja TYYPPI;
+data kaikki;
+ merge perus(in=a)
+       otos(in=b);
+ by henro;
+ length TYYPPI $ 1.;
+ if a then TYYPPI='V'; * verrokit ;
+ if b then TYYPPI='K'; * kokeiluryhmä ;
+
+ * annetaan arvot muuttujalle REAOH ;
+REAOH='PUOTOS';
+run;
+
+* Tarkistetaan, että 2000 henkilöllä TYYPPI saa arvon 'K' ;
+proc freq;
+ tables tyyppi;
+run;
+```
+
 
 Would it be more helpful to publish the exact algorithms? In most cases, publishing the exact algorithms does not bring a lot of transparency either, especially if you do not have the access to the data used in a model.
 
 Nowadays, cognitive and computer scientists develop human-interpretable descriptions of how applications behave, and why. Approaches include, for example, the development of data visualization tools, interactive interfaces, verbal explanations or meta-level descriptions of the features of models. These tools can be extremely helpful for making AI applications more accessible. However, there is still plenty of work to be done.
-
-Example of a visualization technique  --Picture--
-
 
 The fact that comprehensibility is based on subject and culture-dependent components complicates this more. For example, the logic of how visualizations are interpreted – or how the inferences are made on them – varies across cultures. Thus, tech developers should pay attention to the sufficient understanding of the visual language they use.
 
@@ -67,7 +100,7 @@ Moreover, much is dependent on the degree of data or algorithmic literacy, for e
 </styled-text>
 
 
-<text-box name="How to make models more transparent?" icon="exerIcon">
+<text-box name="How to make models more transparent?" icon="techIcon">
 
 The black box problem of artificial intelligence is not new. Providing transparency for machine learning models is an active area of research. Roughly speaking, there are five main approaches:
 
@@ -85,3 +118,26 @@ The black box problem of artificial intelligence is not new. Providing transpare
 </text-box>
 
 <styled-text>
+
+<quiz id="f94f13d3-3983-4d86-811c-881e1282c275">
+
+There is a need to translate algorithmic concepts into everyday language. Most people without a  background in computer science are not familiar with the basic vocabulary of AI. This has a direct impact on their ability to understand recent developments.
+
+<span style="font-size: 30px">1.</span>
+<img src="./rl1.svg" alt="Techical reinforcement learning algorithm" style="width: 450px">
+
+<span style="font-size: 30px">2.</span>
+<img src="./rl2.svg" alt="Robot reinforcement learning algorithm" style="width: 400px">
+
+<br>
+
+<span style="font-size: 30px">3.</span>
+<img src="./rl3.svg" alt="Cat reinforcement learning algorithm" style="width: 450px">
+
+<br>
+
+Compare these three visualizations of reinforcement learning algorithms. Which one of them is the most understandable? Why?
+
+<br>
+
+</quiz>

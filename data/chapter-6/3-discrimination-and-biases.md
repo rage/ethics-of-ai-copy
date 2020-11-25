@@ -1,5 +1,6 @@
 ---
 path: '/chapter-6/3-discrimination-and-biases'
+topic-title: 'What is fairness'
 title: 'Discrimination and biases'
 hidden: false
 ---
@@ -8,12 +9,7 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">Here, we consider discrimination and explore how discriminatory practices can manifest through artificial intelligence. </p>
-
-<br>
-
-
-In this section we will study discrimination and how discriminatory practices can manifest through artificial intelligence. Bias has recently become the prototypical issue for AI ethics, since the hope that the exact formality of algorithms makes them immune to partiality has turned out to be sorely false. First, we will look at two examples of algorithmic systems, which will help us analyze discrimination and bias in AI.
+In this section we will study discrimination and how discriminatory practices can manifest through artificial intelligence. Bias has recently become the prototypical issue for AI ethics, since the hope that the exact formality of algorithms makes them immune to partiality has turned out to be sorely false. First, we will look at three examples of algorithmic systems, which will help us analyze discrimination and bias in AI.
 
 #### Example 1: Word embeddings: ([Bolukbasi et al](https://arxiv.org/abs/1607.06520)).
 
@@ -23,7 +19,11 @@ Word embeddings are a form of data structure used in natural language processing
 
 In 2014, Amazon started developing an internal AI system to streamline their recruitment process. Using the CVs of past applicants as training data, the system would analyze incoming CVs and rate the candidates for further evaluation. Very quickly though, the system was found to rate candidates for technical jobs in a gender-biased way.
 
-The system was found to penalize any CVs which indicated the applicant to be female. This included mentions of attending things like a women’s chess club, or an all-female college.  Amazon reportedly attempted to debias the system but ended up scrapping the whole project instead. The system was never used in actual recruiting processes.
+The system was found to penalize any CVs which indicated the applicant to be a woman. This included mentions of attending things like a women’s chess club, or an all-women college.  Amazon reportedly attempted to debias the system but ended up scrapping the whole project instead. The system was never used in actual recruiting processes.
+
+#### Example 3: Credit scoring ([Rutkenstein & Velkova 2019](https://algorithmwatch.org/en/automating-society-finland))
+
+In 2018, the non-discrimination and equality tribunal of Finland judged on a case where a consumer credit application was automatically denied using statistical methods. The credit institution Svea Ekonomi atuomatically evaluated an individual's creditworthiness in conjunction to his online purchase of building materials, for which he was seeking credit. The credit decision was appealed, and the the tribunal found that "the applicant’s age, male gender, Finnish as the mother tongue and the place of residence in a rural area were all factors that contributed to a case of multiple discriminations, resulting in a decision not to grant a loan." The tribunal remarked, that had the applicant been a woman, or Swedish speaking, he would have been granted the credit.
 
 
 #### What is discrimination?
@@ -32,7 +32,7 @@ First, it is important to note that the word discrimination can be used in a  mo
 
 </styled-text>
 
-<text-box icon="chap6" name="Definition 1: Discrimination">
+<text-box icon="exerIcon" name="Definition 1: Discrimination">
 
 Discrimination is a difference of treatment of individuals based on their membership in a group.
 
@@ -48,7 +48,7 @@ Consider, then, a café which only serves people wearing green shirts. This is m
 
 </styled-text>
 
-<text-box name="Definition 2: Discrimination" icon="chap6">
+<text-box name="Definition 2: Discrimination" icon="exerIcon">
 
 Discrimination is differential treatment based on perceived membership in a socially salient group, which causes social harm. ([Lippert-Rasmussen 2014](https://oxford.universitypressscholarship.com/view/10.1093/acprof:oso/9780199796113.001.0001/acprof-9780199796113))
 
@@ -68,7 +68,7 @@ Reflecting on the two examples above, the condition of social saliency is clearl
 
 #### Allocative harms
 
-Allocative harms are situations where an individual is made worse off in terms of the resources available to them. Here resources should be understood broadly not only as food, cars, cell phones and other material goods, but also the services and opportunities provided. A lower salary for the same work is most definitely an allocative harm. But so is denying the opportunity for a job interview on the basis of one’s gender.
+Allocative harms are situations where an individual is made worse off in terms of the resources available to them. Here resources should be understood broadly not only as food, cars, cell phones and other material goods, but also the services and opportunities provided. A lower salary for the same work is most definitely an allocative harm. But so is denying the opportunity for a job interview on the basis of one’s gender, or denying credit based on it.
 
 Even such abstractions such as risk may be the objects of allocative harms. [Wilson, Hoffman, and Morgenstern (2019)](http://arxiv.org/abs/1902.11097) found that object detection algorithms are worse at recognizing dark toned figures than light toned ones. The researchers Joy Buolamwini and Timnit Gebru have also shown that facial recognition algorithms are noticeably worse at recognising faces of people of color ([Buolamwini and Gebru 2018](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf)). This means that driverless cars may be more likely to hit a black person than a white one. Now granted that causing bodily damage is clearly a harm, one can argue that a harm has been incurred even before such accidents take place. Namely, the disparate distribution of risk is itself an allocative harm to the worse off party.
 
@@ -83,13 +83,13 @@ With the concept of representational harms, we are able to identify the gender-s
 
 ### How does bias come about?
 
- *“All data is historical data: the product of a time, place, political, economic, technical, and social climate. If you are not considering why your data exists, and other data sets don’t, you are doing data science wrong”.*
+ “All data is historical data: the product of a time, place, political, economic, technical, and social climate. If you are not considering why your data exists, and other data sets don’t, you are doing data science wrong”.
 
 - [Melissa Terras (2019)](https://www.youtube.com/watch?v=4yYytLUViI4)
 
 </styled-text>
 
-<text-box name='Three different meanings of “bias”' icon="chap6">
+<text-box name='Three different meanings of “bias”' icon="exerIcon">
 
 In **statistics**: discrepancy of a sample statistic vs the true statistic of the population.
 
@@ -122,7 +122,6 @@ For example, predicting crime is a task which, if done well, would interest cour
 
 The unfortunate truth is that arrests are hardly a neutral proxy for crime. It may give a good sense of overall crime in a population, but it does not generalize well across groupings. In the united states, black people may be much more likely to be arrested on drug charges than white people ([Ferrer & Connolly (2018)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6050822/)), for example. This doesn’t mean that black people are more likely to commit drug crime, only that black people are more likely to be caught, arrested and logged doing it. Thus, any inferences about crime from such data will necessarily repeat and reinforce injustices which brought about the data itself.
 
-
 #### 3) Cultural unawareness
 
 While “AI” and “machine learning” both portray an image of machinic autonomy, in reality large amounts of work  – human work, that is – go into making AI systems real. Thus the behavior of AI systems cannot be seen by only looking at the algorithm and the data going into it. Choices are made in the deployment, interpretation, design and maintenance work involved in AI, and sometimes these choices can create biases in the system.
@@ -131,7 +130,7 @@ One of the clearest examples of this is in the ways data is made “clean”, in
 
 </styled-text>
 
-<text-box name="">
+<text-box name="" icon="techIcon">
 
 A good example of this is when collecting names. To prevent false data from entering the system, certain constraints are made as to how names are supposed to look. For example, sometimes it is assumed that names consist of given names and a surname. Sometimes it is assumed that names only contain letters from A to Z. Sometimes it is assumed that names always have more than two letters.
 

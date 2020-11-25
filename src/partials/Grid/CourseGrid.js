@@ -28,7 +28,7 @@ const GridContainer = styled.div`
   grid-template-columns: repeat(2, 20rem);
   `} ${respond.lg`
 
-  grid-template-columns: repeat(3, 23rem);
+  grid-template-columns: repeat(2, 34rem);
   `};
 `
 

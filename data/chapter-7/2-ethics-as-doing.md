@@ -1,5 +1,6 @@
 ---
 path: '/chapter-7/2-ethics-as-doing'
+topic-title: 'From principles to doing'
 title: 'Ethics as doing'
 hidden: false
 ---
@@ -18,9 +19,9 @@ While the troubles may not be new, the contemporary AI ethics project has much m
 
 </styled-text>
 
-## Ethics guidelines as texts that do
+### Ethics guidelines as texts that do
 
-<text-box name="Performativity">
+<text-box name="Performativity" icon="philIcon">
 
 First coined by philosopher John L. Austin, but made more famous by feminist scholar Judith Butler, performativity is the capacity of words to do things in the world. That is, sometimes making statements does not just describe the world, but also performs a social function beyond describing. As an example (from Austin), when a priest declares a couple to be “husband and wife”,  they are not describing the state of their relationship. Rather, the institution of marriage is brought about by that very declaration – the words perform the marrying of the two people. In a similar way, other acts of communication can also have a performative quality – not just presenting information, but effecting change in the world.
 
@@ -32,20 +33,20 @@ To conceptualize AI ethics guidelines as performative texts invites us to look p
 
 Let’s look at three ways that guidelines perform these functions:
 
-### 1) Guidelines as calls for deregulation
+#### 1) Guidelines as calls for deregulation
 
 Some authors have argued that ethical language deployed by companies is a communicative strategy that provides support for self-regulation [(Wagner 2018)](https://www.jstor.org/stable/j.ctvhrd092.18). The implicit narrative in publishing ethics guidelines is that of a strong moral reflection at the core of business practices, which makes industry regulation unnecessary. Why should our business be restricted, since we are already so ethical? While this communicative strategy is more strongly motivated for private companies, national ethics guidelines  also reflect a tension between ethical consideration, regulation, and market-driven innovation. These conceptualize ethics as a value, to be put into healthy balance with competing values such as economic growth.
 
 One of the core tensions in the AI economy is the balancing of the freedom to pursue projects and innovate versus the need to prevent and redress harm through regulatory practices. How the tension is resolved will undoubtedly have meaningful consequences for companies working in the AI scene, so it is far from an abstract issue. Thus, the concern for the regulation/deregulation debate is present not only in the practices of communication around AI ethics, but also in the contents of scientific research around fair AI. Computer scientist Michael Kearns, for example, presents technical advances in algorithmic fairness and privacy as answers to the regulation/deregulation debate ([Kearns & Roth 2020](https://global.oup.com/academic/product/the-ethical-algorithm-9780190948207)).
 
-### 2) Guidelines as assurances
+#### 2) Guidelines as assurances
 
 Others have argued that ethics guidelines work as assurance to investors and the public [(Kerr 2020)](https://journals-sagepub-com.libproxy.helsinki.fi/doi/10.1177/2053951720915939). That is, in the age of social media, news of businesses’ moral misgivings spread fast and can cause quick shifts in a company’s public image. Publishing ethics guidelines makes assurances that the organization has the competence for producing ethical language, and the capacity to take part in public moral discussions to soothe public concern.
 
 Thus AI ethics guidelines work to deflect critique away from companies; from both investors and the general public. That is, if the company is seen as being able to manage and anticipate the ethical critique produced by journalists, regulators and civil society, the company will also be seen as a stable investment, with the competence to navigate public discourses that may otherwise be harmful for its outlook.
 
 
-### 3) Guidelines as expertise
+#### 3) Guidelines as expertise
 
 With the AI boom well underway, the need for new kinds of expertise arises, and competition around ownership of the AI issue increases. That is, the negotiations around AI regulation, the creation of AI-driven projects of governmental redesign, the implementation of AI in new fields, and the public discourse around AI ethics in the news all demand expertise in AI and especially the intersection of AI and society.
 

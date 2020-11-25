@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { respond } from "../../_respond"
-import H3 from "../Headers/H3"
+import H2 from "../Headers/H2"
 
 //TO-DO: Make Grid responsive without Media queries
 //TO-DO: + More Breakpoints
@@ -19,8 +19,9 @@ const PlaceHolderText = styled.div`
   line-height: 2.8rem;
   width: 60%;
   margin: 0 auto;
-  color: #6f7678;
+  color: #333;
   font-weight: 400;
+  opacity: 0.9;
 
   ${respond.xs`
     font-size: 1.4rem;
@@ -28,14 +29,14 @@ const PlaceHolderText = styled.div`
   `}
 
   ${respond.lg`
-    width: 60%;
+    width: 50%;
   `}
 `
 
 export default (props) => {
   return (
     <PlaceHolderContainer>
-      <H3> {props.title} </H3>{" "}
+      <H2> {props.title} </H2>{" "}
       <PlaceHolderText> {props.children} </PlaceHolderText>{" "}
     </PlaceHolderContainer>
   )

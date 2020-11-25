@@ -9,10 +9,6 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">In this section we will explain which topics are covered in the course and take a closer look at what artificial intelligence means in practice. </p>
-
-<br>
-
 Ever since the birth of computation with Alan Turing, humans have put high hopes on the power of computers and artificial intelligence (AI). AI is expected to bring significant and diverse benefits to society – from greater efficiency and productivity to tackling a number of difficult global problems, such as climate change, poverty, disease, and conflict.
 
 AI technologies shape our societies. They have an enormous impact on our daily lives.  At the same time, multiple legal and societal issues have revealed the potential of these technologies to produce undesirable impacts. Algorithms can enhance already existing biases. They can discriminate. They can threaten our security, manipulate us and have lethal consequences.

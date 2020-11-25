@@ -8,10 +8,6 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">While transparency is seen as desirable in AI systems, there can also be risks associated with it. </p>
-
-<br>
-
 Transparency often denotes a modern, ethico-socio-legal “ideal” (Koivisto 2016), a normative demand for the acceptable use of technology in our societies. It is a reflection of the ideal of “openness”, that is framed in terms of “open government”, “open data”, “open source/code/access”, as well as “open science” (Larsson 2020). In this way, transparency considerations are needed to mitigate the equal distribution of scientific advancements so that the benefits of AI development can be made accessible for all people.
 
 </styled-text>
@@ -27,26 +23,3 @@ Paradoxically, the ideal of openness can lean to harmful consequences, too. For 
 In summary, while there is a need to develop more transparent practices for AI, there is also a need to  develop practices that can help us to avoid abuse. While transparency may help to mitigate ethical issues – such as fairness or accountability – it also creates ethically important risks. Too much openness in the wrong context may defeat the positive development of AI-enabled processes. Taken together, it is clear that the ideal of full transparency of algorithms should be carefully considered, and we will have to find a balance between security and transparency considerations.
 
 </styled-text>
-
-<quiz id="f94f13d3-3983-4d86-811c-881e1282c275">
-
-There is a need to translate algorithmic concepts into everyday language. Most people without a  background in computer science are not familiar with the basic vocabulary of AI. This has a direct impact on their ability to understand recent developments.
-
-<span style="font-size: 30px">1.</span>
-<img src="./rl1.svg" alt="Techical reinforcement learning algorithm" style="width: 450px">
-
-<span style="font-size: 30px">2.</span>
-<img src="./rl2.svg" alt="Robot reinforcement learning algorithm" style="width: 400px">
-
-<br>
-
-<span style="font-size: 30px">3.</span>
-<img src="./rl3.svg" alt="Cat reinforcement learning algorithm" style="width: 450px">
-
-<br>
-
-Compare these three visualizations of reinforcement learning algorithms. Which one of them is the most understandable? Why?
-
-<br>
-
-</quiz>

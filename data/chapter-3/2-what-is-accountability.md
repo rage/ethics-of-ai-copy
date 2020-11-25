@@ -8,10 +8,6 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">What does accountability actually mean, and how does it apply to AI ethics? </p>
-
-<br>
-
 Accountability means the state of being responsible or answerable for a system, its behavior, and its potential impacts. Accountability is an acknowledgement of responsibility for actions, decisions, and products.
 
 Responsibility can be legal or moral (ethical). **Legally**, an actor is responsible for an event when a legal system is liable to penalise that actor for that event. **Morally**, an actor is responsible for an act, if they can be blamed for the action. Moral and legal responsibility are different things. They do not always coincide; an agent can be legally responsible even if they were not morally responsible, and vice versa.  In this course, we´ll focus only on moral aspects of responsibility.

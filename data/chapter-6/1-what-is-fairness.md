@@ -6,16 +6,8 @@ hidden: false
 
 <hero-icon heroIcon='chap6'/>
 
-<styled-text>
 
-<p style="color:red;">In this section, we introduce a thought experiment about fairness and bias in AI systems.</p>
-
-<br>
-
-</styled-text>
-
-
-<text-box name="" icon="chap6">
+<text-box icon="exerIcon">
 
 <styled-text>
 
@@ -35,7 +27,7 @@ As a result, on a national level grades corresponded with the grade distribution
 
 Many would take this thought experiment as an example of algorithmic unfairness. It does not only describe how algorithms themselves can result in unfair results, but also how algorithms can reinforce already existing economic and societal bias.
 
-## Fairness and bias
+### Fairness and bias
 
 Fairness and bias are probably the most discussed ethical issues related to the contemporary algorithms. Why are they so central?
 

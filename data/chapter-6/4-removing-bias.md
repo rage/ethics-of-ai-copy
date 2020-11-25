@@ -1,5 +1,6 @@
 ---
 path: '/chapter-6/4-removing-bias'
+topic-title: 'What is fairness'
 title: 'Removing bias'
 hidden: false
 ---
@@ -9,17 +10,12 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">How can we make AI systems more fair and less biased? Let’s look at some ways this can be done. </p>
-
-<br>
-
-
-So, how do we make AI systems more fair and less biased? There is no panacea for bias – partly because of the many different ways that bias can manifest, and partly because there is no single definition of an algorithmically fair outcome. Nonetheless, we can look at some of the situations above and look at ways the problems with fairness could potentially have been dealt with.
+So how do we make AI systems more fair and less biased? There is no panacea for bias – partly because of the many different ways that bias can manifest, and partly because there is no single definition of an algorithmically fair outcome. Nonetheless, we can look at some of the situations above and look at ways the problems with fairness could potentially have been dealt with.
 
 Starting with the example of the sexist recruiting algorithm, we can pinpoint the source of bias to historical recruitment practices that produced the training data, and the assumption that past recruitment practices provide normative basis for future practices (ie. “we should hire this person because we have hired people like them before”). We can see that the root issues are inexorably linked to company culture and even wider working culture in the technology sector, as well as a morally suspect reasoning (recall Hume’s guillotine in chapter 2). These are problems which require large cultural shifts and structural reformations, and are unlikely to be fixed by technological solutions.
 
 #### Anticlassification
-Nonetheless, one could try to salvage what's possible from the dataset, and see if it could be made at least less biased. One common technical fix on the data set is called anticlassification, or the removal of explicit protected variables from the data. This means erasing information like gender or ethnicity, and their proxies from the data. Here proxies mean features that are strongly correlated with the protected characteristics. For example, if a person’s CV contains references to maternal leave or a women’s college, the algorithm could still make gendered predictions even if an explicit gender variable is left out.
+Nonetheless, one could try to salvage what's possible from the dataset, and see if it could be made at least less biased. One common technical fix on the data set is called anticlassification, or the removal of explicit protected variables from the data. This means erasing information like gender or ethnicity, and their proxies from the data. Here proxies mean features that are strongly correlated with the protected characteristics. Like in the case of the recruiting algorithm mentioned earlier, if a person’s CV contains references to maternal leave or a women’s college, the algorithm could still make gendered predictions even if an explicit gender variable is left out.
 
 This may go some way to reducing bias in the system, but whether it is effective in any specific scenario needs to be verified by testing and auditing. [Corbett-Davies and Goel (2018)](http://arxiv.org/abs/1808.00023) have shown that anticlassification may even be detrimental to fairness in certain situations, where features have different predictive power across social groups. One illustration of this is heart attack symptoms: research has shown that heart attacks look very different in female patients than in male patients. The symptoms most people know to look for, for example right sided chest pain, is far more common in male patients than female patients. Thus, an app where one can check “am I having a heart attack” would likely give very wrong results if it did not take into consideration the sex of the patient.
 

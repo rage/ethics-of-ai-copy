@@ -8,10 +8,6 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">In this section, we’ll look more closely at three examples of human rights that relate to AI. </p>
-
-<br>
-
 ### Privacy
 Privacy concerns are raised, for example, by digital records which contain information that can be used  to infer sensitive attributes (age, gender or sexual orientation), preferences, or religious and political  views. Biometric data also raises privacy concerns, as it can reveal details of physical and mental health. Often the real worry is not the data itself, but the way the data can be used to manipulate, affect, or harm a person.
 
@@ -19,7 +15,7 @@ Ethically, privacy is related to personal autonomy and integrity. Following the 
 
 </styled-text>
 
-<text-box icon="chap5">
+<text-box icon="philIcon">
 
 Many have proposed the principle that people should have control over their own data – and that data concerning them should not be allowed to be used to harm or discriminate against them. According to some, this right to have “full control over one’s own data” should be a human right.
 
@@ -31,8 +27,7 @@ Wachter and Mittelstadt (2019) propose that the right for the control of your ow
 
 <img src=../../src/assets/london-zoom.svg alt="london zoomed image">
 
-
-<text-box name="The GDPR" icon="chap5">
+<styled-text>
 
 The General Data Protection Regulation (GDPR) is a legal framework. It sets guidelines for the collection and processing of personal data from individuals who live in the European Union.
 
@@ -59,7 +54,7 @@ Accountability: The data controller is responsible for being able to demonstrate
 
 According to GDPR, if you process data you’re also required to handle data securely by implementing “appropriate technical and organizational measures.”
 
-How to protect privacy – data anonymisation methods
+**How to protect privacy – data anonymisation methods**
 
 The GDPR permits organisations to collect anonymized data without consent, use it for any purpose, and store it for an indefinite time – as long as organisations remove all identifiers from the data. There are several techniques for data-anonymisation, including:
 
@@ -71,10 +66,6 @@ Synthetic data is a method for using created artificial datasets instead of alte
 
 Data-anonymization can be challenging. There are also methods for “de-anonymization”. De-anonymization methods attempt to re-identify encrypted or obscured information. De-anonymization, also referred to as data re-identification, can, for example, cross-reference anonymized information with other available data in order to identify a person, group, or transaction.
 
-
-</text-box>
-
-<styled-text>
 
 ### Safety and security
 The right to safety is a norm protecting individuals from physical, social and emotional harms, including accidents and malfunctions. Security  means safety from malicious and intentional threats.
@@ -105,7 +96,7 @@ Nonetheless, the progressive zeal that is attached to AI future visions has brou
 
 </styled-text>
 
-<text-box name="Case: Caged pavements – AI safety and environmental uncertainty" icon="chap5">
+<text-box name="Case: Caged pavements – AI safety and environmental uncertainty" icon="exerIcon">
 
 A difficult problem for autonomous vehicles is the complex unpredictability of the urban traffic environment. While AI-driven vehicles are constantly being developed to include better ways to model their surroundings, even a small group of individuals – all performing their own movement goals within a shared space – will create a constellation that is difficult to predict. When technical solutions in the cars are too far off, another way to approach the issue is to contain the uncertainty in the environment.
 
@@ -126,7 +117,7 @@ Another way certain forms of safety are produced through AI is through automated
 
 </styled-text>
 
-<text-box icon="techIcon">
+<styled-text>
 
 “Imagine a surveillance camera in a typical convenience store in the 1980s. That camera was big and expensive, and connected by a wire running through the wall to a VCR sitting in a back room. There have been significant advances in camera technology in the ensuing decades — in resolution, digitization, storage, and wireless transmission — and cameras have become cheaper and far more prevalent.
 
@@ -134,9 +125,6 @@ Another way certain forms of safety are produced through AI is through automated
 
  - [The Dawn of Robot Surveillance, ACLU 2019](https://www.aclu.org/sites/default/files/field_document/061819-robot_surveillance.pdf)
 
-</text-box>
-
-<styled-text>
 
 Unlike the 1980s convenience store security cameras, contemporary AI surveillance systems are centralized. You can be traced both at the convenience store and at the library, and these two “yous” can be identified as the same person. The surveillance feeds are more and more often held by private data giants, as opposed to a VCR in the back room.
 
@@ -161,7 +149,7 @@ Safety also means the right to a safe and healthy environment. Nowadays, this ri
 
 </styled-text>
 
-<text-box icon="chap5">
+<text-box icon="techIcon">
 
 AI could be a powerful tool for tackling climate change. It can be used as a resource for monitoring, understanding, and predicting the consequences of climate change. AI can accelerate the development of more ecologically sustainable societies. It can be used to design green cities, environment-friendly transportation, to reduce the ecological impact of industry, and design equipment that can help study and maintain the diversity of ecosystems.
 
@@ -187,7 +175,7 @@ According to the World Health Organization (2018), more than a billion people li
 
 For example,  there are several tools for developing communication and literacy skills that might offer support with understanding those who have cognitive disabilities and/or complex speech and language difficulties (such as dementia, cerebral palsy, and autism). Moreover, the development of assistive technologies using AI, such as description of images for blind people, speech recognition, captioning for hearing impaired people, sign language recognition and creation for deaf people, multilingual text-to-speech options for reading text for those with cognitive disabilities including dyslexia, care robots for elderly people and mobility guides for visually impaired people provide other examples.
 
-<img src="./sp-too-big-rev.svg" alt="smartphone">  </img>
+<img src="./sp-too-big-rev.svg" alt="smartphone" width="200px">  </img>
 
 #### Inclusion and the gender divide
 
@@ -210,3 +198,5 @@ Technology studies indicate that technology often reflects its developers. For e
 Inclusion is, however, about more than ensuring that women are able to participate. It is an obligation to ensure cultural, age-based and geographic diversity and their intersects. When thinking about the impact of AI in society, there is, simply, a need to intentionally develop systems in different settings and with diverse users.
 
 </styled-text>
+
+<quiz id="729e0725-887b-40b4-a623-1814bfa1ab98"> </quiz>
