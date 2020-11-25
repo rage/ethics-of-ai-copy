@@ -8,8 +8,6 @@ hidden: false
 
 <styled-text>
 
-*“[Ethics] plays the role of a bicycle brake on an intercontinental airplane”*
-
 <br>
 
 “[Ethics] plays the role of a bicycle brake on an intercontinental airplane”
@@ -20,7 +18,7 @@ In this section, we’ll take a reflective look at the whole project of AI ethic
 
 To date, most ethical discussions regarding AI systems have focused on defining principles to prevent risks. National policies and various initiatives have been made on the basis of these discussions. [AlgorithmWatch](https://algorithmwatch.org/), a Berlin-based organization, maintains a repository of published AI ethics guidelines, with over 160 collected so far. It is hard to find any actor in AI these days that does not point to their own set of guidelines as evidence of their ethical engagement.
 
-### The limits of guidelines 
+### The limits of guidelines
 Although ethical principles can shape the development and implementation of ethics-based policy measures and legal norms, empirical studies suggest that guidelines have little impact on the practices surrounding AI development:
 
 “Despite its stated goal, we found no evidence that the ACM code of ethics influences ethical decision-making. Future research is required to identify interventions that do influence decision-making, such as by helping developers identify parallels between their decisions and infamous software news stories.”
