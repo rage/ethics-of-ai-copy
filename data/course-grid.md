@@ -39,7 +39,7 @@ banner: false
 </course-grid-card>
     <course-grid-card title="chapter07" url="/chapter-7/1-from-principles-to-doing">
 
-<course-grid-text><H5>Chapter 7: Doing AI ethics</H5><span>AI ethics in practice</span></course-grid-text>
+<course-grid-text><H5>Chapter 7: Future challenges</H5><span>AI ethics in practice</span></course-grid-text>
 
 </course-grid-card>
 
