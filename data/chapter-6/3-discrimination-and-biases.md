@@ -83,7 +83,7 @@ With the concept of representational harms, we are able to identify the gender-s
 
 ### How does bias come about?
 
- *“All data is historical data: the product of a time, place, political, economic, technical, and social climate. If you are not considering why your data exists, and other data sets don’t, you are doing data science wrong”.*
+ “All data is historical data: the product of a time, place, political, economic, technical, and social climate. If you are not considering why your data exists, and other data sets don’t, you are doing data science wrong”.
 
 -Melissa Terras
 
