@@ -24,6 +24,8 @@ Various organisations have participated in developing an ethical framework for A
 * justice and fairness
 * respect for various human rights, such as privacy and security
 
+<img src="./big-five.svg" alt="Big five"> </img>
+
 The five principles of AI ethics answer different questions and focus on different values:
 
 1. Should we use AI for good and not for causing  harm? (the principle of beneficence/ non-maleficence)
@@ -34,7 +36,6 @@ The five principles of AI ethics answer different questions and focus on differe
 
 </styled-text>
 
-<img src="./big-five.svg" alt="Big five"> </img>
 
 <styled-text>
 
