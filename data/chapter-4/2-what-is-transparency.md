@@ -47,7 +47,47 @@ The comprehensibility – or understandability – of an algorithm requires that
 However, it is notoriously difficult to translate algorithmically derived concepts into human-understandable concepts. In some countries, legislators have discussed whether public authorities should publish the algorithms they use in automated decision-making in terms of programming codes. However, most people do not know how to make sense of programming codes. It is thus hard to see how transparency is increased by publishing codes.
 
 
-![Example code](./example-code.png)
+```sas
+* Otetaan siemenluku otoksen tekoa varten koneajasta ;
+data _NULL_;
+ siemen= int(%sysfunc(TIME())) ;
+ call symput('siemen',siemen);
+run;
+%put &siemen;
+
+* Järjestetään perusjoukko ;
+proc sort data=perus;
+ by henro;
+run;
+* Tehdään otos, n=2000 ;
+proc surveyselect data=perus method=srs
+     n=2000 seed=&siemen
+     out=otos;
+run;
+* Järjestetään otos ;
+proc sort data=otos;
+ by henro;
+run;
+
+ * Yhdistetään otos perusjoukkoon, tehdään muuttuja TYYPPI;
+data kaikki;
+ merge perus(in=a)
+       otos(in=b);
+ by henro;
+ length TYYPPI $ 1.;
+ if a then TYYPPI='V'; * verrokit ;
+ if b then TYYPPI='K'; * kokeiluryhmä ;
+
+ * annetaan arvot muuttujalle REAOH ;
+REAOH='PUOTOS';
+run;
+
+* Tarkistetaan, että 2000 henkilöllä TYYPPI saa arvon 'K' ;
+proc freq;
+ tables tyyppi;
+run;
+```
+
 
 Would it be more helpful to publish the exact algorithms? In most cases, publishing the exact algorithms does not bring a lot of transparency either, especially if you do not have the access to the data used in a model.
 
