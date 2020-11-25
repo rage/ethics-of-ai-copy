@@ -38,3 +38,5 @@ So, according to Kant, we owe ourselves moral respect in virtue of our autonomy.
 
 
 </text-box>
+
+<quiz id="63998353-c785-496e-a447-7f61202ecf3a"> </quiz>

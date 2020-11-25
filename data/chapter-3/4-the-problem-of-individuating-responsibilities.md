@@ -29,8 +29,6 @@ Why is it so difficult to set criteria on who is responsible?
 
 </styled-text>
 
-<quiz id="63998353-c785-496e-a447-7f61202ecf3a"> </quiz>
-
 <quiz id="b6f98b77-1ca1-4c74-b0ad-d2f373c4c9db">
 
 

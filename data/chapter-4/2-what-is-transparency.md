@@ -118,3 +118,26 @@ The black box problem of artificial intelligence is not new. Providing transpare
 </text-box>
 
 <styled-text>
+
+<quiz id="f94f13d3-3983-4d86-811c-881e1282c275">
+
+There is a need to translate algorithmic concepts into everyday language. Most people without a  background in computer science are not familiar with the basic vocabulary of AI. This has a direct impact on their ability to understand recent developments.
+
+<span style="font-size: 30px">1.</span>
+<img src="./rl1.svg" alt="Techical reinforcement learning algorithm" style="width: 450px">
+
+<span style="font-size: 30px">2.</span>
+<img src="./rl2.svg" alt="Robot reinforcement learning algorithm" style="width: 400px">
+
+<br>
+
+<span style="font-size: 30px">3.</span>
+<img src="./rl3.svg" alt="Cat reinforcement learning algorithm" style="width: 450px">
+
+<br>
+
+Compare these three visualizations of reinforcement learning algorithms. Which one of them is the most understandable? Why?
+
+<br>
+
+</quiz>

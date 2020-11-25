@@ -198,3 +198,5 @@ Technology studies indicate that technology often reflects its developers. For e
 Inclusion is, however, about more than ensuring that women are able to participate. It is an obligation to ensure cultural, age-based and geographic diversity and their intersects. When thinking about the impact of AI in society, there is, simply, a need to intentionally develop systems in different settings and with diverse users.
 
 </styled-text>
+
+<quiz id="729e0725-887b-40b4-a623-1814bfa1ab98"> </quiz>

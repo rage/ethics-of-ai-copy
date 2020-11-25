@@ -46,12 +46,6 @@ Lastly, we want to note that when speaking of AI and the social implications, AI
 
 </styled-text>
 
-<quiz id="85149553-407a-4733-a4a0-18d54a4715cd"></quiz>
-
-<quiz id="0e72de1d-165b-4d3e-9e62-1008a83f2e8f"></quiz>
-
-<quiz id="33ef4765-0577-4eed-b8e6-81a96c9a9804"></quiz>
-
 
 <quiz id="c956ae17-d49d-4148-8414-029a14f3ff4c">
 

@@ -88,3 +88,5 @@ Assuming such a measure as utility does in fact exist, philosopher Robert Nozick
 Does this make utilitarianism unpalatable? Is there a way for the utilitarian to argue that the puzzle Nozick posed is not really a problem?
 
 </text-box>
+
+<quiz id="b5647fe2-c441-4cda-974e-dcd3e39aa494"> </quiz>

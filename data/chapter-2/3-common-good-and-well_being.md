@@ -40,6 +40,4 @@ The common good is not a singular, but a plural. Identifying social and moral no
 
 </styled-text>
 
-<quiz id="b5647fe2-c441-4cda-974e-dcd3e39aa494"> </quiz>
-
 <quiz id="6710d2b5-19a9-48d1-a722-912f1e60094d"> </quiz>
