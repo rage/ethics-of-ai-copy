@@ -8,12 +8,8 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">In this section, we take a reflective look at the project of AI ethics as a whole – this requires us to look into the making and doing of AI ethics as a phenomenon. </p>
-
-<br>
-
-“[Ethics] plays the role of a bicycle brake on an intercontinental airplane”
--Ulrike Beck, 1988
+*“[Ethics] plays the role of a bicycle brake on an intercontinental airplane”
+-Ulrike Beck, 1988*
 
 In this section, we’ll take a reflective look at the whole project of AI ethics. This means looking at the making and doing of AI ethics as a phenomenon. AI ethics is a project with diverse members who have differing stakes – and it produces contents and discussions that can be analyzed as cultural products. That is, AI ethics is created by certain people, at a certain time, for certain purposes. But what are these purposes, and is AI ethics achieving its goals?
 
