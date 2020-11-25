@@ -8,11 +8,7 @@ hidden: false
 <hero-icon heroIcon='chap7'/>
 
 <styled-text>
-
-<p style="color:red;">How ethics guidelines can create expectations and impact the discussion about AI ethics. </p>
-
-<br>
-
+  
 The subject of ethical considerations relating to technology is not a new question. Rather, it has been asked in a very similar form throughout many different iterations of technological development. As an illustration of the historical continuities around these issues, the sociologist Langdon Winner wrote in his 1990 essay “Engineering Ethics and Political Imagination” that a difficulty lies in ethical discussions centring on highly hypothetical and limited “troubling incidents” – without calling into question the broader responsibilities of the whole engineering industry. This issue is similar to those facing the AI ethics project now, 30 years later.
 
 While the troubles may not be new, the contemporary AI ethics project has much more public interest and wider stakeholder participation than engineering ethics has had before. Many more are learning about it, many are hoping to implement AI ethics in their work in some way, and many companies, communities, states and individuals have stakes in the outcomes. With this new wave of interest, publishing ethical guidelines has become the typical way of doing ethics.
