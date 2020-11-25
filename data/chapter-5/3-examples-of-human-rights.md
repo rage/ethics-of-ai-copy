@@ -175,7 +175,7 @@ According to the World Health Organization (2018), more than a billion people li
 
 For example,  there are several tools for developing communication and literacy skills that might offer support with understanding those who have cognitive disabilities and/or complex speech and language difficulties (such as dementia, cerebral palsy, and autism). Moreover, the development of assistive technologies using AI, such as description of images for blind people, speech recognition, captioning for hearing impaired people, sign language recognition and creation for deaf people, multilingual text-to-speech options for reading text for those with cognitive disabilities including dyslexia, care robots for elderly people and mobility guides for visually impaired people provide other examples.
 
-<img src="./sp-too-big-rev.svg" alt="smartphone">  </img>
+<img src="./sp-too-big-rev.svg" alt="smartphone" width="200px">  </img>
 
 #### Inclusion and the gender divide
 
