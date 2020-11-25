@@ -10,10 +10,10 @@ import Icon6 from "../../assets/chap-6.svg"
 import Icon7 from "../../assets/chap-7.svg"
 
 const svgs = {
-  chapter01: <Icon1 width="180px"/>,
+  chapter01: <Icon1 width="180px" />,
   chapter02: <Icon2 />,
   chapter03: <Icon3 width="170px" />,
-  chapter04: <Icon4 width="350px"/>,
+  chapter04: <Icon4 width="350px" />,
   chapter05: <Icon5 />,
   chapter06: <Icon6 />,
   chapter07: <Icon7 width="130px" />,

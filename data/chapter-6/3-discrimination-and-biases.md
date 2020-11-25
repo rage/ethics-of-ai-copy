@@ -32,7 +32,7 @@ First, it is important to note that the word discrimination can be used in a  mo
 
 </styled-text>
 
-<text-box icon="chap6" name="Definition 1: Discrimination">
+<text-box icon="exerIcon" name="Definition 1: Discrimination">
 
 Discrimination is a difference of treatment of individuals based on their membership in a group.
 
@@ -48,7 +48,7 @@ Consider, then, a café which only serves people wearing green shirts. This is m
 
 </styled-text>
 
-<text-box name="Definition 2: Discrimination" icon="chap6">
+<text-box name="Definition 2: Discrimination" icon="exerIcon">
 
 Discrimination is differential treatment based on perceived membership in a socially salient group, which causes social harm. (Lippert-Rasmussen 2014)
 
@@ -89,7 +89,7 @@ With the concept of representational harms, we are able to identify the gender-s
 
 </styled-text>
 
-<text-box name='Three different meanings of “bias”' icon="chap6">
+<text-box name='Three different meanings of “bias”' icon="exerIcon">
 
 In **statistics**: discrepancy of a sample statistic vs the true statistic of the population.
 
@@ -131,7 +131,7 @@ One of the clearest examples of this is in the ways data is made “clean”, in
 
 </styled-text>
 
-<text-box name="">
+<text-box name="" icon="techIcon">
 
 A good example of this is when collecting names. To prevent false data from entering the system, certain constraints are made as to how names are supposed to look. For example, sometimes it is assumed that names consist of given names and a surname. Sometimes it is assumed that names only contain letters from A to Z. Sometimes it is assumed that names always have more than two letters.
 

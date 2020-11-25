@@ -7,7 +7,7 @@ hidden: false
 <hero-icon heroIcon='chap6'/>
 
 
-<text-box name="" icon="chap6">
+<text-box icon="exerIcon">
 
 <styled-text>
 

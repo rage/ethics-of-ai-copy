@@ -27,7 +27,7 @@ Philosophically, moral responsibility requires 1) moral autonomy and 2) the abil
 
 </styled-text>
 
-<text-box variant="hint" name="Moral responsibility">
+<text-box icon="philIcon" name="Moral responsibility">
 
 Immanuel Kant is one of the most famous European moral philosophers. For Immanuel Kant, practical reason — our ability to use reasons to choose our own actions — presupposes that we  are free. Actions are based on our own will to utilize a moral law to guide our decisions. For Kant, and Kantians, the claim is that this capacity (to impose the moral law upon ourselves) is the ultimate source of all moral value.
 

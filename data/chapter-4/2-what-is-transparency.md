@@ -60,7 +60,7 @@ Moreover, much is dependent on the degree of data or algorithmic literacy, for e
 </styled-text>
 
 
-<text-box name="How to make models more transparent?" icon="exerIcon">
+<text-box name="How to make models more transparent?" icon="techIcon">
 
 The black box problem of artificial intelligence is not new. Providing transparency for machine learning models is an active area of research. Roughly speaking, there are five main approaches:
 

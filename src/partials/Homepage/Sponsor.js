@@ -10,14 +10,13 @@ import Sponsor4 from "../../assets/gemeente.svg"
 import Sponsor5 from "../../assets/hidata.svg"
 import Sponsor6 from "../../assets/fcai.svg"
 
-
 const sponsors = {
-  1: <Sponsor1 width="150px"/>,
-  2: <Sponsor2 width="150px"/>,
-  3: <Sponsor3 width="150px"/>,
-  4: <Sponsor4 width="150px"/>,
-  5: <Sponsor5 width="150px"/>,
-  6: <Sponsor6 width="150px"/>,
+  1: <Sponsor1 width="150px" />,
+  2: <Sponsor2 width="150px" />,
+  3: <Sponsor3 width="150px" />,
+  4: <Sponsor4 width="150px" />,
+  5: <Sponsor5 width="150px" />,
+  6: <Sponsor6 width="150px" />,
 }
 
 const Container = styled.div`
@@ -40,12 +39,12 @@ const SponsorBox = styled.div`
   margin: 1rem auto;
 `
 const SponsorLogo = styled.div`
-    height: 130px;
-    width: 100%;
-    font-size: 1.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 130px;
+  width: 100%;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export default (props) => {
@@ -53,9 +52,10 @@ export default (props) => {
     <Container>
       <H2> Sponsors </H2> <span> Official sponsor of this course</span>
       <SponsorBox>
-      {Object.values(sponsors).map((s) => <SponsorLogo>{s}</SponsorLogo>)}
+        {Object.values(sponsors).map((s) => (
+          <SponsorLogo>{s}</SponsorLogo>
+        ))}
       </SponsorBox>
-
     </Container>
   )
 }

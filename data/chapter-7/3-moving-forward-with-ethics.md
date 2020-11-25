@@ -74,7 +74,6 @@ In addition, Al actors can be defined as any actors involved in at least one sta
 
 </styled-text>
 
-<text-box>
 
 * AI systems raise ethical issues that include, but are not limited to, their impact on decision-making, equality, polarization, and well-being.
 
@@ -84,7 +83,6 @@ In addition, Al actors can be defined as any actors involved in at least one sta
 
 * AI systems can also change human experience, challenge human agency, raise concerns over the reliability of information sources, and question the ideal of fundamental dignity.
 
-</text-box>
 
 Now, it is your turn to think about these questions.
 

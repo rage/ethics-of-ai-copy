@@ -6,7 +6,7 @@ hidden: false
 
 <hero-icon heroIcon='chap5'/>
 
-<text-box icon="chap5">
+<styled-text>
 
 During the COVID-19 pandemic, governments have struggled to find effective policy-making strategies for exiting lockdown in a safe way. According to epidemiologists, opening up society requires efficient tracking, tracing, and monitoring. In many cases, this has led to the utilization of various tracing and tracking apps. These apps have raised several concerns about privacy and security. Critics have seen them as the first steps towards the algorithmic surveillance of citizens.
 
@@ -15,10 +15,6 @@ In London, authorities decided to try something new. Together with scientists, t
 <img src=../../src/assets/cbcl-02.svg alt="london image">
 
 In Odysseus, the data comes from a wide range of sources. Odysseus combines aggregated, anonymized mobile phone data, anonymized credit card transactions, satellite navigation data, and data from sensors and traffic cameras in the streets. This data is used to create counts of vehicles, cyclists and pedestrians, and to indicate the density and impacts of social distancing. Special attention is paid to the anonymization of data so that individuals cannot be identified.
-
-</text-box>
-
-<styled-text>
 
 In this chapter we will look at human rights. The right for a safe environment is one of these. Odysseus provides an example of how AI can be used in a way that respects and promotes the right to safety or to a healthy environment. At the same time, the project must take other rights – such as the right for privacy – into account. In London these concerns were taken seriously. To secure privacy, Odysseus is designed in a way that all the data is anonymized and individuals cannot be identified from the images taken by the traffic cameras.
 

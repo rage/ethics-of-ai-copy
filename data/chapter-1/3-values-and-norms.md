@@ -49,7 +49,7 @@ ask: “Is this law morally acceptable or not?”
 
 </styled-text>
 
-<text-box variant="hint" name="Hume´s guillotine: Facts, value and norms">
+<text-box icon="philIcon" name="Hume´s guillotine: Facts, value and norms">
 
 Normative claims do not describe how the world is. Instead, **they prescribe how the world should be**. This
 is, they imply “ought-to” evaluations, in distinction to sentences that provide "is" types of assertions. For

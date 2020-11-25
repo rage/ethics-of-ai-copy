@@ -10,7 +10,7 @@ hidden: false
 
 Illustration. © Keksi Agency via City of Helsinki / Communications
 
-<text-box name="">
+<styled-text>
 
 Suppose you are the Chief Digital Officer in Helsinki City. You are asked to consider whether the city’s health care organisation should move from “reactive” healthcare to “preventive” healthcare. You read a report. It tells about novel, sophisticated machine learning systems that would help health authorities to forecast the possible health risks of citizens.
 
@@ -26,15 +26,12 @@ The report, however, also includes some concerns.  For example, the systems rais
 
 The report also raises the fundamental question of the city’s role: if the city has information about a potential health risk and does not act upon the data, is the city guilty of negligence? Are citizens treated equally in the physical and digital worlds? If a person passes out in real life, we call an ambulance without having explicit permission to do so. In the digital world, privacy concerns may prevent us from contacting citizens.
 
-</text-box>
-
-<styled-text>
 
 What do you think about the above example? As a Chief Digital Officer, would you promote the use of preventive methods? If your answer is something like “yes, the city should seek an ethically and legally acceptable way to use those methods – there are so many advantages compared to the possible risks”, you were probably using a form of moral reasoning called "utilitarianism".
 
 </styled-text>
 
-<text-box name="Utilitarianism" icon="chap2">
+<text-box name="Utilitarianism" icon="exerIcon">
 
 **Utilitarianism** is a family of ethical theories. It conceives “benefits” as actions that maximize well-being across all affected individuals. Utilitarianism is a version of consequentialism, which states that the consequences of any action are the only standards of right and wrong.
 
@@ -70,7 +67,6 @@ Utilitarianism is not a perfect account on moral decision making. It has been cr
 
 </styled-text>
 
-<text-box name="Risks" icon="chap2">
 
 "Risk" is commonly used to mean a likelihood of a danger or a hazard that arises unpredictably, or in a more technical sense, the probability of some resulting degree of harm. In AI ethics, harm and risks are taken to arise from design, inappropriate application, or intentional misuse of technology. Typical examples are risks such as discrimination, violation of privacy, security issues, cyberwarfare, or malicious hacking. In practice, it is difficult to compare the risks and benefits for the following reasons:
 
@@ -82,9 +78,8 @@ Utilitarianism is not a perfect account on moral decision making. It has been cr
 
 **Fourthly**, utilitarianism fails to take into account other moral aspects. It is easy to imagine situations where developed technology would produce great benefits for societies, but its use would still raise important ethical questions. For example, let’s think about the case of a preventive healthcare system. The system may indeed be beneficial for many, but it still forces us to ask whether fundamental human rights, such as privacy, matter. Or what happens to the citizen’s right not to know about possible health problems? (Many of us would want to know if we are in a high-risk group, but what if someone does not want to know? Can a city force that knowledge on them?) Or, how can we make it sure that everyone has equal access to the possible benefits of a preventative system?
 
-</text-box>
 
-<text-box name="Nozick’s utility monster" icon="chap2">
+<text-box name="Nozick’s utility monster" icon="philIcon">
 
 One of the biggest difficulties with utilitarianism is the question of utility: what is it really? Technically, utility is only a measure (a numeric quantity) that describes some kind of underlying “good” which we want to maximize. Say, pleasure, or well-being (which hedonist philosophers would claim to be the same thing). Pleasure is at least to some extent a subjective experience, and utility, as a measure, should transform it into an intersubjectively comparable number. That is a high bar to reach.
 

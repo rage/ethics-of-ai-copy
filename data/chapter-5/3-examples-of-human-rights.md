@@ -15,7 +15,7 @@ Ethically, privacy is related to personal autonomy and integrity. Following the 
 
 </styled-text>
 
-<text-box icon="chap5">
+<text-box icon="philIcon">
 
 Many have proposed the principle that people should have control over their own data – and that data concerning them should not be allowed to be used to harm or discriminate against them. According to some, this right to have “full control over one’s own data” should be a human right.
 
@@ -27,8 +27,7 @@ Wachter and Mittelstadt (2019) propose that the right for the control of your ow
 
 <img src=../../src/assets/london-zoom.svg alt="london zoomed image">
 
-
-<text-box name="The GDPR" icon="chap5">
+<styled-text>
 
 The General Data Protection Regulation (GDPR) is a legal framework. It sets guidelines for the collection and processing of personal data from individuals who live in the European Union.
 
@@ -68,10 +67,6 @@ Synthetic data is a method for using created artificial datasets instead of alte
 Data-anonymization can be challenging. There are also methods for “de-anonymization”. De-anonymization methods attempt to re-identify encrypted or obscured information. De-anonymization, also referred to as data re-identification, can, for example, cross-reference anonymized information with other available data in order to identify a person, group, or transaction.
 
 
-</text-box>
-
-<styled-text>
-
 ### Safety and security
 The right to safety is a norm protecting individuals from physical, social and emotional harms, including accidents and malfunctions. Security  means safety from malicious and intentional threats.
 
@@ -101,7 +96,7 @@ Nonetheless, the progressive zeal that is attached to AI future visions has brou
 
 </styled-text>
 
-<text-box name="Case: Caged pavements – AI safety and environmental uncertainty" icon="chap5">
+<text-box name="Case: Caged pavements – AI safety and environmental uncertainty" icon="exerIcon">
 
 A difficult problem for autonomous vehicles is the complex unpredictability of the urban traffic environment. While AI-driven vehicles are constantly being developed to include better ways to model their surroundings, even a small group of individuals – all performing their own movement goals within a shared space – will create a constellation that is difficult to predict. When technical solutions in the cars are too far off, another way to approach the issue is to contain the uncertainty in the environment.
 
@@ -122,7 +117,7 @@ Another way certain forms of safety are produced through AI is through automated
 
 </styled-text>
 
-<text-box icon="techIcon">
+<styled-text>
 
 “Imagine a surveillance camera in a typical convenience store in the 1980s. That camera was big and expensive, and connected by a wire running through the wall to a VCR sitting in a back room. There have been significant advances in camera technology in the ensuing decades — in resolution, digitization, storage, and wireless transmission — and cameras have become cheaper and far more prevalent.
 
@@ -130,9 +125,6 @@ Another way certain forms of safety are produced through AI is through automated
 
  -The Dawn of Robot Surveillance, ACLU
 
-</text-box>
-
-<styled-text>
 
 Unlike the 1980s convenience store security cameras, contemporary AI surveillance systems are centralized. You can be traced both at the convenience store and at the library, and these two “yous” can be identified as the same person. The surveillance feeds are more and more often held by private data giants, as opposed to a VCR in the back room.
 
@@ -157,7 +149,7 @@ Safety also means the right to a safe and healthy environment. Nowadays, this ri
 
 </styled-text>
 
-<text-box icon="chap5">
+<text-box icon="techIcon">
 
 AI could be a powerful tool for tackling climate change. It can be used as a resource for monitoring, understanding, and predicting the consequences of climate change. AI can accelerate the development of more ecologically sustainable societies. It can be used to design green cities, environment-friendly transportation, to reduce the ecological impact of industry, and design equipment that can help study and maintain the diversity of ecosystems.
 
