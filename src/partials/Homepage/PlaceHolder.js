@@ -19,8 +19,9 @@ const PlaceHolderText = styled.div`
   line-height: 2.8rem;
   width: 60%;
   margin: 0 auto;
-  color: #6f7678;
+  color: #333;
   font-weight: 400;
+  opacity: 0.9;
 
   ${respond.xs`
     font-size: 1.4rem;
@@ -28,7 +29,7 @@ const PlaceHolderText = styled.div`
   `}
 
   ${respond.lg`
-    width: 60%;
+    width: 50%;
   `}
 `
 

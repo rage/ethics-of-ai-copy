@@ -54,13 +54,14 @@ const CourseGridText = styled.div`
     font-size: clamp(20px, 2vw, 30px);
     color: #26252a;
     font-weight: 600;
+    margin-bottom: 0.5rem;
   }
 
   span {
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.8;
-    opacity: 0.7;
+    color: #333;
   }
 `
 
