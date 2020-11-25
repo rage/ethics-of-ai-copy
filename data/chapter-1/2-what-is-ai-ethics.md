@@ -8,10 +8,6 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">Here, we will take a closer look at ethics in general before exploring the meaning of AI ethics.</p>
-
-<br>
-
 Before looking at AI ethics, we need to set out what ethics means in the first place.
 
 Ethics seeks to answer questions like “what is good or bad?”, “what is right or what is wrong”, or “what is
