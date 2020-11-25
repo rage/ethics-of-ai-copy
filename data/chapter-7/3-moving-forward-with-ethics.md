@@ -62,10 +62,11 @@ Or, to take another example, let’s look at AlgorithmWatch. AlgorithmWatch trac
 
 The Director of the Ada Lovelace institute Carly Kind calls this the third wave of AI ethics, and suggests we are moving into a new form of societal engagement:
 
-* “Third-wave ethical AI has seen a Dutch Court shut down an algorithmic fraud detection system, students in the UK take to the streets to protest against algorithmically-decided exam results, and US companies voluntarily restrict their sales of facial recognition technology. It is taking us beyond the principled and the technical, to practical mechanisms for rectifying power imbalances and achieving individual and societal justice.”
->**-Carly Kind**
+“Third-wave ethical AI has seen a Dutch Court shut down an algorithmic fraud detection system, students in the UK take to the streets to protest against algorithmically-decided exam results, and US companies voluntarily restrict their sales of facial recognition technology. It is taking us beyond the principled and the technical, to practical mechanisms for rectifying power imbalances and achieving individual and societal justice.”
 
-## Conclusion: now it’s your turn
+-Carly Kind
+
+### Conclusion: now it’s your turn
 
 Ethical questions regarding Al systems pertain to all stages of the Al system lifecycle, understood here to range from research, design, and development to deployment and use – including maintenance, operation, trade, financing, monitoring and evaluation, validation, end-of-use, disassembly, and termination.
 
