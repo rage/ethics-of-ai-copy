@@ -54,11 +54,10 @@ Imagine that one day you end up in a heated conversation on Twitter. It starts w
 
  ![Transforming image of Sanna Marin](./chap1-transf.png)
 
-Note: Artistic impression. </br>
-
-Sanna Marin: Edited from original CC BY 4.0 Laura Kotila / Finnish Prime Minister’s Office </br>
-
-Result image: CC BY-NC 4.0 NVIDIA Corporation </br>
+Note: This is not a real AI-based photo recreation case. <br>
+Image 1: CC BY 4.0 Laura Kotila / Finnish Prime Minister’s Office (edited from original)<br>
+Images 2 and 3 are an artist’s impression.<br>
+Image 4: CC BY-NC 4.0 NVIDIA Corporation<br>
 
 </br>
 
