@@ -40,6 +40,14 @@ const ButtonWrapper = styled.div`
   align-items: center;
 `
 
+const ChapterSubsectionChooser = {
+  1: "I",
+  2: "II",
+  3: "III",
+  4: "IV",
+  5: "V",
+}
+
 class EndOfSubSection extends React.Component {
   render() {
     return (
@@ -106,7 +114,8 @@ class EndOfSubSection extends React.Component {
                   <ButtonWrapper>
                     <StyledLink to={nextPart.path}>
                       <StyledIcon icon={icon} />
-                      {currentPageIndex + 2}. {nextPart.title}
+                      {ChapterSubsectionChooser[currentPageIndex + 2]}.{" "}
+                      {nextPart.title}
                     </StyledLink>
                   </ButtonWrapper>
                 </Fragment>
