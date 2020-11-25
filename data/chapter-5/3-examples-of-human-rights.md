@@ -29,6 +29,8 @@ Wachter and Mittelstadt (2019) propose that the right for the control of your ow
 
 <styled-text>
 
+## GDPR
+
 The General Data Protection Regulation (GDPR) is a legal framework. It sets guidelines for the collection and processing of personal data from individuals who live in the European Union.
 
 The GDPR's aim is to give individuals control over their personal data. Any information that relates to an individual who can be directly or indirectly identified is “personal data”. This includes names, social security numbers and email addresses. Location information, biometric data, ethnicity, gender, web cookies, and political or religious beliefs can also be personal data. Pseudonymous data (data that does not directly identify an individual but can be connected to them) can also fall under the definition if it’s easy to individuate someone from it.
@@ -54,7 +56,7 @@ Accountability: The data controller is responsible for being able to demonstrate
 
 According to GDPR, if you process data you’re also required to handle data securely by implementing “appropriate technical and organizational measures.”
 
-**How to protect privacy – data anonymisation methods**
+### How to protect privacy – data anonymisation methods
 
 The GDPR permits organisations to collect anonymized data without consent, use it for any purpose, and store it for an indefinite time – as long as organisations remove all identifiers from the data. There are several techniques for data-anonymisation, including:
 
