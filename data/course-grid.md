@@ -29,12 +29,12 @@ banner: false
 </course-grid-card>
     <course-grid-card title="chapter05" url="chapter-5/1-introduction">
 
-<course-grid-text><h3>Chapter 5: Human rights </h3><span>Should AI respect human rights?<</span></course-grid-text>
+<course-grid-text><h3>Chapter 5: Human rights </h3><span>Should AI respect human rights?</span></course-grid-text>
 
 </course-grid-card>
     <course-grid-card title="chapter06" url="chapter-6/1-what-is-fairness">
 
-<course-grid-text><H3>Chapter 6: Fairness </H5><span>Should AI be fair and non-discriminative?/span></course-grid-text>
+<course-grid-text><H3>Chapter 6: Fairness </H5><span>Should AI be fair and non-discriminative?</span></course-grid-text>
 
 </course-grid-card>
     <course-grid-card title="chapter07" url="/chapter-7/1-from-principles-to-doing">
