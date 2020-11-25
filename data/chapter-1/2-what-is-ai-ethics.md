@@ -1,7 +1,6 @@
 ---
 path: '/chapter-1/2-what-is-ai-ethics'
-title: 'A guide to AI ethics'
-subtitle: 'What is AI ethics?'
+title: 'What is AI ethics?'
 hidden: false
 ---
 

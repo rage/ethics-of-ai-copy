@@ -1,5 +1,6 @@
 ---
 path: '/chapter-6/4-removing-bias'
+topic-title: 'What is fairness'
 title: 'Removing bias'
 hidden: false
 ---

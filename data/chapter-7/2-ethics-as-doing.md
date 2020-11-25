@@ -1,5 +1,6 @@
 ---
 path: '/chapter-7/2-ethics-as-doing'
+topic-title: 'From principles to doing'
 title: 'Ethics as doing'
 hidden: false
 ---

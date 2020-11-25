@@ -1,5 +1,6 @@
 ---
 path: '/chapter-7/3-moving-forward-with-ethics'
+topic-title: 'From principles to doing'
 title: 'Moving forward with ethics'
 hidden: false
 ---

@@ -1,5 +1,6 @@
 ---
 path: '/chapter-6/3-discrimination-and-biases'
+topic-title: 'What is fairness'
 title: 'Discrimination and biases'
 hidden: false
 ---

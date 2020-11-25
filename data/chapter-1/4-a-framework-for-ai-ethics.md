@@ -1,6 +1,6 @@
 ---
 path: '/chapter-1/4-a-framework-for-ai-ethics'
-title: 'A guide to AI ethics'
+title: 'A framework for AI ethics'
 hidden: false
 ---
 
