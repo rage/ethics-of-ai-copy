@@ -14,7 +14,7 @@ banner: false
 </course-grid-card>
     <course-grid-card title="chapter02" url="/chapter-2/1-what-should-we-do">
 
-<course-grid-text><h3>Chapter 2: Non-maleficence</h3><span>Using AI for good and not for harm</span></course-grid-text>
+<course-grid-text><h3>Chapter 2: Non-maleficence</h3><span>How can we use AI for good and not for harm?</span></course-grid-text>
 
 </course-grid-card>
     <course-grid-card title="chapter03" url="/chapter-3/1-algorithms-and-accountability">
@@ -39,7 +39,7 @@ banner: false
 </course-grid-card>
     <course-grid-card title="chapter07" url="/chapter-7/1-from-principles-to-doing">
 
-<course-grid-text><h3>Chapter 7: Future Challenges</h3><span>Looking at the future of AI ethics</span></course-grid-text>
+<course-grid-text><h3>Chapter 7: Future challenges</h3><span>How might AI ethics develop?</span></course-grid-text>
 
 </course-grid-card>
 
