@@ -8,10 +8,6 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">In this section, we’ll look at moral agency and moral responsibility in the context of AI ethics. </p>
-
-<br>
-
 <img src=../../src/assets/agent-action.svg alt="Agent action" style="width: 600px">
 
 In ethics, accountability is closely related to the concept of “moral agency”. A moral agent is “an agent who is capable of acting with reference to right and wrong." Importantly, only moral agents are morally responsible for their actions.

@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { respond } from "../../_respond"
-import H3 from "../Headers/H3"
+import H2 from "../Headers/H2"
 
 const TeaserWrapper = styled.div`
   margin-top: 5rem;
@@ -38,7 +38,7 @@ const TeaserCardContainer = styled.div`
 
   ${respond.lg`
   padding: 2rem 0;
-  grid-template-columns: repeat(3, 20rem);
+  grid-template-columns: repeat(3, 26rem);
   grid-gap: 6rem;
   `}
 `
@@ -46,7 +46,7 @@ const TeaserCardContainer = styled.div`
 const TeaserQuestion = (props) => {
   return (
     <TeaserWrapper>
-      <H3> {props.title} </H3> <span> {props.subtitle} </span>{" "}
+      <H2> {props.title} </H2>
       <TeaserCardContainer> {props.children} </TeaserCardContainer>{" "}
     </TeaserWrapper>
   )

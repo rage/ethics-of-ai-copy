@@ -16,19 +16,21 @@ const StyledButton = styled.button`
   display: inline-block;
   width: auto;
   border-radius: 4px;
-  padding: 14px 24px;
+  padding: 1.2rem 3rem;
   color: #333;
   border: none;
   text-transform: none;
   outline: 0;
   background: #fff;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 400;
   backface-visibility: hidden;
   letter-spacing: normal;
   transform: translate3d(0, 0, 0);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  text-decoration: none;
 
   :hover {
     transform: translate3d(0, -2px, 0);
@@ -39,6 +41,12 @@ const StyledButton = styled.button`
 const Primary = styled(StyledButton)`
   background: #333;
   color: #fff;
+`
+const Hero = styled(StyledButton)`
+  background: #4A6164;
+  color: #fff;
+  border-radius: 50px;
+  text-transform: uppercase;
 `
 const Secondary = styled(StyledButton)`
   background: #fff;
@@ -64,6 +72,21 @@ export const PrimaryButton = ({
   </StyledLink>
 )
 
+export const HeroButton = ({
+  children,
+  to,
+  onClick,
+  disabled,
+  variant = "outlined",
+}) => (
+  <StyledLink
+    onClick={onClick}
+    to={to === undefined ? false : to}
+    disabled={disabled}
+  >
+    <Hero variant={variant}> {children} </Hero>
+  </StyledLink>
+)
 export const SecondaryButton = ({
   children,
   to,

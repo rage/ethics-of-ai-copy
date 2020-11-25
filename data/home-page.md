@@ -6,18 +6,18 @@ hide_in_sidebar: true
 banner: false
 ---
 
-<hero-section title="Welcome to Ethics of AI!" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+<hero-section title="Welcome to the Ethics of AI!" subtitle="The Ethics of AI is a free online course created by the University of Helsinki. The course is for anyone who is interested in the ethical aspects of AI – we want to encourage people to learn what AI ethics means, what can and can’t be done to develop AI in an ethically sustainable way, and how to start thinking about AI from an ethical point of view.">
 
 </hero-section>
 
-<teaser-question title="Have you always wanted to know..." subtitle="Lorem ipsum dolor sit amet consetetur. Lorem ipsum dolor sit amet consetetur.">
-<teaser-card icon="chart" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor? </teaser-card>
-<teaser-card icon="presenter" state="active">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor?</teaser-card>
-<teaser-card icon="weigh">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor?</teaser-card>
+<teaser-question title="In this course you'll..." subtitle="Lorem ipsum dolor sit amet consetetur. Lorem ipsum dolor sit amet consetetur.">
+<teaser-card icon="chart" >Discover why AI raises concerns about its ethically acceptable use and development. </teaser-card>
+<teaser-card icon="presenter" state="active">Become familiar with the ethical questions and concepts related to contemporary AI.</teaser-card>
+<teaser-card icon="weigh">Learn how to combine ethical concepts and theories with AI by doing practical exercises.</teaser-card>
 </teaser-question>
 
-<placeholder title="Why should AI be fair?">
-“Ethics of AI” is one of the free online courses by the University of Helsinki. We want to encourage people to learn what the ethics of AI is, what can (and can’t) be done to develop AI in an ethically more sustainable way, and how to start thinking AI from an ethical point of view. The course combines ethical concepts and theories with practical exercises and can be completed at your own pace.
+<placeholder title="AI is becoming ever more relevant">
+Artificial intelligence is already a part of our daily lives. When we post pictures to social media, search online or ask questions from chatbots, we’re interacting with AI. Authorities, such as cities, rely on AI for providing public services. And governments are seeking solutions to global problems by using algorithmically produced knowledge. The goal of this course is to help you to develop your own skills for ethical thinking. You can complete the course at your own pace.
 </placeholder>
 
 <homepage-grid></homepage-grid>

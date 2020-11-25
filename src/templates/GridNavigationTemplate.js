@@ -12,7 +12,7 @@ import { LoginStateContextProvider } from "../contexes/LoginStateContext"
 import Button from "../components/Button"
 import { respond } from "../_respond"
 import PagesContext from "../contexes/PagesContext"
-import H3 from "../partials/Headers/H3"
+import H2 from "../partials/Headers/H2"
 
 const ButtonWrapper = styled.div`
   display: flex;
@@ -112,7 +112,7 @@ export default function GridNavigationTemplate(props) {
           <Fragment>
             <ContentWrapper>
               <Heading>
-                <H3> {frontmatter.title} </H3>
+                <H2> {frontmatter.title} </H2>
               </Heading>
               <StyleLink>
                 <ul>

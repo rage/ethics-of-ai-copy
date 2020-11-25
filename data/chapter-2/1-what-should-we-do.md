@@ -8,12 +8,7 @@ hidden: false
 
 <styled-text>
 
-## The principle of beneficence
-
-<p style="color:red;">Let’s take a closer look at what “doing good” and “doing no harm” mean for AI. </p>
-
-<br>
-
+### The principle of beneficence
 
  *“AI inevitably becomes entangled in the ethical and political dimensions of vocations and practices in which
 it is embedded. AI Ethics is effectively a microcosm of the political and ethical challenges faced in society.”*

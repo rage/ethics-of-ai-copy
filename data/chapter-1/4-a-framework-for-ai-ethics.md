@@ -8,15 +8,11 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">In this section, we lay out some principles for AI ethics that will be followed in the rest of the course.  </p>
-
-<br>
-
 Traditionally, technology development has typically revolved around the functionality, usability, efficiency and reliability of technologies. However, AI  technology needs a broader discussion on its societal acceptability. It impacts on moral (and political) considerations. It shapes individuals, societies and their environments in a way that has ethical implications.
 
 The interpretation of ethically relevant concepts can change with technologies (consider what “privacy” meant before social media). Furthermore, when new technologies are introduced, users often apply them for purposes other than those originally intended. This reforms the ethical landscape, and forces us to reflect and analyze the ethical basis of technology over and over again.
 
-## Ethical frameworks
+### Ethical frameworks
 
 Ethical frameworks are attempts to build consensus around values and norms that can be adopted by a community – whether that’s a group of individuals, citizens, governments, businesses within the data sector or other stakeholders.
 
@@ -45,7 +41,8 @@ The five principles of AI ethics answer different questions and focus on differe
 The rest of this course will focus on these principles of AI ethics. We will analyze what these concepts imply and how they can be interpreted, in the fashion of traditional philosophy: concept analysis. We will also look at how these concepts are being applied in practice, discuss their problems and mention some open questions regarding these principles.
 
 In the last section of the course, we will look at the project of AI ethics as a whole. We will be asking the “cui bono” question: who is AI ethics for, and who or what is left out?
-Lastly, we want to note that when speaking of AI and “the social”, AI ethics is the first to come up. There are other theoretical frames for looking at ethical codes for algorithmic, data-driven systems. For example, questions of the social implications of AI come up in fields like algorithmic cultures, gender studies and media studies, amongst numerous others. Correspondingly, the cognitive and psychological aspects of human-machine interaction shapes the question of appropriate ethical framework for AI. Simply, there is a lot more to AI ethics than just data or algorithm ethics.
+
+Lastly, we want to note that when speaking of AI and the social implications, AI ethics is the first on the list. But there are other theoretical frames for looking at ethical codes for algorithmic, data-driven systems. For example, questions of the social implications of AI come up in fields like algorithmic cultures, gender studies and media studies, amongst numerous others. Correspondingly, the cognitive and psychological aspects of human-machine interaction shapes the question of appropriate ethical framework for AI. Simply, there is a lot more to AI ethics than just data or algorithm ethics.
 
 </styled-text>
 
@@ -70,7 +67,7 @@ Result image: CC BY-NC 4.0 NVIDIA Corporation </br>
 
 </br>
 
-What are photo (re)creation algorithms?
+**What are photo (re)creation algorithms?**
 
 <br>
 
@@ -101,7 +98,6 @@ GANs can be used for many purposes, such as image-to-image translation tasks tra
 <br>
 
 To see how GANs work, please go to: http://gandissect.res.ibm.com/ganpaint.html
-Explore the tool.
 
 Next, you’ll enter into the Twitter discussion. Your task is to answer these tweets by formulating your own view on this matter.
 
