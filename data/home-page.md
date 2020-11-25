@@ -6,7 +6,7 @@ hide_in_sidebar: true
 banner: false
 ---
 
-<hero-section title="Welcome to Ethics of AI!" subtitle="The Ethics of AI is a free online course created by the University of Helsinki. The course is for anyone who is interested in the ethical aspects of AI – we want to encourage people to learn what AI ethics means, what can and can’t be done to develop AI in an ethically more ethically sustainable way, and how to start thinking about AI from an ethical point of view. The goal of the course is to help you to develop your own skills for ethical thinking and it can be completed at your own pace.">
+<hero-section title="Welcome to the Ethics of AI!" subtitle="The Ethics of AI is a free online course created by the University of Helsinki. The course is for anyone who is interested in the ethical aspects of AI – we want to encourage people to learn what AI ethics means, what can and can’t be done to develop AI in an ethically sustainable way, and how to start thinking about AI from an ethical point of view.">
 
 </hero-section>
 
@@ -17,7 +17,7 @@ banner: false
 </teaser-question>
 
 <placeholder title="AI is becoming ever more relevant">
-Artificial intelligence is already a part of our daily lives. When we post pictures to social media, search online or ask questions from chatbots we’re interacting with AI. Authorities, such as cities, rely on AI for providing public services. And governments are seeking solutions to global problems – like climate change, poverty or pandemics –  by using algorithmically produced knowledge.
+Artificial intelligence is already a part of our daily lives. When we post pictures to social media, search online or ask questions from chatbots, we’re interacting with AI. Authorities, such as cities, rely on AI for providing public services. And governments are seeking solutions to global problems by using algorithmically produced knowledge. The goal of this course is to help you to develop your own skills for ethical thinking, and you can complete it at your own pace.
 </placeholder>
 
 <homepage-grid></homepage-grid>
