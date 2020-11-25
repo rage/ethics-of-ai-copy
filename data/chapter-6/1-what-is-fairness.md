@@ -27,7 +27,7 @@ As a result, on a national level grades corresponded with the grade distribution
 
 Many would take this thought experiment as an example of algorithmic unfairness. It does not only describe how algorithms themselves can result in unfair results, but also how algorithms can reinforce already existing economic and societal bias.
 
-## Fairness and bias
+### Fairness and bias
 
 Fairness and bias are probably the most discussed ethical issues related to the contemporary algorithms. Why are they so central?
 
