@@ -48,7 +48,7 @@ const Body = styled.div`
   @media (min-width: 1px) {
     padding-bottom: 0.5rem;
     width: auto;
-    margin-left: 2em;
+    margin-left: 1em;
   }
   @media (min-width: 425px) {
     padding-bottom: 0.5rem;
@@ -69,12 +69,13 @@ const Body = styled.div`
 
 const ImageBox = styled.img`
   @media (min-width: 1px) {
-    top: 6em;
-    left: 0em;
-    width: 60px;
+    top: -2em;
+    left: -4em;
+    width: 120px;
     heigth: auto;
     position: absolute;
     -webkit-transform: translate(18%, 0);
+    opacity: 0.4;
   }
   @media (min-width: 425px) {
     top: 2em;

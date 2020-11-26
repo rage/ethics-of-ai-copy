@@ -18,9 +18,16 @@ const Wrapper = styled.aside`
 
   ${respond.mobile`
   width: 100%;
-  padding: 1rem;
+  padding: 1.4rem 1rem;
   margin: 4rem 0;
 `}
+
+h2 {
+  ${respond.mobile`
+  font-size: 24px;
+  text-transform: uppercase;
+`}
+}
 `
 
 const Header = styled.h3`
