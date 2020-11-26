@@ -1,16 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.02 150.43">
-    <g data-name="Layer 2">
-        <g data-name="Layer 1">
-            <path d="M48.9 21.94c17.06-9.85 31.84-8.73 49.41-2.2 16.74 6.22 37.45 12 44.48 28.12 14.74 33.86 20 56-36.19 94.67-12.69 8.75-89.35-28-93.36-39.39-11.85-33.78 5.99-64.07 35.66-81.2z" fill="#d39a50"/>
-            <path fill="#e3e3e3" d="M.003 57.782l63.575-17.726 25.835 92.656-63.574 17.726zM91.601 17.732L155.176.005l25.835 92.656-63.575 17.726z"/>
-            <path fill="#c9c8c6" d="M117.49 110.55l-28.13 21.98-25.83-92.65L91.66 17.9l25.83 92.65z"/>
-            <ellipse cx="48.49" cy="121.87" rx="5.2" ry="5.29" transform="rotate(-13.63 48.491 121.899)" fill="none" stroke="#2a3f55" stroke-miterlimit="10"/>
-            <ellipse cx="95.17" cy="75.76" rx="2.7" ry="2.74" transform="rotate(-19.48 95.187 75.773)" fill="none" stroke="#2a3f55" stroke-miterlimit="10"/>
-            <ellipse cx="79.95" cy="82.31" rx="3.77" ry="3.84" transform="rotate(-31.09 79.971 82.317)" fill="none" stroke="#2a3f55" stroke-miterlimit="10"/>
-            <ellipse cx="111.83" cy="65.34" rx="5.2" ry="5.29" transform="rotate(-13.63 111.858 65.352)" fill="none" stroke="#2a3f55" stroke-miterlimit="10"/>
-            <ellipse cx="154.34" cy="58.09" rx="8.4" ry="8.55" transform="rotate(-13.63 154.357 58.082)" fill="none" stroke="#2a3f55" stroke-miterlimit="10"/>
-            <ellipse cx="135.51" cy="26.16" rx="3.29" ry="3.35" transform="rotate(-13.63 135.51 26.167)" fill="none" stroke="#2a3f55" stroke-miterlimit="10"/>
-            <path d="M53.75 119.39c8.92-6.55 12.16-12.46 13.43-16.74a59.92 59.92 0 012.31-7.43 48 48 0 016.21-11M133.25 28.89l-20 31M98.04 74.21l8.26-7.59M92.57 76.85l-8.84 4.86M117.25 63.89l28.5-4.5" fill="none" stroke="#2a3f55" stroke-miterlimit="10"/>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 493.97 331.98" style="enable-background:new 0 0 493.97 331.98;" xml:space="preserve">
+<g id="Group_1474" transform="translate(-157 -3358.111)">
+	<g id="Group_1473">
+		<rect id="Rectangle_461" x="157" y="3358.11" style="fill:#D39A50;" width="493.97" height="331.98"/>
+	</g>
+	<g id="Group_1309" transform="translate(-741.328 3019.99)">
+		<g id="Group_1285" transform="translate(1041.881 432.666)">
+			
+				<rect id="Rectangle_464" x="13.32" y="53.63" transform="matrix(0.9632 -0.2686 0.2686 0.9632 -27.2324 17.642)" style="fill:#F2F2F2;" width="75.08" height="109.42"/>
+			
+				<rect id="Rectangle_465" x="117.52" y="8.07" transform="matrix(0.9632 -0.2686 0.2686 0.9632 -11.1648 43.9594)" style="fill:#F2F2F2;" width="75.08" height="109.42"/>
+			<g id="Group_1284" transform="translate(72.263 20.362)">
+				<g id="Group_1283">
+					<path id="Path_6652" style="fill:#E0DEDC;" d="M61.39,105.39l-32,25L0,24.99l32-25L61.39,105.39z"/>
+				</g>
+			</g>
+		</g>
+		<g id="Group_1308" transform="translate(1089.87 457.849)">
+			<g id="Group_1287" transform="translate(0 106.205)">
+				<g id="Group_1286" transform="translate(0 0)">
+					
+						<ellipse id="Ellipse_109" transform="matrix(0.9718 -0.2357 0.2357 0.9718 -1.5053 1.8933)" style="fill:none;stroke:#2A3F55;stroke-miterlimit:10;" cx="7.17" cy="7.24" rx="5.92" ry="6.02"/>
+				</g>
+			</g>
+			<g id="Group_1289" transform="translate(56.333 57.031)">
+				<g id="Group_1288" transform="translate(0 0)">
+					
+						<ellipse id="Ellipse_110" transform="matrix(0.9426 -0.3339 0.3339 0.9426 -1.0984 1.5416)" style="fill:none;stroke:#2A3F55;stroke-width:1.0004;stroke-miterlimit:10.004;" cx="3.94" cy="3.97" rx="3.07" ry="3.12"/>
+				</g>
+			</g>
+			<g id="Group_1291" transform="translate(37.023 62.489)">
+				<g id="Group_1290" transform="translate(0 0)">
+					
+						<ellipse id="Ellipse_111" transform="matrix(0.8564 -0.5163 0.5163 0.8564 -2.2255 3.9174)" style="fill:none;stroke:#2A3F55;stroke-width:0.9995;stroke-miterlimit:9.995;" cx="5.93" cy="5.96" rx="4.29" ry="4.37"/>
+				</g>
+			</g>
+			<g id="Group_1293" transform="translate(72.058 41.895)">
+				<g id="Group_1292" transform="translate(0 0)">
+					
+						<ellipse id="Ellipse_112" transform="matrix(0.9718 -0.2357 0.2357 0.9718 -1.5053 1.8933)" style="fill:none;stroke:#2A3F55;stroke-miterlimit:10;" cx="7.17" cy="7.24" rx="5.92" ry="6.02"/>
+				</g>
+			</g>
+			<g id="Group_1295" transform="translate(115.999 29.199)">
+				<g id="Group_1294" transform="translate(0 0)">
+					
+						<ellipse id="Ellipse_113" transform="matrix(0.9718 -0.2357 0.2357 0.9718 -2.4309 3.0571)" style="fill:none;stroke:#2A3F55;stroke-miterlimit:10;" cx="11.57" cy="11.7" rx="9.55" ry="9.72"/>
+				</g>
+			</g>
+			<g id="Group_1297" transform="translate(101.629 0)">
+				<g id="Group_1296" transform="translate(0)">
+					
+						<ellipse id="Ellipse_114" transform="matrix(0.9718 -0.2357 0.2357 0.9718 -0.9518 1.197)" style="fill:none;stroke:#2A3F55;stroke-miterlimit:10;" cx="4.53" cy="4.58" rx="3.74" ry="3.81"/>
+				</g>
+			</g>
+			<g id="Group_1299" transform="translate(13.151 70.661)">
+				<g id="Group_1298">
+					<path id="Path_6653" style="fill:none;stroke:#2A3F55;stroke-miterlimit:10;" d="M0,39.97c10.15-7.46,13.83-14.18,15.27-19.05
+						c0.7-2.87,1.58-5.69,2.64-8.45C19.7,8.02,22.08,3.83,24.97,0"/>
+				</g>
+			</g>
+			<g id="Group_1301" transform="translate(80.833 7.684)">
+				<g id="Group_1300">
+					<line id="Line_48" style="fill:none;stroke:#2A3F55;stroke-miterlimit:10;" x1="22.75" y1="0" x2="0" y2="35.26"/>
+				</g>
+			</g>
+			<g id="Group_1303" transform="translate(63.536 50.596)">
+				<g id="Group_1302">
+					<line id="Line_49" style="fill:none;stroke:#2A3F55;stroke-miterlimit:10;" x1="0" y1="8.63" x2="9.39" y2="0"/>
+				</g>
+			</g>
+			<g id="Group_1305" transform="translate(47.258 62.239)">
+				<g id="Group_1304">
+					<line id="Line_50" style="fill:none;stroke:#2A3F55;stroke-miterlimit:10;" x1="10.05" y1="0" x2="0" y2="5.52"/>
+				</g>
+			</g>
+			<g id="Group_1307" transform="translate(85.383 42.378)">
+				<g id="Group_1306">
+					<line id="Line_51" style="fill:none;stroke:#2A3F55;stroke-miterlimit:10;" x1="0" y1="5.12" x2="32.42" y2="0"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>
