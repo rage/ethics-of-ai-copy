@@ -19,7 +19,7 @@ Ethically, privacy is related to personal autonomy and integrity. Following the 
 
 Many have proposed the principle that people should have control over their own data – and that data concerning them should not be allowed to be used to harm or discriminate against them. According to some, this right to have “full control over one’s own data” should be a human right.
 
-But what, exactly, is your “own data”? Is it the raw data, or the collected and analyzed data? If the data is used for secondary purposes, is it still your data? Or, as Wachter and Mittelstadt (2019) remark, does the content of inferences that can be drawn from your data belong to your “own data”?
+But what, exactly, is your “own data”? Is it the raw data, or the collected and analyzed data? If the data is used for secondary purposes, is it still your data? Or, as Wachter and Mittelstadt ([2019](https://osf.io/preprints/lawarxiv/mu2kf/)) remark, does the content of inferences that can be drawn from your data belong to your “own data”?
 
 Wachter and Mittelstadt (2019) propose that the right for the control of your own data should be reformulated as a right for the “right to reasonable inferences”. According to them, it is crucial that we can also control the “high-risk inferences” that can be made about us through big data analytics. These inferences  are  privacy-invasive  or  reputation-damaging, or have low verifiability (in the sense of being predictive or opinion-based) while being used for important decisions.
 
@@ -31,7 +31,7 @@ Wachter and Mittelstadt (2019) propose that the right for the control of your ow
 
 #### GDPR
 
-The General Data Protection Regulation (GDPR) is a legal framework. It sets guidelines for the collection and processing of personal data from individuals who live in the European Union.
+The General Data Protection Regulation ([GDPR](https://gdpr.eu/what-is-gdpr/)) is a legal framework. It sets guidelines for the collection and processing of personal data from individuals who live in the European Union.
 
 The GDPR's aim is to give individuals control over their personal data. Any information that relates to an individual who can be directly or indirectly identified is “personal data”. This includes names, social security numbers and email addresses. Location information, biometric data, ethnicity, gender, web cookies, and political or religious beliefs can also be personal data. Pseudonymous data (data that does not directly identify an individual but can be connected to them) can also fall under the definition if it’s easy to individuate someone from it.
 
@@ -136,7 +136,7 @@ More importantly, contemporary surveillance infrastructure does not passively re
 
 <text-box>
 
-Constant surveillance produces “chilling effects”. That is, the awareness that our actions are constantly watched limits our true freedom to act in the world. Imagine that whenever you leave your house, you are tailed by two police officers. They never interact with you, just follow ten meters behind you. You will probably feel unsettled and unable to go about your day as you normally would. In this way, safety is sometimes at odds with personal freedom and privacy.
+Constant surveillance produces **“chilling effects”**. That is, the awareness that our actions are constantly watched limits our true freedom to act in the world. Imagine that whenever you leave your house, you are tailed by two police officers. They never interact with you, just follow ten meters behind you. You will probably feel unsettled and unable to go about your day as you normally would. In this way, safety is sometimes at odds with personal freedom and privacy.
 
 </text-box>
 
@@ -181,9 +181,10 @@ For example,  there are several tools for developing communication and literacy 
 
 #### Inclusion and the gender divide
 
-Many technology researchers have paid attention to the “gender gap” or “the gender divide”. This gap has many faces. First, according to Unesco (refs), women’s digital and algorithmic literacy skills are not at the same level as men’s. Women are less likely to know how to operate or use computers, navigate the internet, use social media and understand how to safeguard information in digital media – abilities that underlie innumerable life and work tasks and are relevant to people of all ages. UNESCO estimates that men are around four times more likely than women to have advanced information and communication technology (ICT) skills such as the ability to program.
+Many technology researchers have paid attention to the “gender gap” or “the gender divide”. This gap has many faces. First, according to [Unesco](https://en.unesco.org/EQUALS/policy-paper), women’s digital and algorithmic literacy skills are not at the same level as men’s. Women are less likely to know how to operate or use computers, navigate the internet, use social media and understand how to safeguard information in digital media – abilities that underlie innumerable life and work tasks and are relevant to people of all ages. UNESCO estimates that men are around four times more likely than women to have advanced information and communication technology (ICT) skills such as the ability to program.
 
-Women are also less likely to create content or use cutting-edge technology.  According to studies, across G20 countries, just 7 per cent of ICT patents are generated by women. A recent survey of undergraduate students in 29 countries found that early adopters of new technologies are overwhelmingly male. Calculations based on the attendees of the world’s top machine-learning conferences in 2017 indicate that only 12 per cent of the leading machine-learning researchers are female.
+Women are also less likely to create cutting-edge technology.  According to studies, across G20 countries, just 7 per cent of ICT patents are generated by women. A recent survey of undergraduate students in 29 countries found that early adopters of new technologies are overwhelmingly male. Calculations based on the attendees of the world’s top machine-learning conferences in 2017 indicate that only 12 percent of the leading machine-learning researchers are female.
+
 
 </styled-text>
 

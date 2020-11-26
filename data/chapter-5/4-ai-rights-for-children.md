@@ -15,7 +15,9 @@ The presence of AI in children’s lives raises many questions. Is it acceptable
 As Unicef and other organisations emphasize, we must pay specific attention to children and the evolution of AI technology in a way that children-specific rights and needs are recognized. The potential impact of artificial intelligence on children deserves special attention, given children’s heightened vulnerabilities and the numerous roles that artificial intelligence will play throughout the lifespan of individuals born in the 21st century.
 
 For more information:
+
 https://www.unicef.org/innovation/GenerationAI
+
 https://www.weforum.org/projects/generation-ai
 
 <styled-text>
