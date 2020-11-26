@@ -97,10 +97,12 @@ Next, you’ll enter into the Twitter discussion. Your task is to answer these t
 
 <br>
 
-![Twitter chat](./twitter-exercise-test-small.svg)
+![Twitter chat](./twitter-image.svg)
 
 How would you reply? Develop a Twitter name for yourself, and write your reply down below.
 
 </quiz>
 
 <quiz id="b2b4b434-f4fa-4364-8b0b-b79daac3f09c"> </quiz>
+
+<quiz id="45035363-efb6-43d7-bad1-a8b1ee26facf"> </quiz>

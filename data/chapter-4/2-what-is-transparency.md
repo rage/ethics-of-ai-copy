@@ -12,7 +12,7 @@ Transparency can be defined in multiple ways. There are a number of neighboring 
 
 Transparency is, roughly, a property of an application. It is about how much it is possible to understand about a system’s inner workings “in theory”.  It can also mean the way of providing explanations of algorithmic models and decisions that are comprehensible for the user. This deals with the public perception and understanding of how AI works. Transparency can also be taken as a broader socio-technical and normative ideal of “openness”.
 
-There are many open questions regarding what constitutes transparency or explainability, and what level of transparency is sufficient for different stakeholders (Matsakis, 2018). Depending on the specific situation, the precise meaning of “transparency” may vary. It is an open scientific question, whether there are several different kinds, or types, of transparency. Moreover, transparency can refer to different things whether the purpose is to, say, analyze the legal significance of unjust biases or to discuss them in terms of features of machine learning systems.
+There are many open questions regarding what constitutes transparency or explainability, and what level of transparency is sufficient for different stakeholders. Depending on the specific situation, the precise meaning of “transparency” may vary. It is an open scientific question, whether there are several different kinds, or types, of transparency. Moreover, transparency can refer to different things whether the purpose is to, say, analyze the legal significance of unjust biases or to discuss them in terms of features of machine learning systems.
 
 ### Transparency as a property of a system
 
@@ -32,7 +32,7 @@ As a property of a system, transparency addresses how a model works or functions
 
 <styled-text>
 
-Given that many of the most efficient, current deep learning models are black box models (almost by definition), researchers seem to assume it is highly unlikely that we would be able to develop them as fully transparent. Because of this, the discussion focuses on finding the “sufficient level of transparency”. Would it suffice if algorithms offered people a disclosure of how algorithms came to their decision and provide the smallest change “that can be made to obtain a desirable outcome” (Wachter et al., 2018)? For example, if an algorithm refuses someone a social benefit, it should tell the person the reason, and also what he or she can do to reverse the decision (Matsakis 2018).
+Given that many of the most efficient, current deep learning models are black box models (almost by definition), researchers seem to assume it is highly unlikely that we would be able to develop them as fully transparent. Because of this, the discussion focuses on finding the “sufficient level of transparency”. Would it suffice if algorithms offered people a disclosure of how algorithms came to their decision and provide the smallest change “that can be made to obtain a desirable outcome” ([Wachter et al., 2018](https://arxiv.org/pdf/1811.01439.pdf))? For example, if an algorithm refuses someone a social benefit, it should tell the person the reason, and also what he or she can do to reverse the decision.
 
 The explanation should tell, for instance, what the maximum amount of salary to be approved is (input), and how decreasing the amount will impact the decisions made (manipulation of the input). But the problem is that the right to know also applies to situations where the system makes mistakes. Then, it may be necessary to perform an autopsy on the algorithm and identify those factors that caused the system to make mistakes (Rusanen & Ylikoski 2017). This can’t be done by only manipulating the inputs and outputs.
 
@@ -49,43 +49,42 @@ The comprehensibility – or understandability – of an algorithm requires that
 However, it is notoriously difficult to translate algorithmically derived concepts into human-understandable concepts. In some countries, legislators have discussed whether public authorities should publish the algorithms they use in automated decision-making in terms of programming codes. However, most people do not know how to make sense of programming codes. It is thus hard to see how transparency is increased by publishing codes.
 
 ```sas
-* Otetaan siemenluku otoksen tekoa varten koneajasta ;
+* Take seed number from machine time for sample;
 data _NULL_;
- siemen= int(%sysfunc(TIME())) ;
- call symput('siemen',siemen);
+ seedNumber= int(%sysfunc(TIME())) ;
+ call symput('seedNumber',seedNumber);
 run;
-%put &siemen;
+%put &seedNumber;
 
-* Järjestetään perusjoukko ;
-proc sort data=perus;
+* Order universe ;
+proc sort data=universe;
  by henro;
 run;
-* Tehdään otos, n=2000 ;
-proc surveyselect data=perus method=srs
-     n=2000 seed=&siemen
-     out=otos;
+* Make a sample, n=2000 ;
+proc surveyselect data=universe method=srs
+     n=2000 seed=&seedNumber
+     out=sample;
 run;
-* Järjestetään otos ;
-proc sort data=otos;
+* Order sample ;
+proc sort data=sample;
  by henro;
 run;
 
- * Yhdistetään otos perusjoukkoon, tehdään muuttuja TYYPPI;
-data kaikki;
- merge perus(in=a)
-       otos(in=b);
+ * Unite sample to universe, create variable TYPE; data all;
+ merge universe(in=a)
+       sample(in=b);
  by henro;
- length TYYPPI $ 1.;
- if a then TYYPPI='V'; * verrokit ;
- if b then TYYPPI='K'; * kokeiluryhmä ;
+ length TYPE $ 1.;
+ if a then TYPE='V'; * referenceGroup ;
+ if b then TYPE='K'; * experimentGroup ;
 
- * annetaan arvot muuttujalle REAOH ;
+ * assign values to variable REAOH ;
 REAOH='PUOTOS';
 run;
 
-* Tarkistetaan, että 2000 henkilöllä TYYPPI saa arvon 'K' ;
+* Confirm that all 2000 people have a TYPE that is given a value 'K';
 proc freq;
- tables tyyppi;
+ tables type;
 run;
 ```
 
@@ -96,9 +95,17 @@ Would it be more helpful to publish the exact algorithms? In most cases, publish
 
 Nowadays, cognitive and computer scientists develop human-interpretable descriptions of how applications behave, and why. Approaches include, for example, the development of data visualization tools, interactive interfaces, verbal explanations or meta-level descriptions of the features of models. These tools can be extremely helpful for making AI applications more accessible. However, there is still plenty of work to be done.
 
+
+<img src="./distill-example.png" alt="Distill example">
+
+Diagram CC-BY 4.0 Olah, et al., "The Building Blocks of Interpretability", Distill, 2018.
+
+<br>
+<br>
+
 The fact that comprehensibility is based on subject and culture-dependent components complicates this more. For example, the logic of how visualizations are interpreted – or how the inferences are made on them – varies across cultures. Thus, tech developers should pay attention to the sufficient understanding of the visual language they use.
 
-Moreover, much is dependent on the degree of data or algorithmic literacy, for example the knowledge of contemporary technologies. In some cultures, the vocabulary of contemporary technology is more familiar, but in many others they may be completely novel. To increase the understandability, there is clearly a need for significant educational efforts in improving algorithmic literacy – for example on “computational thinking” (Heintz, Mannila, & Färnqvist, 2016). This user literacy will have a direct effect on transparency in terms of the ordinary users’ basic understanding of AI systems. It may actually provide the most efficient and practical way to make the boxes less black for many people.
+Moreover, much is dependent on the degree of data or algorithmic literacy, for example the knowledge of contemporary technologies. In some cultures, the vocabulary of contemporary technology is more familiar, but in many others they may be completely novel. To increase the understandability, there is clearly a need for significant educational efforts in improving algorithmic literacy – for example on “computational thinking” ([Heintz & al 2016](https://ieeexplore.ieee.org/document/7757410)). This user literacy will have a direct effect on transparency in terms of the ordinary users’ basic understanding of AI systems. It may actually provide the most efficient and practical way to make the boxes less black for many people.
 
 </styled-text>
 
