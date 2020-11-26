@@ -49,7 +49,6 @@ The comprehensibility – or understandability – of an algorithm requires that
 However, it is notoriously difficult to translate algorithmically derived concepts into human-understandable concepts. In some countries, legislators have discussed whether public authorities should publish the algorithms they use in automated decision-making in terms of programming codes. However, most people do not know how to make sense of programming codes. It is thus hard to see how transparency is increased by publishing codes.
 
 ```sas
-* Otetaan siemenluku otoksen tekoa varten koneajasta ;
 * Take seed number from machine time for sample;
 data _NULL_;
  seedNumber= int(%sysfunc(TIME())) ;
