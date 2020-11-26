@@ -27,13 +27,19 @@ import { faArrowCircleUp as icon } from "@fortawesome/free-solid-svg-icons"
 import EndOfSubSection from "../components/EndOfSubSection"
 import { tryToScrollToSelector } from "../util/dom"
 import { nthIndex } from "../util/strings"
+import { respond } from "../_respond"
 
 const StyledIcon = styled(FontAwesomeIcon)`
   margin-right: 0.25rem;
   font-size: 1em;
 `
 
-const ContentWrapper = styled.article``
+const ContentWrapper = styled.article`
+${respond.mobile`
+width: 100%;
+padding: 1rem;
+`}
+`
 
 const UpLink = styled(Link)`
   color: #332c2cb3 !important;
