@@ -75,18 +75,20 @@ The right to safety is a norm protecting individuals from physical, social and e
 As a right, safety creates a moral obligation to design our products, laws and environment in such a way that safety can be protected even in unconventional circumstances or impairments. In terms of AI, safety has come to encompass several different conversations, including the following:
 
 #### 1) AI as an existential threat
-The conversation around AI as an existential threat takes a highly speculative and future-oriented stance towards artificial intelligence. It focuses on asking what kind of threats to humanity are posed by AI systems if they become too complex to control (this kind of “superintelligence” scenario is painted by thinkers such as Nick Bostrom [(Bostrom 2014)](https://global.oup.com/academic/product/superintelligence-9780199678112) and Ray Kurzweil [(Kurzweil 2016)](https://onlinelibrary.wiley.com/doi/abs/10.1002/9781118922590.ch15)).
 
-However, the plausibility of a future of superintelligent AI has been called into question, both by philosophers and technologists. Philosophers have also argued that the depiction of the control problem as a technical obstacle discounts the political aspects of the issue. It’s fair to imagine that any invocation of a humanly common good hides a great deal of political contentions about what, in fact, is good.
+The conversation around AI as an existential threat takes a highly speculative and future-oriented stance towards artificial intelligence. It focuses on asking what kind of threats to humanity are posed by AI systems if they become too complex to control (this kind of “superintelligence” scenario is painted by thinkers such as Nick Bostrom and Ray Kurzweil).
+
+However, the plausibility of a future of superintelligent AI has been called into question, both by philosophers and technologists. As things stand,  there is no reason to assume that superintelligence will emerge from developing contemporary algorithmic methods.
 
 #### 2) Safety in AI
+
 The second interpretation of safety in AI is the practical question of designing systems which behave in a safe and predictable manner. As AI systems are integrated into ever-widening areas of life, it becomes more important that the systems are well designed to account for the complexity of the world. A very practical and already existing example of this is lane guard technology, which uses machine learning to prevent cars from veering outside of their lanes. Machine learning researchers have found that some lane detection algorithms are quite easy to confuse with rogue road markings, causing the car to veer off the road by following the fake lane markings.
 
 </styled-text>
 
 <text-box icon="techIcon">
 
-One could argue that the right to safety obligates technology producers to account for these kinds of scenarios: the fact that the environment was not ideal does not excuse the system malfunctioning. Machine learning researchers call this feature robustness – the capacity of the system to to work predictably under new and unpredictable circumstances.
+One could argue that the right to safety obligates technology producers to account for these kinds of scenarios: the fact that the environment was not ideal does not excuse the system malfunctioning. Machine learning researchers call this feature **robustness** – the capacity of the system to to work predictably under new and unpredictable circumstances.
 
 </text-box>
 
@@ -102,20 +104,22 @@ Nonetheless, the progressive zeal that is attached to AI future visions has brou
 
 A difficult problem for autonomous vehicles is the complex unpredictability of the urban traffic environment. While AI-driven vehicles are constantly being developed to include better ways to model their surroundings, even a small group of individuals – all performing their own movement goals within a shared space – will create a constellation that is difficult to predict. When technical solutions in the cars are too far off, another way to approach the issue is to contain the uncertainty in the environment.
 
-In a [New York Times column](https://www.nytimes.com/2019/08/01/business/self-driving-cars-jaywalking.html), consultant Eric A. Taub proposed a solution: by enclosing pavements in cages, with traffic-light-synced gates at crossings, the complex traffic environment is simplified to become more understandable to autonomous vehicles and therefore safer. However, this safety comes at an obvious cost: limiting the freedom of pedestrians, and a redistribution of accountability. This means we should look at the intersecting limits of the right of safety vs freedom. Which one is more important?
+In a New York Times column, consultant Eric A. Taub proposed a solution: by enclosing pavements in cages, with traffic-light-synced gates at crossings, the complex traffic environment is simplified to become more understandable to autonomous vehicles and therefore safer. However, this safety comes at an obvious cost: limiting the freedom of pedestrians, and a redistribution of accountability. This means we should look at the intersecting limits of the right of safety vs freedom. Which one is more important?
 
 Or is this just a false dichotomy, brought about by a technical solution that was never very workable in the first place? A further interesting line of thought that can be traced here is the criminality of what in the United States is called “jaywalking”, or walking across the road at locations without zebra crossings. The concept of jaywalking did not exist until the roads were reconceptualized with motor vehicles as the primary users. How comparable is this to the thought of caging pavements?
+
 
 </text-box>
 
 <styled-text>
 
 #### 3) Producing safety with AI
+
 The third concept of safety and AI we will look at in this section is the production of safety through the use of AI. Can AI make the world safer? Can AI make the world feel safer? And safer for whom?
 
 Robotization can provide an example of this concept in practice. The work of handling hazardous materials or working in hazardous environments can be delegated to robots, protecting the health of human (or animal) workers.
 
-Another way certain forms of safety are produced through AI is through automated surveillance. AI-powered surveillance has manifested in many domains: in public spaces, in law-enforcement work through predictive policing, and in domestic life through products like Amazon’s Ring. Although surveillance cameras (CCTV) have existed and dominated public and semi-public spaces for decades, the ACLU argues that automation brings about a big qualitative shift in how surveillance functions [(American Civil Liberties Union 2019)](https://www.aclu.org/sites/default/files/field_document/061819-robot_surveillance.pdf). But what is so different?
+Another way certain forms of safety are produced through AI is through automated surveillance. AI-powered surveillance has manifested in many domains: in public spaces, in law-enforcement work through predictive policing, and in domestic life through products like Amazon’s Ring. Although surveillance cameras (CCTV) have existed and dominated public and semi-public spaces for decades, the ACLU argues that automation brings about a big qualitative shift in how surveillance functions. But what is so different?
 
 </styled-text>
 
@@ -125,12 +129,7 @@ Another way certain forms of safety are produced through AI is through automated
 
 “Still, for all those advances, the social implications of being recorded have not changed: when we walk into a store, we generally expect that the presence of cameras won’t affect us. We expect that our movements will be recorded, and we might feel self-conscious if we notice a camera, especially if we were doing anything that we feel might attract attention. But unless something dramatic occurs, we generally understand that the videos in which we appear are unlikely to be scrutinized or monitored.”
 
- - [The Dawn of Robot Surveillance, ACLU 2019](https://www.aclu.org/sites/default/files/field_document/061819-robot_surveillance.pdf)
-
-
-Unlike the 1980s convenience store security cameras, contemporary AI surveillance systems are centralized. You can be traced both at the convenience store and at the library, and these two “yous” can be identified as the same person. The surveillance feeds are more and more often held by private data giants, as opposed to a VCR in the back room.
-
-More importantly, contemporary surveillance infrastructure does not passively record “just in case”. Instead, it actively watches, analyzes, predicts, and informs. Moreover, AI surveillance infrastructure actively watches without a human. The concern with privacy shifts from being recognized by somebody to becoming infrastructurally – and in many ways invisibly and globally – surveilled. Our actions become objects of analysis, transported outside of our reach, and markers that follow us beyond the convenience store. In this case, whether or not a human has recognized me in the process is irrelevant to my privacy and freedom.
+ -The Dawn of Robot Surveillance, ACLU
 
 </styled-text>
 
