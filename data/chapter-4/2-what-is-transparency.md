@@ -38,6 +38,8 @@ The explanation should tell, for instance, what the maximum amount of salary to 
 
 <img src="./autopsy.svg" alt="Autopsy"> </img>
 
+This illustration depicts a very simplified AI model tasked to recognize all cats in data consisting of all kinds of animals. The model has inferred two patterns that make up a cat. To the model, they're just numbers, but to us, they look like describable patterns. However, patterns and features inferred can look quite complicated to us. For more information, see https://distill.pub/2017/feature-visualization/.
+
 Moreover, transparency serves many other functions in contemporary debates on machine learning models. It can be relevant for developing legislation or for ensuring public trust in AI. To handle these issues the notion of transparency in AI is typically given a wider definition in terms of “comprehensibility”.
 
 ### Transparency as comprehensibility
