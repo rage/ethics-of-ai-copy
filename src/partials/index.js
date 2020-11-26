@@ -92,6 +92,7 @@ import ErrorHero from "./404page/index"
 import Title from "./Title"
 import BigFive from "./BigFive"
 import StyledText from "./StyledText"
+import CodeBox from "./Codebox"
 
 const mapping = {
   test: Test,
@@ -139,6 +140,7 @@ const mapping = {
   "big-five": BigFive,
   "course-progress": CourseProgress,
   "styled-text": StyledText,
+  "code-box": CodeBox,
   vocabulary: Vocabulary,
   notice: Notice,
   youtube: Youtube,
