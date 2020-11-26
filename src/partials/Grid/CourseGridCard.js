@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import Icon1 from "../../assets/chap-1.svg"
+import Icon1 from "../../assets/chap-1-rev.svg"
 import Icon2 from "../../assets/chap-2.svg"
 import Icon3 from "../../assets/chap-3.svg"
 import Icon4 from "../../assets/chap-4.svg"
@@ -10,13 +10,13 @@ import Icon6 from "../../assets/chap-6.svg"
 import Icon7 from "../../assets/chap-7.svg"
 
 const svgs = {
-  chapter01: <Icon1 width="180px"/>,
-  chapter02: <Icon2 />,
-  chapter03: <Icon3 width="170px" />,
-  chapter04: <Icon4 width="350px"/>,
-  chapter05: <Icon5 />,
-  chapter06: <Icon6 />,
-  chapter07: <Icon7 width="130px" />,
+  chapter01: <Icon1 width="180px" />,
+  chapter02: <Icon2 width="180px" />,
+  chapter03: <Icon3 width="250px" />,
+  chapter04: <Icon4 width="250px" />,
+  chapter05: <Icon5 width="170px" />,
+  chapter06: <Icon6 width="230px" />,
+  chapter07: <Icon7 width="150px" />,
 }
 
 const CourseGridWrapper = styled.div`

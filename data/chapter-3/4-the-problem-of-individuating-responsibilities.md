@@ -9,10 +9,6 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">Accountability, or finding out who is responsible for when something goes wrong with AI systems, can be difficult. </p>
-
-<br>
-
 Accountability is often taken as a legal and ethical obligation on an individual or organisation to accept responsibility for the use of AI systems, and to disclose the results in a transparent manner. This formulation presupposes a “power-relation”. It individuates who is in control and who is to be blamed.
 
 However, it has turned out to be notoriously difficult to set specific criteria on how, exactly, the responsibilities should be individuated, directed and defined. In many countries, there are on-going debates on these questions. International actors, such as European Union and G7 have addressed them as  open challenges.
@@ -33,8 +29,6 @@ Why is it so difficult to set criteria on who is responsible?
 
 </styled-text>
 
-<quiz id="63998353-c785-496e-a447-7f61202ecf3a"> </quiz>
-
 <quiz id="b6f98b77-1ca1-4c74-b0ad-d2f373c4c9db">
 
 
@@ -54,6 +48,10 @@ The report mentions many advantages, such as sickness prevention, better impact 
 <br>
 
 The report also addresses the issue of individuating responsibilities. If the system was applied in practice, there is always a risk that it would make a mistake. Who should we blame if this happens?
+
+<br>
+
+Please read the  instructions carefully and answer in the text box below. Your answer will be reviewed by other users and by the instructors. Please answer in English, and check your answer before clicking 'Submit' because, once submitted, you can no longer edit your answer.
 
 <br>
 

@@ -8,15 +8,11 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">In this section, we lay out some principles for AI ethics that will be followed in the rest of the course.  </p>
-
-<br>
-
 Traditionally, technology development has typically revolved around the functionality, usability, efficiency and reliability of technologies. However, AI  technology needs a broader discussion on its societal acceptability. It impacts on moral (and political) considerations. It shapes individuals, societies and their environments in a way that has ethical implications.
 
 The interpretation of ethically relevant concepts can change with technologies (consider what “privacy” meant before social media). Furthermore, when new technologies are introduced, users often apply them for purposes other than those originally intended. This reforms the ethical landscape, and forces us to reflect and analyze the ethical basis of technology over and over again.
 
-## Ethical frameworks
+### Ethical frameworks
 
 Ethical frameworks are attempts to build consensus around values and norms that can be adopted by a community – whether that’s a group of individuals, citizens, governments, businesses within the data sector or other stakeholders.
 
@@ -28,6 +24,8 @@ Various organisations have participated in developing an ethical framework for A
 * justice and fairness
 * respect for various human rights, such as privacy and security
 
+<img src="./big-five.svg" alt="Big five"> </img>
+
 The five principles of AI ethics answer different questions and focus on different values:
 
 1. Should we use AI for good and not for causing  harm? (the principle of beneficence/ non-maleficence)
@@ -38,22 +36,16 @@ The five principles of AI ethics answer different questions and focus on differe
 
 </styled-text>
 
-<img src="./big-five.svg" alt="Big five"> </img>
 
 <styled-text>
 
 The rest of this course will focus on these principles of AI ethics. We will analyze what these concepts imply and how they can be interpreted, in the fashion of traditional philosophy: concept analysis. We will also look at how these concepts are being applied in practice, discuss their problems and mention some open questions regarding these principles.
 
 In the last section of the course, we will look at the project of AI ethics as a whole. We will be asking the “cui bono” question: who is AI ethics for, and who or what is left out?
-Lastly, we want to note that when speaking of AI and “the social”, AI ethics is the first to come up. There are other theoretical frames for looking at ethical codes for algorithmic, data-driven systems. For example, questions of the social implications of AI come up in fields like algorithmic cultures, gender studies and media studies, amongst numerous others. Correspondingly, the cognitive and psychological aspects of human-machine interaction shapes the question of appropriate ethical framework for AI. Simply, there is a lot more to AI ethics than just data or algorithm ethics.
+
+Lastly, we want to note that when speaking of AI and the social implications, AI ethics is the first on the list. But there are other theoretical frames for looking at ethical codes for algorithmic, data-driven systems. For example, questions of the social implications of AI come up in fields like algorithmic cultures, gender studies and media studies, amongst numerous others. Correspondingly, the cognitive and psychological aspects of human-machine interaction shapes the question of appropriate ethical framework for AI. Simply, there is a lot more to AI ethics than just data or algorithm ethics.
 
 </styled-text>
-
-<quiz id="85149553-407a-4733-a4a0-18d54a4715cd"></quiz>
-
-<quiz id="0e72de1d-165b-4d3e-9e62-1008a83f2e8f"></quiz>
-
-<quiz id="33ef4765-0577-4eed-b8e6-81a96c9a9804"></quiz>
 
 
 <quiz id="c956ae17-d49d-4148-8414-029a14f3ff4c">
@@ -62,15 +54,14 @@ Imagine that one day you end up in a heated conversation on Twitter. It starts w
 
  ![Transforming image of Sanna Marin](./chap1-transf.png)
 
-Note: Artistic impression. </br>
-
-Sanna Marin: Edited from original CC BY 4.0 Laura Kotila / Finnish Prime Minister’s Office </br>
-
-Result image: CC BY-NC 4.0 NVIDIA Corporation </br>
+Note: This is not a real AI-based photo recreation case. <br>
+Image 1: CC BY 4.0 Laura Kotila / Finnish Prime Minister’s Office (edited from original)<br>
+Images 2 and 3 are an artist’s impression.<br>
+Image 4: CC BY-NC 4.0 NVIDIA Corporation<br>
 
 </br>
 
-What are photo (re)creation algorithms?
+**What are photo (re)creation algorithms?**
 
 <br>
 
@@ -101,7 +92,6 @@ GANs can be used for many purposes, such as image-to-image translation tasks tra
 <br>
 
 To see how GANs work, please go to: http://gandissect.res.ibm.com/ganpaint.html
-Explore the tool.
 
 Next, you’ll enter into the Twitter discussion. Your task is to answer these tweets by formulating your own view on this matter.
 

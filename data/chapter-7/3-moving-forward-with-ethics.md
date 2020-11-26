@@ -9,10 +9,6 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">Let’s explore how AI ethics could develop and what they will look like in the future.</p>
-
-<br>
-
 Moving beyond ethical guidelines, how should AI ethics manifest in the future? What kind of conversations around the ethics of AI should we have, and what kind of activities and ways of doing ethics should be taken into practice? This is a difficult question to answer, but some hints can be found from looking at what is left outside the scope of the AI ethics guidelines we have been discussing so far.
 
 </styled-text>
@@ -67,9 +63,9 @@ Or, to take another example, let’s look at AlgorithmWatch. AlgorithmWatch trac
 The Director of the Ada Lovelace institute Carly Kind calls this the third wave of AI ethics, and suggests we are moving into a new form of societal engagement:
 
 * “Third-wave ethical AI has seen a Dutch Court shut down an algorithmic fraud detection system, students in the UK take to the streets to protest against algorithmically-decided exam results, and US companies voluntarily restrict their sales of facial recognition technology. It is taking us beyond the principled and the technical, to practical mechanisms for rectifying power imbalances and achieving individual and societal justice.”
->**-Carly Kind**
+>[**-Carly Kind**](https://venturebeat.com/2020/08/23/the-term-ethical-ai-is-finally-starting-to-mean-something/)
 
-## Conclusion: now it’s your turn
+### Conclusion: now it’s your turn
 
 Ethical questions regarding Al systems pertain to all stages of the Al system lifecycle, understood here to range from research, design, and development to deployment and use – including maintenance, operation, trade, financing, monitoring and evaluation, validation, end-of-use, disassembly, and termination.
 
@@ -77,7 +73,6 @@ In addition, Al actors can be defined as any actors involved in at least one sta
 
 </styled-text>
 
-<text-box>
 
 * AI systems raise ethical issues that include, but are not limited to, their impact on decision-making, equality, polarization, and well-being.
 
@@ -87,8 +82,11 @@ In addition, Al actors can be defined as any actors involved in at least one sta
 
 * AI systems can also change human experience, challenge human agency, raise concerns over the reliability of information sources, and question the ideal of fundamental dignity.
 
-</text-box>
 
 Now, it is your turn to think about these questions.
 
-<quiz id="95f8a331-d4a2-443a-b155-3ba7dd8679c1"> </quiz>
+<quiz id="6453e3a5-b333-4088-9a62-4f51c99000cc"> </quiz>
+
+<quiz id="19d1f748-97c7-4a8e-a1b8-a29589b249b8"> </quiz>
+
+<quiz id="4146c68c-1ff8-4034-baec-5c7eec645e9d"> </quiz>

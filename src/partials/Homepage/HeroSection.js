@@ -29,10 +29,10 @@ const HeroSection = styled.div`
 `
 
 const BigText = styled.h1`
-font-family: "Work Sans", sans-serif;
-font-weight: 600;
-font-size: clamp(40px, 4vw, 70px);
-color: #26252a;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: clamp(40px, 4vw, 70px);
+  color: #26252a;
 `
 
 const HeroText = styled.div`

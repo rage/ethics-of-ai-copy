@@ -8,10 +8,6 @@ hidden: false
 
 <styled-text>
 
-<p style="color:red;">In this section, we’ll look more closely at three examples of human rights that relate to AI. </p>
-
-<br>
-
 ### Privacy
 Privacy concerns are raised, for example, by digital records which contain information that can be used  to infer sensitive attributes (age, gender or sexual orientation), preferences, or religious and political  views. Biometric data also raises privacy concerns, as it can reveal details of physical and mental health. Often the real worry is not the data itself, but the way the data can be used to manipulate, affect, or harm a person.
 
@@ -19,7 +15,7 @@ Ethically, privacy is related to personal autonomy and integrity. Following the 
 
 </styled-text>
 
-<text-box icon="chap5">
+<text-box icon="philIcon">
 
 Many have proposed the principle that people should have control over their own data – and that data concerning them should not be allowed to be used to harm or discriminate against them. According to some, this right to have “full control over one’s own data” should be a human right.
 
@@ -31,8 +27,9 @@ Wachter and Mittelstadt (2019) propose that the right for the control of your ow
 
 <img src=../../src/assets/london-zoom.svg alt="london zoomed image">
 
+<styled-text>
 
-<text-box name="The GDPR" icon="chap5">
+#### GDPR
 
 The General Data Protection Regulation (GDPR) is a legal framework. It sets guidelines for the collection and processing of personal data from individuals who live in the European Union.
 
@@ -49,17 +46,17 @@ The GDPR recognizes several privacy rights for data subjects. Their aim is to gi
 
 If you process data, then according to GDPR you have to do so according to protection and accountability principles. You must consider these data protection principles in the design of any new product or activity. The data protection principles are:
 
-Lawfulness, fairness and transparency: Processing must be lawful, fair, and transparent to the data subject
-Purpose limitation: You must process data for the legitimate purposes specified explicitly to the data subject when you collected it
-Data minimization: You should collect and process only as much data as absolutely necessary for the purposes specified
-Accuracy: You must keep personal data accurate and up to date
-Storage limitation: You may only store personally identifying data for as long as necessary for the specified purpose
-Integrity and confidentiality: Processing must be done in such a way as to ensure appropriate security, integrity, and confidentiality (for example by using encryption)
-Accountability: The data controller is responsible for being able to demonstrate GDPR compliance with all of these principles
+* **Lawfulness, fairness and transparency**: Processing must be lawful, fair, and transparent to the data subject
+* **Purpose limitation**: You must process data for the legitimate purposes specified explicitly to the data subject when you collected it
+* **Data minimization**: You should collect and process only as much data as absolutely necessary for the purposes specified
+* **Accuracy**: You must keep personal data accurate and up to date
+* **Storage limitation**: You may only store personally identifying data for as long as necessary for the specified purpose
+* **Integrity and confidentiality**: Processing must be done in such a way as to ensure appropriate security, integrity, and confidentiality (for example by using encryption)
+* **Accountability**: The data controller is responsible for being able to demonstrate GDPR compliance with all of these principles
 
 According to GDPR, if you process data you’re also required to handle data securely by implementing “appropriate technical and organizational measures.”
 
-How to protect privacy – data anonymisation methods
+#### How to protect privacy – data anonymisation methods
 
 The GDPR permits organisations to collect anonymized data without consent, use it for any purpose, and store it for an indefinite time – as long as organisations remove all identifiers from the data. There are several techniques for data-anonymisation, including:
 
@@ -72,17 +69,13 @@ Synthetic data is a method for using created artificial datasets instead of alte
 Data-anonymization can be challenging. There are also methods for “de-anonymization”. De-anonymization methods attempt to re-identify encrypted or obscured information. De-anonymization, also referred to as data re-identification, can, for example, cross-reference anonymized information with other available data in order to identify a person, group, or transaction.
 
 
-</text-box>
-
-<styled-text>
-
 ### Safety and security
 The right to safety is a norm protecting individuals from physical, social and emotional harms, including accidents and malfunctions. Security  means safety from malicious and intentional threats.
 
 As a right, safety creates a moral obligation to design our products, laws and environment in such a way that safety can be protected even in unconventional circumstances or impairments. In terms of AI, safety has come to encompass several different conversations, including the following:
 
 #### 1) AI as an existential threat
-The conversation around AI as an existential threat takes a highly speculative and future-oriented stance towards artificial intelligence. It focuses on asking what kind of threats to humanity are posed by AI systems if they become too complex to control (this kind of “superintelligence” scenario is painted by thinkers such as Nick Bostrom and Ray Kurzweil).
+The conversation around AI as an existential threat takes a highly speculative and future-oriented stance towards artificial intelligence. It focuses on asking what kind of threats to humanity are posed by AI systems if they become too complex to control (this kind of “superintelligence” scenario is painted by thinkers such as Nick Bostrom [(Bostrom 2014)](https://global.oup.com/academic/product/superintelligence-9780199678112) and Ray Kurzweil [(Kurzweil 2016)](https://onlinelibrary.wiley.com/doi/abs/10.1002/9781118922590.ch15)).
 
 However, the plausibility of a future of superintelligent AI has been called into question, both by philosophers and technologists. Philosophers have also argued that the depiction of the control problem as a technical obstacle discounts the political aspects of the issue. It’s fair to imagine that any invocation of a humanly common good hides a great deal of political contentions about what, in fact, is good.
 
@@ -105,11 +98,11 @@ Nonetheless, the progressive zeal that is attached to AI future visions has brou
 
 </styled-text>
 
-<text-box name="Case: Caged pavements – AI safety and environmental uncertainty" icon="chap5">
+<text-box name="Case: Caged pavements – AI safety and environmental uncertainty" icon="exerIcon">
 
 A difficult problem for autonomous vehicles is the complex unpredictability of the urban traffic environment. While AI-driven vehicles are constantly being developed to include better ways to model their surroundings, even a small group of individuals – all performing their own movement goals within a shared space – will create a constellation that is difficult to predict. When technical solutions in the cars are too far off, another way to approach the issue is to contain the uncertainty in the environment.
 
-In a New York Times column, consultant Eric A. Taub proposed a solution: by enclosing pavements in cages, with traffic-light-synced gates at crossings, the complex traffic environment is simplified to become more understandable to autonomous vehicles and therefore safer. However, this safety comes at an obvious cost: limiting the freedom of pedestrians, and a redistribution of accountability. This means we should look at the intersecting limits of the right of safety vs freedom. Which one is more important?
+In a [New York Times column](https://www.nytimes.com/2019/08/01/business/self-driving-cars-jaywalking.html), consultant Eric A. Taub proposed a solution: by enclosing pavements in cages, with traffic-light-synced gates at crossings, the complex traffic environment is simplified to become more understandable to autonomous vehicles and therefore safer. However, this safety comes at an obvious cost: limiting the freedom of pedestrians, and a redistribution of accountability. This means we should look at the intersecting limits of the right of safety vs freedom. Which one is more important?
 
 Or is this just a false dichotomy, brought about by a technical solution that was never very workable in the first place? A further interesting line of thought that can be traced here is the criminality of what in the United States is called “jaywalking”, or walking across the road at locations without zebra crossings. The concept of jaywalking did not exist until the roads were reconceptualized with motor vehicles as the primary users. How comparable is this to the thought of caging pavements?
 
@@ -122,21 +115,18 @@ The third concept of safety and AI we will look at in this section is the produc
 
 Robotization can provide an example of this concept in practice. The work of handling hazardous materials or working in hazardous environments can be delegated to robots, protecting the health of human (or animal) workers.
 
-Another way certain forms of safety are produced through AI is through automated surveillance. AI-powered surveillance has manifested in many domains: in public spaces, in law-enforcement work through predictive policing, and in domestic life through products like Amazon’s Ring. Although surveillance cameras (CCTV) have existed and dominated public and semi-public spaces for decades, the ACLU argues that automation brings about a big qualitative shift in how surveillance functions. But what is so different?
+Another way certain forms of safety are produced through AI is through automated surveillance. AI-powered surveillance has manifested in many domains: in public spaces, in law-enforcement work through predictive policing, and in domestic life through products like Amazon’s Ring. Although surveillance cameras (CCTV) have existed and dominated public and semi-public spaces for decades, the ACLU argues that automation brings about a big qualitative shift in how surveillance functions [(American Civil Liberties Union 2019)](https://www.aclu.org/sites/default/files/field_document/061819-robot_surveillance.pdf). But what is so different?
 
 </styled-text>
 
-<text-box icon="techIcon">
+<styled-text>
 
 “Imagine a surveillance camera in a typical convenience store in the 1980s. That camera was big and expensive, and connected by a wire running through the wall to a VCR sitting in a back room. There have been significant advances in camera technology in the ensuing decades — in resolution, digitization, storage, and wireless transmission — and cameras have become cheaper and far more prevalent.
 
 “Still, for all those advances, the social implications of being recorded have not changed: when we walk into a store, we generally expect that the presence of cameras won’t affect us. We expect that our movements will be recorded, and we might feel self-conscious if we notice a camera, especially if we were doing anything that we feel might attract attention. But unless something dramatic occurs, we generally understand that the videos in which we appear are unlikely to be scrutinized or monitored.”
 
- -The Dawn of Robot Surveillance, ACLU
+ - [The Dawn of Robot Surveillance, ACLU 2019](https://www.aclu.org/sites/default/files/field_document/061819-robot_surveillance.pdf)
 
-</text-box>
-
-<styled-text>
 
 Unlike the 1980s convenience store security cameras, contemporary AI surveillance systems are centralized. You can be traced both at the convenience store and at the library, and these two “yous” can be identified as the same person. The surveillance feeds are more and more often held by private data giants, as opposed to a VCR in the back room.
 
@@ -161,7 +151,7 @@ Safety also means the right to a safe and healthy environment. Nowadays, this ri
 
 </styled-text>
 
-<text-box icon="chap5">
+<text-box icon="techIcon">
 
 AI could be a powerful tool for tackling climate change. It can be used as a resource for monitoring, understanding, and predicting the consequences of climate change. AI can accelerate the development of more ecologically sustainable societies. It can be used to design green cities, environment-friendly transportation, to reduce the ecological impact of industry, and design equipment that can help study and maintain the diversity of ecosystems.
 
@@ -187,7 +177,7 @@ According to the World Health Organization (2018), more than a billion people li
 
 For example,  there are several tools for developing communication and literacy skills that might offer support with understanding those who have cognitive disabilities and/or complex speech and language difficulties (such as dementia, cerebral palsy, and autism). Moreover, the development of assistive technologies using AI, such as description of images for blind people, speech recognition, captioning for hearing impaired people, sign language recognition and creation for deaf people, multilingual text-to-speech options for reading text for those with cognitive disabilities including dyslexia, care robots for elderly people and mobility guides for visually impaired people provide other examples.
 
-<img src="./sp-too-big-rev.svg" alt="smartphone">  </img>
+<img src="./sp-too-big-rev.svg" alt="smartphone" width="200px">  </img>
 
 #### Inclusion and the gender divide
 
@@ -210,3 +200,5 @@ Technology studies indicate that technology often reflects its developers. For e
 Inclusion is, however, about more than ensuring that women are able to participate. It is an obligation to ensure cultural, age-based and geographic diversity and their intersects. When thinking about the impact of AI in society, there is, simply, a need to intentionally develop systems in different settings and with diverse users.
 
 </styled-text>
+
+<quiz id="729e0725-887b-40b4-a623-1814bfa1ab98"> </quiz>
