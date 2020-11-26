@@ -6,7 +6,7 @@ import H2 from "../Headers/H2"
 import Sponsor1 from "../../assets/ministry-of-finance.svg"
 import Sponsor2 from "../../assets/mayor-of-london.svg"
 import Sponsor3 from "../../assets/helsinki.svg"
-import Sponsor4 from "../../assets/gemeente.svg"
+import Sponsor4 from "../../assets/gemeente01.svg"
 import Sponsor5 from "../../assets/hidata.svg"
 import Sponsor6 from "../../assets/fcai.svg"
 
