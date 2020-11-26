@@ -3,20 +3,24 @@ import styled from "styled-components"
 
 import { respond } from "../../_respond"
 import H2 from "../Headers/H2"
-import Sponsor1 from "../../assets/ministry-of-finance.svg"
+import Sponsor1 from "../../assets/hidata.svg"
 import Sponsor2 from "../../assets/mayor-of-london.svg"
 import Sponsor3 from "../../assets/helsinki.svg"
 import Sponsor4 from "../../assets/gemeente01.svg"
-import Sponsor5 from "../../assets/hidata.svg"
+import Sponsor5 from "../../assets/ministry-of-finance.svg"
 import Sponsor6 from "../../assets/fcai.svg"
+import UHLogo from "../../images/uh-logo.png"
+import MoocfiLogo from "../../images/moocfi-logo-bw.png"
+
+
 
 const sponsors = {
-  1: <Sponsor1 width="150px" />,
-  2: <Sponsor2 width="150px" />,
-  3: <Sponsor3 width="150px" />,
-  4: <Sponsor4 width="150px" />,
-  5: <Sponsor5 width="150px" />,
-  6: <Sponsor6 width="150px" />,
+  1: <Sponsor1 width="250px" />,
+  2: <Sponsor2 width="250px" />,
+  3: <Sponsor3 width="250px" />,
+  4: <Sponsor4 width="250px" />,
+  5: <Sponsor5 width="250px" />,
+  6: <Sponsor6 width="250px" />,
 }
 
 const Container = styled.div`
@@ -30,13 +34,16 @@ const Container = styled.div`
   }
 `
 const SponsorBox = styled.div`
-  background: white;
   padding: 2rem;
   width: 50%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
   margin: 1rem auto;
+
+  img {
+    margin: 2rem 0;
+  }
 `
 const SponsorLogo = styled.div`
   height: 130px;
@@ -55,6 +62,8 @@ export default (props) => {
         {Object.values(sponsors).map((s) => (
           <SponsorLogo>{s}</SponsorLogo>
         ))}
+        <img alt="Helsingin yliopisto" src={UHLogo} />
+        <img alt="MOOC.fi" src={MoocfiLogo} />
       </SponsorBox>
     </Container>
   )
