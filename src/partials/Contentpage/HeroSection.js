@@ -25,8 +25,13 @@ const HeroSection = styled.div`
 
   ${respond.mobile`
   width: 100%;
-  padding: 0;
+  padding: 0 1rem;
   margin: 0;
+`}
+
+  ${respond.lg`
+  width: 100%;
+  padding: 4rem 2rem 4rem 10rem;
 `}
 `
 const TextWrapper = styled.div`
@@ -53,6 +58,14 @@ const HeroText = styled.div`
   font-weight: 450;
   width: 90%;
   display: grid;
+
+  ${respond.mobile`
+  width: 100%;
+`}
+
+${respond.lg`
+width: 90%;
+`}
 `
 
 export default (props) => {

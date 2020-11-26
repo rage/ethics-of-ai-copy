@@ -47,6 +47,7 @@ const Hero = styled(StyledButton)`
   color: #fff;
   border-radius: 50px;
   text-transform: uppercase;
+  font-weight: 500;
 `
 const Secondary = styled(StyledButton)`
   background: #fff;
