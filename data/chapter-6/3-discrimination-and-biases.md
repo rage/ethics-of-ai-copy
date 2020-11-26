@@ -14,6 +14,8 @@ In this section we will study discrimination and how discriminatory practices ca
 
 Word embeddings are a form of data structure used in natural language processing applications (AI that can understand a language, like English). They are produced by trawling through texts and noting which words often occur together. The produced associations work as a kind of dictionary for AI systems, capturing semantic relationships like “man” is to “king” as “woman” is to “queen”. Bolukbasi et al. found that, rather unsurprisingly, these kinds of word associations have a tendency to encode conceptual relationships which are culturally pervasive but considered discriminatory. For example, “mother” is to “nurse” as “father” is to “doctor”.
 
+<img src="bias.svg" alt="bias" width="300px"> </img>
+
 #### Example 2: Amazon recruitment algorithm ([Dastin 2018](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G))
 
 In 2014, Amazon started developing an internal AI system to streamline their recruitment process. Using the CVs of past applicants as training data, the system would analyze incoming CVs and rate the candidates for further evaluation. Very quickly though, the system was found to rate candidates for technical jobs in a gender-biased way.
