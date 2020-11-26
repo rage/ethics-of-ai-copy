@@ -22,10 +22,6 @@ Artificial intelligence is already a part of our daily lives. When we post pictu
 
 <homepage-grid></homepage-grid>
 
-<about-section>
-
-<img src="./img/placeholder.jpg" alt="placeholder image">
-
 <sponsor-section></sponsor-section>
 
 <course-progress />
