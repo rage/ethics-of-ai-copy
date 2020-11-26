@@ -66,14 +66,10 @@ export default (props) => {
               {props.title}:{" "}
             </a>
             <a style={{ color: "rgba(28, 59, 64)", fontFamily: "Work Sans" }}>
-              {props.subtitle}
+              {props.headerText}
             </a>
           </H2>
-          <HeroText>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
-          </HeroText>
+          <HeroText>{props.subHeader}</HeroText>
         </TextWrapper>
         <ImageImporter icon={props.heroIcon} />
       </HeroSection>

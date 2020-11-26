@@ -103,6 +103,16 @@ export default class CourseContentTemplate extends React.Component {
       7: "AI ethics in practice",
     }
 
+    const chooseSubHeader = {
+      1: "What does AI ethics mean and what role do values and norms play? We’ll also look at the principles of AI ethics that we will follow in this course.",
+      2: "What do the principles of beneficence (do good) and non-maleficence (do no harm) mean for AI, and how do they relate to the concept of the “common good”?",
+      3: "What does accountability actually mean, and how does it apply to AI ethics? We’ll also discuss what moral agency and responsibility mean and the difficulty of assigning blame.",
+      4: "Why is transparency in AI important and what major issues are affected by transparency –  and what are some of the risks associated with transparency in AI systems?",
+      5: "What are human rights, and how do they tie into the current ethical guidelines and principles of AI? We’ll also look more closely at three rights of particular importance to AI: the right to privacy, security, and inclusion.",
+      6: "What does fairness mean in relation to AI, how does discrimination manifest through AI – and what can we do to make these systems less biased?",
+      7: "What are some of the current challenges for AI ethics, what role do AI guidelines play in shaping the discussion, and how might things develop in the future?",
+    }
+
     const filePath = data.page.fileAbsolutePath.substring(
       data.page.fileAbsolutePath.lastIndexOf("/data/"),
       data.page.fileAbsolutePath.length,
@@ -130,7 +140,8 @@ export default class CourseContentTemplate extends React.Component {
             <Layout>
               <HeroSection
                 title={parentSectionName}
-                subtitle={chooseChapterHeader[frontmatter.path.substr(9, 1)]}
+                headerText={chooseChapterHeader[frontmatter.path.substr(9, 1)]}
+                subHeader={chooseSubHeader[frontmatter.path.substr(9, 1)]}
                 heroIcon={heroIcon}
               ></HeroSection>
               <Container>
