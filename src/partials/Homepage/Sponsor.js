@@ -15,12 +15,14 @@ import MoocfiLogo from "../../images/moocfi-logo-bw.png"
 
 
 const sponsors = {
-  1: <Sponsor1 width="250px" />,
-  2: <Sponsor2 width="250px" />,
-  3: <Sponsor3 width="280px" />,
-  4: <Sponsor4 width="250px" />,
-  5: <Sponsor5 width="250px" />,
-  6: <Sponsor6 width="200px" />,
+  1: <Sponsor1 width="200px" />,
+  2: <Sponsor2 width="200px" />,
+  3: <Sponsor3 width="200px" />,
+  4: <img alt="Helsingin yliopisto" src={UHLogo} width="260px"/>,
+  5: <img alt="MOOC.fi" src={MoocfiLogo} width="260px"/>,
+  6: <Sponsor4 width="180px" />,
+  7: <Sponsor5 width="160px" />,
+  8: <Sponsor6 width="140px" />,
 }
 
 const Container = styled.div`
@@ -31,14 +33,48 @@ const Container = styled.div`
   span {
     font-size: 1.2rem;
   }
+
+  h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: clamp(28px, 4vw, 40px);
+    color: #333;
+  }
+
+  ${respond.xs`
+  padding:0
+`}
+
+${respond.sm`
+  width: 100%;
+  padding: 0;
+`}
 `
 const SponsorBox = styled.div`
   padding: 2rem;
-  width: 70%;
+  width: 60%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
   margin: 1rem auto;
+
+  ${respond.xs`
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  padding:0
+`}
+
+${respond.sm`
+grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  padding: 0;
+`}
+
+${respond.lg`
+padding: 2rem;
+width: 70%;
+grid-template-columns: repeat(3, 1fr);
+`}
 
   img {
     display: flex;
@@ -57,10 +93,8 @@ const SponsorLogo = styled.div`
 export default (props) => {
   return (
     <Container>
-      <H2> Partners </H2> <span> Official partners of this course</span>
+      <h2> Partners </h2> <span> Official partners of this course</span>
       <SponsorBox>
-        <img alt="Helsingin yliopisto" src={UHLogo} />
-        <img alt="MOOC.fi" src={MoocfiLogo} />
         {Object.values(sponsors).map((sponsor) => (
           <SponsorLogo>{sponsor}</SponsorLogo>
         ))}
