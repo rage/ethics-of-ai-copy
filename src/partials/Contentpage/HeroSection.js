@@ -60,7 +60,7 @@ export default (props) => {
               {props.title}:{" "}
             </a>
             <a style={{ color: "rgba(28, 59, 64)", fontFamily: "Work Sans" }}>
-              {props.subtitle}
+              {props.headerText}
             </a>
           </H2>
           <HeroText>
