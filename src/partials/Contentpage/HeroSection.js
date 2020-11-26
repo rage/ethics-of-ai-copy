@@ -70,9 +70,7 @@ export default (props) => {
             </a>
           </H2>
           <HeroText>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
+            {props.intro}
           </HeroText>
         </TextWrapper>
         <ImageImporter icon={props.heroIcon} />
