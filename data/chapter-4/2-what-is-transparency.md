@@ -50,42 +50,42 @@ However, it is notoriously difficult to translate algorithmically derived concep
 
 ```sas
 * Otetaan siemenluku otoksen tekoa varten koneajasta ;
+* Take seed number from machine time for sample;
 data _NULL_;
- siemen= int(%sysfunc(TIME())) ;
- call symput('siemen',siemen);
+ seedNumber= int(%sysfunc(TIME())) ;
+ call symput('seedNumber',seedNumber);
 run;
-%put &siemen;
+%put &seedNumber;
 
-* Järjestetään perusjoukko ;
-proc sort data=perus;
+* Order universe ;
+proc sort data=universe;
  by henro;
 run;
-* Tehdään otos, n=2000 ;
-proc surveyselect data=perus method=srs
-     n=2000 seed=&siemen
-     out=otos;
+* Make a sample, n=2000 ;
+proc surveyselect data=universe method=srs
+     n=2000 seed=&seedNumber
+     out=sample;
 run;
-* Järjestetään otos ;
-proc sort data=otos;
+* Order sample ;
+proc sort data=sample;
  by henro;
 run;
 
- * Yhdistetään otos perusjoukkoon, tehdään muuttuja TYYPPI;
-data kaikki;
- merge perus(in=a)
-       otos(in=b);
+ * Unite sample to universe, create variable TYPE; data all;
+ merge universe(in=a)
+       sample(in=b);
  by henro;
- length TYYPPI $ 1.;
- if a then TYYPPI='V'; * verrokit ;
- if b then TYYPPI='K'; * kokeiluryhmä ;
+ length TYPE $ 1.;
+ if a then TYPE='V'; * referenceGroup ;
+ if b then TYPE='K'; * experimentGroup ;
 
- * annetaan arvot muuttujalle REAOH ;
+ * assign values to variable REAOH ;
 REAOH='PUOTOS';
 run;
 
-* Tarkistetaan, että 2000 henkilöllä TYYPPI saa arvon 'K' ;
+* Confirm that all 2000 people have a TYPE that is given a value 'K';
 proc freq;
- tables tyyppi;
+ tables type;
 run;
 ```
 
