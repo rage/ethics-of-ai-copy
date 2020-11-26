@@ -46,13 +46,13 @@ The GDPR recognizes several privacy rights for data subjects. Their aim is to gi
 
 If you process data, then according to GDPR you have to do so according to protection and accountability principles. You must consider these data protection principles in the design of any new product or activity. The data protection principles are:
 
-Lawfulness, fairness and transparency: Processing must be lawful, fair, and transparent to the data subject
-Purpose limitation: You must process data for the legitimate purposes specified explicitly to the data subject when you collected it
-Data minimization: You should collect and process only as much data as absolutely necessary for the purposes specified
-Accuracy: You must keep personal data accurate and up to date
-Storage limitation: You may only store personally identifying data for as long as necessary for the specified purpose
-Integrity and confidentiality: Processing must be done in such a way as to ensure appropriate security, integrity, and confidentiality (for example by using encryption)
-Accountability: The data controller is responsible for being able to demonstrate GDPR compliance with all of these principles
+* **Lawfulness, fairness and transparency**: Processing must be lawful, fair, and transparent to the data subject
+* **Purpose limitation**: You must process data for the legitimate purposes specified explicitly to the data subject when you collected it
+* **Data minimization**: You should collect and process only as much data as absolutely necessary for the purposes specified
+* **Accuracy**: You must keep personal data accurate and up to date
+* **Storage limitation**: You may only store personally identifying data for as long as necessary for the specified purpose
+* **Integrity and confidentiality**: Processing must be done in such a way as to ensure appropriate security, integrity, and confidentiality (for example by using encryption)
+* **Accountability**: The data controller is responsible for being able to demonstrate GDPR compliance with all of these principles
 
 According to GDPR, if you process data you’re also required to handle data securely by implementing “appropriate technical and organizational measures.”
 
