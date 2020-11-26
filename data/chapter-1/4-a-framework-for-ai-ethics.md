@@ -50,7 +50,7 @@ Lastly, we want to note that when speaking of AI and the social implications, AI
 
 <quiz id="c956ae17-d49d-4148-8414-029a14f3ff4c">
 
-Imagine that one day you end up in a heated conversation on Twitter. It starts with a university professor’s (@TuringLives) tweet on photo recreation models. He tells about a model which depixelated an input image of Finnish Prime Minister Sanna Marin into a photo of a middle-aged white male:
+Imagine that one day you end up in a heated conversation on Twitter. It starts with a university professor’s (@TuringLives) tweet on a image translation model.  It depixelated an input image of Finnish Prime Minister Sanna Marin into a photo of a middle-aged white male:
 
  ![Transforming image of Sanna Marin](./chap1-transf.png)
 
@@ -61,11 +61,11 @@ Image 4: CC BY-NC 4.0 NVIDIA Corporation<br>
 
 </br>
 
-**What are photo (re)creation algorithms?**
+**What are image translation algorithms?**
 
 <br>
 
-Many of the most famous examples of photo (re)creation are produced by a Generative Adversarial Network (GAN). A GAN is a type of neural network architecture for generative modeling.
+Many of the most famous examples of image translation are produced by a Generative Adversarial Network (GAN). A GAN is a type of neural network architecture for generative modeling.
 
 <br>
 
@@ -97,7 +97,7 @@ Next, you’ll enter into the Twitter discussion. Your task is to answer these t
 
 <br>
 
-![Twitter chat](./twitter-exercise.svg)
+![Twitter chat](./twitter-exercise-test-small.svg)
 
 How would you reply? Develop a Twitter name for yourself, and write your reply down below.
 
