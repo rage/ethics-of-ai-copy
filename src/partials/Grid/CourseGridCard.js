@@ -12,7 +12,7 @@ import Icon7 from "../../assets/chap-7.svg"
 const svgs = {
   chapter01: <Icon1 width="180px" />,
   chapter02: <Icon2 width="180px" />,
-  chapter03: <Icon3 width="250px" />,
+  chapter03: <Icon3 width="170px" />,
   chapter04: <Icon4 width="250px" />,
   chapter05: <Icon5 width="170px" />,
   chapter06: <Icon6 width="230px" />,
