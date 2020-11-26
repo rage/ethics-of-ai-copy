@@ -17,17 +17,16 @@ import MoocfiLogo from "../../images/moocfi-logo-bw.png"
 const sponsors = {
   1: <Sponsor1 width="250px" />,
   2: <Sponsor2 width="250px" />,
-  3: <Sponsor3 width="250px" />,
+  3: <Sponsor3 width="280px" />,
   4: <Sponsor4 width="250px" />,
   5: <Sponsor5 width="250px" />,
-  6: <Sponsor6 width="250px" />,
+  6: <Sponsor6 width="200px" />,
 }
 
 const Container = styled.div`
   margin: 6rem 0;
   padding: 2rem 6rem;
   height: 60%;
-  background: #f9f9f9;
 
   span {
     font-size: 1.2rem;
@@ -35,14 +34,15 @@ const Container = styled.div`
 `
 const SponsorBox = styled.div`
   padding: 2rem;
-  width: 50%;
+  width: 70%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
   margin: 1rem auto;
 
   img {
-    margin: 2rem 0;
+    display: flex;
+    align-self: center;
   }
 `
 const SponsorLogo = styled.div`
@@ -57,13 +57,13 @@ const SponsorLogo = styled.div`
 export default (props) => {
   return (
     <Container>
-      <H2> Sponsors </H2> <span> Official sponsor of this course</span>
+      <H2> Partners </H2> <span> Official partners of this course</span>
       <SponsorBox>
-        {Object.values(sponsors).map((s) => (
-          <SponsorLogo>{s}</SponsorLogo>
-        ))}
         <img alt="Helsingin yliopisto" src={UHLogo} />
         <img alt="MOOC.fi" src={MoocfiLogo} />
+        {Object.values(sponsors).map((sponsor) => (
+          <SponsorLogo>{sponsor}</SponsorLogo>
+        ))}
       </SponsorBox>
     </Container>
   )
