@@ -7,7 +7,7 @@ import H2 from "../Headers/H2"
 //TO-DO: + More Breakpoints
 
 const PlaceHolderContainer = styled.div`
-  margin: 6rem 0;
+  margin: 10rem 0;
   padding: 2rem 6rem;
   height: 70vh;
   align-item: center;
@@ -21,15 +21,14 @@ const PlaceHolderContainer = styled.div`
 const PlaceHolderText = styled.div`
   font-size: 1rem;
   line-height: 2.8rem;
-  width: 60%;
-  margin: 0 auto;
+  width: 70%;
+  margin: 0rem auto;
   color: #333;
   font-weight: 400;
   opacity: 0.9;
 
   ${respond.mobile`
   width: 100%;
-  line-height: 1.8rem;
   padding: 30px;
 `}
 

@@ -103,7 +103,6 @@ export default class CourseContentTemplate extends React.Component {
       7: ["AI ethics in practice","What are some of the current challenges for AI ethics, what role do AI guidelines play in shaping the discussion, and how might things develop in the future?"]
     }
 
-
     const filePath = data.page.fileAbsolutePath.substring(
       data.page.fileAbsolutePath.lastIndexOf("/data/"),
       data.page.fileAbsolutePath.length,
