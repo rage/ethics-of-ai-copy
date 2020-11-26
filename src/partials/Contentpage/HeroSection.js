@@ -22,6 +22,12 @@ const HeroSection = styled.div`
     padding: 4rem 2rem 4rem 3rem;
   }
   margin-bottom: 4rem;
+
+  ${respond.mobile`
+  width: 100%;
+  padding: 0;
+  margin: 0;
+`}
 `
 const TextWrapper = styled.div`
   padding: 0rem 0rem 4rem 0rem;

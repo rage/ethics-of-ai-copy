@@ -5,6 +5,7 @@ import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import chapterIcon from "../images/blob-4.svg"
 import PagesContext from "../contexes/PagesContext"
 import { nthIndex } from "../util/strings"
+import { respond } from "../_respond"
 
 const Wrapper = styled.aside`
   padding: 3em 2em 7em 2em;
@@ -14,6 +15,12 @@ const Wrapper = styled.aside`
   position: relative;
   width: 500px;
   max-height: 480px;
+
+  ${respond.mobile`
+  width: 100%;
+  padding: 1rem;
+  margin: 4rem 0;
+`}
 `
 
 const Header = styled.h3`
