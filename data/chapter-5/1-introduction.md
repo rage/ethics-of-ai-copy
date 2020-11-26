@@ -12,7 +12,7 @@ During the COVID-19 pandemic, governments have struggled to find effective polic
 
 In London, authorities decided to try something new. Together with scientists, they developed methods for “capturing activity over London” to better understand the city’s level of activity. In a project called [Odysseus](https://www.turing.ac.uk/research/research-projects/project-odysseus-understanding-london-busyness-and-exiting-lockdown), authorities get information about the distribution of activities in London by combining machine learning algorithms, statistical time-series analysis, and image processing. This information about the activity in the streets of London can be utilized for the safe reopening of streets and for public health planning.
 
-<img src=../../src/assets/cbcl-02.svg alt="london image">
+<img src=./london-01.svg alt="london image">
 
 In Odysseus, the data comes from a wide range of sources. Odysseus combines aggregated, anonymized mobile phone data, anonymized credit card transactions, satellite navigation data, and data from sensors and traffic cameras in the streets. This data is used to create counts of vehicles, cyclists and pedestrians, and to indicate the density and impacts of social distancing. Special attention is paid to the anonymization of data so that individuals cannot be identified.
 

@@ -82,9 +82,7 @@ export default (props) => {
               {props.headerText}
             </a>
           </H2>
-          <HeroText>
-            {props.intro}
-          </HeroText>
+          <HeroText>{props.intro}</HeroText>
         </TextWrapper>
         <ImageImporter icon={props.heroIcon} />
       </HeroSection>

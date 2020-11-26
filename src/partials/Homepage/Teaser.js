@@ -6,7 +6,7 @@ import H2 from "../Headers/H2"
 const TeaserWrapper = styled.div`
   margin-top: 5rem;
 
-    ${respond.mobile`
+  ${respond.mobile`
   margin-top: 10rem;
   `}
 `

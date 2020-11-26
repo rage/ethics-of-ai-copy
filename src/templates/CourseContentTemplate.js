@@ -100,13 +100,34 @@ export default class CourseContentTemplate extends React.Component {
     const parentSectionPath = `/${frontmatter.path.split(/\//g)[1]}`
 
     const chooseChapterHeader = {
-      1: ["What is AI ethics?", "What does AI ethics mean and what role do values and norms play? We’ll also look at the principles of AI ethics that we will follow in this course. "],
-      2: ["What should we do?","What do the principles of beneficence (do good) and non-maleficence (do no harm) mean for AI, and how do they relate to the concept of the “common good?"],
-      3: ["Who should be blamed?", "What does accountability actually mean, and how does it apply to AI ethics? We’ll also discuss what moral agency and responsibility mean and the difficulty of assigning blame."],
-      4: ["Should we know how AI works", "Why is transparency in AI important and what major issues are affected by transparency –  and what are some of the risks associated with transparency in AI systems?"],
-      5: ["Should AI respect and promote them?", "What are human rights, and how do they tie into the current ethical guidelines and principles of AI? We’ll also look more closely at three rights of particular importance to AI: the right to privacy, security, and inclusion."],
-      6: ["Should AI be fair and non-discriminative", "What does fairness mean in relation to AI, how does discrimination manifest through AI – and what can we do to make these systems less biased?"],
-      7: ["AI ethics in practice","What are some of the current challenges for AI ethics, what role do AI guidelines play in shaping the discussion, and how might things develop in the future?"]
+      1: [
+        "What is AI ethics?",
+        "What does AI ethics mean and what role do values and norms play? We’ll also look at the principles of AI ethics that we will follow in this course. ",
+      ],
+      2: [
+        "What should we do?",
+        "What do the principles of beneficence (do good) and non-maleficence (do no harm) mean for AI, and how do they relate to the concept of the “common good?",
+      ],
+      3: [
+        "Who should be blamed?",
+        "What does accountability actually mean, and how does it apply to AI ethics? We’ll also discuss what moral agency and responsibility mean and the difficulty of assigning blame.",
+      ],
+      4: [
+        "Should we know how AI works",
+        "Why is transparency in AI important and what major issues are affected by transparency –  and what are some of the risks associated with transparency in AI systems?",
+      ],
+      5: [
+        "Should AI respect and promote them?",
+        "What are human rights, and how do they tie into the current ethical guidelines and principles of AI? We’ll also look more closely at three rights of particular importance to AI: the right to privacy, security, and inclusion.",
+      ],
+      6: [
+        "Should AI be fair and non-discriminative",
+        "What does fairness mean in relation to AI, how does discrimination manifest through AI – and what can we do to make these systems less biased?",
+      ],
+      7: [
+        "AI ethics in practice",
+        "What are some of the current challenges for AI ethics, what role do AI guidelines play in shaping the discussion, and how might things develop in the future?",
+      ],
     }
 
     const filePath = data.page.fileAbsolutePath.substring(

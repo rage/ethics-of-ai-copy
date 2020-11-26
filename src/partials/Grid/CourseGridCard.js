@@ -11,12 +11,12 @@ import Icon7 from "../../assets/chap-7.svg"
 
 const svgs = {
   chapter01: <Icon1 width="180px" />,
-  chapter02: <Icon2 width="180px" />,
+  chapter02: <Icon2 width="170px" />,
   chapter03: <Icon3 width="170px" />,
-  chapter04: <Icon4 width="250px" />,
-  chapter05: <Icon5 width="170px" />,
-  chapter06: <Icon6 width="230px" />,
-  chapter07: <Icon7 width="150px" />,
+  chapter04: <Icon4 width="150px" />,
+  chapter05: <Icon5 width="200px" />,
+  chapter06: <Icon6 width="200px" />,
+  chapter07: <Icon7 width="160px" />,
 }
 
 const CourseGridWrapper = styled.div`

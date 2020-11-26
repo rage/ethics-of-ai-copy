@@ -93,6 +93,12 @@ AI is developing fast. While nobody can say for certain how it will impact our l
 “Choice, not chance, determines your destiny.”
 >**-Aristotle**
 
-<quiz id="95f8a331-d4a2-443a-b155-3ba7dd8679c1"> </quiz>
+<img src="./p-p-f-01.svg" alt="Future"> </img>
+
+<quiz id="6453e3a5-b333-4088-9a62-4f51c99000cc"> </quiz>
+
+<quiz id="19d1f748-97c7-4a8e-a1b8-a29589b249b8"> </quiz>
+
+<quiz id="4146c68c-1ff8-4034-baec-5c7eec645e9d"> </quiz>
 
 <quiz id="5a970b1f-608b-4255-9c8b-65ffdbe95ec1"> </quiz>

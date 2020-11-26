@@ -12,14 +12,12 @@ import Sponsor6 from "../../assets/fcai.svg"
 import UHLogo from "../../images/uh-logo.png"
 import MoocfiLogo from "../../images/moocfi-logo-bw.png"
 
-
-
 const sponsors = {
   1: <Sponsor1 width="200px" />,
   2: <Sponsor2 width="200px" />,
   3: <Sponsor3 width="200px" />,
-  4: <img alt="Helsingin yliopisto" src={UHLogo} width="260px"/>,
-  5: <img alt="MOOC.fi" src={MoocfiLogo} width="260px"/>,
+  4: <img alt="Helsingin yliopisto" src={UHLogo} width="260px" />,
+  5: <img alt="MOOC.fi" src={MoocfiLogo} width="260px" />,
   6: <Sponsor4 width="180px" />,
   7: <Sponsor5 width="160px" />,
   8: <Sponsor6 width="140px" />,
