@@ -97,7 +97,7 @@ Next, you’ll enter into the Twitter discussion. Your task is to answer these t
 
 <br>
 
-![Twitter chat](./twitter-exercise.svg)
+![Twitter chat](./twitter-exercise-test-plain.svg)
 
 How would you reply? Develop a Twitter name for yourself, and write your reply down below.
 
