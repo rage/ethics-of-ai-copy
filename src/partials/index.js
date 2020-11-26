@@ -140,7 +140,6 @@ const mapping = {
   "big-five": BigFive,
   "course-progress": CourseProgress,
   "styled-text": StyledText,
-  "code-box": CodeBox,
   vocabulary: Vocabulary,
   notice: Notice,
   youtube: Youtube,
