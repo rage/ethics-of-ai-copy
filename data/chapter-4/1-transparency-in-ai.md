@@ -10,6 +10,8 @@ hidden: false
 
 Imagine a facial recognition system called MYFACE. MYFACE is used for security purposes in the airport. Usually it works perfectly, but one day it starts to miscategorize individuals as potentially dangerous. As a result, several innocent people are arrested. Would it be important to know why the system made all these mistakes? Should we be able to explain why it made mistakes? And why would this matter?
 
+<img src="./myface.svg" alt="myface" width="400px"> </img>
+
 <styled-text>
 
 Some contemporary machine learning systems are so-called “black box” systems, meaning we can’t really see how they work.  This “opacity”, or lack of visibility, can be a problem if  we use these systems to make decisions that have an effect on individuals.
