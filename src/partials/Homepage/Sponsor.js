@@ -41,6 +41,12 @@ const Container = styled.div`
     color: #333;
   }
 
+  ${respond.mobile`
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  `}
+
   ${respond.xs`
   padding:0
 `}
@@ -57,6 +63,12 @@ const SponsorBox = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
   margin: 1rem auto;
+
+  ${respond.mobile`
+  grid-template-columns: 1fr;
+  width: 100%;
+  padding: 0;
+  `}
 
   ${respond.xs`
   grid-template-columns: repeat(2, 1fr);

@@ -5,6 +5,10 @@ import H2 from "../Headers/H2"
 
 const TeaserWrapper = styled.div`
   margin-top: 5rem;
+
+    ${respond.mobile`
+  margin-top: 10rem;
+  `}
 `
 
 const TeaserCardContainer = styled.div`
@@ -16,6 +20,12 @@ const TeaserCardContainer = styled.div`
   grid-template-columns: 1fr;
   grid-gap: 4rem;
   justify-content: center;
+
+  ${respond.mobile`
+  margin-top: 1.2rem;
+  padding: 0 0.5rem;
+    grid-template-columns: minmax(20rem,100%);
+  `}
 
   ${respond.xs`
   grid-gap: 2rem;

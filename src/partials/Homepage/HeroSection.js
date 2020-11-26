@@ -26,6 +26,17 @@ const HeroSection = styled.div`
   justify-content: center;
   align-text: center;
   z-inde: 99;
+
+  ${respond.xs`
+  padding: 0;
+`}
+
+  ${respond.mobile`
+  margin: 4rem 0;
+  width: 100%;
+  padding: 0;
+`}
+
 `
 
 const BigText = styled.h1`
@@ -43,6 +54,11 @@ const HeroText = styled.div`
   width: 60%;
   display: grid;
   margin: 0 auto;
+
+  ${respond.mobile`
+  width: 100%;
+  padding: 0 20px;
+`}
 
   ${respond.xs`
   width: 100%;;
