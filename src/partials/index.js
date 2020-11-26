@@ -92,6 +92,7 @@ import ErrorHero from "./404page/index"
 import Title from "./Title"
 import BigFive from "./BigFive"
 import StyledText from "./StyledText"
+import CodeBox from "./Codebox"
 
 const mapping = {
   test: Test,
