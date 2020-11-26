@@ -29,7 +29,7 @@ Wachter and Mittelstadt (2019) propose that the right for the control of your ow
 
 <styled-text>
 
-## GDPR
+#### GDPR
 
 The General Data Protection Regulation (GDPR) is a legal framework. It sets guidelines for the collection and processing of personal data from individuals who live in the European Union.
 
@@ -56,7 +56,7 @@ Accountability: The data controller is responsible for being able to demonstrate
 
 According to GDPR, if you process data you’re also required to handle data securely by implementing “appropriate technical and organizational measures.”
 
-### How to protect privacy – data anonymisation methods
+#### How to protect privacy – data anonymisation methods
 
 The GDPR permits organisations to collect anonymized data without consent, use it for any purpose, and store it for an indefinite time – as long as organisations remove all identifiers from the data. There are several techniques for data-anonymisation, including:
 

@@ -24,7 +24,7 @@ banner: false
 </course-grid-card>
     <course-grid-card title="chapter04" url="chapter-4/1-transparency-in-ai">
 
-<course-grid-text><H5>Chapter 4: Transparency</H5><span>Should we know how AI works</span></course-grid-text>
+<course-grid-text><H5>Chapter 4: Transparency</H5><span>Should we know how AI works?</span></course-grid-text>
 
 </course-grid-card>
     <course-grid-card title="chapter05" url="chapter-5/1-introduction">
@@ -34,7 +34,7 @@ banner: false
 </course-grid-card>
     <course-grid-card title="chapter06" url="chapter-6/1-what-is-fairness">
 
-<course-grid-text><H5>Chapter 6: Fairness</H5><span>Should AI be fair and non-discriminative</span></course-grid-text>
+<course-grid-text><H5>Chapter 6: Fairness</H5><span>Should AI be fair and non-discriminative?</span></course-grid-text>
 
 </course-grid-card>
     <course-grid-card title="chapter07" url="/chapter-7/1-from-principles-to-doing">
