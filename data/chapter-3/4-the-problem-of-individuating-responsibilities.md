@@ -51,7 +51,7 @@ The report also addresses the issue of individuating responsibilities. If the sy
 
 <br>
 
-Please read the above instructions carefully and answer both of the items above in the text box below. Your answer will be reviewed by other users and by the instructors. Please answer in English, and check your answer before clicking 'Submit' because, once submitted, you can no longer edit your answer.
+Please read the  instructions carefully and answer in the text box below. Your answer will be reviewed by other users and by the instructors. Please answer in English, and check your answer before clicking 'Submit' because, once submitted, you can no longer edit your answer.
 
 <br>
 
