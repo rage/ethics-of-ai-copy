@@ -11,23 +11,24 @@ const HeroSection = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  padding: 4rem 2rem 0rem 10rem;
+  height: 50vh;
+  padding: 4rem 2rem 4rem 10rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-text: left;
   z-index: 99;
   @media (max-width: 1000px) {
-    padding: 4rem 2rem 2rem 3rem;
+    padding: 4rem 2rem 4rem 3rem;
   }
   margin-bottom: 4rem;
 `
 const TextWrapper = styled.div`
-  padding: 10rem 0rem 4rem 0rem;
+  padding: 0rem 0rem 4rem 0rem;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-text: center;
+  align-content: center;
   flex: 1;
   @media (max-width: 1000px) {
     width: 90%;
@@ -48,13 +49,6 @@ const HeroText = styled.div`
   display: grid;
 `
 
-const Border = styled.div`
-  border-bottom: 2px solid rgba(112, 112, 112, 1);
-  margin-bottom: 4em;
-  margin-left: 2em;
-  width: 95%;
-`
-
 export default (props) => {
   console.log(props)
   return (
@@ -69,7 +63,7 @@ export default (props) => {
               {props.headerText}
             </a>
           </H2>
-          <HeroText>{props.subHeader}</HeroText>
+          <HeroText>{props.intro}</HeroText>
         </TextWrapper>
         <ImageImporter icon={props.heroIcon} />
       </HeroSection>

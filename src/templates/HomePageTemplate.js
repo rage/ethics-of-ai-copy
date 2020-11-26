@@ -19,6 +19,11 @@ const ContentWrapper = styled.article`
   margin: 0;
   font-family: "Montserrat", sans-serif;
 
+  ${respond.mobile`
+  margin: 0;
+  padding: 0;
+`}
+
   ${respond.xs`
 
     margin: 0

@@ -88,7 +88,12 @@ In addition, Al actors can be defined as any actors involved in at least one sta
 
 </text-box>
 
-Now, it is your turn to think about these questions.
+AI is developing fast. While nobody can say for certain how it will impact our lives, we still can make a difference. As is the case with most emerging technologies, there are real risks. Still, if artificial intelligence is developed and deployed in ethically sustainable ways, AI may bring many positive consequences -- not only for individuals, or societies, but for the planet as a whole. The direction of development, however, depends only on us.
+
+“Choice, not chance, determines your destiny.”
+>**-Aristotle**
+
+<img src="./p-p-f-01.svg" alt="Future"> </img>
 
 <quiz id="6453e3a5-b333-4088-9a62-4f51c99000cc"> </quiz>
 

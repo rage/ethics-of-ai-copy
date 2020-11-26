@@ -13,6 +13,10 @@ const PlaceHolderContainer = styled.div`
   align-item: center;
   display: grid;
   align-content: center;
+
+  ${respond.mobile`
+  padding: 0;
+`}
 `
 const PlaceHolderText = styled.div`
   font-size: 1rem;
@@ -22,6 +26,12 @@ const PlaceHolderText = styled.div`
   color: #333;
   font-weight: 400;
   opacity: 0.9;
+
+  ${respond.mobile`
+  width: 100%;
+  line-height: 1.8rem;
+  padding: 30px;
+`}
 
   ${respond.xs`
     font-size: 1.4rem;
