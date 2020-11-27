@@ -20,6 +20,10 @@ const TopBarWrapper = styled.div`
   width: 100%;
 `
 
+const StyledLogin = styled.div`
+  margin-left: 80px;
+`
+
 export default function Navbar(props) {
   const [clicked, setClicked] = useState(false)
 
@@ -36,9 +40,9 @@ export default function Navbar(props) {
           <div className="menu-icon" onClick={() => setClicked(!clicked)}>
             <Hamburger> </Hamburger>
           </div>
-          <div>
+          <StyledLogin>
             <LoginControls />
-          </div>
+          </StyledLogin>
         </TopBarWrapper>
       </nav>
     </div>

@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+  margin: 0 4rem;
 }
 
 .NavbarItems h1 {
@@ -146,14 +147,14 @@ ul {
 
   .navbar-logo {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 6px;
+    left: -20px;
     padding-left: 10px;
     transform: translate(50%, 35%);
   }
 
   .menu-icon {
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
