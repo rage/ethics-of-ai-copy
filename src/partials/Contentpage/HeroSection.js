@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 
 import heroSvg from "../../images/hero-svg.svg"
-import smallHeroSvg from "../../images/hero-svg-mobile.svg"
 import ImageImporter from "./ImageImporter"
 import { respond } from "../../_respond"
 import H2 from "../Headers/H2"

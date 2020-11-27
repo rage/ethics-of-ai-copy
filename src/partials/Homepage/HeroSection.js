@@ -9,7 +9,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding-bottom: 1rem;
 `
 
@@ -48,7 +48,7 @@ const BigText = styled.h1`
 
 const HeroText = styled.div`
   color: #333;
-  font-size: 20px;
+  font-size: 1.6rem;
   line-height: 1.8;
   font-weight: 400;
   width: 60%;
@@ -57,11 +57,13 @@ const HeroText = styled.div`
 
   ${respond.mobile`
   width: 100%;
+  font-size: 1.1rem;
   padding: 0 20px;
 `}
 
   ${respond.xs`
-  width: 100%;;
+  width: 100%;
+  font-size: 1.6rem;
 `}
 
   ${respond.lg`
