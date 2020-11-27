@@ -24,6 +24,12 @@ const HeroSection = styled.div`
   }
   margin-bottom: 4rem;
 
+  ${respond.mobile`
+  width: 100%;
+  margin: 0;
+  padding: 0;
+`}
+
   ${respond.lg`
   width: 100%;
   padding: 4rem 2rem 4rem 10rem;
@@ -45,6 +51,10 @@ const TextWrapper = styled.div`
   width: 100%;
   padding: 0;
 `}
+
+  ${respond.mobile`
+  padding: 1rem;
+  `}
 `
 
 const HeroText = styled.div`
@@ -55,6 +65,7 @@ const HeroText = styled.div`
   display: grid;
 
   ${respond.mobile`
+  font-size: 1rem;
   width: 100%;
 `}
 
