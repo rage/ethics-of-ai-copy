@@ -29,7 +29,7 @@ banner: false
 </course-grid-card>
     <course-grid-card title="chapter05" url="chapter-5/1-introduction">
 
-<course-grid-text><H4>Chapter 5: Human rights</H4><span>Should AI respect and promote them?</span></course-grid-text>
+<course-grid-text><H4>Chapter 5: Human rights</H4><span>Should AI respect and promote the rights?</span></course-grid-text>
 
 </course-grid-card>
     <course-grid-card title="chapter06" url="chapter-6/1-what-is-fairness">
