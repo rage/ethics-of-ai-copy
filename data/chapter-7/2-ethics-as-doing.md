@@ -6,9 +6,6 @@ hidden: false
 
 <hero-icon heroIcon='chap7'/>
 
-<styled-text>
-
-<p style="color:red;">How ethics guidelines can create expectations and impact the discussion about AI ethics. </p>
 
 <br>
 

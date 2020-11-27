@@ -54,7 +54,6 @@ const TextWrapper = styled.div`
   width: 100%;
   padding: 0 1rem;
 `}
-
 `
 
 const HeroText = styled.div`
