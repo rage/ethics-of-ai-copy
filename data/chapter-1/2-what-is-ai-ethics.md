@@ -64,7 +64,4 @@ Second Laws.
 
 These days, AI ethics is a more general field, and closer to engineering ethics: we don’t have to assume the machine is an ethical agent to analyze its ethics. Research in the field of AI ethics ranges from reflections on how ethical or moral principles can be implemented in autonomous machines to the empirical analysis on how trolley problems are solved, the systematic analysis of ethical principles such as fairness, and the critical evaluation of ethical frameworks.
 
-These days, AI ethics is a more general field, and closer to engineering ethics: we don’t have to assume the machine is an ethical agent to analyze its ethics. Research in the field of AI ethics ranges from reflections on how ethical or moral principles can be implemented in autonomous machines to the empirical analysis on how trolley problems are solved, the systematic analysis of ethical principles such as fairness, and the critical evaluation of ethical frameworks.
-
-
 </styled-text>

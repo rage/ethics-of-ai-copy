@@ -58,7 +58,7 @@ const HeroText = styled.div`
   width: 100%;
 `}
 
-${respond.lg`
+  ${respond.lg`
 width: 90%;
 `}
 `
