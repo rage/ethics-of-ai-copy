@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import heroSvg from "../../images/hero-svg.svg"
+import smallHeroSvg from "../../images/hero-svg-mobile.svg"
 import ImageImporter from "./ImageImporter"
 import { respond } from "../../_respond"
 import H2 from "../Headers/H2"
@@ -25,8 +26,8 @@ const HeroSection = styled.div`
 
   ${respond.mobile`
   width: 100%;
-  padding: 0 1rem;
   margin: 0;
+  padding: 0;
 `}
 
   ${respond.lg`
@@ -46,25 +47,37 @@ const TextWrapper = styled.div`
     padding-top: 5rem;
   }
 
+  ${respond.mobile`
+  padding: 1rem;
+  `}
+
   ${respond.sm`
   width: 100%;
-  padding: 0;
+  padding: 0 1rem;
 `}
 `
 
 const HeroText = styled.div`
-  color: rgba(28, 59, 64, 0.8);
+  color: #26252a;
   font-size: 1.4rem;
-  font-weight: 450;
+  font-weight: 400;
   width: 90%;
   display: grid;
 
   ${respond.mobile`
+  font-size: 1rem;
   width: 100%;
 `}
 
+  ${respond.xs`
+  font-size: 1.4rem;
+  font-weight: 400;
+  width: 90%;
+  `}
+
   ${respond.lg`
-width: 90%;
+  width: 90%;
+  font-size: 1.6rem;
 `}
 `
 

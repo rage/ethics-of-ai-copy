@@ -18,7 +18,7 @@ const Wrapper = styled.aside`
 
   ${respond.mobile`
   width: 100%;
-  padding: 1.6rem 1rem;
+  padding: 1.2rem 0.2rem;
   margin: 4rem 0;
 `}
 
