@@ -20,10 +20,11 @@ banner: false
 
 Artificial intelligence is already a part of our daily lives. When we post pictures to social media, search online or ask questions from chatbots, we’re interacting with AI. Authorities, such as cities, rely on AI for providing public services. And governments are seeking solutions to global problems by using algorithmically produced knowledge. The goal of this course is to help you to develop your own skills for ethical thinking. You can complete the course at your own pace.
 
-
 </placeholder>
 
-<placeholder title="FAQ">
+<div style="max-width:60%; margin: auto;">
+
+## FAQ
 
 ### How to study
 
@@ -45,18 +46,13 @@ The course is worth 2 ECTS credits. Open University enrollment is required for t
 
 ### In case of problems or questions
 
-If you have any questions, or suggestions regarding the course, contact us via email: <grp-ethicsofai@helsinki.fi>.
+If you have any questions, or suggestions regarding the course, contact us via email: <br> <grp-ethicsofai@helsinki.fi>.
 
-Technical issues and questions related to the online learning environment: <mooc@cs.helsinki.fi>
+Technical issues and questions related to the online learning environment: <br> <mooc@cs.helsinki.fi>
 
 Questions related to Open University course enrollment: <br> <avoinyo-tietojenkasittelytiede@helsinki.fi>
 
-<br>
-<br>
-<br>
-<br>
-
-</placeholder>
+</div>
 
 <homepage-grid></homepage-grid>
 
