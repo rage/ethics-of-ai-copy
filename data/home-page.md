@@ -46,9 +46,9 @@ The course is worth 2 ECTS credits. Open University enrollment is required for t
 
 ### In case of problems or questions
 
-If you have any questions, or suggestions regarding the course, contact us via email: <grp-ethicsofai@helsinki.fi>.
+If you have any questions, or suggestions regarding the course, contact us via email: <br> <grp-ethicsofai@helsinki.fi>.
 
-Technical issues and questions related to the online learning environment: <mooc@cs.helsinki.fi>
+Technical issues and questions related to the online learning environment: <br> <mooc@cs.helsinki.fi>
 
 Questions related to Open University course enrollment: <br> <avoinyo-tietojenkasittelytiede@helsinki.fi>
 
