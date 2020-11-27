@@ -23,5 +23,3 @@ Artificial intelligence is already a part of our daily lives. When we post pictu
 <homepage-grid></homepage-grid>
 
 <sponsor-section></sponsor-section>
-
-<course-progress />

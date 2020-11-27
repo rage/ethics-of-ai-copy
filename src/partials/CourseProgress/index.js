@@ -7,7 +7,7 @@ import PleaseLogin from "../PleaseLogin"
 
 const CourseProgress = () => {
   if (!loggedIn()) {
-    return <PleaseLogin />
+    return null
   }
   return (
     <CourseStatusProvider
