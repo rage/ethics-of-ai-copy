@@ -109,7 +109,7 @@ ul ol {
 }
 
 ul li {
-  margin-inline-start: 4em;
+  margin-inline-start: 1em;
   line-height: 2.4;
   font-size: 18px;
 }
@@ -355,9 +355,4 @@ template {
   display: none !important;
 }
 
-@media only screen and (max-device-width : 640px) {
-  ul li {
-    margin-inline-start: 0;
-  }
-  }
 
