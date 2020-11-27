@@ -26,25 +26,13 @@ class QuizPartial extends React.Component {
     if (CourseSettings.language === "fi") {
       languageId = "fi_FI"
     }
-    if (!this.context.loggedIn) {
-      const loginPrompt = (
-        <div style={{ padding: "1rem", textAlign: "center" }}>
-          <p>{t("loginToSeeExercise")}</p>
-          <LoginControls />
-        </div>
-      )
-
-      return (
-        <StyledPaper id={normalizeExerciseId(`quiz-${id}`)}>
-          <Quiz
-            id={id}
-            languageId={languageId}
-            backendAddress="https://quizzes.mooc.fi"
-            customContent={loginPrompt}
-          />
-        </StyledPaper>
-      )
-    }
+    const loginPrompt = (
+      <div style={{ padding: "1rem", textAlign: "center" }}>
+        <h4>{t("loginToSeeExercise")}</h4>
+        <p>{t("loginToSeeExerciseExplanation")}</p>
+        <LoginControls />
+      </div>
+    )
 
     if (!id) {
       return <div>There should be quiz here but no quiz id is specified.</div>
@@ -56,6 +44,7 @@ class QuizPartial extends React.Component {
           languageId={languageId}
           accessToken={accessToken()}
           backendAddress="https://quizzes.mooc.fi"
+          customContent={{ Login: loginPrompt }}
         >
           {this.props.children}
         </Quiz>

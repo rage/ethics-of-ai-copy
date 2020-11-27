@@ -16,28 +16,27 @@ const Wrapper = styled.aside`
   width: 500px;
   max-height: 480px;
 
-
   ${respond.mobile`
   width: 100%;
   padding: 1.4rem 1rem;
   margin: 4rem 0;
 `}
 
-${respond.xs`
+  ${respond.xs`
 width: 500px;
 padding: 3em 2em 7em 2em;
 margin-bottom: 5em;
 `}
 
 h2 {
-  ${respond.mobile`
+    ${respond.mobile`
   font-size: 24px;
   text-transform: uppercase;
 `}
-  ${respond.mobile`
+    ${respond.mobile`
   text-transform: capitalize;
 `}
-}
+  }
 `
 
 const Header = styled.h3`

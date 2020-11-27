@@ -35,7 +35,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 `
 
 const ContentWrapper = styled.article`
-${respond.mobile`
+  ${respond.mobile`
 width: 100%;
 padding: 1rem;
 `}
