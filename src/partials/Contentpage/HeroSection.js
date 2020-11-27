@@ -47,19 +47,20 @@ const TextWrapper = styled.div`
     padding-top: 5rem;
   }
 
-  ${respond.sm`
-  width: 100%;
-  padding: 0;
-`}
-
   ${respond.mobile`
   padding: 1rem;
   `}
+
+  ${respond.sm`
+  width: 100%;
+  padding: 0 1rem;
+`}
+
 `
 
 const HeroText = styled.div`
   color: #26252a;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 400;
   width: 90%;
   display: grid;
@@ -69,8 +70,15 @@ const HeroText = styled.div`
   width: 100%;
 `}
 
+  ${respond.xs`
+  font-size: 1.4rem;
+  font-weight: 400;
+  width: 90%;
+  `}
+
   ${respond.lg`
-width: 90%;
+  width: 90%;
+  font-size: 1.6rem;
 `}
 `
 
