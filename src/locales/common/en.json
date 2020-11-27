@@ -20,6 +20,7 @@
     "sampleOutput":"Sample output",
     "sampleData":"Sample data",
     "loginToSeeExercise":"Login to view the exercise",
+    "loginToSeeExerciseExplanation": "If you have done other MOOC.fi courses offered by University of Helsinki (such as Elements of AI), you can use your existing account to log in.",
     "pleaseLogin":"You are not logged in. Some parts of the material are only for logged in users. You can log in here: ",
     "inThisSection":"In this part:" ,
     "programmingExercise":"Programming exercise:",
