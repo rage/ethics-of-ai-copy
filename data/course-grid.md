@@ -45,4 +45,4 @@ banner: false
 
 </course-grid>
 
-
+<course-progress></course-progress>
