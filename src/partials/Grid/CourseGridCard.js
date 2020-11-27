@@ -49,16 +49,12 @@ const CourseGridText = styled.div`
   color: #333;
   padding: 2rem;
 
-  h3 {
-    font-family: "Work Sans", sans-serif;
-    font-size: clamp(20px, 2vw, 30px);
-    color: #26252a;
-    font-weight: 600;
+  H4 {
     margin-bottom: 0.5rem;
   }
 
   span {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.8;
     color: #333;
