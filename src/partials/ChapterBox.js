@@ -18,7 +18,7 @@ const Wrapper = styled.aside`
 
   ${respond.mobile`
   width: 100%;
-  padding: 1.4rem 1rem;
+  padding: 1.6rem 1rem;
   margin: 4rem 0;
 `}
 
@@ -30,10 +30,10 @@ margin-bottom: 5em;
 
 h2 {
     ${respond.mobile`
-  font-size: 24px;
+  font-size: 22px;
   text-transform: uppercase;
 `}
-    ${respond.mobile`
+    ${respond.xs`
   text-transform: capitalize;
 `}
   }
