@@ -50,7 +50,7 @@ const Label = styled.div`
 
   span:last-child{
     justify-self: end;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.8em;
   }
 `

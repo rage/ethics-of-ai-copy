@@ -46,7 +46,7 @@ const ButtonContainer = styled.div`
 `
 
 const FooterWrapper = styled.footer`
-  height: 35rem;
+  height: 25rem;
   position: relative;
   a {
     color: #006fe6;
@@ -61,8 +61,7 @@ const FooterBackground = styled.div`
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: url(${BackgroundImage});
-  filter: invert(1) grayscale(1) brightness(1.5) opacity(0.5);
+  background: #A5C4C6;
   z-index: -50000;
 `
 
