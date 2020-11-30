@@ -6,7 +6,7 @@ import styled from "styled-components"
 
 const BorderLinearProgress = withStyles((theme) => ({
   root: {
-    height: 18,
+    height: 16,
     borderRadius: 10,
     marginBottom: theme.spacing(3),
   },
@@ -61,7 +61,7 @@ const ProgresssBar = ({ n, max, point, label }) => {
   return (
     <div>
       <Label>
-        <span>{label}</span> <span>{n ? Math.round(ExerciseScaled)+"%  Completed" : `${point} / ${max}`}</span>
+        <span>{label}</span> <span>{n ? Math.round(ExerciseScaled)+"%  Complete" : `${point} / ${max}`}</span>
       </Label>
     <BorderLinearProgress variant="determinate" value={n?ExerciseScaled: PointScaled} />
     </div>

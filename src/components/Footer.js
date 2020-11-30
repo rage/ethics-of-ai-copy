@@ -61,7 +61,7 @@ const FooterBackground = styled.div`
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: rgb(32, 33, 36);
+  background: #A5C4C6;
   z-index: -50000;
 `
 

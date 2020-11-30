@@ -7,6 +7,16 @@ import { withTranslation } from "react-i18next"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight as icon } from "@fortawesome/free-solid-svg-icons"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
+import { green } from "@material-ui/core/colors"
+
+const SectionWrapper = styled.div`
+  background: #f1f1f1;
+  padding: 2rem;
+
+  font {
+    color: green;
+  }
+`
 
 const StyledLink = styled(Link)`
   color: black;
@@ -47,6 +57,7 @@ const ChapterSubsectionChooser = {
   4: "IV",
   5: "V",
 }
+
 
 class EndOfSubSection extends React.Component {
   render() {
@@ -106,7 +117,7 @@ class EndOfSubSection extends React.Component {
             })
 
           return (
-            <div>
+            <SectionWrapper>
               {this.props.t("endReached")}{" "}
               {nextPart && (
                 <Fragment>
@@ -131,7 +142,7 @@ class EndOfSubSection extends React.Component {
                   </ButtonWrapper>
                 </Fragment>
               )}
-            </div>
+            </SectionWrapper>
           )
         }}
       </PagesContext.Consumer>
