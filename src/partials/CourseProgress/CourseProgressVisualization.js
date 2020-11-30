@@ -9,9 +9,23 @@ import {
 import { LinearProgress } from "@material-ui/core"
 import styled from "styled-components"
 import ProgressBar from "./ProgressBar"
+import { respond } from "../../_respond"
 
 const ProgressContainer = styled.div`
   margin: 5rem 10rem;
+
+${respond.mobile`
+  margin: 5rem 2rem;
+`}
+  ${respond.xs`
+  margin: 5rem 3rem;
+`} ${respond.sm`
+  margin: 5rem 5rem;
+`} ${respond.md`
+  margin: 5rem 10rem;
+`} ${respond.lg`
+  margin: 5rem 10rem;
+`};
 `
 
 const CourseProgressVisualization = () => {
@@ -33,7 +47,7 @@ const CourseProgressVisualization = () => {
 
   return (
     <ProgressContainer>
-      <ProgressBar label="Totals Points" n={n_points} max={max_points} />
+      <ProgressBar label="Totals Points" point={n_points} max={max_points} />
       <ProgressBar
         label="Total Exercises"
         n={exercise_completions}

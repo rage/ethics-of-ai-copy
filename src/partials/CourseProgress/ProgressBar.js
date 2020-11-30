@@ -8,7 +8,7 @@ const BorderLinearProgress = withStyles((theme) => ({
   root: {
     height: 18,
     borderRadius: 10,
-    marginBottom: theme.spacing(2),
+    marginBottom: theme.spacing(3),
   },
   colorPrimary: {
     backgroundColor: theme.palette.grey[theme.palette.type === 'light' ? 200 : 700],
@@ -51,18 +51,18 @@ const Label = styled.div`
   span:last-child{
     justify-self: end;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.8em;
   }
 `
 
-const ProgresssBar = ({ n, max, label }) => {
-  const pointsScaled = (n / max) * 100
+const ProgresssBar = ({ n, max, point, label }) => {
+  const ExerciseScaled = (n / max) * 100
   return (
     <div>
       <Label>
-        <span>{label}</span> <span>{Math.round(pointsScaled)+"%  Completed"}</span>
+        <span>{label}</span> <span>{n ? Math.round(ExerciseScaled)+"%  Completed" : `${point} / ${max}`}</span>
       </Label>
-    <BorderLinearProgress variant="determinate" value={pointsScaled} />
+    <BorderLinearProgress variant="determinate" value={ExerciseScaled} />
     </div>
   )
 }
