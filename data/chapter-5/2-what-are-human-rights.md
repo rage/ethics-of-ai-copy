@@ -14,7 +14,7 @@ Human rights are norms that protect all people, everywhere from political, legal
 
 * Civil and political rights, such as the right to life, liberty, and property, freedom of expression, pursuit of happiness, and equality before the law
 * Social, cultural and economic rights, including the right to participate in science and culture, the right to work, and the right to education
-The role of human rights is to protect people's ability to form, construe, and pursue their own conceptions of a worthwhile life, not just the ability to live “in liberty, happiness and well-being”.
+The role of human rights is to protect people's ability to form, construe, and pursue their own conceptions of a worthwhile life – it's not just about the ability to live “in liberty, happiness and well-being”.
 
 </styled-text>
 

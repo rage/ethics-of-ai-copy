@@ -14,7 +14,7 @@ import { respond } from "../../_respond"
 const ProgressContainer = styled.div`
   margin: 5rem 10rem;
 
-${respond.mobile`
+  ${respond.mobile`
   margin: 5rem 2rem;
 `}
   ${respond.xs`

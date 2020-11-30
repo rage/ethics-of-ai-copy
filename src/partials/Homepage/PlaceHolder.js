@@ -27,7 +27,7 @@ const PlaceHolderText = styled.div`
   opacity: 0.9;
   font-weight: 400;
 
-    ${respond.mobile`
+  ${respond.mobile`
     width: 100%;
     padding: 0 30px;
     font-size: 1rem;
