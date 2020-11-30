@@ -58,7 +58,7 @@ const TextWrapper = styled.div`
 
 const HeroText = styled.div`
   color: #26252a;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
   width: 90%;
   display: grid;
@@ -76,7 +76,7 @@ const HeroText = styled.div`
 
   ${respond.lg`
   width: 90%;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 `}
 `
 

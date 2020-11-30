@@ -16,11 +16,7 @@ banner: false
 <teaser-card icon="weigh">Learn how to combine ethical concepts and theories with AI by doing practical exercises.</teaser-card>
 </teaser-question>
 
-<placeholder title="AI is becoming ever more relevant">
-
-Artificial intelligence is already a part of our daily lives. When we post pictures to social media, search online or ask questions from chatbots, we’re interacting with AI. Authorities, such as cities, rely on AI for providing public services. And governments are seeking solutions to global problems by using algorithmically produced knowledge. The goal of this course is to help you to develop your own skills for ethical thinking. You can complete the course at your own pace.
-
-</placeholder>
+<placeholder title="AI is becoming ever more relevant" bodycopy="Artificial intelligence is already a part of our daily lives. When we post pictures to social media, search online or ask questions from chatbots, we’re interacting with AI. Authorities, such as cities, rely on AI for providing public services. And governments are seeking solutions to global problems by using algorithmically produced knowledge. The goal of this course is to help you to develop your own skills for ethical thinking. You can complete the course at your own pace." ></placeholder>
 
 <div style="max-width:60%; margin: auto;">
 

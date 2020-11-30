@@ -20,17 +20,18 @@ const PlaceHolderContainer = styled.div`
 `
 const PlaceHolderText = styled.div`
   font-size: 1rem;
-  line-height: 2;
-  width: 80%;
-  margin: 0rem auto;
-  color: #333;
-  font-weight: 400;
+  line-height: 1.7;
+  width: 50%;
+  margin: 0 auto;
+  color: #202020;
   opacity: 0.9;
+  font-weight: 400;
 
-  ${respond.mobile`
-  width: 100%;
-  padding: 30px;
-`}
+    ${respond.mobile`
+    width: 100%;
+    padding: 0 30px;
+    font-size: 1rem;
+  `}
 
   ${respond.xs`
     font-size: 1.4rem;
@@ -46,7 +47,7 @@ export default (props) => {
   return (
     <PlaceHolderContainer>
       <H2> {props.title} </H2>{" "}
-      <PlaceHolderText> {props.children} </PlaceHolderText>{" "}
+      <PlaceHolderText> {props.bodycopy} </PlaceHolderText>{" "}
     </PlaceHolderContainer>
   )
 }

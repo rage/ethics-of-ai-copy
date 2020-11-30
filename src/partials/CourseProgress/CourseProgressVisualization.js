@@ -33,9 +33,9 @@ const CourseProgressVisualization = () => {
 
   return (
     <ProgressContainer>
-      <ProgressBar label="Points" n={n_points} max={max_points} />
+      <ProgressBar label="Totals Points" n={n_points} max={max_points} />
       <ProgressBar
-        label="Exercises"
+        label="Total Exercises"
         n={exercise_completions}
         max={total_exercises}
       />

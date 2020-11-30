@@ -54,10 +54,11 @@ const CourseGridText = styled.div`
   }
 
   span {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.8;
     color: #333;
+    opacity: 0.9;
   }
 `
 

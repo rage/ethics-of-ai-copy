@@ -48,8 +48,8 @@ const BigText = styled.h1`
 
 const HeroText = styled.div`
   color: #333;
-  font-size: 1.6rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.7;
   font-weight: 400;
   width: 60%;
   display: grid;
@@ -63,7 +63,7 @@ const HeroText = styled.div`
 
   ${respond.xs`
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 `}
 
   ${respond.lg`
