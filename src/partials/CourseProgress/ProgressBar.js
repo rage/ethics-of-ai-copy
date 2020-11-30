@@ -6,14 +6,15 @@ import styled from "styled-components"
 
 const BorderLinearProgress = withStyles((theme) => ({
   root: {
-    height: 10,
-    borderRadius: 5,
+    height: 18,
+    borderRadius: 10,
+    marginBottom: theme.spacing(2),
   },
   colorPrimary: {
     backgroundColor: theme.palette.grey[theme.palette.type === 'light' ? 200 : 700],
   },
   bar: {
-    borderRadius: 5,
+    borderRadius: 10,
     backgroundColor: '#C59C5C',
   },
 }))(LinearProgress);
@@ -37,14 +38,20 @@ const Label = styled.div`
   font-weight: 500;
   margin-right: 1rem;
   display: grid;
+  margin-bottom: 0.4rem;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 
   span:first-of-type {
     justify-self: start;
+    font-size: 1.2em;
+    font-weight: 400;
   }
 
   span:last-child{
     justify-self: end;
+    font-weight: 600;
+    font-size: 1rem;
   }
 `
 
