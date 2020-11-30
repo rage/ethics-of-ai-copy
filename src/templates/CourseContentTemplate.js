@@ -117,7 +117,7 @@ export default class CourseContentTemplate extends React.Component {
         "Why is transparency in AI important and what major issues are affected by transparency –  and what are some of the risks associated with transparency in AI systems?",
       ],
       5: [
-        "Should AI respect and promote them?",
+        "Should AI respect and promote rights?",
         "What are human rights, and how do they tie into the current ethical guidelines and principles of AI? We’ll also look more closely at three rights of particular importance to AI: the right to privacy, security, and inclusion.",
       ],
       6: [
