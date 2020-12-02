@@ -62,7 +62,10 @@ const ProgresssBar = ({ n, max, point, label }) => {
   return (
     <div>
       <Label>
-        <span>{label}</span> <span>{n ? Math.round(ExerciseScaled)+"%  Complete" : `${point} / ${max}`}</span>
+        <span>{label}</span>{" "}
+        <span>
+          {n ? Math.round(ExerciseScaled) + "%  Complete" : `${point} / ${max}`}
+        </span>
       </Label>
       <BorderLinearProgress
         variant="determinate"

@@ -21,7 +21,7 @@ const SectionWrapper = styled.div`
     dislay: flex;
   }
 
-  p:nth-child(1){
+  p:nth-child(1) {
     font-size: 2rem;
     font-weight: 500;
   }
@@ -69,7 +69,6 @@ const ChapterSubsectionChooser = {
   4: "IV",
   5: "V",
 }
-
 
 class EndOfSubSection extends React.Component {
   render() {
@@ -130,10 +129,10 @@ class EndOfSubSection extends React.Component {
 
           return (
             <SectionWrapper>
-              <p>{this.props.t("endReached")}{" "}</p>
+              <p>{this.props.t("endReached")} </p>
               {nextPart && (
                 <Fragment>
-                  <p>{this.props.t("continueToNext")}{" "}</p>
+                  <p>{this.props.t("continueToNext")} </p>
                   <ButtonWrapper>
                     <StyledLink to={nextPart.path}>
                       <StyledIcon icon={icon} />
