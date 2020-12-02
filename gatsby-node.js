@@ -6,6 +6,21 @@
 
 const path = require("path")
 
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /mathjax-react/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+}
+
 exports.createPages = ({
   actions,
   graphql
@@ -104,6 +119,7 @@ exports.createPages = ({
         // To prevent a bug that happens in development from time to time
         return;
       }
+
       createPage({
         path: node.frontmatter.path,
         component: template,

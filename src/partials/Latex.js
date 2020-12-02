@@ -1,10 +1,10 @@
 import React from "react"
-import LatexEngine from "../components/LatexEngine"
+import { MathComponent } from "mathjax-react"
 
 const Latex = (props) => {
   return (
     <div>
-      <LatexEngine math={props.children}> </LatexEngine>
+      <MathComponent tex={String.raw`${props.children}`} />
     </div>
   )
 }
