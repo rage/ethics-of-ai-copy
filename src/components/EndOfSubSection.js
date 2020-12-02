@@ -5,35 +5,47 @@ import { nthIndex } from "../util/strings"
 import { Link } from "gatsby"
 import { withTranslation } from "react-i18next"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowRight as icon } from "@fortawesome/free-solid-svg-icons"
+import { faAngleRight as icon } from "@fortawesome/free-solid-svg-icons"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import { green } from "@material-ui/core/colors"
 
 const SectionWrapper = styled.div`
-  background: #f1f1f1;
+  background: #f0f0f0;
   padding: 2rem;
 
-  font {
-    color: green;
+  p {
+    font-size: 1.4rem;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    dislay: flex;
+  }
+
+  p:nth-child(1){
+    font-size: 2rem;
+    font-weight: 500;
   }
 `
 
 const StyledLink = styled(Link)`
-  color: black;
+  color: white;
   text-decoration: none;
   padding: 1rem;
-  border-radius: 0.25rem;
   margin: 1rem 0;
   display: inline-block;
-  width: 100%;
-  border-radius: 10px;
-  background-color: rgba(207, 225, 255, 0.5);
+  min-width: 30%;
+  border-radius: 50px;
+  background-color: #333;
   transition: background-color 0.2s;
 
   &:hover {
     text-decoration: none;
-    color: black;
-    background-color: rgba(130, 177, 255);
+    color: white;
+    background-color: #333;
+  }
+
+  span {
+    color: white !important;
   }
 `
 
@@ -42,7 +54,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
   margin-right: 1rem;
   margin-left: 0.5rem;
   color: var(--color);
-  font-size: 1.5em;
+  font-size: 1.6em;
 `
 
 const ButtonWrapper = styled.div`
@@ -118,15 +130,14 @@ class EndOfSubSection extends React.Component {
 
           return (
             <SectionWrapper>
-              {this.props.t("endReached")}{" "}
+              <p>{this.props.t("endReached")}{" "}</p>
               {nextPart && (
                 <Fragment>
-                  {this.props.t("continueToNext")}{" "}
+                  <p>{this.props.t("continueToNext")}{" "}</p>
                   <ButtonWrapper>
                     <StyledLink to={nextPart.path}>
                       <StyledIcon icon={icon} />
-                      {ChapterSubsectionChooser[currentPageIndex + 2]}.{" "}
-                      {nextPart.title}
+                      <span>Next section</span>
                     </StyledLink>
                   </ButtonWrapper>
                 </Fragment>
