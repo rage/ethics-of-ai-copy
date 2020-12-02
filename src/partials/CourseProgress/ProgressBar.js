@@ -1,6 +1,6 @@
 import React from "react"
-import { makeStyles, withStyles } from '@material-ui/core/styles';
-import LinearProgress from '@material-ui/core/LinearProgress';
+import { makeStyles, withStyles } from "@material-ui/core/styles"
+import LinearProgress from "@material-ui/core/LinearProgress"
 /* import { LinearProgress } from "@material-ui/core"; */
 import styled from "styled-components"
 
@@ -11,13 +11,14 @@ const BorderLinearProgress = withStyles((theme) => ({
     marginBottom: theme.spacing(3),
   },
   colorPrimary: {
-    backgroundColor: theme.palette.grey[theme.palette.type === 'light' ? 200 : 700],
+    backgroundColor:
+      theme.palette.grey[theme.palette.type === "light" ? 200 : 700],
   },
   bar: {
     borderRadius: 10,
-    backgroundColor: '#C59C5C',
+    backgroundColor: "#C59C5C",
   },
-}))(LinearProgress);
+}))(LinearProgress)
 /* const StyledLinearProgress = styled(LinearProgress)`
   height: 30px;
   flex: 1;
@@ -48,7 +49,7 @@ const Label = styled.div`
     font-weight: 400;
   }
 
-  span:last-child{
+  span:last-child {
     justify-self: end;
     font-weight: 700;
     font-size: 0.8em;
@@ -63,7 +64,10 @@ const ProgresssBar = ({ n, max, point, label }) => {
       <Label>
         <span>{label}</span> <span>{n ? Math.round(ExerciseScaled)+"%  Complete" : `${point} / ${max}`}</span>
       </Label>
-    <BorderLinearProgress variant="determinate" value={n?ExerciseScaled: PointScaled} />
+      <BorderLinearProgress
+        variant="determinate"
+        value={n ? ExerciseScaled : PointScaled}
+      />
     </div>
   )
 }
