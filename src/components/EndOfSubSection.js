@@ -30,10 +30,10 @@ const SectionWrapper = styled.div`
 const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
-  padding: 1rem;
+  padding: 1rem 1.4rem;
   margin: 1rem 0;
   display: inline-block;
-  min-width: 30%;
+  min-width: 24%;
   border-radius: 50px;
   background-color: #333;
   transition: background-color 0.2s;
@@ -60,6 +60,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 const ButtonWrapper = styled.div`
   display: flex;
   align-items: center;
+  margin-top: 0.5rem;
 `
 
 const ChapterSubsectionChooser = {
@@ -148,7 +149,7 @@ class EndOfSubSection extends React.Component {
                   <ButtonWrapper>
                     <StyledLink to={nextSectionPages[0].path}>
                       <StyledIcon icon={icon} />
-                      Chapter {currentChapter + 1}. {nextSectionPages[0].title}
+                      <span>Next chapter</span>
                     </StyledLink>
                   </ButtonWrapper>
                 </Fragment>
