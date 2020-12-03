@@ -62,6 +62,8 @@
     "jszip": "^3.2.2",
     "jszip-utils": "^0.1.0",
     "likert-react": "0.0.0-beta6",
+    "mathjax-full": "^3.1.2",
+    "mathjax-react": "^1.0.6",
     "moment": "^2.24.0",
     "monaco-editor": "^0.20.0",
     "moocfi-python-editor": "^0.7.24",

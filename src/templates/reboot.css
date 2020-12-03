@@ -114,9 +114,9 @@ ul li {
   font-size: 18px;
 }
 ol li {
-  margin-inline-start: 0.4em;
-  line-height: 2.4;
-  font-size: 18px;
+  margin-inline-start: 1em;
+  line-height: 1.89;
+  font-size: 1.125rem;
 }
 
 dt {
