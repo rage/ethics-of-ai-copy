@@ -30,7 +30,7 @@ const ProgressContainer = styled.div`
 `};
 
   small {
-    color: #333;
+    color: #757575;
   }
 `
 
@@ -59,7 +59,7 @@ const CourseProgressVisualization = () => {
         n={exercise_completions}
         max={total_exercises}
       />
-      <small>Please not that you'll get points from peer reviewed exercises only after others have reviewed your answer.</small>
+      <small>Please note that you'll get points from a peer reviewed exercise after others have reviewed your answer.</small>
     </ProgressContainer>
   )
 }
