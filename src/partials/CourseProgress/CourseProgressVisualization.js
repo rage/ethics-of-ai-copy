@@ -28,6 +28,10 @@ const ProgressContainer = styled.div`
   margin: 5rem auto;
   max-width: 1140px;
 `};
+
+  small {
+    color: #333;
+  }
 `
 
 const CourseProgressVisualization = () => {
@@ -44,9 +48,8 @@ const CourseProgressVisualization = () => {
     total_exercises,
     max_points,
     n_points,
-    // completed,
+    completed,
   } = data.courseProgressData
-const completed = true
   return (
     <ProgressContainer>
       { completed && <Completed /> }
@@ -56,6 +59,7 @@ const completed = true
         n={exercise_completions}
         max={total_exercises}
       />
+      <small>Please not that you'll get points from peer reviewed exercises only after others have reviewed your answer.</small>
     </ProgressContainer>
   )
 }
