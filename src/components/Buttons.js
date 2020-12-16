@@ -38,7 +38,7 @@ const StyledButton = styled.button`
     text-decoration: none;
   }
 `
-const Primary = styled(StyledButton)`
+export const Primary = styled(StyledButton)`
   background: #333;
   color: #fff;
 `
