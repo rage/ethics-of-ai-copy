@@ -38,6 +38,8 @@ Because we want to continuously improve the course filling the course feedback f
 
 The course certificate is available to all who pass the course. You can download your certificate from your [mooc.fi profile](https://www.mooc.fi/en/profile/completions). No Open University course enrollment is required to access the certificate.
 
+**Certificate is not yet available. You should be able get it in early January.**
+
 The course is worth 2 ECTS credits. Open University enrollment is required for the credits.
 
 ### In case of problems or questions
