@@ -52,4 +52,6 @@ Questions related to Open University course enrollment: <br> <avoinyo-tietojenka
 
 <homepage-grid></homepage-grid>
 
+<about-section></about-section>
+
 <sponsor-section></sponsor-section>
