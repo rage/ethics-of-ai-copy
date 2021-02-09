@@ -6,6 +6,8 @@ hide_in_sidebar: true
 banner: false
 ---
 
+<course-progress></course-progress>
+
 <course-grid>
     <course-grid-card title="chapter01" url="chapter-1/1-a-guide-to-ai-ethics">
 
@@ -44,5 +46,3 @@ banner: false
 </course-grid-card>
 
 </course-grid>
-
-<course-progress></course-progress>

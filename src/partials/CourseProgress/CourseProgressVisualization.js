@@ -10,6 +10,7 @@ import { LinearProgress } from "@material-ui/core"
 import styled from "styled-components"
 import ProgressBar from "./ProgressBar"
 import { respond } from "../../_respond"
+import Completed from "./Completed"
 
 const ProgressContainer = styled.div`
   margin: 5rem 10rem;
@@ -24,8 +25,13 @@ const ProgressContainer = styled.div`
 `} ${respond.md`
   margin: 5rem 10rem;
 `} ${respond.lg`
-  margin: 5rem 10rem;
+  margin: 5rem auto;
+  max-width: 1140px;
 `};
+
+  small {
+    color: #757575;
+  }
 `
 
 const CourseProgressVisualization = () => {
@@ -44,15 +50,19 @@ const CourseProgressVisualization = () => {
     n_points,
     completed,
   } = data.courseProgressData
-
   return (
     <ProgressContainer>
+      {completed && <Completed />}
       <ProgressBar label="Totals Points" point={n_points} max={max_points} />
       <ProgressBar
         label="Total Exercises"
         n={exercise_completions}
         max={total_exercises}
       />
+      <small>
+        Please note that you'll get points from a peer reviewed exercise after
+        others have reviewed your answer.
+      </small>
     </ProgressContainer>
   )
 }
