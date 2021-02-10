@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import heroSvg from "../../images/hero-svg.svg"
+import heroSvg from "../../images/hero-svg1.svg"
 import ImageImporter from "../Contentpage/ImageImporter"
 import { respond } from "../../_respond"
 import H2 from "../Headers/H2"
@@ -11,7 +11,7 @@ const HeroSection = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: black;
+  background-color: #1c1c1c;
   height: 50vh;
   padding: 4rem 2rem 4rem 10rem;
   display: flex;
@@ -32,7 +32,7 @@ const HeroSection = styled.div`
 
   ${respond.lg`
   width: 100%;
-  padding: 4rem 2rem 4rem 10rem;
+  padding: 4rem 10rem 4rem 10rem;
 `}
 `
 const TextWrapper = styled.div`
@@ -63,6 +63,8 @@ const HeroText = styled.div`
   font-weight: 400;
   width: 90%;
   display: grid;
+  margin: 0 auto;
+  opacity: 0.9;
 
   ${respond.mobile`
   font-size: 1rem;
@@ -76,7 +78,7 @@ const HeroText = styled.div`
   `}
 
   ${respond.lg`
-  width: 90%;
+  width: 60%;
   font-size: 1.2rem;
 `}
 `
@@ -88,7 +90,7 @@ export default (props) => {
       <HeroSection>
         <TextWrapper>
           <H2>
-            <a style={{ color: "white", fontFamily: "Work Sans" }}>
+            <a style={{ color: "white", fontFamily: "Montserrat" }}>
               About the Contributors
             </a>
           </H2>

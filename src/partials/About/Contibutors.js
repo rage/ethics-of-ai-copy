@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
+import H3 from "../Headers/H3"
 import Anna from "../../images/contributors/amr_foto.jpg"
 import Jukka from "../../images/contributors/jukka_nurminen.jpg"
 import Santeri from "../../images/contributors/santeri_raisanen.jpg"
@@ -18,20 +19,31 @@ const contributors = [
 const Wrapper = styled.div`
   margin: 4rem 10rem;
   text-align: left;
-`
 
-const CourseGridSVG = styled.div`
-  width: 100%;
-  height: 60%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  padding: 60px;
-  background: #f6ebe8;
+  h3 {
+      padding: 2rem 0 1rem 0;
+      font-weight: 600;
+      font-size: 30px;
+      font-family: Montserrat;
+  }
 `
 
 const Grid = styled.div`
 display: grid;
-grid-template-columns: 0.5fr 1fr;
+grid-template-columns: auto 1fr;
+grid-gap: 3rem;
+
+span {
+    font-size: 1.125rem;
+    line-height: 1.68;
+}
+
+h5 {
+    color: #333;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    margin-bottom: 0.4rem;
+}
 `
 
 const CourseGridText = styled.div`
@@ -58,33 +70,32 @@ export default (props) => {
   return (
     <>
         <Wrapper>
-        <h2>Responsible Teacher</h2>
+        <h3>Responsible Teacher</h3>
           <div>{contributors.slice(0,2).map(t =>(
               <div>
 
               <Grid>
                 <img src={t.url} alt={t.name} width="223px"/>
                 <div>
-                    <h4>{t.name}</h4>
+                    <h5>{t.name}</h5>
                     <span>{t.description}</span>
                 </div>
               </Grid>
               </div>
           ))}</div>
 
-        <h2>Other main contributors</h2>
+        <h3>Other main contributors</h3>
           <div>{contributors.slice(2,5).map(o =>(
             <div>
               <Grid>
-                <img src={o.url} alt={o.name} />
+                <img src={o.url} alt={o.name} width="223px"/>
                 <div>
-                    <h4>{o.name}</h4>
+                    <h5>{o.name}</h5>
                     <span>{o.description}</span>
                 </div>
               </Grid>
             </div>
           ))}</div>
-          <CourseGridText> These are the members of the super team :)</CourseGridText>{" "}
         </Wrapper>{" "}
     </>
   )
