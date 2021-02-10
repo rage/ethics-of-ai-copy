@@ -93,6 +93,7 @@ import Title from "./Title"
 import BigFive from "./BigFive"
 import StyledText from "./StyledText"
 import Latex from "./Latex"
+import AboutContent from "./About/index"
 
 const mapping = {
   test: Test,
@@ -128,6 +129,7 @@ const mapping = {
   "teaser-card": TeaserCard,
   "hero-section": HeroSection,
   "about-section": AboutSection,
+  "about-content": AboutContent,
   "sponsor-section": SponsorSection,
   placeholder: PlaceHolder,
   header: Header,

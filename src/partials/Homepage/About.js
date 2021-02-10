@@ -45,20 +45,22 @@ const ImageWrapper = styled.div`
 
 export default (props) => {
   return (
+    <a href="/about-course" style={{ textDecoration: "none" }}>
     <Container>
       <AboutTextBox>
         <H2> About... </H2>
-        <span> Brief Descrription of the Authors. </span>{" "}
+        <span> Brief Descrription of the Authors. </span>
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero. tempor invidunt ut labore et dolore magna
           aliquyam erat, sed diam voluptua. At vero.
-        </p>{" "}
-      </AboutTextBox>{" "}
+        </p>
+      </AboutTextBox>
       <ImageWrapper>
         <div></div>
-      </ImageWrapper>{" "}
+      </ImageWrapper>
     </Container>
+    </a>
   )
 }
