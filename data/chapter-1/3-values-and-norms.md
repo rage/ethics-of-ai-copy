@@ -9,7 +9,7 @@ hidden: false
 <styled-text>
 
 Values and norms are the basic elements of ethics. The concept “value” means, roughly, the degree of
-importance of a thing or an action. Values provide ideals and standards with which evaluate things, choices,
+importance of a thing or an action. Values provide ideals and standards with which to evaluate things, choices,
 actions, and events. In ethics, the focus is primarily on moral values, although other types of values
 – economic, aesthetic, epistemic (or knowledge-related) – are sometimes relevant morally. For example,
 economic factors may play morally significant role, if economic decisions have morally significant
@@ -56,7 +56,7 @@ is, they imply “ought-to” evaluations, in distinction to sentences that prov
 instance, a sentence "This machine-learning system is a black-box system" is descriptive, while a sentence
 “Machine-learning systems should be transparent" is normative.
 
-Importantly, facts do not dictate our norms. As scottish philosopher, David Hume (1711–76) states it, one
+Importantly, facts do not dictate our norms. As Scottish philosopher, David Hume (1711–76) states it, one
 should not make normative claims about what should be, based only on descriptive statements about what
 is. This does not mean that facts do not take any part in our moral consideration, but that you cannot get
 from an “is” to an “ought” without the use of some purely normative value statement along the way.

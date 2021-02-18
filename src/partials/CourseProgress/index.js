@@ -1,12 +1,16 @@
 import React from "react"
 import { CourseStatusProvider } from "moocfi-quizzes"
-import { accessToken, loggedIn } from "../../services/moocfi"
+import { accessToken } from "../../services/moocfi"
 import CourseSettings from "../../../course-settings"
 import CourseProgressVisualization from "./CourseProgressVisualization"
 import PleaseLogin from "../PleaseLogin"
+import LoginStateContext, {
+  withLoginStateContext,
+} from "../../contexes/LoginStateContext"
 
 const CourseProgress = () => {
-  if (!loggedIn()) {
+  const { loggedIn } = React.useContext(LoginStateContext)
+  if (!loggedIn) {
     return null
   }
   return (
@@ -20,4 +24,4 @@ const CourseProgress = () => {
   )
 }
 
-export default CourseProgress
+export default withLoginStateContext(CourseProgress)
