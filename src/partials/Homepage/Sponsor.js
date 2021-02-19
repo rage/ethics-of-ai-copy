@@ -58,7 +58,7 @@ const SponsorBox = styled.div`
   padding: 2rem;
   width: 60%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 3rem;
   margin: 1rem auto;
 
@@ -83,7 +83,7 @@ grid-template-columns: repeat(2, 1fr);
 ${respond.lg`
 padding: 2rem;
 width: 70%;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(4, 1fr);
 `}
 
   img {
@@ -98,6 +98,7 @@ const SponsorLogo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.6;
 `
 
 export default (props) => {
