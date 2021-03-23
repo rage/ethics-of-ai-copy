@@ -6,6 +6,7 @@ import Anna from "../../images/contributors/amr_foto.jpg"
 import Jukka from "../../images/contributors/jukka_nurminen.jpg"
 import Santeri from "../../images/contributors/santeri_raisanen.jpg"
 import Sasu from "../../images/contributors/sasu-tarkoma.jpg"
+import Saara from "../../images/contributors/saara.jpg"
 
 
 const contributors = [
@@ -13,7 +14,7 @@ const contributors = [
   {"name": 'Jukka K. Nurminen', 'url': Jukka, 'description': 'Jukka K. Nurminen is a Professor at the Department of Computer Science. He is investigating tools and techniques for developing data-intensive software systems. This includes testing of AI systems, technical solutions for ethical decision making as well as software development for new computational platforms like for quantum computers and for highly distributed edge computing.'},
   {"name": 'Santeri Raisanen', 'url': Santeri,'description': 'Santeri is a PhD student in Science and Technology Studies at the Center for Consumer Society Research. Santeri has a background in Philosophy and Mathematics, and his current research revolves around the technological narratives surrounding data practices and their role in sociotechnical change. Santeri is also part of the editorial team of the Zelda Zine online Magazine.'},
   {"name": 'Sasu Tarkoma', 'url': Sasu,'description': 'Sasu Tarkoma is Professor and Head of the Department at the Department of Computer Science, University of Helsinki and Director of the Helsinki Center for Data Science (HiDATA). His research combines distributed systems, AI, and data privacy and security in the design and validation of Enablers for digital infrastructure. He is a member of the national AI technology expert group of the Ministry of Finance.'},
-  {"name": 'Saara Halmetoja', 'url': Sasu,'description': 'Saara Halmetoja (Cognitive Science, University of Helsinki). Her background is in (neuro)linguistics, user experience design, and communications. Her research interests intersect language and the mind. As a strong advocate for open and interdisciplinary science, she values making research more accessible through visualizations and co-design. At Aalto University Digi Platform, she has coordinated technology-related dissemination events and science-arts collaborations such as Connecting the Dots, an exhibition about AI.'},
+  {"name": 'Saara Halmetoja', 'url': Saara,'description': 'Saara Halmetoja (Cognitive Science, University of Helsinki). Her background is in (neuro)linguistics, user experience design, and communications. Her research interests intersect language and the mind. As a strong advocate for open and interdisciplinary science, she values making research more accessible through visualizations and co-design. At Aalto University Digi Platform, she has coordinated technology-related dissemination events and science-arts collaborations such as Connecting the Dots, an exhibition about AI.'},
 ]
 
 const Wrapper = styled.div`

@@ -13,9 +13,9 @@ text-align: left;
 export default (props) => {
   console.log(props)
   return (
-    <div>
+    <>
       <HeroSection></HeroSection>
       <Contributors></Contributors>
-    </div>
+    </>
   )
 }

@@ -4,7 +4,7 @@ import styled from "styled-components"
 import heroSvg from "../../images/hero-svg1.svg"
 import ImageImporter from "../Contentpage/ImageImporter"
 import { respond } from "../../_respond"
-import H2 from "../Headers/H2"
+import H1 from "../Headers/H1"
 
 const HeroSection = styled.div`
   background-image: url(${heroSvg});
@@ -12,7 +12,7 @@ const HeroSection = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #1c1c1c;
-  height: 50vh;
+  height: 35vh;
   padding: 4rem 2rem 4rem 10rem;
   display: flex;
   flex-direction: row;
@@ -89,12 +89,11 @@ export default (props) => {
     <div>
       <HeroSection>
         <TextWrapper>
-          <H2>
+          <H1>
             <a style={{ color: "white", fontFamily: "Montserrat" }}>
               About the Contributors
             </a>
-          </H2>
-          <HeroText>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </HeroText>
+          </H1>
         </TextWrapper>
       </HeroSection>
     </div>
