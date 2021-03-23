@@ -6,6 +6,11 @@ hide_in_sidebar: true
 banner: false
 ---
 
+
+<!-- Note: temporary styling -->
+
+<div style="max-width:60%; margin: 5rem auto;">
+
 ## FAQ
 
 ### How to study
@@ -33,4 +38,6 @@ If you have any questions, or suggestions regarding the course, contact us via e
 Technical issues and questions related to the online learning environment: <br> <mooc@cs.helsinki.fi>
 
 Questions related to Open University course enrollment: <br> <avoinyo-tietojenkasittelytiede@helsinki.fi>
+
+</div>
 
