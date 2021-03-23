@@ -16,8 +16,9 @@ const AboutTextBox = styled.div`
 
 
   span {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 500;
+    text-decoration: underline;
   }
   p {
     padding: 1rem 0;
@@ -31,8 +32,8 @@ export default (props) => {
     <a href="/about" style={{ textDecoration: "none" }}>
     <Container>
       <AboutTextBox>
-        <H2> About the Contributors </H2>
-        <span> Read more about the authors of this course. </span>
+        <H2> Contributors </H2>
+        <span> Read about authors </span>
       </AboutTextBox>
     </Container>
     </a>
