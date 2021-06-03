@@ -35,7 +35,7 @@ const Summary = (props) => {
   })
   return (
     <Wrapper>
-      <Header>Tässä osiossa käsiteltiin seuraavat asiat:</Header>
+      <Header>{props.t("afterSection")}</Header>
       <Split />
       {updatedPropsChildren}
     </Wrapper>

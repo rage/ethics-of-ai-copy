@@ -2,6 +2,7 @@ import React from "react"
 import { Card, CardContent, Typography, Button } from "@material-ui/core"
 import { LinearProgress } from "@material-ui/core"
 import styled from "styled-components"
+import { withTranslation } from "react-i18next"
 
 const ProgressLineContainer = styled.div`
   display: flex;
@@ -17,7 +18,7 @@ const StyledLinearProgress = styled(LinearProgress)`
   margin-left: 10px;
 `
 
-export default ({ courseName, progress, refetch }) => {
+export default withTranslation("common")(({ courseName, progress, refetch, t }) => {
   const data = progress.user_course_progress.progress.sort((a, b) =>
     a.group.localeCompare(b.group, undefined, {
       numeric: true,
@@ -49,9 +50,9 @@ export default ({ courseName, progress, refetch }) => {
             refetch()
           }}
         >
-          Refresh
+          {t("refresh")}
         </Button>
       </CardContent>
     </Card>
   )
-}
+})

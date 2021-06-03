@@ -19,7 +19,7 @@ class ExercisesInThisSection extends React.Component {
 
   render() {
     if (!this.state.render) {
-      return <div>Loading...</div>
+      return <div>{this.props.t("loading2")}</div>
     }
     return (
       <ExpansionPanel>

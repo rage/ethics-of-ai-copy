@@ -54,7 +54,7 @@ class CreateAccountForm extends React.Component {
               `${key.replace(/_/g, " ")} ${msg}.`,
             )
             if (newMessage === "Email has already been taken.") {
-              newMessage = this.props.t("emailInUse")
+              newMessage = this.props.t("user:emailInUse")
             }
             message = `${message} ${newMessage}`
           })
@@ -62,7 +62,7 @@ class CreateAccountForm extends React.Component {
 
         if (message === "") {
           message =
-            this.props.t("problemCreatingAccount") + JSON.stringify(error)
+            this.props.t("user:problemCreatingAccount") + JSON.stringify(error)
         }
         this.setState({ error: message, submitting: false, errorObj: error })
       } catch (_error2) {
@@ -96,19 +96,19 @@ class CreateAccountForm extends React.Component {
     } = this.state
     if (email && validateEmail) {
       if (email.indexOf("@") === -1) {
-        newState.error += this.props.t("noAt")
-        newState.errorObj.email = this.props.t("noAt")
+        newState.error += this.props.t("user:noAt")
+        newState.errorObj.email = this.props.t("user:noAt")
       }
       if (email && email.indexOf(".") === -1) {
-        newState.error += this.props.t("noAt")
-        newState.errorObj.email = this.props.t("noAt")
+        newState.error += this.props.t("user:noAt")
+        newState.errorObj.email = this.props.t("user:noAt")
       }
     }
 
     if (password && password_confirmation && validatePassword) {
       if (password !== password_confirmation) {
-        newState.error += this.props.t("passwordsNoMatch")
-        newState.errorObj.password = this.props.t("passwordsNoMatch")
+        newState.error += this.props.t("user:passwordsNoMatch")
+        newState.errorObj.password = this.props.t("user:passwordsNoMatch")
         newState.errorObj.password_confirmation = this.props.t(
           "passwordsNoMatch",
         )
@@ -146,14 +146,14 @@ class CreateAccountForm extends React.Component {
   render() {
     if (this.context.loggedIn) {
       navigate("/")
-      return <div>Redirecting...</div>
+      return <div>{this.props.t("common:redirecting")}</div>
     }
     return (
       <FormContainer>
-        <h1>{this.props.t("createAccount")}</h1>
+        <h1>{this.props.t("user:createAccount")}</h1>
         <Form onChange={this.validate}>
           <InfoBox>
-            {this.props.t("courseUses")}{" "}
+            {this.props.t("user:courseUses")}{" "}
             <OutboundLink
               href="https://mooc.fi"
               target="_blank"
@@ -161,7 +161,7 @@ class CreateAccountForm extends React.Component {
             >
               mooc.fi
             </OutboundLink>{" "}
-            {this.props.t("courseUses2")}
+            {this.props.t("user:courseUses2")}
           </InfoBox>
 
           <Row>
@@ -170,7 +170,7 @@ class CreateAccountForm extends React.Component {
               type="email"
               name="email"
               autoComplete="email"
-              label={this.props.t("email")}
+              label={this.props.t("user:email")}
               error={this.state.errorObj.email}
               fullWidth
               value={this.state.email}
@@ -186,7 +186,7 @@ class CreateAccountForm extends React.Component {
             <TextField
               variant="outlined"
               type={this.state.showPassword ? "text" : "password"}
-              label={this.props.t("password")}
+              label={this.props.t("user:password")}
               name="password"
               error={this.state.errorObj.password}
               fullWidth
@@ -198,7 +198,7 @@ class CreateAccountForm extends React.Component {
             <TextField
               variant="outlined"
               type={this.state.showPassword ? "text" : "password"}
-              label={this.props.t("passwordAgain")}
+              label={this.props.t("user:passwordAgain")}
               name="password_confirmation"
               error={this.state.errorObj.password_confirmation}
               fullWidth
@@ -221,18 +221,18 @@ class CreateAccountForm extends React.Component {
               fullWidth
               type="submit"
             >
-              {this.props.t("create")}
+              {this.props.t("user:create")}
             </Button>
           </Row>
         </Form>
 
         <Row>
-          <Link to="/sign-in">{this.props.t("alreadyHaveAccount")}</Link>
+          <Link to="/sign-in">{this.props.t("user:alreadyHaveAccount")}</Link>
         </Row>
         {this.state.error && (
           <InfoBox>
             <b>
-              {this.props.t("error")} {this.state.error}
+              {this.props.t("user:error")} {this.state.error}
             </b>
           </InfoBox>
         )}
@@ -241,6 +241,6 @@ class CreateAccountForm extends React.Component {
   }
 }
 
-export default withTranslation("user")(
+export default withTranslation(["user", "common"])(
   withSimpleErrorBoundary(CreateAccountForm),
 )

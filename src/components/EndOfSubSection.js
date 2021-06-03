@@ -138,7 +138,7 @@ class EndOfSubSection extends React.Component {
                   <ButtonWrapper>
                     <StyledLink to={nextPart.path}>
                       <StyledIcon icon={icon} />
-                      <span>Next section</span>
+                      <span>{this.props.t("nextSection")}</span>
                     </StyledLink>
                   </ButtonWrapper>
                 </Fragment>
@@ -149,7 +149,7 @@ class EndOfSubSection extends React.Component {
                   <ButtonWrapper>
                     <StyledLink to={nextSectionPages[0].path}>
                       <StyledIcon icon={icon} />
-                      <span>Next chapter</span>
+                      <span>{this.props.t("nextChapter")}</span>
                     </StyledLink>
                   </ButtonWrapper>
                 </Fragment>

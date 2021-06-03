@@ -35,7 +35,7 @@ class QuizPartial extends React.Component {
     )
 
     if (!id) {
-      return <div>There should be quiz here but no quiz id is specified.</div>
+      return <div>{t("quizIdMissing")}</div>
     }
     return (
       <StyledPaper id={normalizeExerciseId(`quiz-${id}`)}>

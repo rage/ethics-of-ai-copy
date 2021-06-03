@@ -9,6 +9,7 @@ import GridNavigation from "../../partials/Grid/index"
 import Button from "../Button"
 import { respond } from "../../_respond"
 import H3 from "../../partials/Headers/H3"
+import { withTranslation } from "react-i18next"
 
 const ButtonWrapper = styled.div`
   display: flex;
@@ -61,7 +62,7 @@ const StyleLink = styled.div`
   }
 `
 
-export default function GridNavigationTemplate(props) {
+export default withTranslation("navbar")(function GridNavigationTemplate(props) {
   const [showModal, setShowModal] = useState(false)
 
   const animation = useSpring({
@@ -78,27 +79,27 @@ export default function GridNavigationTemplate(props) {
   return (
     <>
       <ButtonWrapper>
-        <Button onClick={handleClick}> Course </Button>
+        <Button onClick={handleClick}> {props.t("gridButton")} </Button>
       </ButtonWrapper>
       <animated.div style={animation}>
         <Fragment>
-          <Helmet title="Grid navigation" />{" "}
+          <Helmet title={props.t("gridTitle")} />{" "}
           {/* <LoginStateContextProviderider> */}
           <Fragment>
             <ContentWrapper>
               <Heading>
-                <H3> Basics of Programming Course, Summer 2020</H3>
+                <H3> {props.t("gridHeader")}</H3>
               </Heading>
               <StyleLink>
                 <ul>
                   <li>
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                      Judging & tests
+                      {props.t("gridItem1")}
                     </a>
                   </li>
                   <li>
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                      FAQ
+                      {props.t("gridItem2")}
                     </a>
                   </li>
                 </ul>
@@ -111,4 +112,4 @@ export default function GridNavigationTemplate(props) {
       </animated.div>
     </>
   )
-}
+})

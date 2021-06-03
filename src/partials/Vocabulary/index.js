@@ -3,6 +3,7 @@ import PagesContext from "../../contexes/PagesContext"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
 import styled from "styled-components"
 import Word from "./Word"
+import { withTranslation } from "react-i18next"
 
 const WordContainer = styled.div`
   margin: 1em 2em;
@@ -65,7 +66,7 @@ class Vocabulary extends React.Component {
 
   render() {
     if (!this.state.render) {
-      return <div>Loading...</div>
+      return <div>{this.props.t("loading2")}</div>
     }
 
     return (
@@ -79,4 +80,4 @@ class Vocabulary extends React.Component {
   }
 }
 
-export default withSimpleErrorBoundary(Vocabulary)
+export default withTranslation("common")(withSimpleErrorBoundary(Vocabulary))

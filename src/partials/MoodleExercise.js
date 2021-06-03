@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUniversity as icon } from "@fortawesome/free-solid-svg-icons"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import { normalizeExerciseId } from "../util/strings"
+import { withTranslation } from "react-i18next"
 
 const Wrapper = styled.aside`
   padding 1rem;
@@ -40,11 +41,13 @@ const MoodleExercise = (props) => {
     >
       <Header>
         <StyledIcon icon={icon} size="1x" />
-        Moodle-tehtävä: {props.name}
+        {props.t("moodleExercise")} {props.name}
       </Header>
       <Body>{props.children}</Body>
     </Wrapper>
   )
 }
 
-export default withSimpleErrorBoundary(MoodleExercise)
+export default withTranslation("common")(
+  withSimpleErrorBoundary(MoodleExercise),
+)

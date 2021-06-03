@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { withTranslation } from "react-i18next"
 
 import heroSvg from "../../images/hero-svg1.svg"
 import ImageImporter from "../Contentpage/ImageImporter"
@@ -83,7 +84,7 @@ const HeroText = styled.div`
 `}
 `
 
-export default (props) => {
+export default withTranslation("common")((props) => {
   console.log(props)
   return (
     <div>
@@ -91,11 +92,11 @@ export default (props) => {
         <TextWrapper>
           <H1>
             <a style={{ color: "white", fontFamily: "Montserrat" }}>
-              About the Contributors
+              {props.t("aboutTitle")}
             </a>
           </H1>
         </TextWrapper>
       </HeroSection>
     </div>
   )
-}
+})

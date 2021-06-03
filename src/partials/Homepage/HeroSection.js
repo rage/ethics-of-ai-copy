@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { respond } from "../../_respond"
 import { HeroButton } from "../../components/Buttons"
 import HeroIllustration from "../../assets/hero-svg.svg"
+import { withTranslation } from "react-i18next"
 
 const ButtonWrapper = styled.div`
   display: flex;
@@ -81,7 +82,7 @@ const StyledSVG = styled(HeroIllustration)`
   position: absolute;
 `
 
-export default (props) => {
+export default withTranslation("common")((props) => {
   return (
     <div>
       <StyledSVG />
@@ -89,9 +90,9 @@ export default (props) => {
         <BigText> {props.title} </BigText>
         <HeroText> {props.subtitle} </HeroText>{" "}
         <ButtonWrapper>
-          <HeroButton to="/start">Start </HeroButton>
+          <HeroButton to="/start">{props.t("start")} </HeroButton>
         </ButtonWrapper>
       </HeroSection>
     </div>
   )
-}
+})

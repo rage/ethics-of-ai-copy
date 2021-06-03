@@ -3,8 +3,9 @@ import PointsImpl from "./PointsImpl"
 import ApolloClient from "apollo-boost"
 import { ApolloProvider } from "@apollo/react-hooks"
 import { accessToken } from "../../services/moocfi"
+import { withTranslation } from "react-i18next"
 
-export default class Points extends React.Component {
+export default withTranslation(class Points extends React.Component {
   state = {
     render: false,
   }
@@ -13,7 +14,7 @@ export default class Points extends React.Component {
   }
   render() {
     if (!this.state.render) {
-      return <div>Loading...</div>
+      return <div>{this.props.t("loading2")}</div>
     }
     const apolloClient = new ApolloClient({
       uri: "https://www.mooc.fi/api",
@@ -35,4 +36,4 @@ export default class Points extends React.Component {
       </ApolloProvider>
     )
   }
-}
+})

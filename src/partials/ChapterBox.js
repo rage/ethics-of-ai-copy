@@ -6,6 +6,7 @@ import chapterIcon from "../images/blob-4.svg"
 import PagesContext from "../contexes/PagesContext"
 import { nthIndex } from "../util/strings"
 import { respond } from "../_respond"
+import { withTranslation } from "react-i18next"
 
 const Wrapper = styled.aside`
   padding: 3em 2em 7em 2em;
@@ -128,7 +129,7 @@ const ChapterBox = (props) => (
             }}
           >
             {" "}
-            Chapter content{" "}
+            {props.t("chapterContent")}{" "}
           </h2>
           <Body>
             {sectionPages.map((value, index) => {
@@ -186,4 +187,4 @@ const ChapterBox = (props) => (
   </PagesContext.Consumer>
 )
 
-export default withSimpleErrorBoundary(ChapterBox)
+export default withTranslation("common")(withSimpleErrorBoundary(ChapterBox))

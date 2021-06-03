@@ -3,6 +3,7 @@ import { makeStyles, withStyles } from "@material-ui/core/styles"
 import LinearProgress from "@material-ui/core/LinearProgress"
 /* import { LinearProgress } from "@material-ui/core"; */
 import styled from "styled-components"
+import { withTranslation } from "react-i18next"
 
 const BorderLinearProgress = withStyles((theme) => ({
   root: {
@@ -56,7 +57,7 @@ const Label = styled.div`
   }
 `
 
-const ProgresssBar = ({ n, max, point, label }) => {
+const ProgresssBar = ({ n, max, point, label, t }) => {
   const ExerciseScaled = (n / max) * 100
   const PointScaled = (point / max) * 100
   return (
@@ -64,7 +65,7 @@ const ProgresssBar = ({ n, max, point, label }) => {
       <Label>
         <span>{label}</span>{" "}
         <span>
-          {n ? Math.round(ExerciseScaled) + "%  Complete" : `${point} / ${max}`}
+          {n ? Math.round(ExerciseScaled) + t("percentCompleted") : `${point} / ${max}`}
         </span>
       </Label>
       <BorderLinearProgress
@@ -75,4 +76,4 @@ const ProgresssBar = ({ n, max, point, label }) => {
   )
 }
 
-export default ProgresssBar
+export default withTranslation("common")(ProgresssBar)

@@ -4,50 +4,43 @@ import Layout from "../templates/Layout"
 import Container from "../components/Container"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { withLoginStateContext } from "../contexes/LoginStateContext"
+import { withTranslation } from "react-i18next"
 
-const Credits = () => (
+const Credits = ({ t }) => (
   <Layout>
     <Container>
-      <Helmet title="Kiitokset ja materiaalista" />
-      <h1>Kiitokset ja materiaalista</h1>
+      <Helmet title={t("credits")} />
+      <h1>{t("credits")}</h1>
       <p>
-        Kurssin on tehnyt Helsingin yliopiston{" "}
+        {t("makers")}{" "}
         <OutboundLink
           href="https://www.helsinki.fi/en/researchgroups/data-driven-education"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Agile Education Research -tutkimusryhmä
+          {t("rage")}
         </OutboundLink>
         .
       </p>
-      <h2>Kurssimateriaali</h2>
+      <h2>{t("material")}</h2>
 
+      <p>{t("contentMakers")}</p>
       <p>
-        Kurssimateriaalin ja tehtävien tekijät ovat Erkki Kaila, Antti Laaksonen
-        ja Matti Luukkainen. Muutama kurssin tehtävistä on Arto Hellaksen (né
-        Vihavainen) käsialaa.
-      </p>
-      <p>
-        Kurssin materiaali on lisensoitu{" "}
+        {t("licenceTitle")}{" "}
         <OutboundLink
-          href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi"
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"
           target="_blank"
           rel="noopener noreferrer"
         >
           Creative Commons BY-NC-SA 4.0
         </OutboundLink>{" "}
-        -lisenssillä, joten voit käyttää ja levittää sitä vapaasti, kunhan
-        alkuperäisten tekijöiden nimiä ei poisteta. Jos teet muutoksia
-        materiaaliin ja haluat levittää muunneltua versiota, se täytyy
-        lisensoida samalla lisenssillä. Materiaalien käyttö kaupalliseen
-        tarkoitukseen on ilman erillistä lupaa kielletty.
+        {t("licenceInfo")}
       </p>
 
-      <h2>Kurssilla käytössä oleva teknologia</h2>
+      <h2>{t("licenceTechTitle")}</h2>
 
       <p>
-        Kurssisivuston ovat tehneet{" "}
+        {t("licenceTechMakers")}{" "}
         <OutboundLink
           href="https://github.com/nygrenh"
           target="_blank"
@@ -55,7 +48,7 @@ const Credits = () => (
         >
           Henrik Nygren
         </OutboundLink>{" "}
-        ja{" "}
+        {t("and")}{" "}
         <OutboundLink
           href="https://github.com/redande"
           target="_blank"
@@ -63,15 +56,15 @@ const Credits = () => (
         >
           Antti Leinonen
         </OutboundLink>
-        . Helsingin yliopiston{" "}
+        {t("licenceRage1")}{" "}
         <OutboundLink
           href="https://www.helsinki.fi/en/researchgroups/data-driven-education"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Agile Education Research -tutkimusryhmä
+          {t("licenceRage2")}
         </OutboundLink>{" "}
-        on luonut kurssilla käytetyn ohjelmointitehtävien palautusympäristön (
+        {t("licenceTMC1")}
         <OutboundLink
           href="https://tmc.mooc.fi"
           target="_blank"
@@ -79,11 +72,10 @@ const Credits = () => (
         >
           Test My Code
         </OutboundLink>
-        ) ja sen liitännäiset ohjelmointiympäristöihin, kurssimateriaalissa
-        olevan kyselyjärjestelmän ja muut toiminnot.
+        {t("licenceTMC2")}
       </p>
     </Container>
   </Layout>
 )
 
-export default withLoginStateContext(Credits)
+export default withTranslation("common")(withLoginStateContext(Credits))

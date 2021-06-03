@@ -154,7 +154,7 @@ class ProgrammingExercise extends React.Component {
               )}
               <ExerciseDescription>{children}</ExerciseDescription>
               {this.state.exerciseDetails === null && (
-                <div>Error loading exercise details</div>
+                <div>{this.props.t("exerciseDetailsError")}</div>
               )}
             </div>
           ) : (

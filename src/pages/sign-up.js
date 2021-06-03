@@ -9,6 +9,7 @@ import LoginStateContext, {
   withLoginStateContext,
 } from "../contexes/LoginStateContext"
 import Container from "../components/Container"
+import { withTranslation } from "react-i18next"
 
 class SignInPage extends React.Component {
   static contextType = LoginStateContext
@@ -43,11 +44,11 @@ class SignInPage extends React.Component {
 
     return (
       <Layout>
-        <Helmet title="Luo käyttäjätunnus" />
+        <Helmet title={this.props.t("create")} />
         <Container>{stepComponent}</Container>
       </Layout>
     )
   }
 }
 
-export default withLoginStateContext(SignInPage)
+export default withTranslation("user")(withLoginStateContext(SignInPage))

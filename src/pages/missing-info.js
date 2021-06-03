@@ -7,6 +7,7 @@ import LoginStateContext, {
   withLoginStateContext,
 } from "../contexes/LoginStateContext"
 import Container from "../components/Container"
+import { withTranslation } from "react-i18next"
 
 class MissingInfo extends React.Component {
   static contextType = LoginStateContext
@@ -24,7 +25,7 @@ class MissingInfo extends React.Component {
       if (typeof window !== "undefined") {
         navigate("/sign-in")
       }
-      return <div>Redirecting...</div>
+      return <div>{this.props.t("redirecting")}</div>
     }
     return (
       <Layout>
@@ -39,4 +40,4 @@ class MissingInfo extends React.Component {
   }
 }
 
-export default withLoginStateContext(MissingInfo)
+export default withTranslation("common")(withLoginStateContext(MissingInfo))

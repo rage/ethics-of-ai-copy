@@ -17,6 +17,7 @@ import { faCheckCircle as icon } from "@fortawesome/free-solid-svg-icons"
 
 import Snackbar from "@material-ui/core/Snackbar"
 import SnackbarContent from "@material-ui/core/SnackbarContent"
+import { withTranslation } from "react-i18next"
 
 const StyledSnackbarContent = styled(SnackbarContent)`
   background-color: #43a047 !important;
@@ -58,14 +59,14 @@ class MissingInfo extends React.Component {
       if (typeof window !== "undefined") {
         navigate("/sign-in")
       }
-      return <div>Redirecting...</div>
+      return <div>{this.props.t("redirecting")}</div>
     }
 
     return (
       <Layout>
         <Container>
-          <Helmet title="Profile" />
-          <h1>Profile</h1>
+          <Helmet title={this.props.t("profilePageHeader")} />
+          <h1>{this.props.t("profilePageHeader")}</h1>
           <CourseOptionsEditor onComplete={this.onStepComplete} />
         </Container>
         <Snackbar
@@ -92,4 +93,4 @@ class MissingInfo extends React.Component {
   }
 }
 
-export default withLoginStateContext(MissingInfo)
+export default withTranslation("common")(withLoginStateContext(MissingInfo))

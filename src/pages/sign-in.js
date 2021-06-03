@@ -97,7 +97,7 @@ class SignInPage extends React.Component {
   render() {
     if (this.context.loggedIn && !this.state.submitting) {
       navigate("/")
-      return <div>Redirecting....</div>
+      return <div>{this.props.t("common:redirecting")}</div>
     }
     return (
       <Layout>

@@ -90,7 +90,7 @@ class InBrowserProgrammingExercisePartial extends React.Component {
     } = this.props
 
     if (!this.state.render) {
-      return <div>Loading</div>
+      return <div>{this.props.t("loading2")}</div>
     }
 
     const points = get(this.state, "exerciseDetails.available_points.length")

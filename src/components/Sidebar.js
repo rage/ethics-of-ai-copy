@@ -17,6 +17,7 @@ import {
   MEDIUM_SIDEBAR_WIDTH,
   LARGE_SIDEBAR_WIDTH,
 } from "../util/constants"
+import { withTranslation } from "react-i18next"
 
 const StyledIcon = styled(FontAwesomeIcon)`
   vertical-align: middle;
@@ -175,12 +176,12 @@ const Sidebar = (props) => {
           {props.mobileMenuOpen ? (
             <span>
               <StyledIcon icon={faTimes} />
-              Sulje valikko
+              {props.t("label4")}
             </span>
           ) : (
             <span>
               <StyledIcon icon={faBars} />
-              Avaa valikko
+              {props.t("label2")}
             </span>
           )}
         </Button>
@@ -230,4 +231,6 @@ const SidebarWithData = (props) => (
   />
 )
 
-export default withSimpleErrorBoundary(SidebarWithData)
+export default withTranslation("navbar")(
+  withSimpleErrorBoundary(SidebarWithData),
+)

@@ -3,6 +3,7 @@ import { Paper } from "@material-ui/core"
 import styled from "styled-components"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
 import Loading from "../../components/Loading"
+import { withTranslation } from "react-i18next"
 const MoocFiPythonEditor = lazy(() => import("./MoocfiPythonEditorLoader"))
 
 const StyledPaper = styled(Paper)`
@@ -34,7 +35,7 @@ class MoocFiPythonEditorWrapper extends React.Component {
       )
     }
     return (
-      <Suspense fallback={<div style={{ height: "540px" }}>Loading...</div>}>
+      <Suspense fallback={<div style={{ height: "540px" }}>{this.props.t("loading2")}</div>}>
         <StyledPaper>
           <MoocFiPythonEditor {...this.props} />
         </StyledPaper>
@@ -43,4 +44,4 @@ class MoocFiPythonEditorWrapper extends React.Component {
   }
 }
 
-export default withSimpleErrorBoundary(MoocFiPythonEditorWrapper)
+export default withTranslation("common")(withSimpleErrorBoundary(MoocFiPythonEditorWrapper))

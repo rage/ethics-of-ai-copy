@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import { getCourseVariant, loggedIn } from "../services/moocfi"
 import LoginStateContext from "../contexes/LoginStateContext"
+import { withTranslation } from "react-i18next"
 
 class OnlyForCourseVariant extends Component {
   static contextType = LoginStateContext
@@ -24,7 +25,7 @@ class OnlyForCourseVariant extends Component {
 
   render() {
     if (!this.state.render && !this.state.currentCourseVariant) {
-      return <div>Loading...</div>
+      return <div>{this.props.t("loading2")}</div>
     }
     if (!this.context.loggedIn) {
       return <div />
@@ -36,4 +37,6 @@ class OnlyForCourseVariant extends Component {
   }
 }
 
-export default withSimpleErrorBoundary(OnlyForCourseVariant)
+export default withTranslation("common")(
+  withSimpleErrorBoundary(OnlyForCourseVariant),
+)

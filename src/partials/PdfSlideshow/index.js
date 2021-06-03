@@ -3,6 +3,7 @@ import { Paper } from "@material-ui/core"
 import styled from "styled-components"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
 import Loading from "../../components/Loading"
+import { withTranslation } from "react-i18next"
 const PdfSlideshow = lazy(() => import("./PdfSlideshowLoader"))
 
 const HiddenLinkWrapper = styled.div`
@@ -44,7 +45,7 @@ class PdfSlideshowWrapper extends React.Component {
       )
     }
     return (
-      <Suspense fallback={<div style={{ height: "540px" }}>Loading...</div>}>
+      <Suspense fallback={<div style={{ height: "540px" }}>{this.props.t("loading2")}</div>}>
         <StyledPaper>
           <PdfSlideshow slideWidth={800} pdfLocation={this.state.path} />
         </StyledPaper>
@@ -53,4 +54,4 @@ class PdfSlideshowWrapper extends React.Component {
   }
 }
 
-export default withSimpleErrorBoundary(PdfSlideshowWrapper)
+export default withTranslation("common")(withSimpleErrorBoundary(PdfSlideshowWrapper))

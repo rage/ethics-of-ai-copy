@@ -11,6 +11,7 @@ import styled from "styled-components"
 import ProgressBar from "./ProgressBar"
 import { respond } from "../../_respond"
 import Completed from "./Completed"
+import { withTranslation } from "react-i18next"
 
 const ProgressContainer = styled.div`
   margin: 5rem 10rem;
@@ -35,14 +36,14 @@ const ProgressContainer = styled.div`
   }
 `
 
-const CourseProgressVisualization = () => {
+const CourseProgressVisualization = ({ t }) => {
   const data = useContext(CourseProgressProviderContext)
   if (data.loading) {
-    return <div>Loading...</div>
+    return <div>{t("loading2")}</div>
   }
 
   if (data.error) {
-    return <div>Error while fetching progress data.</div>
+    return <div>{t("progressError")}</div>
   }
   const {
     exercise_completions,
@@ -61,11 +62,10 @@ const CourseProgressVisualization = () => {
         max={total_exercises}
       />
       <small>
-        Please note that you'll get points from a peer reviewed exercise after
-        others have reviewed your answer.
+        {t("progressNote")}
       </small>
     </ProgressContainer>
   )
 }
 
-export default CourseProgressVisualization
+export default withTranslation("common")(CourseProgressVisualization)

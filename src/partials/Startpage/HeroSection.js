@@ -6,6 +6,7 @@ import { respond } from "../../_respond"
 import { PrimaryButton, SecondaryButton } from "../../components/Buttons"
 import Box from "../../assets/SprintingDoodle.svg"
 import H1 from "../Headers/H1"
+import { withTranslation } from "react-i18next"
 
 const HeroSection = styled.div`
   padding: 4rem 8rem;
@@ -52,7 +53,7 @@ const StyledSVG = styled(Box)`
   padding: 2rem;
 `
 
-export default (props) => {
+export default withTranslation("common")((props) => {
   return (
     <>
       <HeroSection>
@@ -60,9 +61,9 @@ export default (props) => {
           <div>
             <H1> {props.title} </H1> <p> {props.subtitle} </p>{" "}
             <div>
-              <PrimaryButton>Start </PrimaryButton>{" "}
+              <PrimaryButton>{props.t("start")} </PrimaryButton>{" "}
               <SecondaryButton onClick={() => scrollTo("#grid")}>
-                Table of Content{" "}
+                {props.t("TOC")}{" "}
               </SecondaryButton>{" "}
             </div>{" "}
           </div>{" "}
@@ -74,4 +75,4 @@ export default (props) => {
       <div id="grid"> {props.children} </div>{" "}
     </>
   )
-}
+})

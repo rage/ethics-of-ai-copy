@@ -113,7 +113,7 @@ const Footer = ({ t }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img alt="Helsingin yliopisto" src={UHLogo} />
+                <img alt={t("hy")} src={UHLogo} />
               </OutboundLink>
               <OutboundLink
                 href="https://mooc.fi"

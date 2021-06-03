@@ -51,7 +51,7 @@ class MailingListForm extends React.Component {
             <TextField
               variant="outlined"
               type="text"
-              label="Sähköpostiosoite"
+              label={props.t("emailAddress")}
               fullWidth
               name="EMAIL"
             />

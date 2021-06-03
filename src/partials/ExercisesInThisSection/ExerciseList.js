@@ -7,6 +7,7 @@ import ExerciseSummary from "./ExerciseSummary"
 import { fetchManyQuizDetails } from "../../services/quiznator"
 import { flatten } from "../../util/arrays"
 import { fetchQuizNames } from "../../services/quizzes"
+import { withTranslation } from "react-i18next"
 
 const Title = styled.div`
   margin-bottom: 0.5em;
@@ -49,7 +50,7 @@ class ExerciseList extends React.Component {
   }
   render() {
     if (!this.state.render) {
-      return <div>Loading...</div>
+      return <div>{this.props.t("loading2")}</div>
     }
     return (
       <div>
@@ -78,4 +79,4 @@ class ExerciseList extends React.Component {
   }
 }
 
-export default withSimpleErrorBoundary(ExerciseList)
+export default withTranslation("common")(withSimpleErrorBoundary(ExerciseList))

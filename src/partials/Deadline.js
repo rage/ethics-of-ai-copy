@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faClock as icon } from "@fortawesome/free-solid-svg-icons"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
+import { withTranslation } from "react-i18next"
 
 const DeadlineWrapper = styled.div`
   margin-bottom: 1rem;
@@ -17,13 +18,13 @@ const StyledIcon = styled(FontAwesomeIcon)`
   font-size: 1em;
 `
 
-const Deadline = ({ children }) => {
+const Deadline = ({ children, t }) => {
   return (
     <DeadlineWrapper>
       <StyledIcon icon={icon} />
-      Deadline: {children}
+      {t("deadline")}: {children}
     </DeadlineWrapper>
   )
 }
 
-export default withSimpleErrorBoundary(Deadline)
+export default withTranslation("common")(withSimpleErrorBoundary(Deadline))

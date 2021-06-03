@@ -39,11 +39,11 @@ const GoogleFormLink = ({ children, href, t, emailfieldname }) => {
   }
 
   if (userDetails.loading) {
-    return <div>Loading...</div>
+    return <div>{t("loading2")}</div>
   }
 
   if (userDetails.error) {
-    return <div>Error while loading user information.</div>
+    return <div>{t("userInfoError")}</div>
   }
 
   const email = userDetails.value.email

@@ -11,17 +11,18 @@ import Sponsor5 from "../../assets/ministry-of-finance.svg"
 import Sponsor6 from "../../assets/fcai.svg"
 import UHLogo from "../../images/uh-logo.png"
 import MoocfiLogo from "../../images/moocfi-logo-bw.png"
+import { withTranslation } from "react-i18next"
 
-const sponsors = {
-  1: <Sponsor1 width="200px" />,
-  2: <Sponsor2 width="200px" />,
-  3: <Sponsor3 width="200px" />,
-  4: <img alt="Helsingin yliopisto" src={UHLogo} width="260px" />,
-  5: <img alt="MOOC.fi" src={MoocfiLogo} width="260px" />,
-  6: <Sponsor4 width="180px" />,
-  7: <Sponsor5 width="160px" />,
-  8: <Sponsor6 width="140px" />,
-}
+const sponsors = ({ t }) => [
+  <Sponsor1 width="200px" />,
+  <Sponsor2 width="200px" />,
+  <Sponsor3 width="200px" />,
+  <img alt={t("hy")} src={UHLogo} width="260px" />,
+  <img alt="MOOC.fi" src={MoocfiLogo} width="260px" />,
+  <Sponsor4 width="180px" />,
+  <Sponsor5 width="160px" />,
+  <Sponsor6 width="140px" />,
+]
 
 const Container = styled.div`
   margin: 6rem 0;
@@ -101,15 +102,15 @@ const SponsorLogo = styled.div`
   opacity: 0.6;
 `
 
-export default (props) => {
+export default withTranslation("common")((props) => {
   return (
     <Container>
-      <h2> Partners </h2> <span> Official partners of this course</span>
+      <h2> {props.t("partnersTitle")} </h2> <span> {props.t("partnersInfo")}</span>
       <SponsorBox>
-        {Object.values(sponsors).map((sponsor) => (
+        {Object.values(sponsors(props)).map((sponsor) => (
           <SponsorLogo>{sponsor}</SponsorLogo>
         ))}
       </SponsorBox>
     </Container>
   )
-}
+})

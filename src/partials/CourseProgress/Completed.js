@@ -1,6 +1,7 @@
 import { Button } from "@material-ui/core"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import React from "react"
+import { withTranslation } from "react-i18next"
 import styled from "styled-components"
 import { Primary } from "../../components/Buttons"
 
@@ -18,19 +19,16 @@ const Subtitle = styled.p`
   max-width: 700px;
 `
 
-const Completed = () => {
+const Completed = ({ t }) => {
   return (
     <CompletionContainer>
-      <Title>Congratulations for passing the course!</Title>
-      <Subtitle>
-        If you have a a Finnish social security number, we recommend you to get
-        free ECTS credits from Open University of University of Helsinki:
-      </Subtitle>
+      <Title>{t("completedTitle")}</Title>
+      <Subtitle>{t("completedSubtitle")}</Subtitle>
       <OutboundLink href="https://www.mooc.fi/en/profile/completions">
-        <Primary>Register completion</Primary>
+        <Primary>{t("completedRegister")}</Primary>
       </OutboundLink>
     </CompletionContainer>
   )
 }
 
-export default Completed
+export default withTranslation("common")(Completed)
