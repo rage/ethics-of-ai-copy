@@ -33,6 +33,7 @@ i18n.use(initReactI18next).init({
     wait: true,
   },
   lng: CourseSettings.language,
+  preload: ['en'],
 })
 
 export default i18n
