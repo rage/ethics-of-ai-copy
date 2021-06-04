@@ -94,7 +94,8 @@ export default (props) => {
         <TextWrapper>
           <H1>
             <a style={{ color: "white", fontFamily: "Montserrat" }}>
-              {t("aboutTitle")}
+              {/* {t("aboutTitle")} */}
+              About the Contributors
             </a>
           </H1>
         </TextWrapper>
