@@ -46,7 +46,8 @@ export default function Navbar(props) {
               aria-label={t("label3")}
               role="button"
             >
-              {t("gridItem2")}
+              {/* {t("gridItem2")} */}
+              FAQ
             </a>
           </li>
           <LoginControls />
