@@ -33,8 +33,7 @@ i18n.use(initReactI18next).init({
     wait: true,
   },
   lng: CourseSettings.language,
+  preload: ["common:en", "user:en", "points-balloon:en", "navbar:en"]
 })
-
-console.log(i18n.t("common:translationLoaded"))
 
 export default i18n
