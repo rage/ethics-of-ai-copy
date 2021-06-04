@@ -1,5 +1,6 @@
 import i18n from "i18next"
 import { initReactI18next } from "react-i18next"
+import Backend from "i18next-http-backend"
 import CourseSettings from "../course-settings"
 import commonEN from "./locales/common/en"
 import pointsBalloonEN from "./locales/pointsBalloon/en"
@@ -25,7 +26,7 @@ const resources = {
   },
 }
 
-i18n.use(initReactI18next).init({
+i18n.use(Backend).use(initReactI18next).init({
   resources,
   ns: ["common", "user", "points-balloon", "navbar"],
   defaultNS: "common",
@@ -33,7 +34,9 @@ i18n.use(initReactI18next).init({
     wait: true,
   },
   lng: CourseSettings.language,
-  preload: ["common:en", "user:en", "points-balloon:en", "navbar:en"]
+  backend: {
+    loadPath: '/src/locales/{{ns}}/{{lng}}.json'
+  },
 })
 
 export default i18n
