@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDatabase as icon } from "@fortawesome/free-solid-svg-icons"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import { normalizeExerciseId } from "../util/strings"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 const Wrapper = styled.aside`
   padding 1rem;
@@ -35,6 +35,8 @@ const Body = styled.div`
 `
 
 const SqltrainerExercise = (props) => {
+  const { t } = useTranslation("common")
+
   return (
     <Wrapper
       id={normalizeExerciseId(`sqltrainer-exercise-${props.name}`)}
@@ -42,11 +44,11 @@ const SqltrainerExercise = (props) => {
     >
       <Header>
         <StyledIcon icon={icon} size="1x" />
-        {props.t("sqlTrainerExercise")} {props.name}
+        {t("sqlTrainerExercise")} {props.name}
       </Header>
       <Body>
         {props.children}
-        {props.t("sqlTrainerUrl")}{" "}
+        {t("sqlTrainerUrl")}{" "}
         <OutboundLink
           href="https://sql-t.herokuapp.com/"
           target="_blank"
@@ -59,6 +61,4 @@ const SqltrainerExercise = (props) => {
   )
 }
 
-export default withTranslation("common")(
-  withSimpleErrorBoundary(SqltrainerExercise),
-)
+export default withSimpleErrorBoundary(SqltrainerExercise)

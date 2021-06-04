@@ -6,7 +6,7 @@ import chapterIcon from "../images/blob-4.svg"
 import PagesContext from "../contexes/PagesContext"
 import { nthIndex } from "../util/strings"
 import { respond } from "../_respond"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 const Wrapper = styled.aside`
   padding: 3em 2em 7em 2em;
@@ -100,91 +100,95 @@ const chooseChapterValue = {
   3: "IV",
   4: "V",
 }
-const ChapterBox = (props) => (
-  <PagesContext.Consumer>
-    {(value) => {
-      const currentPath = value.current.frontmatter.path
-      let sectionPath = currentPath
-      const sectionSeparator = nthIndex(currentPath, "/", 2)
-      if (sectionSeparator !== -1) {
-        sectionPath = currentPath.substr(0, sectionSeparator)
-      }
+const ChapterBox = (props) => {
+  const { t } = useTranslation("common")
 
-      const sectionPages = value.all
-        .filter((o) => o.path.startsWith(`${sectionPath}/`))
-        .sort((a, b) => {
-          a = a.path.toLowerCase()
-          b = b.path.toLowerCase()
+  return (
+    <PagesContext.Consumer>
+      {(value) => {
+        const currentPath = value.current.frontmatter.path
+        let sectionPath = currentPath
+        const sectionSeparator = nthIndex(currentPath, "/", 2)
+        if (sectionSeparator !== -1) {
+          sectionPath = currentPath.substr(0, sectionSeparator)
+        }
 
-          return a > b ? 1 : b > a ? -1 : 0
-        })
-      return (
-        <Wrapper>
-          <h2
-            style={{
-              textAlign: "center",
-              marginBottom: "0.7em",
-              color: "#3B4754",
-              fontFamily: "Work Sans",
-            }}
-          >
-            {" "}
-            {props.t("chapterContent")}{" "}
-          </h2>
-          <Body>
-            {sectionPages.map((value, index) => {
-              return (
-                <a
-                  style={{ color: "#1C3B40", boxShadow: "none" }}
-                  href={value.path}
-                >
-                  <ChapterParts currentPage={currentPath === value.path}>
-                    <ImageBox>
-                      <div
-                        style={{
-                          width: "100%",
-                          height: "100%",
-                          zIndex: "2",
-                          left: "-0.8em",
-                          textAlign: "center",
-                        }}
-                      >
-                        <p
+        const sectionPages = value.all
+          .filter((o) => o.path.startsWith(`${sectionPath}/`))
+          .sort((a, b) => {
+            a = a.path.toLowerCase()
+            b = b.path.toLowerCase()
+
+            return a > b ? 1 : b > a ? -1 : 0
+          })
+        return (
+          <Wrapper>
+            <h2
+              style={{
+                textAlign: "center",
+                marginBottom: "0.7em",
+                color: "#3B4754",
+                fontFamily: "Work Sans",
+              }}
+            >
+              {" "}
+              {t("chapterContent")}{" "}
+            </h2>
+            <Body>
+              {sectionPages.map((value, index) => {
+                return (
+                  <a
+                    style={{ color: "#1C3B40", boxShadow: "none" }}
+                    href={value.path}
+                  >
+                    <ChapterParts currentPage={currentPath === value.path}>
+                      <ImageBox>
+                        <div
                           style={{
-                            top: "0.6em",
+                            width: "100%",
+                            height: "100%",
+                            zIndex: "2",
+                            left: "-0.8em",
                             textAlign: "center",
-                            position: "relative",
-                            zIndex: "3",
-                            color: "white",
-                            fontSize: "16px",
                           }}
                         >
-                          {chooseChapterValue[index]}
-                        </p>
-                        <Image src={chapterIcon} alt="Chapter icon" />
-                      </div>
-                    </ImageBox>
-                    <p
-                      style={{
-                        verticalAlign: "top",
-                        /* marginLeft: "1em", */
-                        fontSize: "18px",
-                        display: "inline-block",
-                        width: "80%",
-                        margin: ".4em 0 .4em 1em",
-                      }}
-                    >
-                      {value.title}
-                    </p>
-                  </ChapterParts>
-                </a>
-              )
-            })}
-          </Body>
-        </Wrapper>
-      )
-    }}
-  </PagesContext.Consumer>
-)
+                          <p
+                            style={{
+                              top: "0.6em",
+                              textAlign: "center",
+                              position: "relative",
+                              zIndex: "3",
+                              color: "white",
+                              fontSize: "16px",
+                            }}
+                          >
+                            {chooseChapterValue[index]}
+                          </p>
+                          <Image src={chapterIcon} alt="Chapter icon" />
+                        </div>
+                      </ImageBox>
+                      <p
+                        style={{
+                          verticalAlign: "top",
+                          /* marginLeft: "1em", */
+                          fontSize: "18px",
+                          display: "inline-block",
+                          width: "80%",
+                          margin: ".4em 0 .4em 1em",
+                        }}
+                      >
+                        {value.title}
+                      </p>
+                    </ChapterParts>
+                  </a>
+                )
+              })}
+            </Body>
+          </Wrapper>
+        )
+      }}
+    </PagesContext.Consumer>
+  )
+}
 
-export default withTranslation("common")(withSimpleErrorBoundary(ChapterBox))
+export default withSimpleErrorBoundary(ChapterBox)

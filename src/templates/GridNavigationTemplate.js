@@ -13,7 +13,7 @@ import Button from "../components/Button"
 import { respond } from "../_respond"
 import PagesContext from "../contexes/PagesContext"
 import H2 from "../partials/Headers/H2"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 const ButtonWrapper = styled.div`
   display: flex;
@@ -66,11 +66,10 @@ const StyleLink = styled.div`
   }
 `
 
-export default withTranslation("navbar")(function GridNavigationTemplate(
-  props,
-) {
+export default function GridNavigationTemplate(props) {
   /*   const [showModal, setShowModal] = useState(true) */
 
+  const { t } = useTranslation("navbar")
   const { data } = props
   const { frontmatter, htmlAst } = data.page
   const partials = getNamedPartials()
@@ -121,12 +120,12 @@ export default withTranslation("navbar")(function GridNavigationTemplate(
                 <ul>
                   <li>
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                      {props.t("gridItem1")}
+                      {t("gridItem1")}
                     </a>
                   </li>
                   <li>
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                      {props.t("gridItem2")}
+                      {t("gridItem2")}
                     </a>
                   </li>
                 </ul>
@@ -140,7 +139,7 @@ export default withTranslation("navbar")(function GridNavigationTemplate(
       {/*       </animated.div> */}
     </>
   )
-})
+}
 
 export const pageQuery = graphql`
   query($path: String!) {

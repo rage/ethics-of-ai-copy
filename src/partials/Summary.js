@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 const Wrapper = styled.aside`
   border-left: 0.2rem solid var(--color);
@@ -26,6 +26,8 @@ const Split = styled.div`
 `
 
 const Summary = (props) => {
+  const { t } = useTranslation("common")
+
   const updatedPropsChildren = props.children.map((child, index) => {
     return child.type.displayName === "Hr__StyledDivider" ? (
       <Split />
@@ -35,11 +37,11 @@ const Summary = (props) => {
   })
   return (
     <Wrapper>
-      <Header>{props.t("afterSection")}</Header>
+      <Header>{t("afterSection")}</Header>
       <Split />
       {updatedPropsChildren}
     </Wrapper>
   )
 }
 
-export default withTranslation("common")(withSimpleErrorBoundary(Summary))
+export default withSimpleErrorBoundary(Summary)

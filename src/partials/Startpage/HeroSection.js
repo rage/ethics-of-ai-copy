@@ -6,7 +6,7 @@ import { respond } from "../../_respond"
 import { PrimaryButton, SecondaryButton } from "../../components/Buttons"
 import Box from "../../assets/SprintingDoodle.svg"
 import H1 from "../Headers/H1"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 const HeroSection = styled.div`
   padding: 4rem 8rem;
@@ -53,7 +53,9 @@ const StyledSVG = styled(Box)`
   padding: 2rem;
 `
 
-export default withTranslation("common")((props) => {
+export default (props) => {
+  const { t } = useTranslation("common")
+
   return (
     <>
       <HeroSection>
@@ -63,7 +65,7 @@ export default withTranslation("common")((props) => {
             <div>
               <PrimaryButton>{props.t("start")} </PrimaryButton>{" "}
               <SecondaryButton onClick={() => scrollTo("#grid")}>
-                {props.t("TOC")}{" "}
+                {t("TOC")}{" "}
               </SecondaryButton>{" "}
             </div>{" "}
           </div>{" "}
@@ -75,4 +77,4 @@ export default withTranslation("common")((props) => {
       <div id="grid"> {props.children} </div>{" "}
     </>
   )
-})
+}

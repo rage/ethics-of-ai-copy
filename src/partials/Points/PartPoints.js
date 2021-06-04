@@ -1,8 +1,11 @@
 import React from "react"
 import { Card, CardContent, Typography } from "@material-ui/core"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 
-export default withTranslation("common")(({ points, t }) => (
+export default ({ points }) => {
+  const { t } = useTranslation("common")
+
+  return (
   <Card>
     <CardContent>
       <Typography variant="h5" component="h2">
@@ -10,4 +13,5 @@ export default withTranslation("common")(({ points, t }) => (
       </Typography>
     </CardContent>
   </Card>
-))
+)
+}

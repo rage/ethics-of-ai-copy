@@ -6,10 +6,12 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { withLoginStateContext } from "../contexes/LoginStateContext"
 import { Button, Typography } from "@material-ui/core"
 import CourseSettings from "../../course-settings"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
-const EditPage = ({ t }) => {
+const EditPage = () => {
+  const { t } = useTranslation("common")
+
   const urlEnd =
     typeof window !== `undefined`
       ? window.location.search.substr(1).split("&")
@@ -96,6 +98,4 @@ const EditPage = ({ t }) => {
   )
 }
 
-export default withTranslation("common")(
-  withSimpleErrorBoundary(withLoginStateContext(EditPage)),
-)
+export default withSimpleErrorBoundary(withLoginStateContext(EditPage))

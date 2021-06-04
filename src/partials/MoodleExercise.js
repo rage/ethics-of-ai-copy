@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUniversity as icon } from "@fortawesome/free-solid-svg-icons"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import { normalizeExerciseId } from "../util/strings"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 const Wrapper = styled.aside`
   padding 1rem;
@@ -34,6 +34,8 @@ const Body = styled.div`
 `
 
 const MoodleExercise = (props) => {
+  const { t } = useTranslation("common")
+
   return (
     <Wrapper
       id={normalizeExerciseId(`moodle-exercise-${props.name}`)}
@@ -41,13 +43,11 @@ const MoodleExercise = (props) => {
     >
       <Header>
         <StyledIcon icon={icon} size="1x" />
-        {props.t("moodleExercise")} {props.name}
+        {t("moodleExercise")} {props.name}
       </Header>
       <Body>{props.children}</Body>
     </Wrapper>
   )
 }
 
-export default withTranslation("common")(
-  withSimpleErrorBoundary(MoodleExercise),
-)
+export default withSimpleErrorBoundary(MoodleExercise)

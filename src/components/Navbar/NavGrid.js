@@ -9,7 +9,7 @@ import GridNavigation from "../../partials/Grid/index"
 import Button from "../Button"
 import { respond } from "../../_respond"
 import H3 from "../../partials/Headers/H3"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 const ButtonWrapper = styled.div`
   display: flex;
@@ -62,8 +62,9 @@ const StyleLink = styled.div`
   }
 `
 
-export default withTranslation("navbar")(function GridNavigationTemplate(props) {
+export default function GridNavigationTemplate(props) {
   const [showModal, setShowModal] = useState(false)
+  const { t } = useTranslation("navbar")
 
   const animation = useSpring({
     opacity: showModal ? 1 : 0,
@@ -79,27 +80,27 @@ export default withTranslation("navbar")(function GridNavigationTemplate(props) 
   return (
     <>
       <ButtonWrapper>
-        <Button onClick={handleClick}> {props.t("gridButton")} </Button>
+        <Button onClick={handleClick}> {t("gridButton")} </Button>
       </ButtonWrapper>
       <animated.div style={animation}>
         <Fragment>
-          <Helmet title={props.t("gridTitle")} />{" "}
+          <Helmet title={t("gridTitle")} />{" "}
           {/* <LoginStateContextProviderider> */}
           <Fragment>
             <ContentWrapper>
               <Heading>
-                <H3> {props.t("gridHeader")}</H3>
+                <H3> {t("gridHeader")}</H3>
               </Heading>
               <StyleLink>
                 <ul>
                   <li>
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                      {props.t("gridItem1")}
+                      {t("gridItem1")}
                     </a>
                   </li>
                   <li>
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                      {props.t("gridItem2")}
+                      {t("gridItem2")}
                     </a>
                   </li>
                 </ul>
@@ -112,4 +113,4 @@ export default withTranslation("navbar")(function GridNavigationTemplate(props) 
       </animated.div>
     </>
   )
-})
+}

@@ -1,5 +1,5 @@
 import React from "react"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 import styled from "styled-components"
 import { respond } from "../../_respond"
 import H2 from "../Headers/H2"
@@ -28,15 +28,17 @@ const AboutTextBox = styled.div`
   }
 `
 
-export default withTranslation("common")((props) => {
+export default (props) => {
+  const { t } = useTranslation("common")
+
   return (
     <a href="/about" style={{ textDecoration: "none" }}>
     <Container>
       <AboutTextBox>
-        <H2> {props.t("contributors")} </H2>
-        <span> {props.t("aboutAuthors")} </span>
+        <H2> {t("contributors")} </H2>
+        <span> {t("aboutAuthors")} </span>
       </AboutTextBox>
     </Container>
     </a>
   )
-})
+}

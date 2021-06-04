@@ -11,9 +11,9 @@ import Sponsor5 from "../../assets/ministry-of-finance.svg"
 import Sponsor6 from "../../assets/fcai.svg"
 import UHLogo from "../../images/uh-logo.png"
 import MoocfiLogo from "../../images/moocfi-logo-bw.png"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 
-const sponsors = ({ t }) => [
+const sponsors = (t) => [
   <Sponsor1 width="200px" />,
   <Sponsor2 width="200px" />,
   <Sponsor3 width="200px" />,
@@ -102,15 +102,17 @@ const SponsorLogo = styled.div`
   opacity: 0.6;
 `
 
-export default withTranslation("common")((props) => {
+export default (props) => {
+  const { t } = useTranslation("common")
+
   return (
     <Container>
-      <h2> {props.t("partnersTitle")} </h2> <span> {props.t("partnersInfo")}</span>
+      <h2> {t("partnersTitle")} </h2> <span> {t("partnersInfo")}</span>
       <SponsorBox>
-        {Object.values(sponsors(props)).map((sponsor) => (
+        {Object.values(sponsors(t)).map((sponsor) => (
           <SponsorLogo>{sponsor}</SponsorLogo>
         ))}
       </SponsorBox>
     </Container>
   )
-})
+}

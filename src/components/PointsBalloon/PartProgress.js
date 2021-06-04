@@ -6,7 +6,7 @@ import { improveGroupName } from "../../util/strings"
 import CustomTooltip from "./CustomTooltip"
 import { SMALL_MEDIUM_BREAKPOINT } from "../../util/constants"
 import { getCourseVariant } from "../../services/moocfi"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 import CourseSettings from "../../../course-settings"
 
 const PartProgressContainer = styled.div`
@@ -44,7 +44,9 @@ const CustomLabel = ({ x, y, stroke, value }) => {
   )
 }
 
-const PartProgress = ({ name, data, appliesForStudyRight, t }) => {
+const PartProgress = ({ name, data, appliesForStudyRight }) => {
+  const { t } = useTranslation("points-balloon")
+
   var BAR_CHART_WIDTH = 375
   var BAR_CHART_Y_AXIS_WIDTH = 152
 
@@ -120,6 +122,4 @@ const PartProgress = ({ name, data, appliesForStudyRight, t }) => {
   )
 }
 
-export default withTranslation("points-balloon")(
-  withSimpleErrorBoundary(PartProgress),
-)
+export default withSimpleErrorBoundary(PartProgress)

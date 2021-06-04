@@ -11,7 +11,7 @@ import styled from "styled-components"
 import ProgressBar from "./ProgressBar"
 import { respond } from "../../_respond"
 import Completed from "./Completed"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 const ProgressContainer = styled.div`
   margin: 5rem 10rem;
@@ -36,7 +36,9 @@ const ProgressContainer = styled.div`
   }
 `
 
-const CourseProgressVisualization = ({ t }) => {
+const CourseProgressVisualization = () => {
+  const { t } = useTranslation("common")
+
   const data = useContext(CourseProgressProviderContext)
   if (data.loading) {
     return <div>{t("loading2")}</div>
@@ -68,4 +70,4 @@ const CourseProgressVisualization = ({ t }) => {
   )
 }
 
-export default withTranslation("common")(CourseProgressVisualization)
+export default CourseProgressVisualization

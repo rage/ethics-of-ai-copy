@@ -6,7 +6,7 @@ import styled from "styled-components"
 
 import Hamburger from "../../components/Hamburger"
 import LoginControls from "../LoginControls"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 /* import NavGrid from "./NavGrid" */
 import "./Navbar.css"
 
@@ -15,14 +15,15 @@ const StyledIcon = styled(FontAwesomeIcon)`
   color: #333;
 `
 
-export default withTranslation("navbar")(function Navbar(props) {
+export default function Navbar(props) {
   const [clicked, setClicked] = useState(false)
+  const { t } = useTranslation("navbar")
 
   return (
     <div className="fixedPosition">
       <nav className="NavbarItems">
         <h1 className="navbar-logo">
-          <Link to="/" aria-label={props.t("label1")} role="button">
+          <Link to="/" aria-label={t("label1")} role="button">
             {" "}
             <StyledIcon icon={faBullseye} aria-hidden="true">
               {" "}
@@ -33,7 +34,7 @@ export default withTranslation("navbar")(function Navbar(props) {
           className="menu-icon"
           onClick={() => setClicked(!clicked)}
           role="button"
-          aria-label={props.t("label2")}
+          aria-label={t("label2")}
         >
           <Hamburger> </Hamburger>
         </div>
@@ -42,10 +43,10 @@ export default withTranslation("navbar")(function Navbar(props) {
             <a
               className="nav-links"
               href="/faq"
-              aria-label={props.t("label3")}
+              aria-label={t("label3")}
               role="button"
             >
-              {props.t("gridItem2")}
+              {t("gridItem2")}
             </a>
           </li>
           <LoginControls />
@@ -58,4 +59,4 @@ export default withTranslation("navbar")(function Navbar(props) {
       </nav>{" "}
     </div>
   )
-})
+}

@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@material-ui/core"
 import Coins from "./Coins"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import styled from "styled-components"
 
@@ -16,7 +16,9 @@ const StyledTypography = styled(Typography)`
   margin-bottom: 0.5rem !important;
 `
 
-const ExtraDetails = ({ exerciseDetails, onUpdate, nocoins, t }) => {
+const ExtraDetails = ({ exerciseDetails, onUpdate, nocoins }) => {
+  const { t } = useTranslation("common")
+
   if (!exerciseDetails) {
     return <Loading heightHint="305px" />
   }
@@ -74,4 +76,4 @@ const ExtraDetails = ({ exerciseDetails, onUpdate, nocoins, t }) => {
   )
 }
 
-export default withTranslation("common")(ExtraDetails)
+export default ExtraDetails

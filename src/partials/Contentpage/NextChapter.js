@@ -1,5 +1,5 @@
 import React from "react"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 import styled from "styled-components"
 import { PrimaryButton } from "../../components/Buttons"
 import heroSvg from "../../images/hero-svg.svg"
@@ -20,6 +20,8 @@ const Background = styled.div`
   height: 60em;
 `
 const NextChapter = (props) => {
+  const { t } = useTranslation("common")
+
   return (
     <Layout>
       <Background>
@@ -32,7 +34,7 @@ const NextChapter = (props) => {
         >
           <PrimaryButton to={props.nextChapter.path}>
             {" "}
-            {props.t("nextChapter")}
+            {t("nextChapter")}
           </PrimaryButton>
         </div>
       </Background>
@@ -40,4 +42,4 @@ const NextChapter = (props) => {
   )
 }
 
-export default withTranslation("common")(NextChapter)
+export default NextChapter

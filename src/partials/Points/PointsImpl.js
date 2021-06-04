@@ -6,7 +6,7 @@ import { useQuery } from "@apollo/react-hooks"
 import { gql } from "apollo-boost"
 import { Button } from "@material-ui/core"
 import OverallPoints from "./OverallPoints"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 const PROGRESS = gql`
   {
@@ -37,13 +37,14 @@ const PROGRESS = gql`
 const Points = (props) => {
   const course = props.course || CourseSettings.slug
   const { data, loading, error, refetch } = useQuery(PROGRESS)
+  const { t } = useTranslation("common")
 
   if (loading) {
-    return <>{props.t("loading2")}</>
+    return <>{t("loading2")}</>
   }
 
   if (error) {
-    return <>{props.t("pointsError")} {error}</>
+    return <>{t("pointsError")} {error}</>
   }
 
   if (!data || !data.currentUser) {
@@ -54,9 +55,9 @@ const Points = (props) => {
             refetch()
           }}
         >
-          {props.t("refresh")}
+          {t("refresh")}
         </Button>
-        <p>{props.t("pointsLogin")}</p>
+        <p>{t("pointsLogin")}</p>
       </>
     )
   }
@@ -74,4 +75,4 @@ const Points = (props) => {
   )
 }
 
-export default withTranslation("common")(withSimpleErrorBoundary(Points))
+export default withSimpleErrorBoundary(Points)

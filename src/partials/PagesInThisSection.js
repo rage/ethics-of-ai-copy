@@ -3,7 +3,7 @@ import PagesContext from "../contexes/PagesContext"
 import { nthIndex } from "../util/strings"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 import { Divider, Paper } from "@material-ui/core"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
@@ -63,46 +63,53 @@ const StyledPaper = styled(Paper)`
   margin-bottom: 2em;
 `
 
-const PagesInThisSection = ({ style, t }) => (
-  <PagesContext.Consumer>
-    {(value) => {
-      const currentPath = value.current.frontmatter.path
-      let sectionPath = currentPath
-      const sectionSeparator = nthIndex(currentPath, "/", 2)
-      if (sectionSeparator !== -1) {
-        sectionPath = currentPath.substr(0, sectionSeparator)
-      }
+const PagesInThisSection = ({ style }) => {
+  const { t } = useTranslation("common")
 
-      const sectionPages = value.all
-        .filter((o) => o.path.startsWith(`${sectionPath}/`))
-        .sort((a, b) => {
-          a = a.path.toLowerCase()
-          b = b.path.toLowerCase()
+  return (
+    <PagesContext.Consumer>
+      {(value) => {
+        const currentPath = value.current.frontmatter.path
+        let sectionPath = currentPath
+        const sectionSeparator = nthIndex(currentPath, "/", 2)
+        if (sectionSeparator !== -1) {
+          sectionPath = currentPath.substr(0, sectionSeparator)
+        }
 
-          return a > b ? 1 : b > a ? -1 : 0
-        })
+        const sectionPages = value.all
+          .filter((o) => o.path.startsWith(`${sectionPath}/`))
+          .sort((a, b) => {
+            a = a.path.toLowerCase()
+            b = b.path.toLowerCase()
 
-      return (
-        <StyledPaper style={style}>
-          <Title>{t("inThisSection")}</Title>
-          <PagesList>
-            {sectionPages.map((page, i) => (
-              <Fragment>
-                <StyledLink to={page.path}>
-                  <Page key={page.path} currentPage={page.path === currentPath}>
-                    {i + 1}. {page.title}
-                  </Page>
-                </StyledLink>
-                {i !== sectionPages.length - 1 && <Divider variant="middle" />}
-              </Fragment>
-            ))}
-          </PagesList>
-        </StyledPaper>
-      )
-    }}
-  </PagesContext.Consumer>
-)
+            return a > b ? 1 : b > a ? -1 : 0
+          })
 
-export default withTranslation("common")(
-  withSimpleErrorBoundary(PagesInThisSection),
-)
+        return (
+          <StyledPaper style={style}>
+            <Title>{t("inThisSection")}</Title>
+            <PagesList>
+              {sectionPages.map((page, i) => (
+                <Fragment>
+                  <StyledLink to={page.path}>
+                    <Page
+                      key={page.path}
+                      currentPage={page.path === currentPath}
+                    >
+                      {i + 1}. {page.title}
+                    </Page>
+                  </StyledLink>
+                  {i !== sectionPages.length - 1 && (
+                    <Divider variant="middle" />
+                  )}
+                </Fragment>
+              ))}
+            </PagesList>
+          </StyledPaper>
+        )
+      }}
+    </PagesContext.Consumer>
+  )
+}
+
+export default withSimpleErrorBoundary(PagesInThisSection)

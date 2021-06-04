@@ -3,14 +3,16 @@ import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
 import styled from "styled-components"
 import { normalizeExerciseId } from "../../util/strings"
 import { Link } from "gatsby"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 const ExerciseSummaryWrapper = styled(Link)`
   padding-left: 1rem;
   margin-bottom: 0.5rem;
   display: block;
 `
 
-const ExerciseSummary = ({ exercise, index, quizIdToTitle, t }) => {
+const ExerciseSummary = ({ exercise, index, quizIdToTitle }) => {
+  const { t } = useTranslation("common")
+
   let description = t("unknownType")
   if (exercise.type === "quiz") {
     const name = quizIdToTitle[exercise.id]
@@ -45,6 +47,4 @@ const ExerciseSummary = ({ exercise, index, quizIdToTitle, t }) => {
   )
 }
 
-export default withTranslation("common")(
-  withSimpleErrorBoundary(ExerciseSummary),
-)
+export default withSimpleErrorBoundary(ExerciseSummary)

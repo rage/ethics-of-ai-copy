@@ -3,7 +3,7 @@ import LoginStateContext from "../contexes/LoginStateContext"
 import styled from "styled-components"
 import { Card } from "@material-ui/core"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import { useAsync } from "react-use"
 import { getCachedUserDetails } from "../services/moocfi"
@@ -22,9 +22,10 @@ const P = styled.p`
   margin-bottom: 1rem !important;
 `
 
-const GoogleFormLink = ({ children, href, t, emailfieldname }) => {
+const GoogleFormLink = ({ children, href, emailfieldname }) => {
   const { loggedIn } = useContext(LoginStateContext)
   const userDetails = useAsync(getCachedUserDetails)
+  const { t } = useTranslation("common")
 
   if (!loggedIn) {
     return (
@@ -61,6 +62,4 @@ const GoogleFormLink = ({ children, href, t, emailfieldname }) => {
   )
 }
 
-export default withTranslation("common")(
-  withSimpleErrorBoundary(GoogleFormLink),
-)
+export default withSimpleErrorBoundary(GoogleFormLink)

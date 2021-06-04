@@ -17,7 +17,7 @@ import {
   MEDIUM_SIDEBAR_WIDTH,
   LARGE_SIDEBAR_WIDTH,
 } from "../util/constants"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 const StyledIcon = styled(FontAwesomeIcon)`
   vertical-align: middle;
@@ -116,6 +116,8 @@ const MobileWrapperOrFragment = (props) => {
 }
 
 const Sidebar = (props) => {
+  const { t } = useTranslation("navbar")
+
   let edges =
     props.data?.allMarkdownRemark?.edges.map((o) => o.node?.frontmatter) || []
   if (process.env.NODE_ENV === "production") {
@@ -176,12 +178,12 @@ const Sidebar = (props) => {
           {props.mobileMenuOpen ? (
             <span>
               <StyledIcon icon={faTimes} />
-              {props.t("label4")}
+              {t("label4")}
             </span>
           ) : (
             <span>
               <StyledIcon icon={faBars} />
-              {props.t("label2")}
+              {t("label2")}
             </span>
           )}
         </Button>
@@ -231,6 +233,4 @@ const SidebarWithData = (props) => (
   />
 )
 
-export default withTranslation("navbar")(
-  withSimpleErrorBoundary(SidebarWithData),
-)
+export default withSimpleErrorBoundary(SidebarWithData)

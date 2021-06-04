@@ -4,7 +4,7 @@ import BackgroundImage from "../images/banner.svg"
 import { Card, CardContent } from "@material-ui/core"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { Link } from "gatsby"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import CourseSettings from "../../course-settings"
 
@@ -97,9 +97,10 @@ const BrandsContainer = styled.div`
   }
 `
 
-const Footer = ({ t }) => {
+const Footer = () => {
   const pagesContextValue = useContext(PagesContext)
   const filePath = pagesContextValue?.current?.filePath
+  const { t } = useTranslation("common")
 
   return (
     <FooterWrapper>
@@ -130,4 +131,4 @@ const Footer = ({ t }) => {
   )
 }
 
-export default withTranslation("common")(withSimpleErrorBoundary(Footer))
+export default withSimpleErrorBoundary(Footer)

@@ -7,10 +7,10 @@ import Jukka from "../../images/contributors/jukka_nurminen.jpg"
 import Santeri from "../../images/contributors/santeri_raisanen.jpg"
 import Sasu from "../../images/contributors/sasu-tarkoma.jpg"
 import Saara from "../../images/contributors/saara.jpg"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 
-const contributors = ({ t }) => [
+const contributors = (t) => [
   {"name": 'Anna-Mari Rusanen', 'url': Anna, "description": t("contributorDescription1")},
   {"name": 'Jukka K. Nurminen', 'url': Jukka, 'description': t("contributorDescription2")},
   {"name": 'Santeri Raisanen', 'url': Santeri,'description': t("contributorDescription3")},
@@ -68,26 +68,28 @@ const CourseGridText = styled.div`
   }
 `
 
-export default withTranslation("common")((props) => {
+export default (props) => {
+  const { t } = useTranslation("common")
+
   return (
     <>
         <Wrapper>
-        <h3>{props.t("aboutSubtitle1")}</h3>
-          <div>{contributors(props).slice(0,2).map(t =>(
+        <h3>{t("aboutSubtitle1")}</h3>
+          <div>{contributors(t).slice(0,2).map(c =>(
               <div>
 
               <Grid>
-                <img src={t.url} alt={t.name} width="223px"/>
+                <img src={c.url} alt={c.name} width="223px"/>
                 <div>
-                    <h5>{t.name}</h5>
-                    <span>{t.description}</span>
+                    <h5>{c.name}</h5>
+                    <span>{c.description}</span>
                 </div>
               </Grid>
               </div>
           ))}</div>
 
-        <h3>{props.t("aboutSubtitle2")}</h3>
-          <div>{contributors(props).slice(2,5).map(o =>(
+        <h3>{t("aboutSubtitle2")}</h3>
+          <div>{contributors(t).slice(2,5).map(o =>(
             <div>
               <Grid>
                 <img src={o.url} alt={o.name} width="223px"/>
@@ -101,4 +103,4 @@ export default withTranslation("common")((props) => {
         </Wrapper>{" "}
     </>
   )
-})
+}

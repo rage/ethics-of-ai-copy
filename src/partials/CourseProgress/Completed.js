@@ -1,7 +1,7 @@
 import { Button } from "@material-ui/core"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import React from "react"
-import { withTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 import styled from "styled-components"
 import { Primary } from "../../components/Buttons"
 
@@ -19,7 +19,9 @@ const Subtitle = styled.p`
   max-width: 700px;
 `
 
-const Completed = ({ t }) => {
+const Completed = () => {
+  const { t } = useTranslation("common")
+
   return (
     <CompletionContainer>
       <Title>{t("completedTitle")}</Title>
@@ -31,4 +33,4 @@ const Completed = ({ t }) => {
   )
 }
 
-export default withTranslation("common")(Completed)
+export default Completed
