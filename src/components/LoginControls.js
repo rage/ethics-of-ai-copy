@@ -51,13 +51,13 @@ class LoginControls extends React.Component {
         </Button>
         <Button onClick={this.doSignOut}>{this.props.t("logout")}</Button>
       </Fragment>
-    ) : (
+    ) : this.props.tReady === true ? (
       <Fragment>
-        {/* <Button to="/sign-up">{this.props.t("newAccount")}</Button>
-        <Button to="/sign-in">{this.props.t("login")}</Button> */}
-        <Button to="/sign-up">Create a new Account</Button>
-        <Button to="/sign-in">Log in</Button>
+        <Button to="/sign-up">{this.props.t("newAccount")}</Button>
+        <Button to="/sign-in">{this.props.t("login")}</Button>
       </Fragment>
+    ) : (
+      <Fragment>Loading...</Fragment>
     )
   }
 }

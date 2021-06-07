@@ -31,7 +31,7 @@ i18n.use(Backend).use(initReactI18next).init({
   ns: ["common", "user", "points-balloon", "navbar"],
   defaultNS: "common",
   react: {
-    wait: true,
+    useSuspense: false,
   },
   lng: CourseSettings.language,
   backend: {

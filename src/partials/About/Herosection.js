@@ -85,21 +85,26 @@ const HeroText = styled.div`
 `
 
 export default (props) => {
-  const { t } = useTranslation("common")
+  const { t, ready } = useTranslation("common")
 
   console.log(props)
   return (
-    <div>
+    ready === true ? (
+      <div>
       <HeroSection>
         <TextWrapper>
           <H1>
             <a style={{ color: "white", fontFamily: "Montserrat" }}>
-              {/* {t("aboutTitle")} */}
-              About the Contributors
+              {t("aboutTitle")}
             </a>
           </H1>
         </TextWrapper>
       </HeroSection>
     </div>
+    ) : (
+      <div>
+        Loading...
+      </div>
+    )
   )
 }
