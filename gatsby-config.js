@@ -38,7 +38,6 @@ module.exports = {
     `gatsby-plugin-anchor-links`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-i18next`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
