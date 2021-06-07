@@ -13,11 +13,11 @@ import UHLogo from "../../images/uh-logo.png"
 import MoocfiLogo from "../../images/moocfi-logo-bw.png"
 import { useTranslation } from "react-i18next"
 
-const sponsors = (hyAlt) => [
+const sponsors = (t) => [
   <Sponsor1 width="200px" />,
   <Sponsor2 width="200px" />,
   <Sponsor3 width="200px" />,
-  <img alt={hyAlt} src={UHLogo} width="260px" />,
+  <img alt={t("hy")} src={UHLogo} width="260px" />,
   <img alt="MOOC.fi" src={MoocfiLogo} width="260px" />,
   <Sponsor4 width="180px" />,
   <Sponsor5 width="160px" />,
@@ -103,27 +103,17 @@ const SponsorLogo = styled.div`
 `
 
 export default (props) => {
-  const { t, ready } = useTranslation("common")
+  const { t } = useTranslation("common")
 
   return (
-    ready === true ? (
-      <Container>
-      <h2> {t("partnersTitle")} </h2> <span> {t("partnersInfo")}</span>
+    <Container>
+      {/* <h2> {t("partnersTitle")} </h2> <span> {t("partnersInfo")}</span> */}
+      <h2> Partners </h2> <span> Official partners of this course</span>
       <SponsorBox>
-        {Object.values(sponsors(t("hy"))).map((sponsor) => (
+        {Object.values(sponsors(t)).map((sponsor) => (
           <SponsorLogo>{sponsor}</SponsorLogo>
         ))}
       </SponsorBox>
     </Container>
-    ) : (
-      <Container>
-      <p> Loading... </p>
-      <SponsorBox>
-        {Object.values(sponsors("Loading...")).map((sponsor) => (
-          <SponsorLogo>{sponsor}</SponsorLogo>
-        ))}
-      </SponsorBox>
-    </Container>
-    )
   )
 }

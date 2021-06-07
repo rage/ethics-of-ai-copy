@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import './i18n'
 
 export default class HTML extends React.Component {
   render() {

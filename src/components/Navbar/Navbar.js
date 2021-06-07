@@ -17,7 +17,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 
 export default function Navbar(props) {
   const [clicked, setClicked] = useState(false)
-  const { t, ready } = useTranslation("navbar")
+  const { t } = useTranslation("navbar")
 
   return (
     <div className="fixedPosition">
@@ -46,7 +46,8 @@ export default function Navbar(props) {
               aria-label={t("label3")}
               role="button"
             >
-              {ready === true ? (t("gridItem2")) : ("Loading...")}
+              {/* {t("gridItem2")} */}
+              FAQ
             </a>
           </li>
           <LoginControls />
