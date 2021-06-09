@@ -6,7 +6,7 @@ import { useQuery } from "@apollo/react-hooks"
 import { gql } from "apollo-boost"
 import { Button } from "@material-ui/core"
 import OverallPoints from "./OverallPoints"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const PROGRESS = gql`
   {

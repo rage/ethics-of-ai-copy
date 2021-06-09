@@ -11,7 +11,7 @@ import Sponsor5 from "../../assets/ministry-of-finance.svg"
 import Sponsor6 from "../../assets/fcai.svg"
 import UHLogo from "../../images/uh-logo.png"
 import MoocfiLogo from "../../images/moocfi-logo-bw.png"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const sponsors = (t) => [
   <Sponsor1 width="200px" />,

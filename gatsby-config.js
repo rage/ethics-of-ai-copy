@@ -28,6 +28,32 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/locales`,
+        name: `locale`,
+      }
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`,
+        languages: [`en`],
+        defaultLanguage: CourseSettings.language,
+        i18nextOptions: {
+          ns: ["common", "user", "points", "navbar"],
+          defaultNS: "common",
+          react: {
+            useSuspense: false,
+          },
+          lng: CourseSettings.language,
+          interpolation: {
+            escapeValue: false,
+          },
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {

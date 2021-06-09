@@ -4,7 +4,7 @@ import styled from "styled-components"
 import LoginControls from "../components/LoginControls"
 import LoginStateContext from "../contexes/LoginStateContext"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 const PleaseLoginWrapper = styled(Card)`
   margin-bottom: 2rem;
 `

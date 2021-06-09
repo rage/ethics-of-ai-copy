@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const accentColor = "#CCC"
 

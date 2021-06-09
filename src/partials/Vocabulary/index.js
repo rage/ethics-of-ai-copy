@@ -3,7 +3,7 @@ import PagesContext from "../../contexes/PagesContext"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
 import styled from "styled-components"
 import Word from "./Word"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 
 const WordContainer = styled.div`
   margin: 1em 2em;

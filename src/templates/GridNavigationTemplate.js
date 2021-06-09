@@ -13,7 +13,7 @@ import Button from "../components/Button"
 import { respond } from "../_respond"
 import PagesContext from "../contexes/PagesContext"
 import H2 from "../partials/Headers/H2"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const ButtonWrapper = styled.div`
   display: flex;

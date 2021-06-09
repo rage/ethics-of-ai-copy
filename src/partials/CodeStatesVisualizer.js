@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from "react"
 
 import "code-states-visualizer/dist/app.css"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 const CodeStatesVisualizer = lazy(() => import("code-states-visualizer"))
 
 class CodeStatesVisualizerWrapper extends React.Component {

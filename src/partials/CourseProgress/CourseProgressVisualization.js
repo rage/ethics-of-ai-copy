@@ -11,7 +11,7 @@ import styled from "styled-components"
 import ProgressBar from "./ProgressBar"
 import { respond } from "../../_respond"
 import Completed from "./Completed"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const ProgressContainer = styled.div`
   margin: 5rem 10rem;

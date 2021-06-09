@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
 import LoginStateContext from "../../contexes/LoginStateContext"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 import { Card } from "@material-ui/core"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"

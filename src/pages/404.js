@@ -3,7 +3,7 @@ import Layout from "../templates/Layout"
 import Container from "../components/Container"
 import { withLoginStateContext } from "../contexes/LoginStateContext"
 import Helmet from "react-helmet"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const NotFoundPage = () => {
   const { t } = useTranslation("common")
@@ -20,3 +20,17 @@ const NotFoundPage = () => {
 }
 
 export default withLoginStateContext(NotFoundPage)
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

@@ -17,7 +17,7 @@ import {
   MEDIUM_SIDEBAR_WIDTH,
   LARGE_SIDEBAR_WIDTH,
 } from "../util/constants"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const StyledIcon = styled(FontAwesomeIcon)`
   vertical-align: middle;

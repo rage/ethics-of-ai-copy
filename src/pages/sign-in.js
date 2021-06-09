@@ -5,7 +5,7 @@ import { authenticate, loggedIn } from "../services/moocfi"
 import { navigate, Link } from "gatsby"
 import { TextField, Button } from "@material-ui/core"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 import styled from "styled-components"
 import LoginStateContext, {
   withLoginStateContext,
@@ -181,3 +181,17 @@ class SignInPage extends React.Component {
 export default withTranslation(["common", "user"])(
   withLoginStateContext(SignInPage),
 )
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

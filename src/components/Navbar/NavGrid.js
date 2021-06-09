@@ -9,7 +9,7 @@ import GridNavigation from "../../partials/Grid/index"
 import Button from "../Button"
 import { respond } from "../../_respond"
 import H3 from "../../partials/Headers/H3"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const ButtonWrapper = styled.div`
   display: flex;

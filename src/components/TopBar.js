@@ -9,7 +9,7 @@ import Button from "./Button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChartLine as pointsIcon } from "@fortawesome/free-solid-svg-icons"
 import CourseSettings from "../../course-settings"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 
 const TopBarContainer = styled.div`
   height: 4rem;

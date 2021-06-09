@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faClock as icon } from "@fortawesome/free-solid-svg-icons"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const DeadlineWrapper = styled.div`
   margin-bottom: 1rem;

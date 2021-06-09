@@ -7,7 +7,7 @@ import { fetchProgress } from "../../services/progress"
 import { getCachedUserDetails } from "../../services/moocfi"
 import { SMALL_MEDIUM_BREAKPOINT } from "../../util/constants"
 import CourseProgress from "./CourseProgress"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 
 const StyledModal = styled(Modal)`
   z-index: 500 !important;
@@ -112,6 +112,6 @@ class PointsBalloonContent extends React.Component {
   }
 }
 
-export default withTranslation("points-balloon")(
+export default withTranslation("points")(
   withSimpleErrorBoundary(PointsBalloonContent),
 )

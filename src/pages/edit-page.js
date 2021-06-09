@@ -6,7 +6,7 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { withLoginStateContext } from "../contexes/LoginStateContext"
 import { Button, Typography } from "@material-ui/core"
 import CourseSettings from "../../course-settings"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
 const EditPage = () => {
@@ -99,3 +99,17 @@ const EditPage = () => {
 }
 
 export default withSimpleErrorBoundary(withLoginStateContext(EditPage))
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

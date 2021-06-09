@@ -2,7 +2,7 @@ import React from "react"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
 import styled from "styled-components"
 import { SMALL_MEDIUM_BREAKPOINT } from "../../util/constants"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const StyledTooltip = styled.div`
   background: white;
@@ -20,7 +20,7 @@ const StyledTooltip = styled.div`
 `
 
 const CustomTooltip = (props) => {
-  const { t } = useTranslation("points-balloon")
+  const { t } = useTranslation("points")
 
   if (!props.active) {
     return null

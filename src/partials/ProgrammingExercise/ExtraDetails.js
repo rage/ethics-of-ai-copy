@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@material-ui/core"
 import Coins from "./Coins"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import styled from "styled-components"
 

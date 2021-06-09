@@ -7,7 +7,7 @@ import LoginStateContext, {
   withLoginStateContext,
 } from "../contexes/LoginStateContext"
 import Container from "../components/Container"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 
 class MissingInfo extends React.Component {
   static contextType = LoginStateContext
@@ -41,3 +41,17 @@ class MissingInfo extends React.Component {
 }
 
 export default withTranslation("common")(withLoginStateContext(MissingInfo))
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

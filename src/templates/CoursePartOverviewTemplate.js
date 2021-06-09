@@ -88,7 +88,7 @@ export default class CoursePartOverviewTemplate extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query($path: String!, $language: String!) {
     page: markdownRemark(frontmatter: { path: { eq: $path } }) {
       htmlAst
       html
@@ -111,6 +111,15 @@ export const pageQuery = graphql`
             type
             parentPagePath
           }
+        }
+      }
+    }
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

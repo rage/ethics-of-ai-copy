@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import { normalizeExerciseId } from "../util/strings"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 
 const quizWrapper = styled.div`
   code {

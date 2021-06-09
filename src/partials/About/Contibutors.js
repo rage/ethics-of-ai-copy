@@ -7,7 +7,7 @@ import Jukka from "../../images/contributors/jukka_nurminen.jpg"
 import Santeri from "../../images/contributors/santeri_raisanen.jpg"
 import Sasu from "../../images/contributors/sasu-tarkoma.jpg"
 import Saara from "../../images/contributors/saara.jpg"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 
 const contributors = (t) => [

@@ -6,7 +6,7 @@ import { respond } from "../../_respond"
 import { PrimaryButton, SecondaryButton } from "../../components/Buttons"
 import Box from "../../assets/SprintingDoodle.svg"
 import H1 from "../Headers/H1"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const HeroSection = styled.div`
   padding: 4rem 8rem;

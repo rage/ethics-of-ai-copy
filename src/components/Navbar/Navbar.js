@@ -6,7 +6,7 @@ import styled from "styled-components"
 
 import Hamburger from "../../components/Hamburger"
 import LoginControls from "../LoginControls"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 /* import NavGrid from "./NavGrid" */
 import "./Navbar.css"
 

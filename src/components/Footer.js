@@ -4,7 +4,7 @@ import BackgroundImage from "../images/banner.svg"
 import { Card, CardContent } from "@material-ui/core"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { Link } from "gatsby"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import CourseSettings from "../../course-settings"
 

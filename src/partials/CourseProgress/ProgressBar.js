@@ -3,7 +3,7 @@ import { makeStyles, withStyles } from "@material-ui/core/styles"
 import LinearProgress from "@material-ui/core/LinearProgress"
 /* import { LinearProgress } from "@material-ui/core"; */
 import styled from "styled-components"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const BorderLinearProgress = withStyles((theme) => ({
   root: {

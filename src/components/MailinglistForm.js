@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 import { TextField, Button } from "@material-ui/core"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 

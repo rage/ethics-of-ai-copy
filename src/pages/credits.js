@@ -4,7 +4,7 @@ import Layout from "../templates/Layout"
 import Container from "../components/Container"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { withLoginStateContext } from "../contexes/LoginStateContext"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const Credits = () => {
   const { t } = useTranslation("common")
@@ -83,3 +83,17 @@ const Credits = () => {
 }
 
 export default withLoginStateContext(Credits)
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

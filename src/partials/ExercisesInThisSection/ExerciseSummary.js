@@ -3,7 +3,7 @@ import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
 import styled from "styled-components"
 import { normalizeExerciseId } from "../../util/strings"
 import { Link } from "gatsby"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 const ExerciseSummaryWrapper = styled(Link)`
   padding-left: 1rem;
   margin-bottom: 0.5rem;

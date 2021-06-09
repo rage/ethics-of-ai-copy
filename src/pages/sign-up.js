@@ -9,7 +9,7 @@ import LoginStateContext, {
   withLoginStateContext,
 } from "../contexes/LoginStateContext"
 import Container from "../components/Container"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 
 class SignInPage extends React.Component {
   static contextType = LoginStateContext
@@ -52,3 +52,17 @@ class SignInPage extends React.Component {
 }
 
 export default withTranslation("user")(withLoginStateContext(SignInPage))
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

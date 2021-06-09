@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { respond } from "../../_respond"
 import { HeroButton } from "../../components/Buttons"
 import HeroIllustration from "../../assets/hero-svg.svg"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const ButtonWrapper = styled.div`
   display: flex;

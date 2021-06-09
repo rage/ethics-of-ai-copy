@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { get } from "lodash"
 
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 import {
   fetchProgrammingExerciseDetails,
   fetchProgrammingExerciseModelSolution,

@@ -22,7 +22,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInfoCircle as icon } from "@fortawesome/free-solid-svg-icons"
 import DropdownMenu from "./DropdownMenu"
 import { Link } from "gatsby"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 
 const Row = styled.div`
   margin-bottom: 1.5rem;

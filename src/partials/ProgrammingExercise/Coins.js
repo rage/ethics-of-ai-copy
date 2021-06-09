@@ -4,7 +4,7 @@ import { fetchProgrammingExerciseModelSolution } from "../../services/moocfi"
 import { Button, Paper, Card, CardContent } from "@material-ui/core"
 import Modal from "@material-ui/core/Modal"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
-import { withTranslation, Trans } from "react-i18next"
+import { withTranslation, Trans } from "gatsby-plugin-react-i18next"
 
 const ModalContent = styled(Paper)`
   padding: 5rem;

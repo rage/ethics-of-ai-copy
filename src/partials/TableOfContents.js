@@ -3,7 +3,7 @@ import Loading from "../components/Loading"
 import styled from "styled-components"
 import { Paper } from "@material-ui/core"
 import { normalizeExerciseId } from "../util/strings"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 
 const TableOfContentsWrapper = styled(Paper)`
   padding: 1rem;

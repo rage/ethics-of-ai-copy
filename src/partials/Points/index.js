@@ -3,9 +3,9 @@ import PointsImpl from "./PointsImpl"
 import ApolloClient from "apollo-boost"
 import { ApolloProvider } from "@apollo/react-hooks"
 import { accessToken } from "../../services/moocfi"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 
-export default withTranslation(class Points extends React.Component {
+export default withTranslation("common")(class Points extends React.Component {
   state = {
     render: false,
   }

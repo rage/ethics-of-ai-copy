@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import ContentLoader from "react-content-loader"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPencilAlt as icon, faRedo } from "@fortawesome/free-solid-svg-icons"
 import { Card, CardContent, Button, Typography } from "@material-ui/core"

@@ -1,42 +1,41 @@
 import i18n from "i18next"
-import { initReactI18next } from "react-i18next"
-import Backend from "i18next-http-backend"
+import { initReactI18next } from "gatsby-plugin-react-i18next"
 import CourseSettings from "../course-settings"
-import commonEN from "./locales/common/en"
-import pointsBalloonEN from "./locales/pointsBalloon/en"
-import userEN from "./locales/user/en"
-import navbarEN from "./locales/navbar/en"
-import commonFI from "./locales/common/fi"
-import pointsBalloonFI from "./locales/pointsBalloon/fi"
-import userFI from "./locales/user/fi"
-import navbarFI from "./locales/navbar/fi"
+import commonEN from "./locales/en/common"
+import pointsEN from "./locales/en/points"
+import userEN from "./locales/en/user"
+import navbarEN from "./locales/en/navbar"
+import commonFI from "./locales/fi/common"
+import pointsFI from "./locales/fi/points"
+import userFI from "./locales/fi/user"
+import navbarFI from "./locales/fi/navbar"
 
 const resources = {
   en: {
     common: commonEN,
-    "points-balloon": pointsBalloonEN,
+    "points": pointsEN,
     user: userEN,
     navbar: navbarEN,
   },
   fi: {
     common: commonFI,
-    "points-balloon": pointsBalloonFI,
+    "points": pointsFI,
     user: userFI,
     navbar: navbarFI,
   },
 }
 
-i18n.use(Backend).use(initReactI18next).init({
+i18n.use(initReactI18next).init({
   resources,
-  ns: ["common", "user", "points-balloon", "navbar"],
+  ns: ["common", "user", "points", "navbar"],
   defaultNS: "common",
   react: {
-    wait: true,
+    useSuspense: false,
   },
   lng: CourseSettings.language,
-  backend: {
-    loadPath: '/src/locales/{{ns}}/{{lng}}.json'
-  },
+  interpolation: {
+    escapeValue: false,
+  }
 })
 
 export default i18n

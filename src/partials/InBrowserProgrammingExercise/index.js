@@ -3,7 +3,7 @@ import { Paper } from "@material-ui/core"
 import styled from "styled-components"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
 import Loading from "../../components/Loading"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 const MoocFiPythonEditor = lazy(() => import("./MoocfiPythonEditorLoader"))
 
 const StyledPaper = styled(Paper)`

@@ -7,7 +7,7 @@ import MenuItem from "@material-ui/core/MenuItem"
 import FormControl from "@material-ui/core/FormControl"
 import Select from "@material-ui/core/Select"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const StyledFormControl = styled(FormControl)`
   width: 100%;

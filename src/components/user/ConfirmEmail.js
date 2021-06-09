@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 import EmailExample from "../../images/email-example.png"
 
 import styled from "styled-components"

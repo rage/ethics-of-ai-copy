@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUniversity as icon } from "@fortawesome/free-solid-svg-icons"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import { normalizeExerciseId } from "../util/strings"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const Wrapper = styled.aside`
   padding 1rem;

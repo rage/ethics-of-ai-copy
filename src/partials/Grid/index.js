@@ -4,7 +4,7 @@ import styled from "styled-components"
 import rehypeReact from "rehype-react"
 import { Helmet } from "react-helmet"
 
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
 
 import getNamedPartials from "../../partials"

@@ -4,7 +4,7 @@ import { signOut, getCachedUserDetails } from "../services/moocfi"
 import LoginStateContext, {
   withLoginStateContext,
 } from "../contexes/LoginStateContext"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser as profileIcon } from "@fortawesome/free-solid-svg-icons"
 import styled from "styled-components"

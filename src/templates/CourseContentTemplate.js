@@ -28,7 +28,8 @@ import EndOfSubSection from "../components/EndOfSubSection"
 import { tryToScrollToSelector } from "../util/dom"
 import { nthIndex } from "../util/strings"
 import { respond } from "../_respond"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
+import courseSettings from "../../course-settings"
 
 const StyledIcon = styled(FontAwesomeIcon)`
   margin-right: 0.25rem;
@@ -96,10 +97,14 @@ export default withTranslation("common")(
         components: partials,
       }).Compiler
 
+      let pathWithoutLng = `${frontmatter.path.replace(
+        `/${courseSettings.language}`,
+        "",
+      )}`
       const parentSectionName = capitalizeFirstLetter(
-        `${frontmatter.path.split(/\//g)[1].replace(/-/g, " ")}`,
+        `${pathWithoutLng.split(/\//g)[1].replace(/-/g, " ")}`,
       )
-      const parentSectionPath = `/${frontmatter.path.split(/\//g)[1]}`
+      const parentSectionPath = `/${pathWithoutLng.split(/\//g)[1]}`
 
       const chooseChapterHeader = {
         1: [this.props.t("chapterTitle1"), this.props.t("chapterInfo1")],
@@ -140,10 +145,8 @@ export default withTranslation("common")(
               <Layout>
                 <HeroSection
                   title={parentSectionName}
-                  subtitle={
-                    chooseChapterHeader[frontmatter.path.substr(9, 1)][0]
-                  }
-                  intro={chooseChapterHeader[frontmatter.path.substr(9, 1)][1]}
+                  subtitle={chooseChapterHeader[pathWithoutLng.substr(9, 1)][0]}
+                  intro={chooseChapterHeader[pathWithoutLng.substr(9, 1)][1]}
                   heroIcon={heroIcon}
                 ></HeroSection>
                 <Container>
@@ -151,7 +154,7 @@ export default withTranslation("common")(
                     <ChapterBox />
                     <H2>
                       {" "}
-                      {chooseChapterValue[frontmatter.path.substr(11, 1)]}.{" "}
+                      {chooseChapterValue[pathWithoutLng.substr(11, 1)]}.{" "}
                       {frontmatter.title}
                     </H2>
                     {renderAst(htmlAst)}
@@ -169,7 +172,7 @@ export default withTranslation("common")(
 )
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query($path: String!, $language: String!) {
     page: markdownRemark(frontmatter: { path: { eq: $path } }) {
       htmlAst
       html
@@ -187,6 +190,15 @@ export const pageQuery = graphql`
             path
             title
           }
+        }
+      }
+    }
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

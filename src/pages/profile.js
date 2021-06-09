@@ -17,7 +17,7 @@ import { faCheckCircle as icon } from "@fortawesome/free-solid-svg-icons"
 
 import Snackbar from "@material-ui/core/Snackbar"
 import SnackbarContent from "@material-ui/core/SnackbarContent"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 
 const StyledSnackbarContent = styled(SnackbarContent)`
   background-color: #43a047 !important;
@@ -94,3 +94,17 @@ class MissingInfo extends React.Component {
 }
 
 export default withTranslation("common")(withLoginStateContext(MissingInfo))
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

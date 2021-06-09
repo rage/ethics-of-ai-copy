@@ -3,7 +3,7 @@ import PagesContext from "../contexes/PagesContext"
 import { nthIndex } from "../util/strings"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 import { Divider, Paper } from "@material-ui/core"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 

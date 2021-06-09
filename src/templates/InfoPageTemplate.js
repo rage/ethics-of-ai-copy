@@ -58,7 +58,7 @@ export default class InfoPageTemplate extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query($path: String!, $language: String!) {
     page: markdownRemark(frontmatter: { path: { eq: $path } }) {
       htmlAst
       html
@@ -68,6 +68,15 @@ export const pageQuery = graphql`
         banner
       }
       fileAbsolutePath
+    }
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
     }
   }
 `

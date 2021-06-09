@@ -7,7 +7,7 @@ import ExerciseSummary from "./ExerciseSummary"
 import { fetchManyQuizDetails } from "../../services/quiznator"
 import { flatten } from "../../util/arrays"
 import { fetchQuizNames } from "../../services/quizzes"
-import { withTranslation } from "react-i18next"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 
 const Title = styled.div`
   margin-bottom: 0.5em;
