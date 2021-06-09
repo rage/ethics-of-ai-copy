@@ -107,8 +107,7 @@ export default (props) => {
 
   return (
     <Container>
-      {/* <h2> {t("partnersTitle")} </h2> <span> {t("partnersInfo")}</span> */}
-      <h2> Partners </h2> <span> Official partners of this course</span>
+      <h2> {t("partnersTitle")} </h2> <span> {t("partnersInfo")}</span>
       <SponsorBox>
         {Object.values(sponsors(t)).map((sponsor) => (
           <SponsorLogo>{sponsor}</SponsorLogo>

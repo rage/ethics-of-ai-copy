@@ -35,10 +35,8 @@ export default (props) => {
     <a href="/about" style={{ textDecoration: "none" }}>
     <Container>
       <AboutTextBox>
-        {/* <H2> {t("contributors")} </H2>
-        <span> {t("aboutAuthors")} </span> */}
-        <H2> Contributors </H2>
-        <span> Read about authors </span>
+        <H2> {t("contributors")} </H2>
+        <span> {t("aboutAuthors")} </span>
       </AboutTextBox>
     </Container>
     </a>

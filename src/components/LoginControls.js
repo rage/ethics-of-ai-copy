@@ -53,10 +53,8 @@ class LoginControls extends React.Component {
       </Fragment>
     ) : (
       <Fragment>
-        {/* <Button to="/sign-up">{this.props.t("newAccount")}</Button>
-        <Button to="/sign-in">{this.props.t("login")}</Button> */}
-        <Button to="/sign-up">Create a new Account</Button>
-        <Button to="/sign-in">Log in</Button>
+        <Button to="/sign-up">{this.props.t("newAccount")}</Button>
+        <Button to="/sign-in">{this.props.t("login")}</Button>
       </Fragment>
     )
   }
