@@ -47,6 +47,6 @@ Automation or autonomisation is about degree, and hence, they are continuums rat
 <br/>
 <br/>
 
-<img src=../../src/assets/levels-automatisation.svg alt="Levels of automatisation" style="width: 700px">
+<img src=../../../src/assets/levels-automatisation.svg alt="Levels of automatisation" style="width: 700px">
 
 </text-box>

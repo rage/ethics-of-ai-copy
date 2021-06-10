@@ -25,7 +25,7 @@ Wachter and Mittelstadt (2019) propose that the right for the control of your ow
 
 </text-box>
 
-<img src=../../src/assets/london-zoom.svg alt="london zoomed image">
+<img src=../../../src/assets/london-zoom.svg alt="london zoomed image">
 
 <styled-text>
 
