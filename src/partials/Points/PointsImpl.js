@@ -44,7 +44,11 @@ const Points = (props) => {
   }
 
   if (error) {
-    return <>{t("pointsError")} {error}</>
+    return (
+      <>
+        {t("pointsError")} {error}
+      </>
+    )
   }
 
   if (!data || !data.currentUser) {

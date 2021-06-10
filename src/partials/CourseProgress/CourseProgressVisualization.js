@@ -16,7 +16,6 @@ import { useTranslation } from "gatsby-plugin-react-i18next"
 const ProgressContainer = styled.div`
   margin: 5rem 10rem;
 
-
   ${respond.mobile`
   margin: 5rem 2rem;
 `}
@@ -63,9 +62,7 @@ const CourseProgressVisualization = () => {
         n={exercise_completions ? exercise_completions : 0}
         max={total_exercises}
       />
-      <small>
-        {t("progressNote")}
-      </small>
+      <small>{t("progressNote")}</small>
     </ProgressContainer>
   )
 }

@@ -6,12 +6,12 @@ export default ({ points }) => {
   const { t } = useTranslation("common")
 
   return (
-  <Card>
-    <CardContent>
-      <Typography variant="h5" component="h2">
-        {t("points")}: {points.group}
-      </Typography>
-    </CardContent>
-  </Card>
-)
+    <Card>
+      <CardContent>
+        <Typography variant="h5" component="h2">
+          {t("points")}: {points.group}
+        </Typography>
+      </CardContent>
+    </Card>
+  )
 }

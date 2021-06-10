@@ -13,13 +13,13 @@ import navbarFI from "./locales/fi/navbar"
 const resources = {
   en: {
     common: commonEN,
-    "points": pointsEN,
+    points: pointsEN,
     user: userEN,
     navbar: navbarEN,
   },
   fi: {
     common: commonFI,
-    "points": pointsFI,
+    points: pointsFI,
     user: userFI,
     navbar: navbarFI,
   },
@@ -35,7 +35,7 @@ i18n.use(initReactI18next).init({
   lng: CourseSettings.language,
   interpolation: {
     escapeValue: false,
-  }
+  },
 })
 
 export default i18n

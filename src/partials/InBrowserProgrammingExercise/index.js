@@ -35,7 +35,11 @@ class MoocFiPythonEditorWrapper extends React.Component {
       )
     }
     return (
-      <Suspense fallback={<div style={{ height: "540px" }}>{this.props.t("loading2")}</div>}>
+      <Suspense
+        fallback={
+          <div style={{ height: "540px" }}>{this.props.t("loading2")}</div>
+        }
+      >
         <StyledPaper>
           <MoocFiPythonEditor {...this.props} />
         </StyledPaper>
@@ -44,4 +48,6 @@ class MoocFiPythonEditorWrapper extends React.Component {
   }
 }
 
-export default withTranslation("common")(withSimpleErrorBoundary(MoocFiPythonEditorWrapper))
+export default withTranslation("common")(
+  withSimpleErrorBoundary(MoocFiPythonEditorWrapper),
+)

@@ -7,7 +7,7 @@ import { respond } from "../../_respond"
 import H2 from "../Headers/H2"
 
 const Container = styled.div`
-text-align: left;
+  text-align: left;
 `
 
 export default (props) => {
