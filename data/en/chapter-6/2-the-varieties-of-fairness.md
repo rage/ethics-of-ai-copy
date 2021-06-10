@@ -10,7 +10,7 @@ hidden: false
 
 Philosophers have proposed various definitions for the concept of fairness. According to Aristotle, “equals should be treated equally and unequals unequally”.
 
-This principle of equality states that individuals should be treated the same, unless they differ in ways that are relevant to the situation in which they are involved.
+This **principle of equality** states that individuals should be treated the same, unless they differ in ways that are relevant to the situation in which they are involved.
 
 For example, if Alan Turing and Ada Lovelace both got the same grades from the exams, and there are no relevant differences between them or the exams they take, then they should be given the same grade. And if Turing would get a better grade than Lovelace simply because he has a higher socio-economic status, then it would be unfair. Why? Because socio-economic status should not be relevant when grades are given.
 

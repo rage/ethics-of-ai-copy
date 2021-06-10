@@ -34,6 +34,7 @@ The convention involves four general principles:
 * The interests of the child are primary in all decision-making
 * The child is entitled to a good life
 * The views of the child shall be taken into account
+
 The rights of the child are the obligation of adults. The authorities must evaluate the impact on children of all their measures and decisions relating to children, take into account the interests of the children and listen to their opinions.
 
 Parents and legal guardians have the primary responsibility for taking care of their children and their upbringing. They are entitled to obtain support, guidance and advice for that task. If the parents or guardians are not, despite support, able to take care of the well-being of their child, the state must safeguard good care for the child through foster care or adoption.

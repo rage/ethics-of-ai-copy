@@ -15,6 +15,7 @@ In ethics, accountability is closely related to the concept of “moral agency�
 **Actions and omissions**
 
 Philosophically, a moral agent is primarily responsible for their own actions (“acts”). Sometimes agents are also responsible for not-doings, “omissions”. So, if I kill someone, I am responsible for that act. If I just let someone die, I am responsible for not-helping (omission), even if I did not actively kill someone.
+
 Omissions and actions are not morally equal. It is morally less bad to omit a thing than to perform an act: It is worse to actively kill someone than to let them die. But this doesn’t make omissions morally right. However, we cannot be responsible for all of the things we do not do. Instead, we are responsible for only those things which we’ve deliberately and knowingly chosen to do or omit.
 
 **Autonomy**

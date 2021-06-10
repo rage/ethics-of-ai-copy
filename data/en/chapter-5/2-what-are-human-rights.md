@@ -8,12 +8,13 @@ hidden: false
 
 <styled-text>
 
-Human rights form the foundation of the current ethical guidelines and principles of AI. This makes human rights a fundamental component of contemporary AI ethics. As rights, human rights are universal: all humans are entitled to have them. One does not have to be a particular kind of person or a member of some specific community to have human rights.
+Human rights form the foundation of the current ethical guidelines and principles of AI. This makes human rights a fundamental component of contemporary AI ethics. As rights, human rights are **universal**: all humans are entitled to have them. One does not have to be a particular kind of person or a member of some specific community to have human rights.
 
-Human rights are norms that protect all people, everywhere from political, legal, and social abuses. They include the following:
+Human rights are **norms** that protect all people, everywhere from political, legal, and social abuses. They include the following:
 
-* Civil and political rights, such as the right to life, liberty, and property, freedom of expression, pursuit of happiness, and equality before the law
-* Social, cultural and economic rights, including the right to participate in science and culture, the right to work, and the right to education
+* **Civil and political rights**, such as the right to life, liberty, and property, freedom of expression, pursuit of happiness, and equality before the law
+* **Social, cultural and economic rights**, including the right to participate in science and culture, the right to work, and the right to education
+
 The role of human rights is to protect people's ability to form, construe, and pursue their own conceptions of a worthwhile life – it's not just about the ability to live “in liberty, happiness and well-being”.
 
 </styled-text>

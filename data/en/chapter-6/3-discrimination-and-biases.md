@@ -64,7 +64,7 @@ Recognizing moralistic discrimination then is not simply a matter of recognizing
 
 ### Harms – what are they?
 
-Reflecting on the two examples above, the condition of social saliency is clearly fulfilled in both. Gender is a category which has historically always structured social interaction. What about harm? One case is clearer than the other: losing out on a job opportunity due to reasons unrelated to one’s suitability for the job is clearly a harm. In the case of the word embeddings, any harm which may incur is more difficult to pinpoint. At least, we cannot directly point out an opportunity lost, a service refused or a good denied. In cases like this, a harm is nonetheless instigated. To capture this, we need to understand the difference between allocative and representational harms, as they are presented in [Crawford 2017](https://www.youtube.com/watch?v=fMym_BKWQzk).
+Reflecting on the two examples above, the condition of social saliency is clearly fulfilled in both. Gender is a category which has historically always structured social interaction. What about harm? One case is clearer than the other: losing out on a job opportunity due to reasons unrelated to one’s suitability for the job is clearly a harm. In the case of the word embeddings, any harm which may incur is more difficult to pinpoint. At least, we cannot directly point out an opportunity lost, a service refused or a good denied. In cases like this, a harm is nonetheless instigated. To capture this, we need to understand the difference between **allocative** and **representational** harms, as they are presented in [Crawford 2017](https://www.youtube.com/watch?v=fMym_BKWQzk).
 
 
 #### Allocative harms

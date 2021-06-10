@@ -60,11 +60,11 @@ According to GDPR, if you process data you’re also required to handle data sec
 
 The GDPR permits organisations to collect anonymized data without consent, use it for any purpose, and store it for an indefinite time – as long as organisations remove all identifiers from the data. There are several techniques for data-anonymisation, including:
 
-Generalization is a method that deliberately removes some of the data to make it less identifiable. Data can be modified into a set of ranges or a broad area with appropriate boundaries. You can remove, for example, the street address while including the information about the town name. In this way, you can eliminate some of the identifiers while retaining a degree of data accuracy.
+* **Generalization** is a method that deliberately removes some of the data to make it less identifiable. Data can be modified into a set of ranges or a broad area with appropriate boundaries. You can remove, for example, the street address while including the information about the town name. In this way, you can eliminate some of the identifiers while retaining a degree of data accuracy.
 
-Pseudonymization is a data management and de-identification method that replaces private identifiers – names, ID-codes – with fake identifiers or pseudonyms, for example replacing the identifier “Santeri” with “Saara”. Pseudonymization preserves statistical accuracy and data integrity. The modified data can be used while still protecting data privacy.
+* **Pseudonymization** is a data management and de-identification method that replaces private identifiers – names, ID-codes – with fake identifiers or pseudonyms, for example replacing the identifier “Santeri” with “Saara”. Pseudonymization preserves statistical accuracy and data integrity. The modified data can be used while still protecting data privacy.
 
-Synthetic data is a method for using created artificial datasets instead of altering the original dataset. The process involves creating statistical models based on patterns found in the original dataset. You can use standard deviations, medians, linear regression or other statistical techniques to generate the synthetic data.
+* **Synthetic data** is a method for using created artificial datasets instead of altering the original dataset. The process involves creating statistical models based on patterns found in the original dataset. You can use standard deviations, medians, linear regression or other statistical techniques to generate the synthetic data.
 
 Data-anonymization can be challenging. There are also methods for “de-anonymization”. De-anonymization methods attempt to re-identify encrypted or obscured information. De-anonymization, also referred to as data re-identification, can, for example, cross-reference anonymized information with other available data in order to identify a person, group, or transaction.
 
