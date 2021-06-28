@@ -22,7 +22,7 @@ In 2014, Amazon started developing an internal AI system to streamline their rec
 
 The system was found to penalize any CVs which indicated the applicant to be a woman. This included mentions of attending things like a women’s chess club, or an all-women college.  Amazon reportedly attempted to debias the system but ended up scrapping the whole project instead. The system was never used in actual recruiting processes.
 
-#### Example 3: Credit scoring ([Rutkenstein & Velkova 2019](https://algorithmwatch.org/en/automating-society-finland))
+#### Example 3: Credit scoring ([Rutkenstein & Velkova 2019](https://algorithmwatch.org/en/automating-society-2019/finland/))
 
 In 2018, the non-discrimination and equality tribunal of Finland judged on a case where a consumer credit application was automatically denied using statistical methods. The credit institution Svea Ekonomi atuomatically evaluated an individual's creditworthiness in conjunction to his online purchase of building materials, for which he was seeking credit. The credit decision was appealed, and the the tribunal found that "the applicant’s age, male gender, Finnish as the mother tongue and the place of residence in a rural area were all factors that contributed to a case of multiple discriminations, resulting in a decision not to grant a loan." The tribunal remarked, that had the applicant been a woman, or Swedish speaking, he would have been granted the credit.
 
