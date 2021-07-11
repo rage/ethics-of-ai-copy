@@ -11,7 +11,7 @@ import { useTranslation } from "gatsby-plugin-react-i18next"
 import "./Navbar.css"
 
 const StyledIcon = styled(FontAwesomeIcon)`
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #333;
 `
 
