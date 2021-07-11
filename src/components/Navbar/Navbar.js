@@ -50,11 +50,6 @@ export default function Navbar(props) {
             </a>
           </li>
           <LoginControls />
-          <span className="copyright">
-            {" "}
-            © 2020 Graduate Economic, <br />
-            Inc.All Rights Reserved.{" "}
-          </span>{" "}
         </ul>{" "}
       </nav>{" "}
     </div>

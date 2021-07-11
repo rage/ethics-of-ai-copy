@@ -16,7 +16,7 @@ const StyledButton = styled.button`
   display: inline-block;
   width: auto;
   border-radius: 4px;
-  padding: 1.2rem 3rem;
+  padding: .9rem 2.4rem;
   color: #333;
   border: none;
   text-transform: none;
@@ -46,7 +46,6 @@ const Hero = styled(StyledButton)`
   background: #4a6164;
   color: #fff;
   border-radius: 50px;
-  text-transform: uppercase;
   font-weight: 500;
 `
 const Secondary = styled(StyledButton)`

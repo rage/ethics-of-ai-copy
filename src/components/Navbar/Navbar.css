@@ -34,8 +34,10 @@ ul {
 
 .nav-menu {
   display: grid;
+  ms-display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-gap: 20px;
+  -ms-grid-columns: repeat(3, auto);
+  grid-gap: 10px;
   list-style: none;
   text-align: center;
   align-items: center;
@@ -96,6 +98,12 @@ ul {
 
 @media screen and (max-width: 960px) {
   .NavbarItems {
+    padding: 0 2rem;
+  }
+}
+
+/* @media screen and (max-width: 960px) {
+  .NavbarItems {
     top: 0;
     width: 100%;
     z-index: 2;
@@ -114,7 +122,7 @@ ul {
     transition: all 0.5s ease;
     padding-left: 0;
     padding-top: 4rem;
-    background: black;
+    background: #f1f1f1;
   }
 
   .nav-menu .copyright {
@@ -207,3 +215,4 @@ ul {
     transform: translateX(0);
   }
 }
+ */

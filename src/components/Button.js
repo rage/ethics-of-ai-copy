@@ -5,7 +5,7 @@ import { Button as MaterialButton } from "@material-ui/core"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
 const StyledLink = styled(Link)`
-  margin: 1rem 0.5rem;
+  margin: 1rem 0rem;
 
   &:hover {
     text-decoration: none;
