@@ -56,10 +56,10 @@ const CourseProgressVisualization = () => {
   return (
     <ProgressContainer>
       {completed && <Completed />}
-      <ProgressBar label="Totals Points" point={n_points ? n_points : 0} max={max_points} />
+      <ProgressBar label="Totals Points" point={n_points} max={max_points} />
       <ProgressBar
         label="Total Exercises"
-        n={exercise_completions ? exercise_completions : 0}
+        point={exercise_completions ? exercise_completions : 0}
         max={total_exercises}
       />
       <small>{t("progressNote")}</small>

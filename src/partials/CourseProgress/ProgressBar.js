@@ -60,21 +60,19 @@ const Label = styled.div`
 const ProgresssBar = ({ n, max, point, label }) => {
   const { t } = useTranslation("common")
 
-  const ExerciseScaled = (n / max) * 100
+  /* const ExerciseScaled = (n / max) * 100 */
   const PointScaled = (point / max) * 100
   return (
     <div>
       <Label>
         <span>{label}</span>{" "}
         <span>
-          {n
-            ? Math.round(ExerciseScaled) + t("percentCompleted")
-            : `${point} / ${max}`}
+          {point && `${point} / ${max}`}
         </span>
       </Label>
       <BorderLinearProgress
         variant="determinate"
-        value={n ? ExerciseScaled : PointScaled}
+        value={PointScaled}
       />
     </div>
   )
