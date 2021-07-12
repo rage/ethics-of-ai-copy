@@ -67,7 +67,7 @@ const ProgresssBar = ({ n, max, point, label }) => {
       <Label>
         <span>{label}</span>{" "}
         <span>
-          {point && `${point} / ${max}`}
+          {`${point} / ${max}`}
         </span>
       </Label>
       <BorderLinearProgress
