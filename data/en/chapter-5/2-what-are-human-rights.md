@@ -30,7 +30,7 @@ A human right is a norm which can exist on different levels:
 * a legal right within international law
 
 #### What is the Universal Declaration of Human Rights?
-[The Universal Declaration of Human Rights](http://www.un.org/en/universal-declaration-human-rights/) (UDHR) is a document which was drafted by representatives with different legal and cultural backgrounds from all regions of the world. The declaration was proclaimed by the United Nations General Assembly in Paris on 10 December 1948 (General Assembly resolution 217 A) as a common standard of achievements for all peoples and all nations.
+[The Universal Declaration of Human Rights](https://www.un.org/en/about-us/universal-declaration-of-human-rights) (UDHR) is a document which was drafted by representatives with different legal and cultural backgrounds from all regions of the world. The declaration was proclaimed by the United Nations General Assembly in Paris on 10 December 1948 (General Assembly resolution 217 A) as a common standard of achievements for all peoples and all nations.
 
 </text-box>
 
