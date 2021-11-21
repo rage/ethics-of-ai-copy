@@ -62,17 +62,19 @@ const ProgresssBar = ({ n, max, point, label }) => {
 
   /* const ExerciseScaled = (n / max) * 100 */
   const PointScaled = (point / max) * 100
+  const pointsLabel = `${point} / ${max}`
   return (
     <div>
       <Label>
         <span>{label}</span>{" "}
         <span>
-          {`${point} / ${max}`}
+          {pointsLabel}
         </span>
       </Label>
       <BorderLinearProgress
         variant="determinate"
         value={PointScaled}
+        aria-label={`${pointsLabel} points gained`}
       />
     </div>
   )

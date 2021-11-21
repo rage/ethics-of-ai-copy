@@ -1,0 +1,54 @@
+name: Deploy preview
+
+on:
+  push:
+    branches:
+      - swedish_translations
+
+jobs:
+  generate-storybook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Set up deploy key
+        run: |
+          mkdir -p ~/.ssh
+          echo "$PREVIEW_DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          md5sum ~/.ssh/id_ed25519
+          ls -la ~/.ssh
+        env:
+          PREVIEW_DEPLOY_KEY: ${{ secrets.PREVIEW_DEPLOY_KEY }}
+      - name: Check out storybook repository
+        run: git clone --branch gh-pages git@github.com:rage/ethics-of-ai-preview.git ethics-of-ai-preview
+        env:
+          GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes"
+
+      - name: npm ci
+        run: npm ci
+
+
+      - name: npm run build
+        run: npm run build
+
+      - name: Remove old files from repo
+        run: rm -rf ./ethics-of-ai-preview/*
+
+      - name: Copy new files to repo
+        run: cp -r ./public/* ./ethics-of-ai-preview/
+
+      - name: Commit files
+        run: |
+          git config --local user.email "bot@example.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "Update: $GITHUB_SHA" --allow-empty
+        working-directory: ./ethics-of-ai-preview/
+
+      - name: Push changes
+        run: git push
+        env:
+          GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes"
+        working-directory: ./ethics-of-ai-preview/

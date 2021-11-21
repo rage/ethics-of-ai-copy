@@ -16,7 +16,7 @@ const StyledButton = styled.button`
   display: inline-block;
   width: auto;
   border-radius: 4px;
-  padding: .9rem 2.4rem;
+  padding: 0.9rem 2.4rem;
   color: #333;
   border: none;
   text-transform: none;

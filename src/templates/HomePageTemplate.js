@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React, { Fragment, useContext, useEffect, useState } from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import rehypeReact from "rehype-react"
@@ -11,6 +11,12 @@ import { respond } from "../_respond"
 import PagesContext from "../contexes/PagesContext"
 import Navbar from "../components/Navbar/Navbar"
 import ScrollIndicator from "../components/ScrollIndicator"
+import Notice from "../partials/Notice"
+import { useI18next } from "gatsby-plugin-react-i18next"
+import { getCachedUserDetails } from "../services/moocfi"
+import LoginStateContext, {
+  withLoginStateContext,
+} from "../contexes/LoginStateContext"
 
 const ContentWrapper = styled.article`
   text-align: center;
@@ -55,9 +61,35 @@ const ContentWrapper = styled.article`
 `}
 `
 
-export default function GridNavigationTemplate(props) {
+const NoticeContainer = styled.div`
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  margin: auto;
+  background: #ffffff;
+
+  a {
+    color: #003d9a;
+  }
+`
+
+const HomePageTemplate = (props) => {
   const { data } = props
   const { frontmatter, htmlAst } = data.page
+  const { language } = useI18next()
+  const [userLanguage, setUserLanguage] = useState(undefined)
+  const loginStateContext = useContext(LoginStateContext)
+
+  useEffect(() => {
+    if (loginStateContext.loggedIn) {
+      const fetchUserLanguage = async () => {
+        let userDetails = await getCachedUserDetails()
+        setUserLanguage(userDetails?.extra_fields?.language)
+      }
+      fetchUserLanguage()
+    }
+  }, [])
+
   const partials = getNamedPartials()
   const renderAst = new rehypeReact({
     createElement: React.createElement,
@@ -68,6 +100,8 @@ export default function GridNavigationTemplate(props) {
     data.page.fileAbsolutePath.lastIndexOf("/data/"),
     data.page.fileAbsolutePath.length,
   )
+
+  const langPrefix = userLanguage === "en" ? "" : `/${userLanguage}`
 
   return (
     <>
@@ -83,6 +117,26 @@ export default function GridNavigationTemplate(props) {
         >
           <Fragment>
             <Navbar> </Navbar> <ScrollIndicator />
+            {loginStateContext.loggedIn &&
+              language &&
+              userLanguage &&
+              language !== userLanguage && (
+                <NoticeContainer>
+                  <Notice>
+                    You are viewing a different language version of the course
+                    than what you selected in your profile settings. Assignment
+                    answers are tied to the language version, so to continue
+                    with the assignments switch back to the{" "}
+                    {userLanguage === "en"
+                      ? "English"
+                      : userLanguage === "sv"
+                      ? "Swedish"
+                      : "Finnish"}{" "}
+                    version of the course, or change the language in your{" "}
+                    <a href={`${langPrefix}/profile`}>profile</a>.
+                  </Notice>
+                </NoticeContainer>
+              )}
             <ContentWrapper> {renderAst(htmlAst)} </ContentWrapper>{" "}
           </Fragment>{" "}
         </PagesContext.Provider>{" "}
@@ -90,6 +144,8 @@ export default function GridNavigationTemplate(props) {
     </>
   )
 }
+
+export default withLoginStateContext(HomePageTemplate)
 
 export const pageQuery = graphql`
   query($path: String!, $language: String!) {

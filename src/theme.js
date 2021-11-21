@@ -42,6 +42,22 @@ const theme = createMuiTheme({
         fontSize: "18px",
       },
     },
+    MuiList: {
+      root: {
+        background: "#E7E7E7",
+      }
+    },
+    MuiMenuItem: {
+      root: {
+        padding: "0.7em 1em !important",
+        "&$selected, &$selected:hover": {
+          background: "#B4B4B4",
+        },
+        "&:hover": {
+          background: "#CECECE",
+        },
+      }
+    },
   },
 })
 

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import {
   TextField,
   Button,
@@ -8,6 +8,7 @@ import {
   RadioGroup,
   Card,
   CardContent,
+  FormHelperText,
 } from "@material-ui/core"
 
 import { OutboundLink } from "gatsby-plugin-google-analytics"
@@ -22,7 +23,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInfoCircle as icon } from "@fortawesome/free-solid-svg-icons"
 import DropdownMenu from "./DropdownMenu"
 import { Link } from "gatsby"
-import { withTranslation } from "gatsby-plugin-react-i18next"
+import { useI18next, withTranslation } from "gatsby-plugin-react-i18next"
 
 const Row = styled.div`
   margin-bottom: 1.5rem;
@@ -43,235 +44,265 @@ const StyledIcon = styled(FontAwesomeIcon)`
   margin-right: 0.25rem;
 `
 
-class CourseOptionsEditor extends React.Component {
-  async componentDidMount() {
-    const data = await userDetails()
-    this.setState(
-      {
-        first_name: data.user_field?.first_name,
-        last_name: data.user_field?.last_name,
-        email: data.email,
-        student_number: data.user_field?.organizational_id,
-        digital_education_for_all:
-          data.extra_fields?.digital_education_for_all === "t",
-        marketing: data.extra_fields?.marketing === "t",
-        research: data.extra_fields?.research,
-        loading: false,
-      },
-      () => {
-        this.validate()
-      },
-    )
-  }
+const StyledFormHelperText = styled(FormHelperText)`
+  margin-left: .9rem;
+`
 
-  onClick = async (e) => {
+const CourseOptionsEditor = ({ t, onComplete }) => {
+  const { language, changeLanguage } = useI18next()
+
+  const [submitting, setSubmitting] = useState(false)
+  const [error, setError] = useState(true)
+  const [errorObj, setErrorObj] = useState({})
+  const [digitalEducationForAll, setDigitalEducationForAll] = useState(false)
+  const [marketing, setMarketing] = useState(false)
+  const [research, setResearch] = useState(undefined)
+  const [firstName, setFirstName] = useState(undefined)
+  const [lastName, setLastName] = useState(undefined)
+  const [email, setEmail] = useState(undefined)
+  const [studentNumber, setStudentNumber] = useState(undefined)
+  const [loading, setLoading] = useState(true)
+  const [focused, setFocused] = useState(null)
+  const [selectedLanguage, setSelectedLanguage] = useState(undefined)
+
+  useEffect(() => {
+    const fetchUserDetails = async () => {
+      const data = await userDetails()
+      setFirstName(data.user_field?.first_name)
+      setLastName(data.user_field?.last_name)
+      setEmail(data.email)
+      setStudentNumber(data.user_field?.organizational_id)
+      setDigitalEducationForAll(data.extra_fields?.digital_education_for_all === "t")
+      setMarketing(data.extra_fields?.marketing === "t")
+      setResearch(data.extra_fields?.research)
+      setSelectedLanguage(data.extra_fields?.language)
+      setLoading(false)
+      validate()
+    }
+    fetchUserDetails()
+  }, [])
+
+  const onClick = async (e) => {
     e.preventDefault()
-    this.setState({ submitting: true })
-    let extraFields = {
-      digital_education_for_all: this.state.digital_education_for_all,
-      marketing: this.state.marketing,
-      research: this.state.research,
+    setSubmitting(true)
+    const extraFields = {
+      digital_education_for_all: digitalEducationForAll,
+      marketing: marketing,
+      research: research,
+      language: selectedLanguage,
     }
     const userField = {
-      first_name: this.state.first_name,
-      last_name: this.state.last_name,
-      organizational_id: this.state.student_number,
+      first_name: firstName,
+      last_name: lastName,
+      organizational_id: studentNumber,
     }
     await updateUserDetails({
       extraFields,
       userField,
     })
-    this.setState({ submitting: false })
-    this.props.onComplete()
+    setSubmitting(false)
+    changeLanguage(selectedLanguage)
+    onComplete()
   }
 
-  state = {
-    submitting: false,
-    error: true,
-    errorObj: {},
-    digital_education_for_all: false,
-    marketing: false,
-    research: undefined,
-    first_name: undefined,
-    last_name: undefined,
-    email: undefined,
-    student_number: undefined,
-    loading: true,
-    focused: null,
+  const handleFirstNameInput = (e) => {
+    setFirstName(e.target.value)
+    validate()
   }
 
-  handleInput = (e) => {
+  const handleLastNameInput = (e) => {
+    setLastName(e.target.value)
+    validate()
+  }
+
+  const handleStudentNumberInput = (e) => {
+    setStudentNumber(e.target.value)
+    validate()
+  }
+
+  const handleMarketingInput = (e) => {
+    setMarketing(e.target.checked)
+    validate()
+  }
+
+  const handleResearchInput = (e) => {
+    setResearch(e.target.value)
+    validate()
+  }
+
+  const handleFocus = (e) => {
     const name = e.target.name
-    const value = e.target.value
-    this.setState({ [name]: value }, () => {
-      this.validate()
-    })
+    setFocused(name)
   }
 
-  handleCheckboxInput = (e) => {
-    const name = e.target.name
-    const value = e.target.checked
-    this.setState({ [name]: value }, () => {
-      this.validate()
-    })
+  const handleUnFocus = () => {
+    setFocused(null)
   }
 
-  handleFocus = (e) => {
-    const name = e.target.name
-    this.setState({ focused: name })
+  const validate = () => {
+    setError(research === undefined)
   }
 
-  handleUnFocus = () => {
-    this.setState({ focused: null })
+  const setSelectedVariant = (value) => {
+    setSelectedLanguage(value)
+    validate()
   }
 
-  validate = () => {
-    this.setState((prev) => ({
-      error: prev.research === undefined,
-    }))
-  }
+  return (
+    <FormContainer>
+      <Loading loading={loading} heightHint="490px">
+        <InfoBox>
+          <Card>
+            <CardContent>
+              {t("loggedInWith")}
+              {email}
+            </CardContent>
+          </Card>
+        </InfoBox>
+      </Loading>
+      <h1>{t("studentInfo")}</h1>
+      <Form>
+        <InfoBox>{t("aboutYourself")}</InfoBox>
+        <Loading loading={loading} heightHint="490px">
+          <div>
+            <Row>
+              <TextField
+                id="first-name"
+                variant="outlined"
+                type="text"
+                label={t("firstName")}
+                autoComplete="given-name"
+                name="first_name"
+                InputLabelProps={{
+                  shrink:
+                    firstName ||
+                    focused === "first_name",
+                }}
+                fullWidth
+                value={firstName}
+                onChange={handleFirstNameInput}
+                onFocus={handleFocus}
+                onBlur={handleUnFocus}
+              />
+            </Row>
 
-  render() {
-    return (
-      <FormContainer>
-        <Loading loading={this.state.loading} heightHint="490px">
-          <InfoBox>
-            <Card>
-              <CardContent>
-                {this.props.t("loggedInWith")}
-                {this.state.email}
-              </CardContent>
-            </Card>
-          </InfoBox>
+            <Row>
+              <TextField
+                id="last-name"
+                variant="outlined"
+                type="text"
+                label={t("lastName")}
+                autoComplete="family-name"
+                name="last_name"
+                InputLabelProps={{
+                  shrink:
+                    lastName ||
+                    focused === "last_name",
+                }}
+                fullWidth
+                value={lastName}
+                onChange={handleLastNameInput}
+                onFocus={handleFocus}
+                onBlur={handleUnFocus}
+              />
+            </Row>
+
+            <Row>
+              <TextField
+                id="student-number"
+                variant="outlined"
+                type="text"
+                label={t("sid")}
+                name="student_number"
+                InputLabelProps={{
+                  shrink:
+                    studentNumber ||
+                    focused === "student_number",
+                }}
+                fullWidth
+                value={studentNumber}
+                onChange={handleStudentNumberInput}
+                onFocus={handleFocus}
+                onBlur={handleUnFocus}
+              />
+              <StyledFormHelperText id="student-number-helper-text">{t("nosid")}</StyledFormHelperText>
+            </Row>
+
+            <Row>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    checked={marketing}
+                    onChange={handleMarketingInput}
+                    name="marketing"
+                    value="1"
+                  />
+                }
+                label={t("marketing")}
+              />
+            </Row>
+
+            <h4>{t("languageVersionTitle")}</h4>
+
+            <InfoBox>
+              {t("languageVersionInfo")}
+            </InfoBox>
+
+            <Row>
+              <DropdownMenu
+                selectedVariant={selectedLanguage || language || "en"}
+                setSelectedVariant={setSelectedVariant}
+              />
+            </Row>
+          </div>
         </Loading>
-        <h1>{this.props.t("studentInfo")}</h1>
-        <Form>
-          <InfoBox>{this.props.t("aboutYourself")}</InfoBox>
-          <Loading loading={this.state.loading} heightHint="490px">
-            <div>
-              <Row>
-                <TextField
-                  variant="outlined"
-                  type="text"
-                  label={this.props.t("firstName")}
-                  autoComplete="given-name"
-                  name="first_name"
-                  InputLabelProps={{
-                    shrink:
-                      this.state.first_name ||
-                      this.state.focused === "first_name",
-                  }}
-                  fullWidth
-                  value={this.state.first_name}
-                  onChange={this.handleInput}
-                  onFocus={this.handleFocus}
-                  onBlur={this.handleUnFocus}
-                />
-              </Row>
 
-              <Row>
-                <TextField
-                  variant="outlined"
-                  type="text"
-                  label={this.props.t("lastName")}
-                  autoComplete="family-name"
-                  name="last_name"
-                  InputLabelProps={{
-                    shrink:
-                      this.state.last_name ||
-                      this.state.focused === "last_name",
-                  }}
-                  fullWidth
-                  value={this.state.last_name}
-                  onChange={this.handleInput}
-                  onFocus={this.handleFocus}
-                  onBlur={this.handleUnFocus}
-                />
-              </Row>
+        <h2>{t("researchTitle")}</h2>
 
-              <Row>
-                <TextField
-                  variant="outlined"
-                  type="text"
-                  label={this.props.t("sid")}
-                  name="student_number"
-                  InputLabelProps={{
-                    shrink:
-                      this.state.student_number ||
-                      this.state.focused === "student_number",
-                  }}
-                  fullWidth
-                  value={this.state.student_number}
-                  onChange={this.handleInput}
-                  helperText={this.props.t("nosid")}
-                  onFocus={this.handleFocus}
-                  onBlur={this.handleUnFocus}
-                />
-              </Row>
+        <p>{t("research7")}</p>
 
-              <Row>
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={this.state.marketing}
-                      onChange={this.handleCheckboxInput}
-                      name="marketing"
-                      value="1"
-                    />
-                  }
-                  label={this.props.t("marketing")}
-                />
-              </Row>
-            </div>
-          </Loading>
-
-          <h2>{this.props.t("researchTitle")}</h2>
-
-          <p>{this.props.t("research7")}</p>
-
-          <Row>
-            <Loading loading={this.state.loading} heightHint="115px">
-              <RadioGroup
-                aria-label={this.props.t("researchAgree")}
-                name="research"
-                value={this.state.research}
-                onChange={this.handleInput}
-              >
-                <FormControlLabel
-                  value="1"
-                  control={<Radio color="primary" />}
-                  label={this.props.t("researchYes")}
-                />
-                <FormControlLabel
-                  value="0"
-                  control={<Radio />}
-                  label={this.props.t("researchNo")}
-                />
-              </RadioGroup>
-            </Loading>
-          </Row>
-
-          <Row>
-            <Button
-              onClick={this.onClick}
-              disabled={this.state.submitting || this.state.error}
-              loading={this.state.submitting}
-              variant="contained"
-              color="primary"
-              fullWidth
+        <Row>
+          <Loading loading={loading} heightHint="115px">
+            <RadioGroup
+              aria-label={t("researchAgree")}
+              name="research"
+              value={research}
+              onChange={handleResearchInput}
             >
-              {this.props.t("save")}
-            </Button>
-          </Row>
-        </Form>
-        {this.state.error && (
-          <InfoBox>
-            <b>{this.props.t("fillRequired")}</b>
-          </InfoBox>
-        )}
-      </FormContainer>
-    )
-  }
+              <FormControlLabel
+                value="1"
+                control={<Radio color="primary" />}
+                label={t("researchYes")}
+              />
+              <FormControlLabel
+                value="0"
+                control={<Radio />}
+                label={t("researchNo")}
+              />
+            </RadioGroup>
+          </Loading>
+        </Row>
+
+        <Row>
+          <Button
+            onClick={onClick}
+            disabled={submitting || error}
+            loading={submitting}
+            variant="contained"
+            color="primary"
+            fullWidth
+          >
+            {t("save")}
+          </Button>
+        </Row>
+      </Form>
+      {error && (
+        <InfoBox>
+          <b>{t("fillRequired")}</b>
+        </InfoBox>
+      )}
+    </FormContainer>
+  )
 }
 
 export default withTranslation("common")(

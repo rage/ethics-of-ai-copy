@@ -108,7 +108,12 @@ const ChapterBox = (props) => {
       {(value) => {
         const currentPath = value.current.frontmatter.path
         let sectionPath = currentPath
-        const sectionSeparator = nthIndex(currentPath, "/", 2)
+        let sectionSeparator
+        if (value.language === "en") {
+          sectionSeparator = nthIndex(currentPath, "/", 2)
+        } else {
+          sectionSeparator = nthIndex(currentPath, "/", 3)
+        }
         if (sectionSeparator !== -1) {
           sectionPath = currentPath.substr(0, sectionSeparator)
         }

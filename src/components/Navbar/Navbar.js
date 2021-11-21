@@ -9,6 +9,7 @@ import LoginControls from "../LoginControls"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 /* import NavGrid from "./NavGrid" */
 import "./Navbar.css"
+import LanguageOptions from "../LanguageOptions"
 
 const StyledIcon = styled(FontAwesomeIcon)`
   font-size: 2rem;
@@ -49,7 +50,12 @@ export default function Navbar(props) {
               {t("gridItem2")}
             </a>
           </li>
-          <LoginControls />
+          <li>
+            <LoginControls />
+          </li>
+          <li>
+            <LanguageOptions />
+          </li>
         </ul>{" "}
       </nav>{" "}
     </div>

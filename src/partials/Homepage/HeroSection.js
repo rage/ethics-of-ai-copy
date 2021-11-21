@@ -88,7 +88,7 @@ export default (props) => {
   return (
     <div>
       <StyledSVG />
-      <HeroSection>
+      <HeroSection role="main">
         <BigText> {props.title} </BigText>
         <HeroText> {props.subtitle} </HeroText>{" "}
         <ButtonWrapper>

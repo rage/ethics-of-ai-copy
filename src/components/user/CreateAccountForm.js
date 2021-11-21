@@ -1,11 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 import { TextField, Button } from "@material-ui/core"
 import { createAccount, authenticate } from "../../services/moocfi"
 import { capitalizeFirstLetter } from "../../util/strings"
 import { navigate } from "gatsby"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
-import { withTranslation } from "gatsby-plugin-react-i18next"
+import { Link, withTranslation } from "gatsby-plugin-react-i18next"
 import styled from "styled-components"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
 

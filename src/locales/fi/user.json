@@ -1,12 +1,12 @@
 {
-    "welcomeToCourse": "Tervetuloa kurssille!",
+    "welcomeToCourse":"Tervetuloa kurssille!",
     "emailSent":"Olemme lähettäneet sähköpostiisi sähköpostiosoitteen varmistuslinkin. Käy nyt sähköpostissasi ja varmista osoitteesi.",
     "emailExample":"Sähköpostin pitäisi näyttää tälläiseltä:",
     "emailExampleAria":"Esimerkki sähköpostista",
     "nowContinue":"Tämän jälkeen voit jatkaa",
     "toMaterial":"materiaaliin",
-    "withDeadlines": "Aikataulutettu Ohjelmoinnin MOOC",
-    "noDeadlines": "Aikatauluton Ohjelmoinnin MOOC",
+    "withDeadlines":"Aikataulutettu Ohjelmoinnin MOOC",
+    "noDeadlines":"Aikatauluton Ohjelmoinnin MOOC",
     "beginPart8withDeadlines":"Aloitan kurssin aikataulutettuna osasta 8 (Ohjelmoinnin jatkokurssi)",
     "beginPart8withoutDeadlines":"Aloitan kurssin aikatauluttomana osasta 8 (Ohjelmoinnin jatkokurssi)",
     "summerMooc":"Kesä: Aikataulutettu Ohjelmoinnin MOOC",
@@ -25,9 +25,9 @@
     "passwordAgain":"Salasana uudestaan",
     "create":"Luo käyttäjätunnus",
     "alreadyHaveAccount":"Onko sinulla jo käyttäjätunnus? Kirjaudu sisään",
-    "error":"Virhe: ",
+    "error":"Virhe:",
     "forgottenPW":"Unohditko salasanasi?",
-    "wrongDetails":"Virheelliset käyttäjätunnukset. Tarkista kirjoitusasu!"
-
+    "wrongDetails":"Virheelliset käyttäjätunnukset. Tarkista kirjoitusasu!",
+    "whichLanguage":"Kieli"
 
 }

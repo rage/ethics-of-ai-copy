@@ -81,7 +81,6 @@ const HeroText = styled.div`
 `
 
 export default (props) => {
-  console.log(props)
   return (
     <div>
       <HeroSection>

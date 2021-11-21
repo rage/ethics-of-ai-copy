@@ -1,8 +1,7 @@
-import React, { Fragment } from "react"
+import React, { Fragment, useContext, useEffect } from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import rehypeReact from "rehype-react"
-import { navigate } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import Layout from "./Layout"
@@ -13,10 +12,11 @@ import "./remark.css"
 import PagesContext from "../contexes/PagesContext"
 import LoginStateContext, {
   LoginStateContextProvider,
+  withLoginStateContext,
 } from "../contexes/LoginStateContext"
 import Container from "../components/Container"
 
-import { loggedIn } from "../services/moocfi"
+import { useI18next } from "gatsby-plugin-react-i18next"
 
 const ContentWrapper = styled.div`
   margin-top: 1rem;
@@ -29,14 +29,11 @@ const ContentWrapper = styled.div`
 
 const Title = styled.h1``
 
-export default class CoursePartOverviewTemplate extends React.Component {
-  static contextType = LoginStateContext
+const CoursePartOverviewTemplate = ({ data }) => {
+  const loginStateContext = useContext(LoginStateContext)
+  const { navigate } = useI18next()
 
-  async componentDidMount() {
-    if (!loggedIn()) {
-      return
-    }
-
+  const missingInfo = async () => {
     let userInfo = await getCachedUserDetails()
     const research = userInfo?.extra_fields?.research
     if (research === undefined) {
@@ -44,48 +41,53 @@ export default class CoursePartOverviewTemplate extends React.Component {
     }
   }
 
-  render() {
-    const { data } = this.props
-    const { frontmatter, htmlAst } = data.page
-    const allPages = data.allPages.edges.map((o) => {
-      const res = o.node?.frontmatter
-      res.exercises = o.node?.moocfiExercises
-      return res
-    })
-    const partials = getNamedPartials()
-    const renderAst = new rehypeReact({
-      createElement: React.createElement,
-      components: partials,
-    }).Compiler
+  useEffect(() => {
+    if (loginStateContext.loggedIn) {
+      missingInfo()
+    }
+  }, [])
 
-    const filePath = data.page.fileAbsolutePath.substring(
-      data.page.fileAbsolutePath.lastIndexOf("/data/"),
-      data.page.fileAbsolutePath.length,
-    )
-    return (
-      <PagesContext.Provider
-        value={{
-          all: allPages,
-          current: { frontmatter: frontmatter, filePath: filePath },
-        }}
-      >
-        <Helmet title={frontmatter.title} />
-        <LoginStateContextProvider>
-          <Layout>
-            <Fragment>
-              <Container>
-                <ContentWrapper>
-                  <Title>{frontmatter.title}</Title>
-                  {renderAst(htmlAst)}
-                </ContentWrapper>
-              </Container>
-            </Fragment>
-          </Layout>
-        </LoginStateContextProvider>
-      </PagesContext.Provider>
-    )
-  }
+  const { frontmatter, htmlAst } = data.page
+  const allPages = data.allPages.edges.map((o) => {
+    const res = o.node?.frontmatter
+    res.exercises = o.node?.moocfiExercises
+    return res
+  })
+  const partials = getNamedPartials()
+  const renderAst = new rehypeReact({
+    createElement: React.createElement,
+    components: partials,
+  }).Compiler
+
+  const filePath = data.page.fileAbsolutePath.substring(
+    data.page.fileAbsolutePath.lastIndexOf("/data/"),
+    data.page.fileAbsolutePath.length,
+  )
+  return (
+    <PagesContext.Provider
+      value={{
+        all: allPages,
+        current: { frontmatter: frontmatter, filePath: filePath },
+      }}
+    >
+      <Helmet title={frontmatter.title} />
+      <LoginStateContextProvider>
+        <Layout>
+          <Fragment>
+            <Container>
+              <ContentWrapper>
+                <Title>{frontmatter.title}</Title>
+                {renderAst(htmlAst)}
+              </ContentWrapper>
+            </Container>
+          </Fragment>
+        </Layout>
+      </LoginStateContextProvider>
+    </PagesContext.Provider>
+  )
 }
+
+export default withLoginStateContext(CoursePartOverviewTemplate)
 
 export const pageQuery = graphql`
   query($path: String!, $language: String!) {

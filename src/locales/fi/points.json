@@ -9,5 +9,6 @@
     "canApplyForStudyRight": "Opinto-oikeuteen vaaditaan 90% aikataulutetun kurssin ohjelmointitehtävien pisteistä. Edistymisesi tällä hetkellä:",
     "progress":"Edistyminen (beta)",
     "close": "sulje",
-    "error":"Edistymisen hakeminen kaatui seuraavaan virheeseen:"
+    "error":"Edistymisen hakeminen kaatui seuraavaan virheeseen:",
+    "totalExercises":"Tehtävät yhteensä"
 }

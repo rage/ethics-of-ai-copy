@@ -8,7 +8,7 @@ import { normalizeExerciseId } from "../util/strings"
 import Quiz from "moocfi-quizzes"
 import { Paper } from "@material-ui/core"
 import { accessToken } from "../services/moocfi"
-import CourseSettings from "../../course-settings"
+import getCourseSettings from "../util/courseSettingsWithLanguage"
 
 const StyledPaper = styled(Paper)`
   overflow: hidden;
@@ -22,10 +22,23 @@ class QuizPartial extends React.Component {
 
   render() {
     const { id, t } = this.props
-    let languageId = "en_US"
-    if (CourseSettings.language === "fi") {
-      languageId = "fi_FI"
+
+    const CourseSettings = getCourseSettings()
+    let languageId
+    switch (CourseSettings.language) {
+      case "en":
+        languageId = "en_US"
+        break
+      case "sv":
+        languageId = "sv_SE"
+        break
+      case "fi":
+        languageId = "fi_FI"
+        break
+      default:
+        languageId = "en_US"
     }
+
     const loginPrompt = (
       <div style={{ padding: "1rem", textAlign: "center" }}>
         <h4>{t("loginToSeeExercise")}</h4>

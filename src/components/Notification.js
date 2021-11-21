@@ -53,7 +53,10 @@ export default class Notification extends React.Component {
   }
 
   render() {
-    if (!this.state.render || store.get("pajanotification.shown2")) {
+    // if (!this.state.render || store.get("pajanotification.shown2")) {
+    //   return <div />
+    // }
+    if (!this.state.render) {
       return <div />
     }
     return (
@@ -66,17 +69,7 @@ export default class Notification extends React.Component {
           message={
             <Fragment>
               <StyledInfoIcon />
-              <StyledTypography>
-                Pajaohjausta on nyt saatavilla! Pajasta saa apua tehtäviin,
-                ohjelmointiin ja teknisiin ongelmiin sekä hyvää
-                ohjelmointiseuraa. Paja sijaitsee Helsingin Kumpulan
-                kampuksella. Kaikki ovat tervetulleita pajaan! Muut paja-ajat ja
-                tarkemmat ohjeet löytyvät{" "}
-                <Link onClick={this.handleClose} to="/tukivaylat">
-                  tukiväylät
-                </Link>
-                -sivulta.
-              </StyledTypography>
+              <StyledTypography>{this.props.children}</StyledTypography>
             </Fragment>
           }
           action={[

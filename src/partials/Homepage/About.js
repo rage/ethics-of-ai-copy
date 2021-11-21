@@ -13,12 +13,12 @@ const Container = styled.div`
 const AboutTextBox = styled.div`
   text-align: center;
   padding: 2rem;
-  margin-right: 4rem;
 
   span {
     font-size: 1rem;
     font-weight: 500;
     text-decoration: underline;
+    color: #003D9A;
   }
   p {
     padding: 1rem 0;

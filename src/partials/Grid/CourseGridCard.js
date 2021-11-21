@@ -1,3 +1,4 @@
+import { Link } from "gatsby-plugin-react-i18next"
 import React from "react"
 import styled from "styled-components"
 
@@ -65,13 +66,13 @@ const CourseGridText = styled.div`
 export default (props) => {
   return (
     <>
-      <a href={props.url} style={{ textDecoration: "none" }}>
+      <Link to={props.url} style={{ textDecoration: "none" }}>
         <CourseGridWrapper>
           {" "}
           <CourseGridSVG> {svgs[props.title]} </CourseGridSVG>{" "}
           <CourseGridText> {props.children} </CourseGridText>{" "}
         </CourseGridWrapper>{" "}
-      </a>
+      </Link>
     </>
   )
 }

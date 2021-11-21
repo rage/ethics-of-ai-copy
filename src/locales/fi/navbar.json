@@ -2,5 +2,10 @@
     "label1":"Kotisivulle",
     "label2":"Avaa valikko",
     "label3":"Kurssi valikko",
-    "gridTitle":"Grid navigation"
+    "label4":"Sulje valikko",
+    "gridButton":"Kurssi",
+    "gridTitle":"Kurssisivustolla navigointi",
+    "gridHeader":"Ohjelmoinnin perusteet -kurssi, kesä 2020",
+    "gridItem1":"Arviointi ja kokeet",
+    "gridItem2":"UKK"
 }

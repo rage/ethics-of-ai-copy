@@ -1,14 +1,10 @@
 import axios from "axios"
 import { accessToken, getCourseVariant, loggedIn } from "./moocfi"
-import CourseSettings from "../../course-settings"
-
-// const id = CourseSettings.quizzesId
-const language = CourseSettings.language
-
-const quizzesLanguage = language === "en" ? "en_US" : "fi_FI"
+import getCourseSettings from "../util/courseSettingsWithLanguage"
 
 export async function fetchQuizzesProgress() {
-  let id = CourseSettings.quizzesId
+  const courseSettings = getCourseSettings()
+  let id = courseSettings.quizzesId
   const courseVariant = await getCourseVariant()
 
   if (courseVariant === "ohja-dl" || courseVariant === "ohja-nodl") {
@@ -22,8 +18,17 @@ export async function fetchQuizzesProgress() {
 }
 
 export async function fetchQuizNames() {
-  let id = CourseSettings.quizzesId
+  const courseSettings = getCourseSettings()
+  let id = courseSettings.quizzesId
   let courseVariant = "dl"
+  const language = courseSettings.language
+  let quizzesLanguage = "en_US"
+
+  if (language === "sv") {
+    quizzesLanguage = "sv_SE"
+  } else if (language === "fi") {
+    quizzesLanguage = "fi_FI"
+  }
 
   if (loggedIn()) {
     courseVariant = await getCourseVariant()

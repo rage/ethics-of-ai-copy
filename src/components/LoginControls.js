@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React, { Fragment, useContext, useEffect, useState } from "react"
 import Button from "./Button"
 import { signOut, getCachedUserDetails } from "../services/moocfi"
 import LoginStateContext, {
@@ -14,16 +14,23 @@ const StyledIcon = styled(FontAwesomeIcon)`
   margin-right: 0.5rem;
 `
 
-class LoginControls extends React.Component {
-  static contextType = LoginStateContext
+const LoginControls = ({ t }) => {
+  const [name, setName] = useState("")
+  const loginStateContext = useContext(LoginStateContext)
 
-  doSignOut = (e) => {
+  const doSignOut = (e) => {
     e.preventDefault()
     signOut()
   }
 
-  async componentDidMount() {
-    if (!this.context.loggedIn) {
+  useEffect(() => {
+    if (!name) {
+      getName()
+    }
+  }, [])
+
+  const getName = async () => {
+    if (!loginStateContext.loggedIn) {
       return
     }
     const details = await getCachedUserDetails()
@@ -33,31 +40,23 @@ class LoginControls extends React.Component {
     if (name === "") {
       name = details.email
     }
-    this.setState({
-      name,
-    })
+    setName(name)
   }
 
-  state = {
-    name: "Loading...",
-  }
-
-  render() {
-    return this.context.loggedIn ? (
-      <Fragment>
-        <Button to="/profile">
-          <StyledIcon icon={profileIcon} />
-          {this.state.name}
-        </Button>
-        <Button onClick={this.doSignOut}>{this.props.t("logout")}</Button>
-      </Fragment>
-    ) : (
-      <Fragment>
-        <Button to="/sign-up">{this.props.t("newAccount")}</Button>
-        <Button to="/sign-in">{this.props.t("login")}</Button>
-      </Fragment>
-    )
-  }
+  return loginStateContext.loggedIn ? (
+    <Fragment>
+      <Button to="/profile">
+        <StyledIcon icon={profileIcon} />
+        {name}
+      </Button>
+      <Button onClick={doSignOut}>{t("logout")}</Button>
+    </Fragment>
+  ) : (
+    <Fragment>
+      <Button to="/sign-up">{t("newAccount")}</Button>
+      <Button to="/sign-in">{t("login")}</Button>
+    </Fragment>
+  )
 }
 
 export default withTranslation("common")(

@@ -79,7 +79,12 @@ class EndOfSubSection extends React.Component {
         {(value) => {
           const currentPath = value.current.frontmatter.path
           let sectionPath = currentPath
-          const sectionSeparator = nthIndex(currentPath, "/", 2)
+          let sectionSeparator
+          if (value.language === "en") {
+            sectionSeparator = nthIndex(currentPath, "/", 2)
+          } else {
+            sectionSeparator = nthIndex(currentPath, "/", 3)
+          }
           if (sectionSeparator !== -1) {
             sectionPath = currentPath.substr(0, sectionSeparator)
           }
@@ -112,14 +117,19 @@ class EndOfSubSection extends React.Component {
 
           const currentChapter = parseInt(sectionPath.split("-")[1])
 
-          const regex = new RegExp("/chapter-[1-9]$", "gm")
+          const regex = new RegExp("^/chapter-[1-9]$", "gm")
           const chapters = value.all
             .filter((o) => o.path.match(regex))
             .sort((a, b) => {
               return a.path > b.path ? 1 : -1
             })
 
-          const nextSectionPath = `/chapter-${currentChapter + 1}`
+          let nextSectionPath
+          if (value.language === "en") {
+            nextSectionPath = `/chapter-${currentChapter + 1}`
+          } else {
+            nextSectionPath = `/${value.language}/chapter-${currentChapter + 1}`
+          }
           const nextSectionPages = value.all
             .filter((o) => o.path.startsWith(`${nextSectionPath}/`))
             .sort((a, b) => {

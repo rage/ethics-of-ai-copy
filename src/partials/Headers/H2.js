@@ -14,7 +14,7 @@ const Heading = styled.div`
 const H2 = ({ children }) => {
   let text = "unknown heading"
   try {
-    text = children.find((o) => typeof o === "string") || "unknown heading"
+    text = children.join('').trim()
   } catch (e) {}
   const id = `heading-${normalizeExerciseId(text)}`
   return (

@@ -1,11 +1,8 @@
 import React, { useContext } from "react"
-import { CourseStatusProvider } from "moocfi-quizzes"
+import { CourseStatusProvider, injectCourseProgress } from "moocfi-quizzes"
 import { accessToken } from "../../services/moocfi"
 import CourseSettings from "../../../course-settings"
-import {
-  CourseProgressProviderContext,
-  CourseStatusProviderContext,
-} from "moocfi-quizzes/dist/contexes/courseStatusProviderContext"
+import { CourseProgressProviderContext } from "moocfi-quizzes/dist/contexes/courseProgressProviderContext"
 import { LinearProgress } from "@material-ui/core"
 import styled from "styled-components"
 import ProgressBar from "./ProgressBar"
@@ -35,16 +32,15 @@ const ProgressContainer = styled.div`
   }
 `
 
-const CourseProgressVisualization = () => {
-  const { t } = useTranslation("common")
+const CourseProgressVisualization = (props) => {
+  const { t } = useTranslation(["common", "points"])
 
-  const data = useContext(CourseProgressProviderContext)
-  if (data.loading) {
-    return <div>{t("loading2")}</div>
+  if (props.loading) {
+    return <div>{t("common:loading2")}</div>
   }
 
-  if (data.error) {
-    return <div>{t("progressError")}</div>
+  if (props.error) {
+    return <div>{t("common:progressError")}</div>
   }
   const {
     exercise_completions,
@@ -52,19 +48,19 @@ const CourseProgressVisualization = () => {
     max_points,
     n_points,
     completed,
-  } = data.courseProgressData
+  } = props.courseProgressData
   return (
     <ProgressContainer>
       {completed && <Completed />}
-      <ProgressBar label="Totals Points" point={n_points} max={max_points} />
+      <ProgressBar label={t("points:totalPoints")} point={n_points} max={max_points} />
       <ProgressBar
-        label="Total Exercises"
+        label={t("points:totalExercises")}
         point={exercise_completions ? exercise_completions : 0}
         max={total_exercises}
       />
-      <small>{t("progressNote")}</small>
+      <small>{t("common:progressNote")}</small>
     </ProgressContainer>
   )
 }
 
-export default CourseProgressVisualization
+export default injectCourseProgress(CourseProgressVisualization)

@@ -1,8 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { Button as MaterialButton } from "@material-ui/core"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
+import { Link } from "gatsby-plugin-react-i18next"
 
 const StyledLink = styled(Link)`
   margin: 1rem 0rem;

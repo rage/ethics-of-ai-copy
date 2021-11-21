@@ -8,5 +8,6 @@
     "canApplyForStudyRight": "To be applicable for a study place, 90% of the points from programming exercises of the time limited course are required. Your progress so far: ",
     "progress":"Progress (beta)",
     "close": "close ",
-    "error":"Fetching progress data failed with the following error: "
+    "error":"Fetching progress data failed with the following error: ",
+    "totalExercises": "Total exercises"
 }

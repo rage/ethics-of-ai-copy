@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React, { Fragment, useContext, useEffect, useState } from "react"
 import "../i18n"
 import Helmet from "react-helmet"
 //import Sidebar from "../components/Sidebar"
@@ -20,7 +20,11 @@ import "typeface-roboto-mono"
 import "@fortawesome/fontawesome-svg-core/styles.css"
 
 import { config as fontAwesomeConfig } from "@fortawesome/fontawesome-svg-core"
-import { canDoResearch, accessToken } from "../services/moocfi"
+import {
+  canDoResearch,
+  accessToken,
+  getCachedUserDetails,
+} from "../services/moocfi"
 import Footer from "../components/Footer"
 //import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { redTheme, defaultTheme, indigoTheme } from "../theme"
@@ -32,6 +36,11 @@ import {
   SMALL_MEDIUM_BREAKPOINT,
 } from "../util/constants"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
+import { useI18next } from "gatsby-plugin-react-i18next"
+import Notice from "../partials/Notice"
+import LoginStateContext, {
+  withLoginStateContext,
+} from "../contexes/LoginStateContext"
 
 fontAwesomeConfig.autoAddCss = false
 
@@ -73,75 +82,120 @@ const SidebarPush = styled.div`
   }
 `
 
-class Layout extends React.Component {
-  state = {
-    mobileMenuOpen: false,
-  }
+const NoticeContainer = styled.div`
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  margin: auto;
+  background: #ffffff;
 
-  toggleMobileMenu = () => {
-    this.setState((prev) => {
-      return {
-        mobileMenuOpen: !prev.mobileMenuOpen,
+  a {
+    color: #003d9a;
+  }
+`
+
+const Layout = ({ children }) => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { language } = useI18next()
+  const [userLanguage, setUserLanguage] = useState(undefined)
+  const loginStateContext = useContext(LoginStateContext)
+
+  useEffect(() => {
+    if (loginStateContext.loggedIn) {
+      const fetchUserLanguage = async () => {
+        let userDetails = await getCachedUserDetails()
+        setUserLanguage(userDetails?.extra_fields?.language)
       }
-    })
+      fetchUserLanguage()
+    }
+  }, [])
+
+  const toggleMobileMenu = () => {
+    const prev = mobileMenuOpen
+    setMobileMenuOpen(!prev)
   }
 
-  render() {
-    const { children } = this.props
+  const langPrefix = userLanguage === "en" ? "" : `/${userLanguage}`
 
-    return (
-      <Fragment>
-        {" "}
-        <StaticQuery
-          query={layoutQuery}
-          render={(data) => {
-            const siteTitle = data.title.siteMetadata.title
-            const derivedTheme = data.title.siteMetadata.theme
-            const theme = themeArray[derivedTheme] || defaultTheme
-            /*             let selectedTheme
-            for (const [key, value] of Object.entries(themeArray)) {
-              if (key === derivedTheme) {
-                selectedTheme = value
-              }
-            } */
+  const inProfile =
+    typeof window === "undefined"
+      ? false
+      : window.location.href.endsWith("/profile") ||
+        window.location.href.endsWith("/profile/")
 
-            return (
-              <ThemeProvider theme={theme}>
-                <Wrapper mobileMenuOpen={this.state.mobileMenuOpen}>
-                  <Helmet
-                    defaultTitle={siteTitle}
-                    titleTemplate={`%s - ${siteTitle}`}
-                    // meta={[
-                    //   {
-                    //     name: "description",
-                    //     content:
-                    //       "Helsingin yliopiston kaikille avoin ja ilmainen ohjelmoinnin perusteet opettava verkkokurssi. Kurssilla perehdytään nykyaikaisen ohjelmoinnin perusideoihin sekä ohjelmoinnissa käytettävien työvälineiden lisäksi algoritmien laatimiseen. Kurssille osallistuminen ei vaadi ennakkotietoja ohjelmoinnista.",
-                    //   },
-                    //   {
-                    //     name: "keywords",
-                    //     content:
-                    //       "ohjelmointi, java, programming, CS1, MOOC, 2019, ohjelmointikurssi, avoin, ilmainen, helsingin yliopisto",
-                    //   },
-                    // ]}
-                  />
-                  <NavBar />
-                  <ContentArea mobileMenuOpen={this.state.mobileMenuOpen}>
-                    {children}
-                  </ContentArea>
-                  {/* <PointsBalloon /> */}
-                  <Footer />
-                </Wrapper>
-              </ThemeProvider>
-            )
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(courseMetaData) }}
-        />
-      </Fragment>
-    )
-  }
+  return (
+    <Fragment>
+      {" "}
+      <StaticQuery
+        query={layoutQuery}
+        render={(data) => {
+          const siteTitle = data.title.siteMetadata.title
+          const derivedTheme = data.title.siteMetadata.theme
+          const theme = themeArray[derivedTheme] || defaultTheme
+          /*             let selectedTheme
+          for (const [key, value] of Object.entries(themeArray)) {
+            if (key === derivedTheme) {
+              selectedTheme = value
+            }
+          } */
+
+          return (
+            <ThemeProvider theme={theme}>
+              <Wrapper mobileMenuOpen={mobileMenuOpen}>
+                <Helmet
+                  defaultTitle={siteTitle}
+                  titleTemplate={`%s - ${siteTitle}`}
+                  // meta={[
+                  //   {
+                  //     name: "description",
+                  //     content:
+                  //       "Helsingin yliopiston kaikille avoin ja ilmainen ohjelmoinnin perusteet opettava verkkokurssi. Kurssilla perehdytään nykyaikaisen ohjelmoinnin perusideoihin sekä ohjelmoinnissa käytettävien työvälineiden lisäksi algoritmien laatimiseen. Kurssille osallistuminen ei vaadi ennakkotietoja ohjelmoinnista.",
+                  //   },
+                  //   {
+                  //     name: "keywords",
+                  //     content:
+                  //       "ohjelmointi, java, programming, CS1, MOOC, 2019, ohjelmointikurssi, avoin, ilmainen, helsingin yliopisto",
+                  //   },
+                  // ]}
+                />
+                <NavBar />
+                {loginStateContext.loggedIn &&
+                  language &&
+                  userLanguage &&
+                  language !== userLanguage &&
+                  !inProfile && (
+                    <NoticeContainer>
+                      <Notice>
+                        You are viewing a different language version of the
+                        course than what you selected in your profile settings.
+                        Assignment answers are tied to the language version, so
+                        to continue with the assignments switch back to the{" "}
+                        {userLanguage === "en"
+                          ? "English"
+                          : userLanguage === "sv"
+                          ? "Swedish"
+                          : "Finnish"}{" "}
+                        version of the course, or change the language in your{" "}
+                        <a href={`${langPrefix}/profile`}>profile</a>.
+                      </Notice>
+                    </NoticeContainer>
+                  )}
+                <ContentArea mobileMenuOpen={mobileMenuOpen}>
+                  {children}
+                </ContentArea>
+                {/* <PointsBalloon /> */}
+                <Footer />
+              </Wrapper>
+            </ThemeProvider>
+          )
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseMetaData) }}
+      />
+    </Fragment>
+  )
 }
 
-export default withSimpleErrorBoundary(Layout)
+export default withSimpleErrorBoundary(withLoginStateContext(Layout))

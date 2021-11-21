@@ -4,7 +4,7 @@ import styled from "styled-components"
 import rehypeReact from "rehype-react"
 import { Helmet } from "react-helmet"
 
-import { withTranslation } from "gatsby-plugin-react-i18next"
+import { I18nextContext } from "gatsby-plugin-react-i18next"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
 
 import getNamedPartials from "../../partials"
@@ -29,7 +29,22 @@ const ContentWrapper = styled.article`
 `
 
 const GridNavigation = ({ data }) => {
-  const { frontmatter, htmlAst } = data.markdownRemark
+  const context = React.useContext(I18nextContext)
+  let filteredData
+  if (context.language === "en") {
+    filteredData = data.allMarkdownRemark.edges.filter((e) => (
+      e.node.frontmatter.path === "/grid"
+    ))
+  } else {
+    filteredData = data.allMarkdownRemark.edges.filter((e) => (
+      e.node.frontmatter.path.includes(`/${context.language}/`)
+    ))
+  }
+  if (filteredData.length > 1) {
+    console.log("something went wrong with filtering in src/partials/Grid.js")
+  }
+  filteredData = filteredData[0].node
+  const { frontmatter, htmlAst } = filteredData
   const partials = getNamedPartials()
   const renderAst = new rehypeReact({
     createElement: React.createElement,
@@ -49,15 +64,19 @@ export default function GridQuery(props) {
   return (
     <StaticQuery
       query={graphql`
-        query {
-          markdownRemark(frontmatter: { path: { eq: "/grid" } }) {
-            htmlAst
-            frontmatter {
-              path
-              title
+      query {
+        allMarkdownRemark(filter: { frontmatter: { path: { regex: "/^(/[a-z][a-z])?/grid$/" } } }) {
+          edges {
+            node {
+              htmlAst
+              frontmatter {
+                path
+                title
+              }
             }
           }
         }
+      }
       `}
       render={(data) => <GridNavigation data={data} {...props} />}
     />

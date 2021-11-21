@@ -38,7 +38,7 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`,
-        languages: [`en`],
+        languages: [`en`,`sv`, `fi`],
         defaultLanguage: CourseSettings.language,
         i18nextOptions: {
           ns: ["common", "user", "points", "navbar"],
@@ -51,7 +51,13 @@ module.exports = {
             escapeValue: false,
           },
         },
-      },
+        pages: [
+          {
+            matchPath: '/:lang?/(.*)',
+            getLanguageFromPath: true,
+          },
+        ]
+      }
     },
     {
       resolve: "gatsby-plugin-react-svg",
@@ -114,7 +120,7 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-images`,
+            resolve: `@bonobolabs/gatsby-remark-images-custom-widths`,
             options: {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the

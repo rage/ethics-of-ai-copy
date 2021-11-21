@@ -1,6 +1,6 @@
 ---
 path: "/faq"
-title: "About the course owners"
+title: "Frequently asked questions"
 home_page: true
 hide_in_sidebar: true
 banner: false
