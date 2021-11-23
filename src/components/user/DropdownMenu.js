@@ -68,13 +68,13 @@ const DropdownMenu = ({ selectedVariant, setSelectedVariant, navBar }) => {
         }
       >
         <MenuItem value={"en"} aria-label="select english" role="option">
-          {inNavBar ? (<UKFlag aria-label="english" style={{ maxWidth: "30px", maxHeight: "20px" }} />) : "English"}
+          {inNavBar ? (<UKFlag aria-label="english" style={{ width: "30px", height: "20px" }} />) : "English"}
         </MenuItem>
         <MenuItem value={"sv"} aria-label="select swedish" role="option">
           {inNavBar ? (<SwedishFlag aria-label="swedish" style={{ width: "30px", height: "20px" }} />) : "Svenska"}
         </MenuItem>
         <MenuItem value={"fi"} aria-label="select finnish" role="option">
-          {inNavBar ? (<FinnishFlag aria-label="finnish" style={{ maxWidth: "30px", maxHeight: "20px" }} />) : "Suomi"}
+          {inNavBar ? (<FinnishFlag aria-label="finnish" style={{ width: "30px", height: "20px" }} />) : "Suomi"}
         </MenuItem>
       </Select>
     </StyledFormControl>
