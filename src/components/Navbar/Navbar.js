@@ -31,14 +31,6 @@ export default function Navbar(props) {
             </StyledIcon>
           </Link>
         </h1>{" "}
-        <div
-          className="menu-icon"
-          onClick={() => setClicked(!clicked)}
-          role="button"
-          aria-label={t("label2")}
-        >
-          <Hamburger> </Hamburger>
-        </div>
         <ul className={clicked ? "nav-menu active" : "nav-menu"} role="list">
           <li>
             <a
@@ -50,8 +42,18 @@ export default function Navbar(props) {
               {t("gridItem2")}
             </a>
           </li>
-          <li>
+          <ul className={clicked ? "tooltip" : "hide"}>
             <LoginControls />
+          </ul>
+          <li>
+            <div
+              className="menu-icon"
+              onClick={() => setClicked(!clicked)}
+              role="button"
+              aria-label={t("label2")}
+            >
+              <Hamburger> </Hamburger>
+            </div>
           </li>
           <li>
             <LanguageOptions />

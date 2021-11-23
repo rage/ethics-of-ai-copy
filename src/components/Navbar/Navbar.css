@@ -34,8 +34,8 @@ ul {
 .nav-menu {
   display: grid;
   ms-display: grid;
-  grid-template-columns: repeat(3, auto);
-  -ms-grid-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
+  -ms-grid-columns: repeat(4, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
@@ -86,8 +86,6 @@ ul {
 }
 
 .menu-icon {
-  width: 50px;
-  height: 15px;
   display: none;
 }
 
@@ -95,9 +93,76 @@ ul {
   display: none;
 }
 
+.tooltip {
+  background: #fafafa;
+  border-color: #cacaca;
+  top: 100px;
+  right: 22px;
+  border-radius: 8px;
+  position: absolute;
+  margin-bottom: 10px;
+  margin-left: -95px;
+  cursor: default;
+  min-width: 220px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 15%);
+  animation: show 0.4s ease-in-out forwards;
+}
+
+.tooltip::after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 151, 167, 0);
+  border-bottom-color: #fafafa;
+  border-width: 12px;
+  margin-left: -12px;
+}
+
+.tooltip li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  border-bottom: 2px solid #e1e1e1;
+  padding: 4px 20px;
+}
+
+.tooltip li:last-child {
+  border-bottom: none;
+}
+
+.tooltip li Button {
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+.tooltip li Button :hover {
+  color: #333;
+  background-color: none;
+}
+
 @media screen and (max-width: 960px) {
   .NavbarItems {
     padding: 0 2rem;
+  }
+
+  .menu-icon {
+    width: 50px;
+    height: 15px;
+    display: inline-block;
+  }
+
+  .hide {
+    display: none;
   }
 }
 
