@@ -12,7 +12,7 @@ const courseSettings = {
   studyRightEnabled: false,
   showExerciseDescriptionWhenNotLoggedIn: false,
   theme: "indogoTheme",
-  courseId: "bc18ca00-c632-4eb6-ab1d-36f15231c8d2" // TODO: create course in mooc.fi
+  courseId: "7fb5fd88-d96f-4379-8052-38438d2585aa"
 }
 
 module.exports = courseSettings
