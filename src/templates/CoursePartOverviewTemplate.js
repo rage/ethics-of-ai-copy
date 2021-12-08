@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet"
 import Layout from "./Layout"
 
 import getNamedPartials from "../partials"
-import { getCachedUserDetails } from "../services/moocfi"
+import { getCachedUserDetails, updateUserDetails } from "../services/moocfi"
 import "./remark.css"
 import PagesContext from "../contexes/PagesContext"
 import LoginStateContext, {
@@ -31,10 +31,29 @@ const Title = styled.h1``
 
 const CoursePartOverviewTemplate = ({ data }) => {
   const loginStateContext = useContext(LoginStateContext)
-  const { navigate } = useI18next()
+  const { navigate, language } = useI18next()
+
+  const setUserLanguageIfUndefined = async (userInfo) => {
+    const userLanguage = userInfo?.extra_fields?.language
+    if (userLanguage === undefined) {
+      const extraFields = {
+        language: language,
+      }
+      const userField = {
+        first_name: userInfo.user_field?.first_name,
+        last_name: userInfo.user_field?.last_name,
+        organizational_id: userInfo.user_field?.organizational_id,
+      }
+      await updateUserDetails({
+        extraFields,
+        userField,
+      })
+    }
+  }
 
   const missingInfo = async () => {
     let userInfo = await getCachedUserDetails()
+    await setUserLanguageIfUndefined(userInfo)
     const research = userInfo?.extra_fields?.research
     if (research === undefined) {
       navigate("/missing-info")

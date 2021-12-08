@@ -9,7 +9,7 @@ import LoginStateContext, {
 } from "../../contexes/LoginStateContext"
 import Container from "../../components/Container"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
-import { getCachedUserDetails } from "../../services/moocfi"
+import { getCachedUserDetails, updateUserDetails } from "../../services/moocfi"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheckCircle as icon } from "@fortawesome/free-solid-svg-icons"
@@ -27,7 +27,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 `
 
 const Profile = () => {
-  const { navigate, t } = useI18next()
+  const { navigate, t, language } = useI18next()
   const loginStateContext = useContext(LoginStateContext)
 
   const [successMessage, setSuccessMessage] = useState(null)
@@ -40,6 +40,24 @@ const Profile = () => {
     setSuccessMessage(null)
   }
 
+  const setUserLanguageIfUndefined = async (userInfo) => {
+    const userLanguage = userInfo?.extra_fields?.language
+    if (userLanguage === undefined) {
+      const extraFields = {
+        language: language,
+      }
+      const userField = {
+        first_name: userInfo.user_field?.first_name,
+        last_name: userInfo.user_field?.last_name,
+        organizational_id: userInfo.user_field?.organizational_id,
+      }
+      await updateUserDetails({
+        extraFields,
+        userField,
+      })
+    }
+  }
+
   useEffect(() => {
     const fetchUserDetails = async () => {
       if (!loginStateContext.loggedIn) {
@@ -47,6 +65,7 @@ const Profile = () => {
       }
 
       let userInfo = await getCachedUserDetails()
+      await setUserLanguageIfUndefined(userInfo)
       const research = userInfo?.extra_fields?.research
       if (research === undefined) {
         navigate("/missing-info", { replace: true })

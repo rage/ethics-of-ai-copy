@@ -11,7 +11,7 @@ import PagesInThisSection from "../partials/PagesInThisSection"
 import NextChapter from "../partials/Contentpage/NextChapter"
 import getNamedPartials from "../partials"
 import CoursePageFooter from "../components/CoursePageFooter"
-import { getCachedUserDetails } from "../services/moocfi"
+import { getCachedUserDetails, updateUserDetails } from "../services/moocfi"
 import "./remark.css"
 import PagesContext from "../contexes/PagesContext"
 import LoginStateContext, {
@@ -58,11 +58,30 @@ const UpLink = styled(Link)`
 
 const CourseContentTemplate = ({ data }) => {
   const loginStateContext = useContext(LoginStateContext)
-  const { navigate, t } = useI18next()
+  const { navigate, t, language } = useI18next()
+
+  const setUserLanguageIfUndefined = async (userInfo) => {
+    const userLanguage = userInfo?.extra_fields?.language
+    if (userLanguage === undefined) {
+      const extraFields = {
+        language: language,
+      }
+      const userField = {
+        first_name: userInfo.user_field?.first_name,
+        last_name: userInfo.user_field?.last_name,
+        organizational_id: userInfo.user_field?.organizational_id,
+      }
+      await updateUserDetails({
+        extraFields,
+        userField,
+      })
+    }
+  }
 
   const missingInfo = async () => {
     if (loginStateContext.loggedIn) {
       let userInfo = await getCachedUserDetails()
+      await setUserLanguageIfUndefined(userInfo)
       const research = userInfo?.extra_fields?.research
       if (research === undefined) {
         navigate("/missing-info")
@@ -98,14 +117,14 @@ const CourseContentTemplate = ({ data }) => {
     components: partials,
   }).Compiler
 
-  const language = data.locales.edges[0].node.language
-  let pathWithoutLng = `${frontmatter.path.replace(`/${language}`, "")}`
+  const lang = data.locales.edges[0].node.language
+  let pathWithoutLng = `${frontmatter.path.replace(`/${lang}`, "")}`
   let parentSectionName = capitalizeFirstLetter(
     `${pathWithoutLng.split(/\//g)[1].replace(/-/g, " ")}`,
   )
-  if (language === "sv") {
+  if (lang === "sv") {
     parentSectionName = parentSectionName.replace("Chapter", "Kapitel")
-  } else if (language === "fi") {
+  } else if (lang === "fi") {
     parentSectionName = parentSectionName.replace("Chapter", "Luku")
   }
 
@@ -140,7 +159,7 @@ const CourseContentTemplate = ({ data }) => {
         value={{
           all: allPages,
           current: { frontmatter: frontmatter, filePath: filePath },
-          language: language,
+          language: lang,
         }}
       >
         <LoginStateContextProvider>
