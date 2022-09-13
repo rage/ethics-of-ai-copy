@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:11
 
 RUN apt-get update && \
   apt-get -y install nasm zlib1g build-essential \
