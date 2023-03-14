@@ -1,5 +1,5 @@
 ---
-path: '/ar/chapter-1/3-values-and-norms'
+path: '/chapter-1/3-values-and-norms'
 title: 'Values and norms'
 hidden: false
 ---

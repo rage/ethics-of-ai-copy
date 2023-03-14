@@ -1,5 +1,5 @@
 ---
-path: '/ar/chapter-2/3-common-good-and-well_being'
+path: '/chapter-2/3-common-good-and-well_being'
 title: 'Common good and well-being'
 hidden: false
 ---

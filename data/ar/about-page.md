@@ -1,5 +1,5 @@
 ---
-path: "/ar/about"
+path: "/about"
 title: "About the course owners"
 home_page: true
 hide_in_sidebar: true

@@ -4,7 +4,7 @@ hidden: true
 hide_in_sidebar: true
 information_page: false
 overview: true
-path: "/ar/frontmatter-guide"
+path: "/frontmatter-guide"
 separator_after: "derp"
 sidebar_priority: 1337
 title: "Frontmatter-guide"

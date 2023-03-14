@@ -1,5 +1,5 @@
 ---
-path: '/ar/chapter-4/2-what-is-transparency'
+path: '/chapter-4/2-what-is-transparency'
 title: 'What is transparency?'
 hidden: false
 ---

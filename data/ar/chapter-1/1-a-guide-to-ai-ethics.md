@@ -1,5 +1,5 @@
 ---
-path: '/ar/chapter-1/1-a-guide-to-ai-ethics'
+path: '/chapter-1/1-a-guide-to-ai-ethics'
 title: 'A guide to AI ethics'
 hidden: false
 ---

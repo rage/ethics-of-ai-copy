@@ -1,5 +1,5 @@
 ---
-path: "/ar/error"
+path: "/error"
 title: "Custom error page"
 home_page: true
 banner: false

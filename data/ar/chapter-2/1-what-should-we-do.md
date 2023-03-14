@@ -1,5 +1,5 @@
 ---
-path: '/ar/chapter-2/1-what-should-we-do'
+path: '/chapter-2/1-what-should-we-do'
 title: 'What should we do?'
 hidden: false
 ---

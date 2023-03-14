@@ -1,5 +1,5 @@
 ---
-path: '/ar/chapter-5/2-what-are-human-rights'
+path: '/chapter-5/2-what-are-human-rights'
 title: 'What are human rights?'
 hidden: false
 ---

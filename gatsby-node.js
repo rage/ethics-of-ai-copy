@@ -59,8 +59,8 @@ exports.createPages = ({
       sort: { order: DESC, fields: [frontmatter___path] }
       limit: 1000${
         process.env.NODE_ENV === "production"
-          ? `, filter: { frontmatter: { hidden: { ne: true }, path: { regex: "^/\/en|\/fi|\/sv/" } } }`
-          : `, filter: { frontmatter: { path: { regex: "^/\/en|\/fi|\/sv/" } } }`
+          ? `, filter: { frontmatter: { hidden: { ne: true } } }`
+          : ""
       }
     ) {
       edges {

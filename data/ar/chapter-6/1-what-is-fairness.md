@@ -1,5 +1,5 @@
 ---
-path: '/ar/chapter-6/1-what-is-fairness'
+path: '/chapter-6/1-what-is-fairness'
 title: 'What is fairness'
 hidden: false
 ---

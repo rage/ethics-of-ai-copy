@@ -1,5 +1,5 @@
 ---
-path: "/ar/faq"
+path: "/faq"
 title: "Frequently asked questions"
 home_page: true
 hide_in_sidebar: true

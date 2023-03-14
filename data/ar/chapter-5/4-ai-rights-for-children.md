@@ -1,5 +1,5 @@
 ---
-path: '/ar/chapter-5/4-ai-rights-for-children'
+path: '/chapter-5/4-ai-rights-for-children'
 title: 'AI rights for children'
 hidden: false
 ---

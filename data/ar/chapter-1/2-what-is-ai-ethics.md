@@ -1,5 +1,5 @@
 ---
-path: '/ar/chapter-1/2-what-is-ai-ethics'
+path: '/chapter-1/2-what-is-ai-ethics'
 title: 'What is AI ethics?'
 hidden: false
 ---

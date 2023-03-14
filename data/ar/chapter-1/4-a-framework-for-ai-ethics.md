@@ -1,5 +1,5 @@
 ---
-path: '/ar/chapter-1/4-a-framework-for-ai-ethics'
+path: '/chapter-1/4-a-framework-for-ai-ethics'
 title: 'A framework for AI ethics'
 hidden: false
 ---

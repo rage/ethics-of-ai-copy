@@ -1,5 +1,5 @@
 ---
-path: '/ar/chapter-3/2-what-is-accountability'
+path: '/chapter-3/2-what-is-accountability'
 title: 'What is accountability?'
 hidden: false
 ---

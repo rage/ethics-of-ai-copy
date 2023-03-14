@@ -1,5 +1,5 @@
 ---
-path: '/ar/chapter-6/4-removing-bias'
+path: '/chapter-6/4-removing-bias'
 title: 'Removing bias'
 hidden: false
 ---

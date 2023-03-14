@@ -1,5 +1,5 @@
 ---
-path: '/ar/chapter-6/3-discrimination-and-biases'
+path: '/chapter-6/3-discrimination-and-biases'
 title: 'Discrimination and biases'
 hidden: false
 ---

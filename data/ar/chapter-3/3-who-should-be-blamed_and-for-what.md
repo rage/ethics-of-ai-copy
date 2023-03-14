@@ -1,5 +1,5 @@
 ---
-path: '/ar/chapter-3/3-who-should-be-blamed_and-for-what'
+path: '/chapter-3/3-who-should-be-blamed_and-for-what'
 title: 'Who should be blamed – and for what?'
 hidden: false
 ---
