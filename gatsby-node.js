@@ -92,7 +92,7 @@ exports.createPages = ({
       return
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({
+    result.data.allMarkdownRemark.edges.filter(e => !e.node.frontmatter.path.includes('/ar/')).forEach(({
       node
     }) => {
       let template = courseMaterialTemplate

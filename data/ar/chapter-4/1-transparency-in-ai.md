@@ -1,5 +1,5 @@
 ---
-path: '/chapter-4/1-transparency-in-ai'
+path: '/ar/chapter-4/1-transparency-in-ai'
 title: 'Transparency in AI'
 hidden: false
 ---

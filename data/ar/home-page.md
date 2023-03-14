@@ -1,5 +1,5 @@
 ---
-path: "/"
+path: "/ar/"
 title: "Welcome to Ethics of AI!"
 home_page: true
 hide_in_sidebar: true

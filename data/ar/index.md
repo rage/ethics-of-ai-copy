@@ -1,5 +1,5 @@
 ---
-path: "/about-course"
+path: "/ar/about-course"
 title: "About the course"
 hidden: false
 information_page: true

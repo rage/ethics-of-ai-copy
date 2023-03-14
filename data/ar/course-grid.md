@@ -1,5 +1,5 @@
 ---
-path: "/grid"
+path: "/ar/grid"
 title: "Ethics of AI"
 grid_navigation: true
 hide_in_sidebar: true

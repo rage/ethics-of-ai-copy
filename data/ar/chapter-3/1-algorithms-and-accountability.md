@@ -1,5 +1,5 @@
 ---
-path: '/chapter-3/1-algorithms-and-accountability'
+path: '/ar/chapter-3/1-algorithms-and-accountability'
 title: 'Algorithms and accountability'
 hidden: false
 ---

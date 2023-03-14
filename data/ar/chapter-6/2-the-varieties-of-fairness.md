@@ -1,5 +1,5 @@
 ---
-path: '/chapter-6/2-the-varieties-of-fairness'
+path: '/ar/chapter-6/2-the-varieties-of-fairness'
 title: 'The varieties of fairness'
 hidden: false
 ---

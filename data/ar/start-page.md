@@ -1,5 +1,5 @@
 ---
-path: "/start"
+path: "/ar/start"
 title: "This is a content"
 home_page: true
 banner: false

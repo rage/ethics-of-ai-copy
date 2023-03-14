@@ -1,5 +1,5 @@
 ---
-path: '/chapter-7/3-moving-forward-with-ethics'
+path: '/ar/chapter-7/3-moving-forward-with-ethics'
 title: 'Moving forward with ethics'
 hidden: false
 ---
