@@ -1,5 +1,5 @@
 ---
-path: '/chapter-2/2-the-common-good_calculating-consequences'
+path: '/ar/chapter-2/2-the-common-good_calculating-consequences'
 title: 'The common good – calculating consequences'
 hidden: false
 ---

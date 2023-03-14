@@ -1,5 +1,5 @@
 ---
-path: '/chapter-3/4-the-problem-of-individuating-responsibilities'
+path: '/ar/chapter-3/4-the-problem-of-individuating-responsibilities'
 title: 'The problem of individuating responsibilities'
 hidden: false
 ---

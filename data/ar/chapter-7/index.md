@@ -1,5 +1,5 @@
 ---
-path: '/chapter-7'
+path: '/ar/chapter-7'
 title: 'Chapter 7'
 overview: true
 hidden: false

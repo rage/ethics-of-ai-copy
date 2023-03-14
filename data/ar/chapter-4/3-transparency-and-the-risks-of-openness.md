@@ -1,5 +1,5 @@
 ---
-path: '/chapter-4/3-transparency-and-the-risks-of-openness'
+path: '/ar/chapter-4/3-transparency-and-the-risks-of-openness'
 title: 'Transparency and the risks of openness'
 hidden: false
 ---

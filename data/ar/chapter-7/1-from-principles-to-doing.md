@@ -1,5 +1,5 @@
 ---
-path: '/chapter-7/1-from-principles-to-doing'
+path: '/ar/chapter-7/1-from-principles-to-doing'
 title: 'From principles to doing'
 hidden: false
 ---

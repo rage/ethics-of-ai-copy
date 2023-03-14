@@ -1,5 +1,5 @@
 ---
-path: '/chapter-7/2-ethics-as-doing'
+path: '/ar/chapter-7/2-ethics-as-doing'
 title: 'Ethics as doing'
 hidden: false
 ---

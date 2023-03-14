@@ -1,5 +1,5 @@
 ---
-path: '/chapter-5/3-examples-of-human-rights'
+path: '/ar/chapter-5/3-examples-of-human-rights'
 title: 'Examples of human rights: privacy, security, and inclusion'
 hidden: false
 ---
