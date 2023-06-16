@@ -2,7 +2,6 @@ import React, { useContext } from "react"
 import styled from "styled-components"
 import BackgroundImage from "../images/banner.svg"
 import { Card, CardContent } from "@material-ui/core"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { Link } from "gatsby"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
@@ -109,20 +108,20 @@ const Footer = () => {
         <StyledCard>
           <StyledCardContent>
             <BrandsContainer>
-              <OutboundLink
+              <a
                 href="https://helsinki.fi"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img alt={t("hy")} src={UHLogo} />
-              </OutboundLink>
-              <OutboundLink
+              </a>
+              <a
                 href="https://mooc.fi"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img alt="MOOC.fi" src={MoocfiLogo} />
-              </OutboundLink>
+              </a>
             </BrandsContainer>
           </StyledCardContent>
         </StyledCard>

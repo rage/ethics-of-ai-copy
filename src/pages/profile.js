@@ -8,7 +8,6 @@ import LoginStateContext, {
   withLoginStateContext,
 } from "../contexes/LoginStateContext"
 import Container from "../components/Container"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { getCachedUserDetails, updateUserDetails } from "../services/moocfi"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"

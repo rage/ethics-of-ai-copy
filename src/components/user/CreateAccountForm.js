@@ -3,7 +3,6 @@ import { TextField, Button } from "@material-ui/core"
 import { createAccount, authenticate } from "../../services/moocfi"
 import { capitalizeFirstLetter } from "../../util/strings"
 import { navigate } from "gatsby"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { Link, withTranslation } from "gatsby-plugin-react-i18next"
 import styled from "styled-components"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
@@ -153,13 +152,13 @@ class CreateAccountForm extends React.Component {
         <Form onChange={this.validate}>
           <InfoBox>
             {this.props.t("user:courseUses")}{" "}
-            <OutboundLink
+            <a
               href="https://mooc.fi"
               target="_blank"
               rel="noopener noreferrer"
             >
               mooc.fi
-            </OutboundLink>{" "}
+            </a>{" "}
             {this.props.t("user:courseUses2")}
           </InfoBox>
 

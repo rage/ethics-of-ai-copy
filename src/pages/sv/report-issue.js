@@ -2,7 +2,6 @@ import React from "react"
 import Helmet from "react-helmet"
 import Layout from "../../templates/Layout"
 import Container from "../../components/Container"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { withLoginStateContext } from "../../contexes/LoginStateContext"
 import { Button, Typography } from "@material-ui/core"
 import CourseSettings from "../../../course-settings"
@@ -24,7 +23,7 @@ const ReportIssue = () => {
         <p>{t("reportIssue1")}</p>
         <p>
           {t("reportIssue2")}{" "}
-          <OutboundLink
+          <a
             href={"https://github.com/join?return_to=".concat(
               CourseSettings.githubUrl,
               "/issues/new&source=login",
@@ -33,23 +32,23 @@ const ReportIssue = () => {
             rel="noopener noreferrer"
           >
             {t("reportIssue3")}
-          </OutboundLink>
+          </a>
         </p>
 
         <p>
           {t("reportIssue4")}{" "}
-          <OutboundLink
+          <a
             href={CourseSettings.githubUrl.concat("/issues")}
             target="_blank"
             rel="noopener noreferrer"
           >
             {t("reportIssue3")}
-          </OutboundLink>{" "}
+          </a>{" "}
           {t("reportIssue5")}
         </p>
 
         <center>
-          <OutboundLink
+          <a
             href={CourseSettings.githubUrl.concat("/issues/new")}
             target="_blank"
             rel="noopener noreferrer"
@@ -57,7 +56,7 @@ const ReportIssue = () => {
             <Button color="primary" variant="contained">
               {t("reportIssueButtonText")}
             </Button>
-          </OutboundLink>
+          </a>
         </center>
 
         <br />

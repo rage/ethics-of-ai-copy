@@ -8,7 +8,6 @@ import Santeri from "../../images/contributors/santeri_raisanen.jpg"
 import Sasu from "../../images/contributors/sasu-tarkoma.jpg"
 import Saara from "../../images/contributors/saara.jpg"
 import { useTranslation } from "gatsby-plugin-react-i18next"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const contributors = (t) => [
   {
@@ -152,23 +151,23 @@ export default (props) => {
         <p>
           {t("licenceMoocCenter1")}
           {" "}
-          <OutboundLink
+          <a
             href="https://mooc.fi"
             target="_blank"
             rel="noopener noreferrer"
           >
             {t("licenceMoocCenter2")}
-          </OutboundLink>
+          </a>
           {" "}
           {t("licenceMoocCenter3")}
           <br />
           <br />
           {t("licenceMoocCenterPersons")}
           <ul>
-            <li><OutboundLink href="https://github.com/nygrenh" target="_blank" rel="noopener noreferrer">Henrik Nygren</OutboundLink></li>
-            <li><OutboundLink href="https://github.com/redande" target="_blank" rel="noopener noreferrer">Antti Leinonen</OutboundLink></li>
-            <li><OutboundLink href="https://github.com/george-misan" target="_blank" rel="noopener noreferrer">George Misan Eyoyibo</OutboundLink></li>
-            <li><OutboundLink href="https://github.com/ipegii" target="_blank" rel="noopener noreferrer">Pekka Mäki-Mikola</OutboundLink></li>
+            <li><a href="https://github.com/nygrenh" target="_blank" rel="noopener noreferrer">Henrik Nygren</a></li>
+            <li><a href="https://github.com/redande" target="_blank" rel="noopener noreferrer">Antti Leinonen</a></li>
+            <li><a href="https://github.com/george-misan" target="_blank" rel="noopener noreferrer">George Misan Eyoyibo</a></li>
+            <li><a href="https://github.com/ipegii" target="_blank" rel="noopener noreferrer">Pekka Mäki-Mikola</a></li>
           </ul>
         </p>
       </Wrapper>{" "}

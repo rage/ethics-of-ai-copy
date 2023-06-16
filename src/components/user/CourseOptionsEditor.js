@@ -11,7 +11,6 @@ import {
   FormHelperText,
 } from "@material-ui/core"
 
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import Loading from "../Loading"
 

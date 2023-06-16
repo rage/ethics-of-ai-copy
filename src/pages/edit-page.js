@@ -2,7 +2,6 @@ import React from "react"
 import Helmet from "react-helmet"
 import Layout from "../templates/Layout"
 import Container from "../components/Container"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { withLoginStateContext } from "../contexes/LoginStateContext"
 import { Button, Typography } from "@material-ui/core"
 import CourseSettings from "../../course-settings"
@@ -45,38 +44,30 @@ const EditPage = () => {
         <p>{t("editPage1")}</p>
         <p>
           {t("editPage2")}{" "}
-          <OutboundLink
-            href={loginThenEditPath}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={loginThenEditPath} target="_blank" rel="noopener noreferrer">
             {t("editPage3")}
-          </OutboundLink>
+          </a>
         </p>
 
         <p>
           {t("editPage4")}{" "}
-          <OutboundLink
+          <a
             href={CourseSettings.githubUrl.concat("/pulls")}
             target="_blank"
             rel="noopener noreferrer"
           >
             {t("editPage3")}
-          </OutboundLink>{" "}
+          </a>{" "}
           {t("editPage5")}
         </p>
 
         <center>
-          <OutboundLink
-            href={editPath}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={editPath} target="_blank" rel="noopener noreferrer">
             <Button color="primary" variant="contained">
               {t("editPageButtonText")}
               {path}
             </Button>
-          </OutboundLink>
+          </a>
         </center>
 
         <br />

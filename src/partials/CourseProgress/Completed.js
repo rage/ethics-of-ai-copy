@@ -1,5 +1,4 @@
 import { Button } from "@material-ui/core"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import React from "react"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 import styled from "styled-components"
@@ -26,9 +25,9 @@ const Completed = () => {
     <CompletionContainer>
       <Title>{t("completedTitle")}</Title>
       <Subtitle>{t("completedSubtitle")}</Subtitle>
-      <OutboundLink href="https://www.mooc.fi/en/profile/completions">
+      <a href="https://www.mooc.fi/en/profile/completions">
         <Primary>{t("completedRegister")}</Primary>
-      </OutboundLink>
+      </a>
     </CompletionContainer>
   )
 }
